@@ -19,8 +19,10 @@ though, i would recommend looking through and comparing your .Xresources to mine
 
 do the same with .vimrc and .zshrc 
 
+
 BEFORE copying .vimrc make sure you have "vundle" installed. After that, go into vim and do a ":PluginInstall" to install all the plugins/
 I use vim-airline for the statusline theme.
 
+If you have any issues, comment on the reddit thread or put an issue through the git repo issue function.
 
 Thanks!
