@@ -50,7 +50,7 @@ run_once("unclutter")
 os.setlocale(os.getenv("LANG"))
 
 -- beautiful init
-beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-darker/theme.lua")
+beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/powerarrow/theme.lua")
 
 -- common
 modkey     = "Mod4"
