@@ -3,26 +3,37 @@ These are the DotFiles for my PowerArrow AwesomeWM configuration.
 
 To Install:
 
-copy the contents of awesomeWM to ~.config/awesome/
+copy awesome  to ~.config/
 It should look something like:
 
-cp -avr ~/Downloads/dotFiles/awesomeWM/* ~/.config/awesome/
-or using the move command (this will move the stuff, not copy it):
-mv ~/Downloads/dotFiles/awesomeWM/* ~/.config/awesome/
+cp awesome ~/.config/
 
 copy the contents of .ncmpcpp to ~/.ncmpcpp (same commands as above)
 
-copy the contents of weechat to ~/.weechat/
+To get the rc.lua mpd Widget working, make SURE to have mpc installed (media placer command line interface). Otherwise, it will not work. 
+Also, make sure to look through your .ncmpcpp/config and .mpd/mpd.conf to make sure all the settings are correct (especially with reference to host/server/port)
+
+copy the contents of .weechat to ~/.weechat/ (same as above)
 
 If you want the URXVT config, copy Xresources and move it to your home directory (~/)
 though, i would recommend looking through and comparing your .Xresources to mine, and simply copying using regular copy-paste commands to avoid potential  conflicts.
 
-do the same with .vimrc and .zshrc 
+To get VIM working:
+
+	Install vundle
+	copy my .vimrc  to your home directory (~/)
+	open vim, and do :PluginInstall to install all the plugins
+
+For .zshrc configuration, make sure to have zsh installed along with oh-my-zsh. The Installation of these falls out of the scope of this guide, but heres the link to the oh-my-zsh page refer to the oh-my-zsh
+https://github.com/robbyrussell/oh-my-zsh
+To install the same zsh theme as me, you will have to install pre-patched unicode fonts. This also falls out of the scope of this guide. Look into oh-my-zsh themes. Heres the wiki:
+https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 
 
-BEFORE copying .vimrc make sure you have "vundle" installed. After that, go into vim and do a ":PluginInstall" to install all the plugins/
-I use vim-airline for the statusline theme.
+To get the rc.lua mpd Widget working, make SURE to have mpc installed (media placer command line interface). Otherwise, it will not work. 
+Also, make sure to look through your .ncmpcpp/config and .mpd/mpd.conf to make sure all the settings are correct (especially with reference to host/server/port)
 
-If you have any issues, comment on the reddit thread or put an issue through the git repo issue function.
+DO THIS AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR ANYTHING THAT HAPPENS TO YOUR COMPUTER/CONFIGURATION.
+
 
 Thanks!
