@@ -1,9 +1,9 @@
 theme                               = {}
 
-themes_dir                          = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow"
+themes_dir                          = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow/"
 theme.wallpaper                     = themes_dir ..  "wall.jpg"
 
-theme.font                          = "Terminus 9"
+theme.font                          = "Terminus 9.7"
 theme.fg_normal                     = "#859900" -- b58900
 theme.fg_focus                      = "#466A84"-- F0DFAF 
 theme.fg_urgent                     = "#CC9393"
@@ -14,7 +14,7 @@ theme.border_width                  = "1"
 theme.border_normal                 = "#3F3F3F"
 theme.border_focus                  = "#466A84" --7F7F7F
 theme.border_marked                 = "#CC9393"
-theme.titlebar_bg_focus             = "#A8A8A8"
+theme.titlebar_bg_focus             = "#A8A8A8" --A8A8A8
 theme.titlebar_bg_normal            = "#A8A8A8"
 theme.taglist_fg_focus              = "#466A84" -- D8D782
 theme.widget_bg                     = "#466A84"
@@ -25,7 +25,7 @@ theme.textbox_widget_margin_top     = 1
 theme.notify_fg                     = theme.fg_normal
 theme.notify_bg                     = theme.bg_normal
 theme.notify_border                 = theme.border_focus
-theme.awful_widget_height           = 30
+theme.awful_widget_height           = 20
 theme.awful_widget_margin_top       = 2
 theme.mouse_finder_color            = "#CC9393"
 theme.menu_height                   = "25"

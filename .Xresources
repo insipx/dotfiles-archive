@@ -7,8 +7,9 @@ dzen2.background: #222326
 
 !URxvt*depth: 50 --24
 URxvt*geometry: 100x25
+!111113
 URxvt.borderColor: #111113
-URxvt.internalBorder: 8
+URxvt.internalBorder: 8 
 URxvt.cursorUnderline: false
 URxvt.cursorBlink: true
 

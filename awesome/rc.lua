@@ -8,6 +8,7 @@ local beautiful = require("beautiful")
 local naughty   = require("naughty")
 local drop      = require("scratchdrop")
 local lain      = require("lain")
+local awesompd = require('awesompd/awesompd')
 -- }}}
 
 -- {{{ Error handling
@@ -111,13 +112,9 @@ separators = lain.util.separators
 
 -- Textclock
 clockicon = wibox.widget.imagebox(beautiful.widget_clock)
-mytextclock = awful.widget.textclock('<span color = "#A8A8A8">%A ~ %d.%m.%Y || %H:%M:%S </span>')
+mytextclock = awful.widget.textclock('<span color = "#FFFFFF">%A %m/%d || %H:%M </span>')
 -- calendar
 lain.widgets.calendar:attach(mytextclock, { font_size = 10 } )
-
-
-
-
 
 -- Mail IMAP check
 mailicon = wibox.widget.imagebox(beautiful.widget_mail)
@@ -142,55 +139,114 @@ mailwidget = lain.widgets.imap({
 
 -- MPD
 mpdicon = wibox.widget.imagebox(beautiful.widget_music)
-mpdicon:buttons(awful.util.table.join(awful.button({ }, 1, function () awful.util.spawn_with_shell(musicplr) end)))
-mpdwidget = lain.widgets.mpd({
+--mpdicon:buttons(awful.util.table.join(awful.button({ }, 1, function () awful.util.spawn_with_shell(musicplr) end)))
+--mpdicon:set_image(beautiful.widget_music_on)
+--mpdwidget = lain.widgets.mpd({
+--    settings = function()
+--        if mpd_now.state == "play" then
+--            mpdicon:set_image(beautiful.widget_music_on)
+--        elseif mpd_now.state == "pause" then
+--            artist = "mpd"
+--            title  = "paused "
+--        else
+--            artist = ""
+--            title  = ""
+--            mpdicon:set_image(beautiful.widget_music)
+--       end
+--
+--    end
+--})
+--AwesomeMPD
+   musicwidget = awesompd:create() -- Create awesompd widget
+   musicwidget.font = "Terminus" -- Set widget font
+   musicwidget.font_color = "#FFFFFF" --Set widget font color
+   musicwidget.background = "#466A84" --Set widget background color
+   musicwidget.scrolling = true -- If true, the text in the widget will be scrolled
+   musicwidget.output_size = 30 -- Set the size of widget in symbols
+   musicwidget.update_interval = 10 -- Set the update interval in seconds
+
+   -- Set the folder where icons are located (change username to your login name)
+   musicwidget.path_to_icons = "/home/insidious/.config/awesome/icons"
+
+   -- Set the path to the icon to be displayed on the widget itself
+   -- musicwidget.widget_icon = "/path/to/icon"
+
+   -- Set the default music format for Jamendo streams. You can change
+   -- this option on the fly in awesompd itself.
+   -- possible formats: awesompd.FORMAT_MP3, awesompd.FORMAT_OGG
+   musicwidget.jamendo_format = awesompd.FORMAT_MP3
+
+   -- Specify the browser you use so awesompd can open links from
+   -- Jamendo in it.
+   musicwidget.browser = "firefox"
+
+   -- If true, song notifications for Jamendo tracks and local tracks
+   -- will also contain album cover image.
+   --musicwidget.show_album_cover = true
+
+   -- Specify how big in pixels should an album cover be. Maximum value
+   -- is 100.
+   --musicwidget.album_cover_size = 50
+
+   -- This option is necessary if you want the album covers to be shown
+   -- for your local tracks.
+  -- musicwidget.mpd_config = "/home/insidious/.mpdconf"
+
+   -- Specify decorators on the left and the right side of the
+   -- widget. Or just leave empty strings if you decorate the widget
+   -- from outside.
+   musicwidget.ldecorator = " "
+   musicwidget.rdecorator = " "
+
+   -- Set all the servers to work with (here can be any servers you use)
+   musicwidget.servers = {
+      { server = "127.0.0.1",
+        port ="6600" },
+   }
+
+   -- Set the buttons of the widget. Keyboard keys are working in the
+   -- entire Awesome environment. Also look at the line 352.
+   musicwidget:register_buttons(
+      { { "", awesompd.MOUSE_LEFT, musicwidget:command_playpause() },
+        { "Control", awesompd.MOUSE_SCROLL_UP, musicwidget:command_prev_track() },
+        { "Control", awesompd.MOUSE_SCROLL_DOWN, musicwidget:command_next_track() },
+        { "", awesompd.MOUSE_SCROLL_UP, musicwidget:command_volume_up() },
+        { "", awesompd.MOUSE_SCROLL_DOWN, musicwidget:command_volume_down() },
+        { "", awesompd.MOUSE_RIGHT, musicwidget:command_show_menu() },
+        { "", "XF86AudioLowerVolume", musicwidget:command_volume_down() },
+        { "", "XF86AudioRaiseVolume", musicwidget:command_volume_up() },
+        { modkey, "Pause", musicwidget:command_playpause() } })
+
     settings = function()
         if mpd_now.state == "play" then
-            artist = " " .. mpd_now.artist .. " "
-            title  = mpd_now.title  .. " "
             mpdicon:set_image(beautiful.widget_music_on)
         elseif mpd_now.state == "pause" then
-            artist = " mpd "
+            artist = "mpd"
             title  = "paused "
         else
             artist = ""
             title  = ""
             mpdicon:set_image(beautiful.widget_music)
-        end
+       end
 
-        widget:set_markup(markup("#E3052D", " " .. artist)
-                          .. " " ..
-                          markup("#A8A8A8", " " .. title .. " "))
- 
     end
-})
+
+
+   musicwidget:run() -- After all configuration is done, run the widget
+
+
+
 
 -- MEM
 memicon = wibox.widget.imagebox(beautiful.widget_mem)
 memwidget = lain.widgets.mem({
     settings = function()
-        widget:set_markup(markup("#A8A8A8", "" .. mem_now.used)
-                          .. " " ..
-                          markup("#A8A8A8","" .. "MB"))
+        widget:set_markup(markup("#FFFFFF", "" .. mem_now.used)
+                          .. "" ..
+                          markup("#FFFFFF","" .. "MB "))
  
 end
 })
-
---Real Battery
-batterywidget = wibox.widget.textbox()    
-batterywidget:set_text(" | Battery | ") 
-batterywidgettimer = timer({ timeout = 5 })
-batterywidgettimer:connect_signal("timeout",    
-  function()    
-    fh = assert(io.popen("acpi | cut -d, -f 2,3 -", "r"))    
-    batterywidget:set_markup(markup("#A8A8A8", "" .. fh:read("*l") .. " ")) 
-    fh:close()    
-  end  
-)    
-batterywidgettimer:start()
-
-
-
 
 -- CPU
 cpuicon = wibox.widget.imagebox(beautiful.widget_cpu)
@@ -204,9 +260,9 @@ cpuwidget = lain.widgets.cpu({
 tempicon = wibox.widget.imagebox(beautiful.widget_temp)
 tempwidget = lain.widgets.temp({
     settings = function()
-        widget:set_markup(markup("#A8A8A8", " " .. coretemp_now)
+        widget:set_markup(markup("#FFFFFF", " " .. coretemp_now)
         .. " " ..
-        markup("#A8A8A8","" .. "°C ")) 
+        markup("#FFFFFF","" .. "°C ")) 
     end
 })
 
@@ -219,23 +275,23 @@ fswidget = lain.widgets.fs({
 })
 
 -- Battery
---baticon = wibox.widget.imagebox(beautiful.widget_battery)
---batwidget = lain.widgets.bat({
---    settings = function()
---        if bat_now.perc == "N/A" then
---            widget:set_markup(" AC ")
---            baticon:set_image(beautiful.widget_ac)
---            return
---        elseif tonumber(bat_now.perc) <= 5 then
---            baticon:set_image(beautiful.widget_battery_empty)
---        elseif tonumber(bat_now.perc) <= 15 then
---            baticon:set_image(beautiful.widget_battery_low)
---        else
---            baticon:set_image(beautiful.widget_battery)
---        end
---        widget:set_markup(" " .. bat_now.perc .. "% ")
---    end
---})
+baticon = wibox.widget.imagebox(beautiful.widget_battery)
+batwidget = lain.widgets.bat({
+    settings = function()
+        if bat_now.perc == "N/A" then
+            widget:set_markup(markup("#FFFFFF","" .. " AC "))
+            baticon:set_image(beautiful.widget_ac)
+            return
+        elseif tonumber(bat_now.perc) <= 5 then
+            baticon:set_image(beautiful.widget_battery_empty)
+        elseif tonumber(bat_now.perc) <= 15 then
+            baticon:set_image(beautiful.widget_battery_low)
+        else
+            baticon:set_image(beautiful.widget_battery)
+        end
+        widget:set_markup(markup("#FFFFFF", "" .. " " .. bat_now.perc .. "% "))
+    end
+})
 
 -- ALSA volume
 volicon = wibox.widget.imagebox(beautiful.widget_vol)
@@ -340,7 +396,7 @@ for s = 1, screen.count() do
     mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, mytasklist.buttons)
 
     -- Create the wibox
-    mywibox[s] = awful.wibox({ position = "top", screen = s, height = 18 })
+    mywibox[s] = awful.wibox({ position = "top", screen = s, height = 25 })
 
     -- Widgets that are aligned to the upper left
     local left_layout = wibox.layout.fixed.horizontal()
@@ -371,14 +427,15 @@ for s = 1, screen.count() do
     if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(spr)
     right_layout:add(arrl)
-    right_layout_add(mpdicon, mpdwidget)
+   right_layout_add(mpdicon, musicwidget.widget)
+    --right_layout_add(mpdicon, mpdwidget)
     right_layout_add(volicon, volumewidget)
     --right_layout_add(mailicon, mailwidget)
     right_layout_add(memicon, memwidget)
     right_layout_add(cpuicon, cpuwidget)
     right_layout_add(tempicon, tempwidget)
     right_layout_add(fsicon, fswidget)
-    right_layout_add(baticon, batterywidget)
+    right_layout_add(baticon, batwidget)
     right_layout_add(neticon,netwidget)
     right_layout_add(mytextclock, spr)
     right_layout_add(mylayoutbox[s])
@@ -496,17 +553,17 @@ globalkeys = awful.util.table.join(
     awful.key({ altkey,           }, "h",      function () fswidget.show(7) end),
 
     -- ALSA volume control
-    awful.key({ altkey }, "Up",
+    awful.key({}, "XF86AudioRaiseVolume",
         function ()
             awful.util.spawn("amixer -q set Master 1%+")
             volumewidget.update()
         end),
-    awful.key({ altkey }, "Down",
+    awful.key({}, "XF86AudioLowerVolume",
         function ()
             awful.util.spawn("amixer -q set Master 1%-")
             volumewidget.update()
         end),
-    awful.key({ altkey }, "m",
+    awful.key({}, "XF86AudioMuteVolume",
         function ()
             awful.util.spawn("amixer -q set Master playback toggle")
             volumewidget.update()
@@ -516,6 +573,13 @@ globalkeys = awful.util.table.join(
             awful.util.spawn("amixer -q set Master playback 100%")
             volumewidget.update()
         end),
+--Brightness
+      awful.key({ }, "XF86MonBrightnessDown", 
+        function ()
+          awful.util.spawn("xbacklight -dec 15") end),
+      awful.key({ }, "XF86MonBrightnessUp",
+       function ()
+          awful.util.spawn("xbacklight -inc 15") end),
 
     -- MPD control
     awful.key({ altkey, "Control" }, "Up",
