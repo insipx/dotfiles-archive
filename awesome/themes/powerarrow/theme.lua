@@ -4,7 +4,7 @@ themes_dir                          = os.getenv("HOME") .. "/.config/awesome/the
 theme.wallpaper                     = themes_dir ..  "wall.jpg"
 
 theme.font                          = "Terminus 9.7"
-theme.fg_normal                     = "#859900" -- b58900
+theme.fg_normal                     = "#FFFFFF" -- 859900
 theme.fg_focus                      = "#466A84"-- F0DFAF 
 theme.fg_urgent                     = "#CC9393"
 theme.bg_normal                     = "#282828" --1a1a1a

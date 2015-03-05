@@ -57,7 +57,7 @@ beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/powerarrow/theme.lu
 modkey     = "Mod4"
 altkey     = "Mod1"
 terminal   = "urxvtc" or "xterm"
-editor     = os.getenv("EDITOR") or "nano" or "vi"
+editor     = os.getenv("EDITOR") or "vi"
 editor_cmd = terminal .. " -e " .. editor
 
 -- user defined
@@ -71,10 +71,10 @@ musicplr   = terminal .. " -g 130x34-320+16 -e ncmpcpp "
 
 local layouts = {
     awful.layout.suit.floating,
---    awful.layout.suit.tile,
---    awful.layout.suit.tile.bottom,
+    awful.layout.suit.tile,
+    awful.layout.suit.tile.bottom,
     awful.layout.suit.fair,
---    awful.layout.suit.fair.horizontal,
+    awful.layout.suit.fair.horizontal,
     lain.layout.uselesstile,
     lain.layout.uselesstile.left,
     lain.layout.uselesstile.top
@@ -112,7 +112,7 @@ separators = lain.util.separators
 
 -- Textclock
 clockicon = wibox.widget.imagebox(beautiful.widget_clock)
-mytextclock = awful.widget.textclock('<span color = "#FFFFFF">%A %m/%d || %H:%M </span>')
+mytextclock = awful.widget.textclock('<span color = "#FFFFFF">%A %m/%d %H:%M </span>')
 -- calendar
 lain.widgets.calendar:attach(mytextclock, { font_size = 10 } )
 
@@ -252,7 +252,7 @@ end
 cpuicon = wibox.widget.imagebox(beautiful.widget_cpu)
 cpuwidget = lain.widgets.cpu({
     settings = function()
-        widget:set_text(" " .. cpu_now.usage .. "% ")
+        widget:set_markup(markup("#466A84", "" .. "" ..  cpu_now.usage .. "% "))
     end
 })
 
@@ -270,7 +270,7 @@ tempwidget = lain.widgets.temp({
 fsicon = wibox.widget.imagebox(beautiful.widget_hdd)
 fswidget = lain.widgets.fs({
     settings  = function()
-        widget:set_text(" " .. fs_now.used .. "% ")
+        widget:set_markup(markup("#466A84", "" .. "" .. fs_now.used .. "% "))
     end
 })
 
@@ -307,7 +307,7 @@ volumewidget = lain.widgets.alsa({
             volicon:set_image(beautiful.widget_vol)
         end
 
-        widget:set_text(" " .. volume_now.level .. "% ")
+        widget:set_markup(markup("#466A84", "" .. "" ..  volume_now.level .. "% "))
     end
 })
 
@@ -603,6 +603,15 @@ globalkeys = awful.util.table.join(
             mpdwidget.update()
         end),
 
+-- Resizing Windows
+   awful.key({ modkey }, "Next",  function () awful.client.moveresize( 0, 0, -40, 0) end),  
+   awful.key({ modkey }, "Prior", function () awful.client.moveresize(0, 0,  40,  0) end),  
+   awful.key({ modkey,"Shift" }, "Next",  function () awful.client.moveresize( 0, 0, 0, 40) end),  
+ 
+  --Resize window while tiled
+   awful.key({ modkey }, "l",          function () awful.tag.incmwfact( 0.05) end),
+   awful.key({ modkey }, "h",          function () awful.tag.incmwfact(-0.05) end),
+ 
     -- Copy to clipboard
     awful.key({ modkey }, "c", function () os.execute("xsel -p -o | xsel -i -b") end),
 
