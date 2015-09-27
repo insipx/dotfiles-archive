@@ -1,23 +1,25 @@
 ! Xresource file
 
 !dzen2.font: -*-lemon-*-r-normal-*-*-100-*-*-*-*-*-*
-dzen2.font: -*-droidsans-*-r-normal-*-*-100-*-*-*-*-*-*
-dzen2.foreground: #d6d7d9
-dzen2.background: #222326
+!dzen2.font: -*-droidsans-*-r-normal-*-*-100-*-*-*-*-*-*
+!dzen2.foreground: #d6d7d9
+!dzen2.background: #222326
 
 !URxvt*depth: 50 --24
 URxvt*geometry: 100x25
 !111113
-URxvt.borderColor: #111113
+xURxvt.borderColor: #000219
 URxvt.internalBorder: 8 
 URxvt.cursorUnderline: false
 URxvt.cursorBlink: true
 
 URxvt*iconFile: /usr/share/icons/Flattr/apps/scalable/bash.svg
-
+!--Get solarized colors right
+!
+URxvt.intensityStyles: false
 !URxvt*.transparent: true
-!URxvt*.shading: 15 
-!URxvt*.blurRadius: 15
+!URxvt*.shading: 5
+!URxvt*.blurRadius: 20
 
 
 ! -- scrollbar
@@ -31,7 +33,8 @@ URxvt*scrollTtyKeypress: true
 URxvt*loginShell: false
 
 ! -- font
-URxvt.font: xft:Terminess Powerline:pixelsize=18
+URxvt.font: xft:hack:pixelsize=15
+!URxvt.font: xft:Terminus-powerline:pixelsize=18
 !URxvt.font: xft:Terminus:pixelsize=18
 !URxvt.font: xft:Droid Sans Mono:size=10
 !URxvt.font: xft:Ubuntu Mono:size=10
@@ -44,59 +47,71 @@ URxvt.font: xft:Terminess Powerline:pixelsize=18
 !URxvt.font: xft:tamsyn:size=8
 !URxvt.font: xft:cure-8
 URxvt.boldFont:
-URxvt*letterSpace: -1
+URxvt*letterSpace: -2
 !URxvt*lineSpace: 2
 
 ! -- perl
-URxvt.perl-ext-common: default,clipboard,vtwheel,matcher
-URxvt.keysym.Mod4-v: perl:clipboard:paste
-URxvt.url-launcher: /usr/local/bin/firefox
+URxvt.perl-ext-common: default,matcher
+!URxvt.keysym.Mod4-v: perl:clipboard:paste
+URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
 URxvt.colorUL: #9472ec
+!002b36
+#define S_base03        #000219
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #D8D8D8
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
 
-! -- tabs
-URxvt.tabbed.tabbar-fg: 8
-URxvt.tabbed.tabbar-bg: 0
-URxvt.tabbed.tab-fg: 15
-URxvt.tabbed.tab-bg: 0
+*background:            S_base03
+*foreground:            S_base0
+*fadeColor:             S_base03
+*cursorColor:           S_base1
+*pointerColorBackground:S_base01
+*pointerColorForeground:S_base1
+!used to be b58900
+!S_yellow is just green because they yellow did terrible against some backgrounds
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
 
-! made w/ http://terminal.sexy/
-! special
-*.foreground:   #93a1a1
-*.background:   #111113
-! -- 002b36
-*.cursorColor:  #93a1a1
+!! black dark/light
+*color0:                S_base02
+*color8:                S_base03
 
-! black
-*.color0:       #111113
-*.color8:       #657b83
-
-! red
-*.color1:       #dc322f
-*.color9:       #dc322f
-
-! green
-*.color2:       #859900
-*.color10:      #859900
-
-! yellow
-*.color3:       #b58900
-*.color11:      #b58900
-
-! blue
-*.color4:       #268bd2
-*.color12:      #268bd2
-
-! magenta
-*.color5:       #6c71c4
-*.color13:      #6c71c4
-
-! cyan
-*.color6:       #2aa198
-*.color14:      #2aa198
-
-! white
-*.color7:       #93a1a1
-*.color15:      #fdf6e3
-
-
+!!! red dark/light
+*color1:                S_red
+*color9:                S_orange
+!
+!!! green dark/light
+*color2:                S_green
+*color10:               S_base01
+!
+!!! yellow dark/light
+*color3:                S_yellow
+*color11:               S_base00
+!
+!!! blue dark/light
+*color4:                S_blue
+*color12:               S_base0
+!
+!!! magenta dark/light
+*color5:                S_magenta
+*color13:               S_violet
+!
+!!! cyan dark/light
+*color6:                S_cyan
+*color14:               S_base1
+!
+!!! white dark/light
+*color7:                S_base2
+*color15:               S_base3
+!

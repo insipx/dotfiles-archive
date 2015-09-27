@@ -71,8 +71,6 @@ musicplr   = terminal .. " -g 130x34-320+16 -e ncmpcpp "
 
 local layouts = {
     awful.layout.suit.floating,
-    awful.layout.suit.tile,
-    awful.layout.suit.tile.bottom,
     awful.layout.suit.fair,
     awful.layout.suit.fair.horizontal,
     lain.layout.uselesstile,
@@ -84,7 +82,7 @@ local layouts = {
 
 -- {{{ Tags
 tags = {
-   names = { "Web", "Development", "Liquid Think", "Files", "Other"},
+   names = { "Web_1", "Development_2", "Liquid Think_3", "Files_4", "Other_5"},
    layout = { layouts[1], layouts[2], layouts[3], layouts[1], layouts[4] }
 }
 
@@ -103,7 +101,7 @@ end
 
 -- {{{ Menu
 mymainmenu = awful.menu.new({ items = require("menugen").build_menu(),
-                              theme = { height = 16, width = 130 }})
+                              theme = { height = 30, width = 130 }})
 -- }}}
 
 -- {{{ Wibox
@@ -112,9 +110,10 @@ separators = lain.util.separators
 
 -- Textclock
 clockicon = wibox.widget.imagebox(beautiful.widget_clock)
-mytextclock = awful.widget.textclock('<span color = "#FFFFFF">%A %m/%d %H:%M </span>')
--- calendar
-lain.widgets.calendar:attach(mytextclock, { font_size = 10 } )
+mytextclock = awful.widget.textclock('<span color = "#D8D8D8">%A %m/%d %H:%M </span>')
+--
+--calendar
+lain.widgets.calendar:attach(mytextclock, { font_size = 13 } )
 
 -- Mail IMAP check
 mailicon = wibox.widget.imagebox(beautiful.widget_mail)
@@ -158,9 +157,9 @@ mpdicon = wibox.widget.imagebox(beautiful.widget_music)
 --})
 --AwesomeMPD
    musicwidget = awesompd:create() -- Create awesompd widget
-   musicwidget.font = "Terminus" -- Set widget font
-   musicwidget.font_color = "#FFFFFF" --Set widget font color
-   musicwidget.background = "#466A84" --Set widget background color
+   musicwidget.font = "hack" -- Set widget font
+   musicwidget.font_color = "#D8D8D8" --Set widget font color
+   musicwidget.background = "#1E0243" --Set widget background color
    musicwidget.scrolling = true -- If true, the text in the widget will be scrolled
    musicwidget.output_size = 30 -- Set the size of widget in symbols
    musicwidget.update_interval = 10 -- Set the update interval in seconds
@@ -241,10 +240,10 @@ mpdicon = wibox.widget.imagebox(beautiful.widget_music)
 memicon = wibox.widget.imagebox(beautiful.widget_mem)
 memwidget = lain.widgets.mem({
     settings = function()
-        widget:set_markup(markup("#FFFFFF", "" .. mem_now.used)
+        widget:set_markup(markup("#D8D8D8", "" .. mem_now.used)
                           .. "" ..
-                          markup("#FFFFFF","" .. "MB "))
- 
+                          markup("#D8D8D8","" .. "MB "))
+
 end
 })
 
@@ -252,7 +251,7 @@ end
 cpuicon = wibox.widget.imagebox(beautiful.widget_cpu)
 cpuwidget = lain.widgets.cpu({
     settings = function()
-        widget:set_markup(markup("#466A84", "" .. "" ..  cpu_now.usage .. "% "))
+        widget:set_markup(markup("#45b707", "" .. "" ..  cpu_now.usage .. "% "))
     end
 })
 
@@ -260,9 +259,9 @@ cpuwidget = lain.widgets.cpu({
 tempicon = wibox.widget.imagebox(beautiful.widget_temp)
 tempwidget = lain.widgets.temp({
     settings = function()
-        widget:set_markup(markup("#FFFFFF", " " .. coretemp_now)
+        widget:set_markup(markup("#D8D8D8", " " .. coretemp_now)
         .. " " ..
-        markup("#FFFFFF","" .. "°C ")) 
+        markup("#D8D8D8","" .. "°C "))
     end
 })
 
@@ -270,7 +269,7 @@ tempwidget = lain.widgets.temp({
 fsicon = wibox.widget.imagebox(beautiful.widget_hdd)
 fswidget = lain.widgets.fs({
     settings  = function()
-        widget:set_markup(markup("#466A84", "" .. "" .. fs_now.used .. "% "))
+        widget:set_markup(markup("#45b707", "" .. "" .. fs_now.used .. "% "))
     end
 })
 
@@ -279,7 +278,7 @@ baticon = wibox.widget.imagebox(beautiful.widget_battery)
 batwidget = lain.widgets.bat({
     settings = function()
         if bat_now.perc == "N/A" then
-            widget:set_markup(markup("#FFFFFF","" .. " AC "))
+            widget:set_markup(markup("#D8D8D8","" .. " AC "))
             baticon:set_image(beautiful.widget_ac)
             return
         elseif tonumber(bat_now.perc) <= 5 then
@@ -289,7 +288,7 @@ batwidget = lain.widgets.bat({
         else
             baticon:set_image(beautiful.widget_battery)
         end
-        widget:set_markup(markup("#FFFFFF", "" .. " " .. bat_now.perc .. "% "))
+        widget:set_markup(markup("#D8D8D8", "" .. " " .. bat_now.perc .. "% "))
     end
 })
 
@@ -307,7 +306,7 @@ volumewidget = lain.widgets.alsa({
             volicon:set_image(beautiful.widget_vol)
         end
 
-        widget:set_markup(markup("#466A84", "" .. "" ..  volume_now.level .. "% "))
+        widget:set_markup(markup("#45b707", "" .. "" ..  volume_now.level .. "% "))
     end
 })
 
@@ -318,7 +317,7 @@ netwidget = lain.widgets.net({
     settings = function()
         widget:set_markup(markup("#7AC82E", " " .. net_now.received)
                           .. " " ..
-                          markup("#46A8C3", " " .. net_now.sent .. " "))
+                          markup("#45b707", " " .. net_now.sent .. " "))
     end
 })
 
@@ -396,7 +395,7 @@ for s = 1, screen.count() do
     mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, mytasklist.buttons)
 
     -- Create the wibox
-    mywibox[s] = awful.wibox({ position = "top", screen = s, height = 25 })
+    mywibox[s] = awful.wibox({ position = "top", screen = s, height = 30 })
 
     -- Widgets that are aligned to the upper left
     local left_layout = wibox.layout.fixed.horizontal()
@@ -539,7 +538,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Control" }, "h",      function () awful.tag.incncol( 1)          end),
     awful.key({ modkey,           }, "space",  function () awful.layout.inc(layouts,  1)  end),
     awful.key({ modkey, "Shift"   }, "space",  function () awful.layout.inc(layouts, -1)  end),
-    awful.key({ modkey, "Control" }, "n",      awful.client.restore), 
+    awful.key({ modkey, "Control" }, "n",      awful.client.restore),
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r",      awesome.restart),
@@ -574,7 +573,7 @@ globalkeys = awful.util.table.join(
             volumewidget.update()
         end),
 --Brightness
-      awful.key({ }, "XF86MonBrightnessDown", 
+      awful.key({ }, "XF86MonBrightnessDown",
         function ()
           awful.util.spawn("xbacklight -dec 15") end),
       awful.key({ }, "XF86MonBrightnessUp",
@@ -604,14 +603,14 @@ globalkeys = awful.util.table.join(
         end),
 
 -- Resizing Windows
-   awful.key({ modkey }, "Next",  function () awful.client.moveresize( 0, 0, -40, 0) end),  
-   awful.key({ modkey }, "Prior", function () awful.client.moveresize(0, 0,  40,  0) end),  
-   awful.key({ modkey,"Shift" }, "Next",  function () awful.client.moveresize( 0, 0, 0, 40) end),  
- 
+   awful.key({ modkey }, "Next",  function () awful.client.moveresize( 0, 0, -40, 0) end),
+   awful.key({ modkey }, "Prior", function () awful.client.moveresize(0, 0,  40,  0) end),
+   awful.key({ modkey,"Shift" }, "Next",  function () awful.client.moveresize( 0, 0, 0, 40) end),
+
   --Resize window while tiled
    awful.key({ modkey }, "l",          function () awful.tag.incmwfact( 0.05) end),
    awful.key({ modkey }, "h",          function () awful.tag.incmwfact(-0.05) end),
- 
+
     -- Copy to clipboard
     awful.key({ modkey }, "c", function () os.execute("xsel -p -o | xsel -i -b") end),
 

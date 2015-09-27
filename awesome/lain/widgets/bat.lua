@@ -26,7 +26,7 @@ local bat = {}
 local function worker(args)
     local args = args or {}
     local timeout = args.timeout or 30
-    local battery = args.battery or "BAT0"
+    local battery = args.battery or "BAT1"
     local notify = args.notify or "on"
     local settings = args.settings or function() end
 

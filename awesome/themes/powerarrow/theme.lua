@@ -2,25 +2,24 @@ theme                               = {}
 
 themes_dir                          = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow/"
 theme.wallpaper                     = themes_dir ..  "wall.jpg"
-
-theme.font                          = "Terminus 9.7"
+theme.font                          = "hack 10.5"
 theme.fg_normal                     = "#FFFFFF" -- 859900
-theme.fg_focus                      = "#466A84"-- F0DFAF 
+theme.fg_focus                      = "#45B707"--4C8EAE-- F0DFAF
 theme.fg_urgent                     = "#CC9393"
-theme.bg_normal                     = "#282828" --1a1a1a
+theme.bg_normal                     = "#000219" --282828--1a1a1a
 theme.bg_focus                      = "#313131" --313131
-theme.bg_urgent                     = "#282828"
+theme.bg_urgent                     = "#000219" --282828
 theme.border_width                  = "1"
 theme.border_normal                 = "#3F3F3F"
 theme.border_focus                  = "#466A84" --7F7F7F
 theme.border_marked                 = "#CC9393"
 theme.titlebar_bg_focus             = "#A8A8A8" --A8A8A8
 theme.titlebar_bg_normal            = "#A8A8A8"
-theme.taglist_fg_focus              = "#466A84" -- D8D782
-theme.widget_bg                     = "#466A84"
-theme.tasklist_bg_focus             = "#282828"
-theme.tasklist_bg_normal            = "#282828"
-theme.tasklist_fg_focus             = "#466A84" -- D8D782
+theme.taglist_fg_focus              = "#45B707" --4C8EAE-- D8D782
+theme.widget_bg                     = "#1E0243" --007D9D 1a522b 268BD2
+theme.tasklist_bg_focus             = "#000219" --282828
+theme.tasklist_bg_normal            = "#000219" --282828
+theme.tasklist_fg_focus             = "#45B707" --4C8EAE-- D8D782--466A84 --#4c8eA
 theme.textbox_widget_margin_top     = 1
 theme.notify_fg                     = theme.fg_normal
 theme.notify_bg                     = theme.bg_normal
@@ -77,9 +76,9 @@ theme.tasklist_maximized_horizontal = ""
 theme.tasklist_maximized_vertical   = ""
 
 -- lain related
-theme.useless_gap_width		    = 30
---theme.layout_uselesstile	    = theme.icon_dir .. "/uselesstile.png" 
---theme.layout_uselesstileleft	    = theme.icon_dir .. "/uselesstileleft.png"
+theme.useless_gap_width       = 20
+--theme.layout_uselesstile      = theme.icon_dir .. "/uselesstile.png"
+--theme.layout_uselesstileleft      = theme.icon_dir .. "/uselesstileleft.png"
 
 
 
