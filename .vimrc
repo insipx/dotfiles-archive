@@ -8,11 +8,12 @@ call vundle#rc()
 " Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
-" vim-scripts repos 
+" vim-scripts repos
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-repeat'
 Bundle 'kien/ctrlp.vim'
+Plugin 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'sjl/gundo.vim'
 Plugin 'Valloric/YouCompleteMe'
@@ -25,12 +26,15 @@ Plugin 'honza/vim-snippets'
 Plugin 'Yggdroot/indentLine'
 Plugin 'Raimondi/delimitMate'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'rdnetto/YCM-Generator'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'vim-scripts/restore_view.vim'
 " Bundle 'L9'
 " Bundle 'FuzzyFinder'
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
 " ...
-filetype plugin indent on     " required! 
+filetype plugin indent on     " required!
 "
 " Brief help
 " :BundleList          - list configured bundles
@@ -42,18 +46,49 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle command are not allowed..
 " Track the engine.
 
+"Hopefully this resolves all issues with UltiSnips and YouCompleteMe
+
+function! g:UltiSnips_Complete()
+    call UltiSnips#ExpandSnippet()
+    if g:ulti_expand_res == 0
+        if pumvisible()
+            return "\<C-n>"
+        else
+            call UltiSnips#JumpForwards()
+            if g:ulti_jump_forwards_res == 0
+               return "\<TAB>"
+            endif
+        endif
+    endif
+    return ""
+endfunction
+
+au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-e>"
+" this mapping Enter key to <C-y> to chose the current highlight item
+" and close the selection list, same as other IDEs.
+" CONFLICT with some plugins like tpope/Endwise
+
+
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<shift>"
+let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "UltiSnippets"]
+let g:UltiSnipsEditSplit="vertical"
 " vertical line indentation
 let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#09AA08'
 let g:indentLine_char = '│'
+"Markdown Settings
+let g:vim_markdown_fontmatter=1
 
 "maps
 nmap <leader>d :NERDTreeToggle<CR>
+"restore_view
+set viewoptions=cursor,folds,slash,unix
+let g:skipview_files= ['*\.vim']
 
 "Vim-Airline
 let g:airlne_powerline_fonts = 1
@@ -63,12 +98,21 @@ let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
-
+let g:airline_theme = 'solarized'
 "ColorStuff
-let g:solarized_termtrans = 1  
-colorscheme solarized
+let g:solarized_termtrans = 1
+colorscheme 0x7A69_dark  
 "slate
-"dalek
-
+"OUTdelek
+"elflord
+"OUTholodark
+"OUTron
+"vividchalk
+"OUTzelner
+"desert
 set nu
 syntax on
+set tabstop=2
+set shiftwidth=2
+set expandtab
+

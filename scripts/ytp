@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mplayer -cookies -cookies-file /tmp/cookies $(youtube-dl -g --cookies /tmp/cookies "$1")

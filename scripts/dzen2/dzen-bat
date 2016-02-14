@@ -1,0 +1,25 @@
+#!/bin/bash
+# dzen2 battery display by twily
+#
+
+while true; do
+	BAT=$(((acpi -b | awk '/^Battery/ { print $4 }') | sed 's/%//g') | sed 's/,//g')
+
+    TXT="$BAT %"
+    if [ $BAT -eq 100 ]; then TXT="MAX"; elif [ $BAT -eq 0 ]; then TXT="MIN"; fi
+
+    echo "^bg(#130F1C) "
+    echo -ne "^cs()\n\n"
+    
+    if [ $BAT -gt 95 ]; then
+        for i in {$(seq 1 20)}; do echo "█"; done
+    elif [ $BAT -lt 5 ]; then
+        for i in {$(seq 1 20)}; do echo "^fg(#4b464f)█"; done
+    else
+        for i in {$(seq 1 $(echo '20-('$BAT'/5)'|bc)); do echo "^fg(#4b464f)█"; done; for i in $(seq $(echo '20-(('$BAT'/5)-1)'|bc) 20); do echo "█"; done
+    fi
+    
+    echo -e "\n^fg(#d6ccdc)$TXT\n"
+
+	sleep 1;
+done | dzen2 -sa c -w 48 -h 8 -y 9 -x 1887 -fg '#aaa5ad' -e "onstart=uncollapse,hide;button3=exit;" -l 24 -tw 6
