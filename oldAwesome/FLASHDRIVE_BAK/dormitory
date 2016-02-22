@@ -1,0 +1,6 @@
+Connection='ethernet'
+Interface=enp3s0
+Description="University of Scranton internet"
+IP='dhcp'
+Auth8021X=yes
+WPAConfigFile=/etc/wpa_supplicant/dormitory.conf

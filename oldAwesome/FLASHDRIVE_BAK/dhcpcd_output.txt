@@ -1,0 +1,7 @@
+dev: loaded udev
+DUID 00:01:00:01:1e:4f:60:47:fc:aa:14:c9:1d:f5
+enp3s0: IAID 14:c9:1d:f5
+enp3s0: soliciting a DHCP lease
+enp3s0: soliciting an IPv6 router
+enp3s0: no IPv6 Routers available
+forked to background, child pid 627

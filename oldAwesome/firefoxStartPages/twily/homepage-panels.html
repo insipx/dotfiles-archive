@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--
+
+    Author:  Twily         2014
+    Website: http://twily.info/
+
+    Search Useage: "artist!i" will find images for "artist"
+
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>~ newtab ~</title>
+
+<style type="text/css">         /* --- CSS Configuration (Comments to right) --- */
+html,body {
+    width: 100%; height: 100%; margin: 0; padding: 0;
+    overflow: hidden; background: #1A1A1A;                                                                                              /* Html/body background */
+}
+
+ul, li { margin: 0; padding: 0; }
+*:focus { outline: none; }
+
+#menu, #q, #rss {
+    font-family: "Segoe UI", "Liberation Sans", "Dejavu Sans", "Droid Sans", monospace; font-size: 14pt;                                /* Font menu, searchbox and rss */
+    background: #121212; color: #aaaaaa;                                                                                                /* Menu background & color */
+}
+
+#wallpaper {
+    display: block; /* none | block */ background: url("http://static.ylilauta.org/files/ge/orig/5ewcm9ar/wallpaper-2240786.jpg");      /* Wallpaper */
+    background-repeat: no-repeat; background-size: cover; background-position: center;
+    position: fixed; top: 0; left: 0; z-index: 1;
+    width: 100%; height: 100%;
+}
+
+#menu a, #menu a:link, #menu a:visited { color: #aaaaaa; text-decoration: none; cursor: pointer; /* pointer | default */ }              /* Dropdown link color */
+#menu a:hover, #menu a:active          { color: #cccccc; }                                                                              /* Active dropdown link color */
+
+#menu {
+    position: fixed; top: 0; left: 0; z-index: 11;
+    width: 100%; cursor: default;
+    height: 32px; line-height: 32px;                                                                                                    /* Menu height */
+}
+    #menu ul               { display: inline-table; position: relative; list-style: none; }
+    #menu label            { padding: 0 10px; }                                                                                         /* Menu title padding */
+
+    #menu ul li            { float: left; }
+    #menu ul li:hover      { background: #3B3B3B; color: #aaaaaa; }                                                                     /* Active menu title background & color */
+    #menu ul li:hover > ul { display: block; }
+    #menu ul li a          { display: block; white-space: nowrap; padding: 0 10px; }                                                    /* Dropdown link padding */
+
+    #menu ul ul            { width: 100px; position: absolute; top: 100%; display: none; background: #3b3b3b; }                         /* Dropdown background */
+    #menu ul ul li         { width: 100%; }
+    #menu ul ul li:hover   { background: #6b59b3; }                                                                                     /* Active dropdown link background */
+
+    #menu #q { /* Search box */
+        border: 0; border-left: 2px solid transparent;
+        position: fixed; top: 0; right: 0; background: transparent;                                                                     /* Search box background */
+        padding: 0 6px; width: 380px;                                                                                                   /* Search box padding & width */
+        height: 32px; line-height: 32px;                                                                                                /* Search box height */
+    }
+    #menu #q:focus { border-left: 2px solid #6b59b3; background: #1A1A1A; }                                                             /* Active search box */
+
+#rss {
+    position: fixed; bottom: 0; left: 0; z-index: 10;
+    min-width: 100%; width: auto; overflow: hidden;
+    height: 32px; line-height: 32px;                                                                                                    /* Rss height */
+}
+    #rss #content {
+        width: auto; height: auto;
+        position: relative; top: 0; left: 100%;
+        background: transparent; white-space: nowrap;
+    }
+    #rss a {  display: inline-block; padding: 0 15px; }                                                                                 /* Rss padding */
+    #rss a:link, #rss a:visited { color: #aaaaaa; text-decoration: none; }                                                              /* Rss link color */
+    #rss a:hover, #rss a:active { color: #cccccc; }                                                                                     /* Rss active link color */
+</style>
+
+<script type="text/javascript" language="javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" language="javascript">
+var $=function(id) { return document.getElementById(id); }
+
+
+// + ------------------------------------ Settings (JS) - BEGIN ------------------------------------ +
+
+var FEEDS=[ // Rss URLs (Randomly picked onLoad and after animation ends)
+    "http://www.hardware.no/feeds/general.xml?noMobile=1",                                                                              // Hardware.no
+    "http://www.hardware.no/feeds/extra.xml",                                                                                           // Hardware.no Extra
+    "http://no.ign.com/feed.xml",                                                                                                       // IGN.com
+    "http://www.gamespot.com/feeds/reviews/",                                                                                           // Gamespot.com
+    "http://www.vg.no/rss/feed/?categories=1097,1107,1100,1101,1098,1102,1068&keywords=10165,10166,2194,2672,2723&limit=10&format=rss", // Vg.no
+    "https://derpibooru.org/images/watched.rss?key=-zy4XC8atFsFbCFWCL3A",                                                               // Derpibooru (NSFW)
+];
+var FEED_NUM  = 8;                                                                                                                      // Number of rss entries to download
+var FPS       = 100;                                                                                                                    // Animation speed
+var STEP      = 2.0;                                                                                                                    // Animation steps (px)
+var enableRSS = true;
+
+var search=[ // Search Engines
+    ["",    "https://www.google.no/#q="],                                                                                               // Google (Default)
+    ["!g",  "https://www.google.no/#q="],                                                                                               // Google
+    ["!d",  "https://duckduckgo.com/?q="],                                                                                              // DuckDuckGo
+    ["!i",  "https://www.google.no/search?tbm=isch&q="],                                                                                // Google Images
+    ["!y",  "https://www.youtube.com/results?search_query="],                                                                           // YouTube
+    ["!w",  "http://en.wikipedia.org/w/index.php?search="],                                                                             // Wikipedia
+    ["!m",  "http://www.imdb.com/find?q="],                                                                                             // IMDb
+    ["!u",  "http://www.urbandictionary.com/define.php?term="],                                                                         // Urban Dictionary
+];
+
+var menus=[ // Menu Titles ["Title", width(px)],
+    ["News",           280],                                                                                                            // menu-1
+    ["4chan",          280],                                                                                                            // menu-2
+    ["Entertainment",  280],                                                                                                            // menu-3
+    ["Other",          280],                                                                                                            // menu-4
+];
+
+// Link setup (separate with ["", ""],)
+// Format: ["Name", "URL"],
+var links=[
+    // News -           menu-1
+    ["Arch Linux",                      "http://archlinux.org"],
+    ["Dagbladet",                       "http://dagbladet.no"],
+    ["Gamer",                           "http://gamer.no"],
+    ["GameSpot",                        "http://gamespot.com"],
+    ["Hardware",                        "http://hardware.no"],
+    ["IGN",                             "http://ign.com"],
+    ["IT-Avisen",                       "http://itavisen.no"],
+    ["NRK",                             "http://nrk.no"],
+    ["OA",                              "http://oa.no"],
+    ["PressFire",                       "http://pressfire.no"],
+    ["Teknofil",                        "http://teknofil.no"],
+    ["TorrentFreak",                    "http://torrentfreak.com"],
+    ["VG",                              "http://vg.no"],
+
+    ["",                                ""],
+
+    // 4chan -          menu-2
+    ["/e/ - Ecchi",                     "https://boards.4chan.org/e/catalog"],
+    ["/g/ - Technology",                "https://boards.4chan.org/g/catalog"],
+    ["/gif/ - Adult GIF",               "https://boards.4chan.org/gif/catalog"],
+    ["/h/ - Hentai",                    "https://boards.4chan.org/h/catalog"],
+    ["/mlp/ - Pony",                    "https://boards.4chan.org/mlp/catalog"],
+    ["/mu/ - Music",                    "https://boards.4chan.org/mu/catalog"],
+    ["/pol/ - Politically Incorrect",   "https://boards.4chan.org/pol/catalog"],
+    ["/wg/ - Wallpaper General",        "https://boards.4chan.org/wg/catalog"],
+    ["/wsg/ - Worksafe GIF",            "https://boards.4chan.org/wsg/catalog"],
+    ["/x/ - Paranormal",                "https://boards.4chan.org/x/catalog"],
+
+    ["",                                ""],
+
+    // Entertainment -  menu-3
+    ["Derpibooru",                      "https://derpibooru.org/"],
+    ["DeviantArt",                      "http://deviantart.com/"],
+    ["I Am Bored",                      "http://www.i-am-bored.com/"],
+    ["Imgur",                           "https://imgur.com/"],
+    ["MetArt",                          "http://members.met-art.com/members/"],
+    ["Netflix",                         "http://netflix.com"],
+    ["Reddit",                          "http://reddit.com"],
+    ["StumbleUpon",                     "http://stumbleupon.com"],
+    ["Your World of Text",              "http://www.yourworldoftext.com/"],
+    ["YouTube",                         "http://youtube.com"],
+    ["xHamster",                        "http://xhamster.com/"],
+
+    ["",                                ""],
+
+    // Other -          menu-4
+    ["Altinn",                          "https://www.altinn.no/"],
+    ["CockMail",                        "https://mail.cock.li"],
+    ["DnB",                             "http://www.dnb.no/en/"],
+    ["Dropbox",                         "https://www.dropbox.com"],
+    ["Facebook",                        "http://facebook.com"],
+    ["Outlook",                         "http://outlook.com"],
+    ["Pastebin",                        "http://pastebin.com"],
+    ["PayPal",                          "http://www.paypal.com/"],
+    ["Userstyles",                      "http://userstyles.org/"],
+    ["Wallbase",                        "http://wallbase.cc"],
+];
+
+// + ------------------------------------- Settings (JS) - END ------------------------------------- +
+
+
+var ss="";
+function init() { // Initialize
+    for(var i=0;i<search.length;i++) {
+        if(search[i][0]=="") { ss=search[i][1]; }
+    }
+
+    if(ss=="")                       { alert("Error: Missing default search engine!"); }
+    if(enableRSS && FEEDS.length==0) { alert("Error: No rss feeds entered!"); enableRSS=false; }
+
+    build();
+    if(enableRSS) { feedLoad(); }
+
+    $('q').value="";
+    $('q').focus();
+}
+
+function build() { // Build menus
+    $('mnu').innerHTML="";
+
+    for(var i=0;i<menus.length;i++) { // Menu titles
+        $('mnu').innerHTML+="<li><label>"+menus[i][0]+"</label>\n<ul id=\"mnu_"+(i+1)+"\"></ul></li>";
+        $('mnu_'+(i+1)).style.width=menus[i][1]+"px";
+    }
+
+    var m=1,skip=false;
+    for(var i=0;i<links.length;i++) { // Menu links
+        if(links[i][0]=="" && links[i][1]=="") { skip=true; }
+
+        if(!skip) { $('mnu_'+m).innerHTML+="<li><a href=\""+links[i][1]+"\" target=\"_self\">"+links[i][0]+"</a></li>"; }
+        else      { skip=false; m++; }
+    }
+}
+
+function handleQuery(e,q) { // Handle search query
+    var key=e.keyCode || e.which;
+
+    if(key==13) { // enter
+        if(q.lastIndexOf("!")!=-1) {
+            var x=q.lastIndexOf("!"),found=false;
+            
+            for(var i=0;i<search.length;i++) {
+                if(search[i][0]==q.substr(x)) { // Find "!?"
+                    found=true; window.location=search[i][1]+q.substr(0,x);
+                }
+            }
+            if(!found) { // Invalid "!?", use default
+                window.location=ss+q.substr(0,x);
+            }
+        } else { // "!?" where not specified, use default
+            window.location=ss+q;
+        }
+    }
+}
+
+if(enableRSS) { google.load("feeds","1"); } // RSS
+
+var w=0,pos=0.0,pause=false,t;
+function feedLoaded(result) { // Load and write rss
+    if(!result.error) {
+        $('content').innerHTML="";
+
+        for(var i=0;i<result.feed.entries.length;i++) {
+            var entry=result.feed.entries[i];
+
+            $('content').innerHTML+="<a class=\"rss-title\" href=\""+entry.link+"\" target=\"_self\">"+entry.title+"</a>";
+            if(i<result.feed.entries.length-1) { $('content').innerHTML+=" • "; }                                                       // Rss separator
+        }
+
+        w=window.innerWidth; $('content').style.left=w+"px"; pos=parseFloat(w);
+
+        clearInterval(t);
+        t=setInterval("animate();",(1000/FPS));
+    }
+}
+
+function animate() { // Rss scroll animation
+    if(!pause) {
+        if(pos<=-$('content').offsetWidth) {
+            clearInterval(t);
+            t=setTimeout("feedLoad();",1500);                                                                                           // Wait before next feed
+        } else {
+            pos-=STEP;
+            $('content').style.left=parseInt(pos)+"px";
+        }
+    }
+}
+
+function feedLoad() { // Initialize rss
+    clearTimeout(t);
+
+    var feed=new google.feeds.Feed(FEEDS[Math.floor(Math.random()*FEEDS.length)]);
+    feed.setNumEntries(FEED_NUM);
+    feed.load(feedLoaded);
+}
+</script>
+</head>
+<body onload="javascript:init();">
+
+
+<div id="menu">
+    <ul id="mnu"></ul>
+
+    <input id="q" type="text" value="" placeholder="Search" onkeypress="javascript:handleQuery(event,this.value);" />
+</div>
+
+<div id="rss">
+    <div id="content" onmouseover="javascript:pause=true;" onmouseout="javascript:pause=false;"></div>
+</div>
+
+<div id="wallpaper"></div>
+
+
+</body>
+</html>

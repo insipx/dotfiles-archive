@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Source:      http://blog.bemoko.com/blog/2009/07/01/add-shadow-and-border-to-images-with-imagemagick/
+# Profile:     http://www.ugra.ch/iso-color-profiles.phtml
+#
+# Author:      Twily                                       2014
+# Description: Capture a window and add a drop shadow behind it
+# Requires:    scrot, imagemagick, ISOcoated_v2_300_eci.icc
+# Usage:       $ sh ./scrotw filename.png
+#
+
+if [ -z $1 ]; then set -- "scrotw.png"; fi
+
+echo -e "\nscrotw: Please select the window you would like to\n"\
+        "       capture by clicking the mouse in that window.\n"
+
+scrot ~/scrotw.tmp.png -sbd 1 || exit 1
+convert ~/scrotw.tmp.png -profile ~/.icc/ISOcoated_v2_300_eci.icc \
+    \( +clone -background "rgba(6,6,6,1)" -shadow 75x7+0+0 \) \
+    +swap -background "rgba(0,0,0,0)" -layers merge +repage ~/$1 &>/dev/null || exit 1
+
+rm ~/scrotw.tmp.png
+
+echo -e "Window captured and saved to \"\e[1;32m~/$1\e[0m\"."
+exit 0

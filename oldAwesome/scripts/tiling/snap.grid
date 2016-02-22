@@ -1,0 +1,119 @@
+#!/bin/bash
+#
+#   Author:         Twily                        2015
+#   Description:    Snaps windows into a virtual grid
+#   Requires:       wmctrl, xdotool, xwininfo
+#   Usage:          $ sh ./snap.grid <id>
+#                   (Eg.: Bind script to trigger on window resize/movement
+#                         or bind to hotkey W-x)
+#
+#   Note:           This script does not work directly w/ 'grid' but can
+#                   be used together w/ 'ext.grid'
+#
+
+ACT=$1
+if [ -z $1 ]; then ACT=$(xdotool getactivewindow); fi
+
+WNAME=$(xdotool getwindowname $ACT);
+if [ "$WNAME" == "Desktop" ]; then exit 3; fi
+
+dW=1920             # Desktop Width
+dH=1080             # Desktop Height
+
+eM=48               # (Used for equal margin on all sides)
+
+L=$eM               # Left Margin
+T=$(( $eM + 24 ))   # Top Margin (+24 for panel)
+R=$eM               # Right Margin
+B=$eM               # Bottom Margin
+
+G=24                # Grid Gap
+D=0                 # Decoration Height (0 = none)
+M=0                 # Border Width (0 = none)
+
+D2=0
+if [ "$D" -gt "0" ]; then D=$(( $D + $M )) && D2=$M; fi
+
+rW=$(( $dW - $L - $R ))
+rH=$(( $dH - $T - $B ))
+M=$(( $M * 2 ))
+
+unset X Y W H
+eval $(xwininfo -id $ACT | 
+    sed -n -e "s/^ \+Absolute upper-left X: \+\([0-9]\+\).*/X=\1/p" \
+           -e "s/^ \+Absolute upper-left Y: \+\([0-9]\+\).*/Y=\1/p" \
+           -e "s/^ \+Width: \+\([0-9]\+\).*/W=\1/p" \
+           -e "s/^ \+Height: \+\([0-9]\+\).*/H=\1/p" )
+
+Y=$(( $Y - $D - $M / 2 ))
+X=$(( $X - $M / 2 ))
+
+i=0
+nP=0
+while [ "$i" -lt "$(( $rW / $G + 1 ))" ]; do # Horizontal loop
+    oP=$nP
+    nP=$(( $L + $i * $G ))
+
+    # Snap left side 
+    if [[ "$X" -lt "$nP" && "$(( $nP - $X ))" -lt "$(( $G + 1 ))" ]]; then
+        t1=$(( $X - $oP ))
+        t2=$(( $nP - $X ))
+
+        if [ "$t1" -lt "$t2" ]
+        then    X=$(( $X - $t1 ))
+                W=$(( $W + $t1 ))
+        else    X=$(( $X + $t2 ))
+                W=$(( $W - $t2 )); fi
+    fi
+
+    # Snap right side
+    if [[ "$(( $W + $X ))" -lt "$nP" && "$(( $nP - $W - $X ))" -lt "$(( $G + 1 ))" ]]; then
+        t1=$(( $W + $X - $oP + $M ))
+        t2=$(( $nP - $W - $X - $M ))
+
+        if [ "$t1" -lt "$t2" ]
+        then    W=$(( $W - $t1 ))
+        else    W=$(( $W + $t2 )); fi
+    fi
+    
+    let i=$i+1
+done
+
+i=0
+nP=0
+while [ "$i" -lt "$(( $rH / $G + 1 ))" ]; do # Vertical loop
+    oP=$nP
+    nP=$(( $T + $i * $G ))
+
+    # Snap top side
+    if [[ "$Y" -lt "$nP" && "$(( $nP - $Y ))" -lt "$(( $G + 1 ))" ]]; then
+        t1=$(( $Y - $oP ))
+        t2=$(( $nP - $Y ))
+
+        if [ "$t1" -lt "$t2" ]
+        then    Y=$(( $Y - $t1 ))
+                H=$(( $H + $t1 ))
+        else    Y=$(( $Y + $t2 ))
+                H=$(( $H - $t2 )); fi
+    fi
+ 
+    # Snap bottom side
+    if [[ "$(( $H + $Y ))" -lt "$nP" && "$(( $nP - $H - $Y ))" -lt "$(( $G + 1 ))" ]]; then
+        t1=$(( $H + $Y - $oP + $M + $D2 ))
+        t2=$(( $nP - $H - $Y - $M - $D2 ))
+
+        if [ "$t1" -lt "$t2" ]
+        then    H=$(( $H - $t1 ))
+        else    H=$(( $H + $t2 )); fi
+    fi
+
+    let i=$i+1
+done
+
+if [ "$X" -lt "$L" ]; then S=$(( $L - $X )) && X=$L; if [ "$W" -le "$(( $dW - $L - $R ))" ]; then W=$(( $W - $S )); fi; fi
+if [ "$Y" -lt "$T" ]; then S=$(( $T - $Y )) && Y=$T; if [ "$H" -le "$(( $dH - $T - $B ))" ]; then H=$(( $H - $S )); fi; fi
+if [ "$(( $X + $W ))" -gt "$(( $dW - $R ))" ]; then W=$(( $dW - $X - $R - $M )); fi
+if [ "$(( $Y + $H ))" -gt "$(( $dH - $B ))" ]; then H=$(( $dH - $Y - $B - $D - $M )); fi
+
+wmctrl -i -r $ACT -e 0,$X,$Y,$W,$H
+exit 0
