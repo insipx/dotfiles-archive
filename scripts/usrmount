@@ -1,2 +1,0 @@
-#!/bin/bash
-sudo mount -o umask=0,uid=nobody,gid=nobody "$1" "$2"

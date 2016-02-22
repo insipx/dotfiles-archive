@@ -1,7 +1,0 @@
-#!/bin/bash
-#
-# note: xfce4-panel may be listed as an dependency of orage
-#       but can be safely force removed afterwards.
-
-pgrep "orage" > /dev/null && killall orage && exit 0
-orage &
