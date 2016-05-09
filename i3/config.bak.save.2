@@ -1,0 +1,353 @@
+# Set mod key.
+
+set $mod        Mod4
+
+
+# -----------------------------------------
+# - Main
+# -----------------------------------------
+
+
+# Window border multiplier.
+set $borders    5
+
+
+# Number of pixels to resize by in resize mode.
+set $resize     5
+
+
+# Set gap sizes. Keep 'gapso' set to 0.
+set $gapso      0
+set $gapsi      12
+set $pgapsi	8
+set $pgapso     32
+
+
+# Set terminal.
+set $term termite
+
+
+# Window options.
+focus_follows_mouse             true
+popup_during_fullscreen         smart
+
+
+# Workspace options.
+workspace_layout                default
+workspace_auto_back_and_forth   true
+
+# -----------------------------------------
+# - Aesthetics
+# -----------------------------------------
+
+
+# Font for window titles and bar. Check bar{} for overrides.
+font pango: Tamsyn, FontAwesome 13
+
+# Window borders:
+#hide_edge_borders   	true
+new_float           	pixel $borders
+new_window          	pixel $borders
+#smart_borders       	no_gaps
+
+
+# Set initial gaps.
+gaps inner   		$gapsi
+gaps outer   		$gapso
+
+
+# -----------------------------------------
+# - General Bindings
+# -----------------------------------------
+
+# Restart i3.
+bindsym $mod+Shift+r    restart
+
+
+# Disable and enable gaps.
+bindsym $mod+n          gaps inner current set 0; gaps outer current \
+set 0
+
+bindsym $mod+m          gaps inner current set $gapsi; gaps outer \
+current set $gapso
+
+
+bindsym $mod+Shift+m	gaps inner current set $pgapsi; gaps outer \
+current set $pgapso
+
+
+# Kill focused window.
+bindsym $mod+c    kill
+
+
+# Laptop backlight controls.
+bindsym XF86MonBrightnessUp     exec --no-startup-id xbacklight \
+-inc 20 && pkill -SIGRTMIN+12 i3blocks
+
+bindsym XF86MonBrightnessDown   exec --no-startup-id xbacklight \
+-dec 20 && pkill -SIGRTMIN+12 i3blocks
+
+# Lock screen.
+bindsym $mod+Ctrl+L exec --no-startup-id ~/.local/bin/i3lock.sh
+
+# Laptop audio controls.
+bindsym XF86AudioRaiseVolume exec --no-startup-id   amixer -q sset \
+Master 3%+
+
+bindsym XF86AudioLowerVolume exec --no-startup-id   amixer -q sset \
+Master 3%-
+
+bindsym XF86AudioMute exec --no-startup-id          amixer -q sset \
+Master toggle
+
+# Music.
+
+bindsym $mod+bracketleft exec --no-startup-id    ~/.local/bin/music.sh prev
+bindsym $mod+bracketright exec --no-startup-id   ~/.local/bin/music.sh next
+bindsym $mod+backslash exec --no-startup-id      ~/.local/bin/music.sh toggle
+
+# Focus parent/child.
+
+#bindsym $mod+a 			focus parent
+#bindsym $mod+b 			focus child
+
+# Focus bindings.
+
+#bindsym $mod+h 			focus left
+#bindsym $mod+j 			focus down
+#bindsym $mod+k 			focus up
+#bindsym $mod+l 	        	focus right
+
+# Same as above, with cursor keys.
+
+bindsym $mod+Left 		focus left
+bindsym $mod+Down 		focus down
+bindsym $mod+Up 		focus up
+bindsym $mod+Right 		focus right
+
+# Focus last urgent window.
+
+#bindsym $mod+u          [urgent=latest] focus
+
+
+# Open rofi as a one-shot.
+#bindsym $mod+b exec rofi -show run -lines 5 -eh 2 -width 100 -padding 500 -opacity "80" -bw 0 -bc "$base01" -bg "$base02" -fg "$base07" -hlbg "$base05" -columns 2 -font "Tamsyn 18" -hlfg "#9575cd
+# -----------------------------------------
+# - Workspace
+# -----------------------------------------
+
+# Set workspace names.
+set $ws1    "terminal "
+set $ws2    "browser"
+set $ws3    "editor"
+set $ws4    "files"
+set $ws5    "e"
+set $ws6    "f"
+set $ws7    "g"
+set $ws8    "h"
+set $ws9    "i"
+set $ws0    "j"
+
+# Switch to certain workspaces.
+bindsym $mod+comma      workspace prev
+bindsym $mod+period     workspace next
+bindsym $mod+1 			workspace $ws1
+bindsym $mod+2 			workspace $ws2
+bindsym $mod+3 			workspace $ws3
+bindsym $mod+4 			workspace $ws4
+bindsym $mod+5 			workspace $ws5
+bindsym $mod+6 			workspace $ws6
+bindsym $mod+7 			workspace $ws7
+bindsym $mod+8 			workspace $ws8
+bindsym $mod+9 			workspace $ws9
+
+# Move to certain workspaces.
+bindsym $mod+Shift+comma  move container to workspace prev
+bindsym $mod+Shift+period move container to workspace next
+bindsym $mod+Shift+1 	move container to workspace $ws1
+bindsym $mod+Shift+2 	move container to workspace $ws2
+bindsym $mod+Shift+3 	move container to workspace $ws3
+bindsym $mod+Shift+4 	move container to workspace $ws4
+bindsym $mod+Shift+5	move container to workspace $ws5
+bindsym $mod+Shift+6	move container to workspace $ws6
+bindsym $mod+Shift+7 	move container to workspace $ws7
+bindsym $mod+Shift+8 	move container to workspace $ws8
+bindsym $mod+Shift+9 	move container to workspace $ws9
+
+# -----------------------------------------
+# - Movement
+# -----------------------------------------
+
+# Move tiled/floating window.
+bindsym $mod+h 			move left
+bindsym $mod+j 			move down
+bindsym $mod+k 			move up
+bindsym $mod+l         		move right
+
+# Same, but with cursor keys.
+bindsym $mod+Shift+Left 		move left
+bindsym $mod+Shift+Down 		move down
+bindsym $mod+Shift+Up 			move up
+bindsym $mod+Shift+Right 		move right
+
+# -----------------------------------------
+# - Layout
+# -----------------------------------------
+
+# Change layouts.
+bindsym $mod+Shift+t        		layout tabbed
+bindsym $mod+e 			    	layout toggle split
+bindsym $mod+f			    	fullscreen
+bindsym $mod+w    			floating toggle
+
+# Splitting mode.
+bindsym $mod+u 		split h
+bindsym $mod+v 		split v
+
+# Floating mode.
+floating_modifier 	$mod
+bindsym $mod+p		exec pcmanfm
+bindsym $mod+x		exec lxappearance
+bindsym $mod+g		exec google-chrome-beta
+bindsym $mod+a		exec atom
+bindsym $mod+s		exec subl
+bindsym $mod+b		exec firefox
+
+# Sticky a window.
+bindsym $mod+Shift+S sticky toggle
+
+
+# Make current window a scratchpad.
+bindsym $mod+Shift+minus move scratchpad
+
+
+# Toggle scratchpad show.
+bindsym $mod+minus scratchpad show
+
+
+# Start a terminal window.
+bindsym $mod+Return	exec $term
+
+# -----------------------------------------
+# - Specific Programmes
+# -----------------------------------------
+
+# Make certain windows floating on launch.
+#for_window [title="^floating"] 		    floating enable
+#for_window [class="^Steam$"] 			    floating enable
+#for_window [title="Add Downloads"]                 floating enable
+#for_window [title="termite"]		            floating enable
+
+# Web workspace.
+assign [class="Firefox"] 	    	$ws2
+assign [class="google-chrome-beta"]	$ws2
+
+# Editor workspace.
+assign [class="subl"]	    		$ws3
+assign [class="atom"]			$ws3
+# File workspace.
+assign [class="pcmanfm"]	    	$ws4
+
+# -----------------------------------------
+# - Modes
+# -----------------------------------------
+
+# Gaps mode. Press Mod+Shift+G and - and + to change gap sizes.
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+    bindsym o      mode "$mode_gaps_outer"
+    bindsym i      mode "$mode_gaps_inner"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+    bindsym plus  gaps inner current plus 5
+    bindsym minus gaps inner current minus 5
+    bindsym 0     gaps inner current set 0
+
+    bindsym Shift+plus  gaps inner all plus 5
+    bindsym Shift+minus gaps inner all minus 5
+    bindsym Shift+0     gaps inner all set 0
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_outer" {
+    bindsym plus  gaps outer current plus 5
+    bindsym minus gaps outer current minus 5
+    bindsym 0     gaps outer current set 0
+
+    bindsym Shift+plus  gaps outer all plus 5
+    bindsym Shift+minus gaps outer all minus 5
+    bindsym Shift+0     gaps outer all set 0
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Resize mode. Press Mod + R to resize windows.
+mode "resize" {
+        bindsym h resize grow left $resize px or $resize ppt
+        bindsym k resize grow up $resize px or $resize ppt
+        bindsym j resize shrink down $resize px or $resize ppt
+        bindsym l resize grow right $resize px or $resize ppt
+
+        bindsym Shift+l resize shrink left $resize px or $resize ppt
+        bindsym Shift+j resize shrink up $resize px or $resize ppt
+        bindsym Shift+k resize shrink down $resize px or $resize ppt
+        bindsym Shift+h resize shrink right $resize px or $resize ppt
+
+        bindsym Left resize grow left $resize px or $resize ppt
+        bindsym Up resize grow up $resize px or $resize ppt
+        bindsym Down resize grow down $resize px or $resize ppt
+        bindsym Right resize grow right $rsize px or $resize ppt
+
+        bindsym Shift+Right resize shrink left $resize px or $resize ppt
+        bindsym Shift+Down resize shrink up $resize px or $resize ppt
+        bindsym Shift+Up resize shrink down $resize px or $resize ppt
+        bindsym Shift+Left resize shrink right $resize px or $resize ppt
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# Ignore mode. Press Mod + Shift + i to ignore most keypresses.
+mode "Ignore" {
+    bindsym Return mode default
+    bindsym Escape mode default
+}
+bindsym $mod+Shift+i mode Ignore
+
+# Start i3bar.
+bar {
+    strip_workspace_numbers no
+    position top
+    height 23
+    status_command i3blocks -c ~/.config/i3/i3blocks.conf
+    separator_symbol "|"
+    #tray_output none
+    font pango: Tamsyn, FontAwesome Regular 12
+  colors {
+    background #221d3b
+    statusline #ffffff
+    separator #ffffff
+    focused_workspace #12fee7 #221d3b #ffffff
+    active_workspace #12fee7 #221d3b #ffffff
+    inactive_workspace #221d3b #221d3b #ffffff
+    urgent_workspace #bf616a #65737e #ffffff
+  }
+}
+
+# Window colours:
+
+client.focused              #12fee7 #12fee7 #ebdbb2 #12fee7 
+client.focused_inactive     #382449 #382449 #ebdbb2 #382449
+client.unfocused            #382449 #382449 #ebdbb2 #382449
+client.urgent               #bf616a #bf616a #ee0000 #bf616a

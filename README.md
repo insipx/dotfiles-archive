@@ -37,3 +37,13 @@ DO THIS AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR ANYTHING THAT HAPPENS TO YOUR
 
 
 Thanks!
+------------------------------------------------------
+
+everything above was for AwesomeWM
+I will update this in the future for my i3 config, but I don't think I customized it enough yet. It's a sweet setup but feels too much like the one I took from
+Will update with instructions when finished ricing
+
+Ricing is Love, Ricing is Life.
+
+I'm not addicted, I swear.
+

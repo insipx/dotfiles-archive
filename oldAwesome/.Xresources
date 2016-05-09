@@ -1,7 +1,7 @@
 !Xresource file
 
 !URxvt*depth: 50 --24
-URxvt*geometry: 75x25
+URxvt*geometry: 100x25
 xURxvt.borderColor: #191918
 URxvt.internalBorder: 10 
 URxvt.cursorUnderline: false
