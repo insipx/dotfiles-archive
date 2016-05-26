@@ -1,0 +1,43 @@
+[options]
+clickable_url = true
+padding = 10
+font = hack 11.5
+
+[colors]
+# special
+foreground      = #ffffff
+foreground_bold = #ffffff
+cursor          = #ffffff
+background      = #2a2337
+
+# black
+color0  = #666666
+color8  = #999999
+
+# red
+color1  = #cc6666
+color9  = #ff9999
+
+# green
+color2  = #66cc99
+color10 = #99ffcc
+
+# yellow
+color3  = #cc9966
+color11 = #ffcc99
+
+# blue
+color4  = #6699cc
+color12 = #99ccff
+
+# magenta
+color5  = #cc6699
+color13 = #ff99cc
+
+# cyan
+color6  = #66cccc
+color14 = #99ffff
+
+# white
+color7  = #cccccc
+color15 = #ffffff
