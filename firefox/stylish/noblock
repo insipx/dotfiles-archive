@@ -1,0 +1,32 @@
+/*
+    Author:        Twily                               2015
+    Website:       http://twily.info/
+    Description:   Non-detectable ad-Block (noblock)
+    Status:        Experimental
+    Note:          Use together with adblocker addon where you have sites 'complaining' about adblockers filtered.
+                   Customize 'noblock' to your specific sites by using 'Inspect Element' to find the id, class, etc.
+
+    CSS Selectors: http://www.w3.org/TR/CSS21/selector.html
+*/
+
+/* AGENT_SHEET */
+@namespace html url(http://www.w3.org/1999/xhtml);
+
+/** Normal **/
+/**/
+[id*="advert"],    [id*="adform"],    [id*="adunit"],    [id*="-ad-"],    [id*="adcontainer"],
+[class*="advert"], [class*="adform"], [class*="adunit"], [class*="-ad-"], [class*="adcontainer"]
+{
+    display: none !important;
+}
+/**/
+
+/** Plus **/
+/**/
+[href*="advert"],  [href*="adform"],  [href*="adlink"],
+[src*="advert"],   [src*="adform"],   [src*="adlink"],
+[title*="Advert"]
+{
+    display: none !important;
+}
+/**/

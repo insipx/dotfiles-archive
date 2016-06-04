@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+
+    Author:        Twily                                        2015
+    Website:       http://twily.info/
+    Compatibility: Mozilla Firefox, Internet Explorer, Google Chrome
+
+    Sources:
+    http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+
+-->
+<html>
+<head>
+<title>&gt;_</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+<!--<link id="favicon" rel="shortcut icon" href="http://twily.info/favicon.ico" />-->
+<!--<link rel="stylesheet" type="text/css" href="./css/style.css?v=1" />-->
+<style type="text/css">
+html,body {
+    margin: 0; padding: 0; overflow: auto; font-size: 12pt;
+    font-family: "Droid Sans", "Liberation Sans", "DejaVu Sans", "Segoe UI", Sans;
+    background: #17181A; color: #AAABAD;
+}
+* { box-sizing: border-box; }
+*:focus { outline: none !important; }
+
+a:link, a:visited { color: #606163; text-decoration: none; }
+a:hover, a:active { color: #EA75BC; }
+
+#center {
+	position: absolute; top: 50%; left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background: #27282B; padding: 64px; border-radius: 1px;
+}
+</style>
+
+<!--<script type="text/javascript" src="./js/main.js?v=1"></script>-->
+<script type="text/javascript">
+var $=function(id) { return document.getElementById(id); };
+
+function init() {
+	$('center').innerHTML="Thanks for using <a href=\"http://twily.info/\" target=\"_blank\">Twily's</a> template!";
+}
+
+</script>
+</head>
+<body onload="init();">
+
+
+<div id="center"></div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<!--
+
+    Author:        Twily                                                                        2015
+    Website:       http://twily.info/
+    Compatibility: Mozilla Firefox, Internet Explorer, Google Chrome
+
+    Search Usage:  "artist!i" will find images for "artist"
+
+
+    (Search this code for "Settings (JS)" to setup rss, search engines, menus, links and wallpapers)
+    (See bottom for chat & music implementation)
+
+-->
+<html>
+<head>
+<title>&nbsp;</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+<link id="favicon" rel="shortcut icon" href="http://twily.info/favicon.ico" />
+<style type="text/css">
+/*
+ *
+ *  >> Search and Replace to change color scheme
+ *
+ *  * (If you make two or more the same value you will need to
+ *       manually separate the colors in the code later to undo) 
+ *
+ *  #17181A - Background
+ *  #27282B - Content BG
+ *  #AAABAD - Content FG
+ *  #CECFD1 - Content FG Light
+ *  #111113 - Chat BG
+ *
+ *  Transition: "transition: .2s ease"
+ *  Sidebar Width: "400px"
+ *
+ *  ----------------------------------------------------------------------------------
+ *
+ *  Stylish CSS for STEREODOSE.COM and TWILY.INFO/CHAT >> http://pastebin.com/VYjhthjY
+ *  -UPDATED October 25 2015, 21:49 (CEST)
+ *
+ */
+
+html,body,textarea {
+    margin: 0; padding: 0; background: #27282B; font-size: 10pt;
+    font-family: "Droid Sans", "Liberation Sans", "DejaVu Sans", "Segoe UI", Sans;
+    overflow: hidden;
+}
+* { box-sizing: border-box; }
+*:focus { outline: none !important; }
+
+.slideshow {
+    position: absolute; top: 0; left: 400px;
+    width: calc(100% - 400px); height: 100%;
+    background: #111113 no-repeat center center; background-size: cover;        /* cover || contain */
+    opacity: 0; transition: opacity 5s ease;                                    /* Image crossfade time */
+    z-index: 1;
+}
+
+#time {
+    position: absolute; bottom: 16px; right: 16px;
+    color: #CECFD1; text-shadow: 0 0 3px #111113;
+    cursor: default; z-index: 2;
+}
+
+a, a:link, a:visited { color: #AAABAD; text-decoration: none; transition: .2s ease; }
+a:hover, a:active    { color: #111113; }
+
+#sidebar {
+    position: absolute; top: 0; left: 0;
+    width: 400px; height: 100%;
+    background: #17181A; z-index: 20;
+    box-shadow: 0 0 3px #111113;
+}
+    .tbl { display: table; height: 100%; }
+    .tbl-tr { display: table-row; }
+    #tbl-links { height: auto; width: 100%; }
+    #tbl-chat  { height: 100%; }
+
+#note {
+    width: 100%; border: 0; margin: 0; padding: 10px;
+    background: #17181A; color: #AAABAD;
+    min-height: 24px; resize: none; transition: .2s ease;
+    overflow: hidden;
+}
+#note:focus { background: #27282B; color: #CECFD1; min-height: 128px; overflow: auto; }
+
+#q {
+    width: 100%; border: 0; margin: 0; padding: 10px;
+    background: #17181A; color: #AAABAD; transition: .2s ease;
+}
+#q:focus { background: #27282B; color: #CECFD1; }
+
+#menu {
+    width: 100%; cursor: default;
+    background: transparent; color: #AAABAD; cursor: default;
+}
+    #mnu                   { width: 100%; position: relative; }
+    #menu ul               { display: block; list-style: none; margin: 0; padding: 0; }
+
+    #menu ul li                  { transition: .2s ease; width: 100%; }
+    #menu > ul > li              { padding: 10px; word-wrap: break-word; }
+    #menu > ul > li::after       { content: '>'; color: #606163; font-weight: bold; float: right; transition: .2s ease; }
+    #menu > ul > li:hover::after { color: #CECFD1; }
+    #menu > ul > li:hover        { background: #27282B; color: #cecfd1;  }
+
+    #menu #mbg, #menu ul ul {
+        position: fixed; top: 0; left: 400px;
+        width: calc(100% - 400px); height: 100%; opacity: 0;
+        visibility: hidden; transition: .2s ease;
+    }
+
+    #menu #mbg         { background: #27282B; z-index: 9; }
+    #menu:hover > #mbg { visibility: visible; opacity: .8; }
+
+    #menu ul ul            { padding: 16px; background: transparent; z-index: 10; overflow-x: hidden; overflow-y: auto; }
+    #menu ul li:hover > ul { visibility: visible; opacity: 1; z-index: 11; }
+    #menu ul ul div        { display: flex; flex-flow: row wrap; justify-content: flex-start; width: 100%; margin-bottom: calc(70px + 16px); }
+    #menu ul ul li {
+        display: inline-block; text-align: center;
+        min-width: 128px; width: 128px;
+        min-height: 96px; height: auto;
+        margin: 1px; border-radius: 1px; background: rgba(23,24,26,.7);
+    }
+    #menu ul ul li:hover  { background: #84BD3F !important; color: #111113; }
+    #menu ul li a         { display: block; padding: 16px; height: 100%; }
+    #menu ul li a:active  { padding-top: 17px; padding-bottom: 15px; }
+
+    #menu ul ul li .icon     { width: 100%; height: 16px; margin-bottom: 16px; position: relative; }
+    #menu ul ul li .icon img {
+        display: block; max-width: 16px; max-height: 16px; visibility: hidden;
+        position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+    }
+
+#rss_btn {
+    position: absolute; top: 0; right: 0;
+    width: 50px; height: 50px; z-index: 21;
+    background: url('http://twily.info/rssicon.png?v=3') no-repeat center center /*rgba(23,24,27,.7)*/ transparent;
+    border-bottom-left-radius: 36px;
+}
+    #rss {
+        visibility: hidden; opacity: 0;
+        position: fixed; top: 0; right: 0;
+        width: 200px; height: auto;
+        transition: .2s ease;
+    }
+    #rss_btn ul { display: block; list-style: none; margin: 0; padding: 16px; }
+    #rss_btn > ul > li {
+        display: block; text-align: right;
+        word-wrap: break-word; margin: 2px 0; padding: 10px; border-radius: 1px;
+        background: rgba(23,24,27,.7); color: #AAABAD;
+        transition: .2s ease; cursor: default;
+    }
+    #rss_btn > ul > li::before       { content: '<'; color: #606163; font-weight: bold; float: left; transition: .2s ease; }
+    #rss_btn > ul > li:hover::before { color: #111113; }
+    #rss_btn > ul > li:hover         { background: #84BD3F; color: #111113; }
+
+    #rss_btn ul ul {
+        position: fixed; top: 0; left: 400px;
+        width: calc(100% - 400px - 200px + 16px); height: 100%;
+        visibility: hidden; overflow-x: hidden; overflow-y: auto;
+        opacity: 0; transition: .2s ease; padding-right: 2px;
+    }
+    #rss_btn #rbg {
+        position: fixed; top: 0; left: 400px;
+        width: calc(100% - 400px); height: 100%;
+        background: #27282B; opacity: 0; z-index: 9;
+        visibility: hidden; transition: .2s ease;
+    }
+    #rss_btn:hover > #rss     { visibility: visible; opacity: 1; z-index: 11; }
+    #rss_btn:hover > #rbg     { visibility: visible; opacity: .8; }
+    #rss_btn ul li:hover > ul { visibility: visible; opacity: 1; z-index: 11; }
+    #rss_btn ul ul > div      { margin-bottom: calc(70px + 16px); }
+
+    #rss_btn ul ul li {
+        display: block; text-align: left;
+        margin: 2px 0; border-radius: 1px;
+        background: rgba(23,24,27,.7); color: #AAABAD;
+        transition: .2s ease;
+    }
+    #rss_btn ul ul li:hover { background: #84BD3F !important; }
+    #rss_btn ul ul li:hover a { color: #111113; }
+    #rss_btn ul ul li a { width: 100%; height: 100%; display: block; padding: 10px; }
+
+    #rss_btn ul ul li .icon     { width: 100%; height: 100%; position: relative; }
+    #rss_btn ul ul li .icon img {
+        display: inline-block; max-width: 16px; max-height: 16px; visibility: hidden;
+        float: left; margin-right: 10px;
+    }
+
+/* Music Implementation (CSS) Begin */
+#music {
+    position: absolute; bottom: 0; left: 400px;
+    width: calc(100% - 400px); height: 70px;
+    z-index: 22; opacity: .7; transition: .2s ease;
+    background: transparent; border: 0; visibility: hidden;
+    overflow-x: hidden; overflow-y: auto;
+}
+    #music:hover { height: 100%; opacity: 1; }
+/* Music Implementation (CSS) End */
+
+/* Chat Implementation (CSS) Begin */
+#chat {
+    border: 0; border-radius: 0;
+    position: relative; bottom: 0; left: 0; padding: 0px;
+    overflow: hidden; width: 400px; height: 100%;
+    background: #111113; visibility: hidden;
+}
+/* Chat Implementation (CSS) End */
+</style>
+
+<script type="text/javascript" language="javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+var $=function(id) { return document.getElementById(id); };
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Settings (JS) Begin -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+var feeds=[ // Rss urls (Format: ["Name", "URL", "Custom Favicon"])
+    ["Derpibooru",   "https://derpibooru.org/images/watched.rss?key=-zy4XC8atFsFbCFWCL3A",""],
+    ["Hardware",     "http://www.hardware.no/feeds/general.xml?noMobile=1",""],
+    ["IT-Avisen",    "http://itavisen.no/feed/","http://itavisen.no/wp-content/themes/itavisen/favicon.ico"],
+    ["VG",           "http://www.vg.no/rss/feed/?categories=1097,1107,1100,1101,1098,1102,1068&keywords=10165,10166,2194,2672,2723&limit=10&format=rss",""],
+    ["IGN",          "http://no.ign.com/feed.xml",""],
+    ["GameSpot",     "http://www.gamespot.com/feeds/reviews/",""],
+];
+var feedNum=16;                                                                 // Number of rss entries to download
+var enableRss=true;
+
+var search=[ // Search engines
+    ["",    "https://www.google.no/#q="],                                       // Google (Default)
+    ["!g",  "https://www.google.no/#q="],                                       // Google
+    ["!i",  "https://www.google.no/search?tbm=isch&q="],                        // Google Images
+    ["!m",  "http://www.imdb.com/find?q="],                                     // IMDb
+    ["!t",  "http://www.tritrans.net/cgibin/translate.cgi?spraak=Norsk&Fra="],  // TriTrans
+    ["!u",  "http://www.urbandictionary.com/define.php?term="],                 // Urban Dictionary
+    ["!w",  "http://en.wikipedia.org/w/index.php?search="],                     // Wikipedia
+    ["!y",  "https://www.youtube.com/results?search_query="],                   // YouTube
+];
+
+var menu=[ // Menu titles
+    "News",                                                                     // mnu_2
+    "4chan",                                                                    // mnu_3
+    "Entertainment",                                                            // mnu_4
+    "Store",                                                                    // mnu_5
+    "Other",                                                                    // mnu_6
+];
+
+// Link setup (separate with ["", "", ""],)
+// Format: ["Name", "URL", "Custom Favicon"],
+var links=[
+    // News -           mnu_2
+    ["Arch Linux",                      "http://archlinux.org",                     ""],
+    ["Dagbladet",                       "http://dagbladet.no",                      ""],
+    ["Gamer",                           "http://gamer.no",                          ""],
+    ["GameSpot",                        "http://www.gamespot.com/",                 ""],
+    ["Hardware",                        "http://hardware.no",                       ""],
+    ["IGN",                             "http://ign.com",                           ""],
+    ["IT-Avisen",                       "http://itavisen.no",                       "http://itavisen.no/wp-content/themes/itavisen/favicon.ico"],
+    ["LiveLeak",                        "http://www.liveleak.com/",                 ""],
+    ["NRK",                             "http://nrk.no",                            ""],
+    ["OA",                              "http://oa.no",                             ""],
+    ["PressFire",                       "http://pressfire.no",                      "http://www.pressfire.no/gfx/icons/application/favico.ico"],
+    ["Teknofil",                        "http://teknofil.no",                       ""],
+    ["The Guardian",                    "http://www.theguardian.com/",              ""],
+    ["The New York Times",              "http://www.nytimes.com/",                  ""],
+    ["TorrentFreak",                    "http://torrentfreak.com",                  ""],
+    ["VG",                              "http://vg.no",                             ""],
+    ["WikiLeaks",                       "https://wikileaks.org/index.en.html",      "https://wikileaks.org/IMG/favicon.ico"],
+
+    ["", "", ""],
+
+    // 4chan -          mnu_3
+    ["/b/ - Random",                    "https://boards.4chan.org/b/catalog",       ""],
+    ["/diy/ - Do It Yourself",          "https://boards.4chan.org/diy/catalog",     "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/e/ - Ecchi",                     "https://boards.4chan.org/e/catalog",       ""],
+    ["/f/ - Flash",                     "https://boards.4chan.org/f/",              ""],
+    ["/g/ - Technology",                "https://boards.4chan.org/g/catalog",       "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/gif/ - Adult GIF",               "https://boards.4chan.org/gif/catalog",     ""],
+    ["/h/ - Hentai",                    "https://boards.4chan.org/h/catalog",       ""],
+    ["/k/ - Weapons",                   "https://boards.4chan.org/k/catalog",       "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/mlp/ - Pony",                    "https://boards.4chan.org/mlp/catalog",     "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/mu/ - Music",                    "https://boards.4chan.org/mu/catalog",      "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/pol/ - Politically Incorrect",   "https://boards.4chan.org/pol/catalog",     ""],
+    ["/r9k/ - ROBOT9001",               "https://boards.4chan.org/r9k/catalog",     ""],
+    ["/sci/ - Science & Math",          "https://boards.4chan.org/sci/catalog",     "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/trash/ - Off-Topic",             "https://boards.4chan.org/trash/catalog",   ""],
+    ["/tv/ - Television & Film",        "https://boards.4chan.org/tv/catalog",      "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/v/ - Video Games",               "https://boards.4chan.org/v/catalog",       "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/vg/ - Video Games Generals",     "https://boards.4chan.org/vg/catalog",      "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/wg/ - Wallpaper General",        "https://boards.4chan.org/wg/catalog",      ""],
+    ["/wsg/ - Worksafe GIF",            "https://boards.4chan.org/wsg/catalog",     "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/x/ - Paranormal",                "https://boards.4chan.org/x/catalog",       "http://s.4cdn.org/image/favicon-ws.ico"],
+
+    ["", "", ""],
+
+    // Entertainment -  mnu_4
+    ["Derpibooru",                      "https://derpibooru.org/",                  ""],
+    ["I Am Bored",                      "http://www.i-am-bored.com/",               "http://www.i-am-bored.com/wp-content/uploads/2015/07/favicon.ico"],
+    ["Imgur",                           "https://imgur.com/",                       ""],
+    ["MetArt",                          "http://members.met-art.com/members/",      ""],
+    ["Netflix",                         "http://netflix.com",                       "https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2015.ico"],
+    ["PartyCloud",                      "http://www.partycloud.fm/",                ""],
+    ["/pone/",                          "https://8chan.co/pone/catalog.html",       ""],
+    ["Reddit",                          "http://reddit.com",                        ""],
+    ["Stereodose",                      "https://www.stereodose.com/",              "https://www.stereodose.com/Stereodose/static/favicon.ico"],
+    ["StumbleUpon",                     "http://stumbleupon.com",                   "https://nb9-stumbleupon.netdna-ssl.com/-G-ChSR8MQAl3Skvq8oNZg"],
+    ["The Useless Web",                 "http://www.theuselessweb.com/",            ""],
+    ["uWall.tv",                        "http://uwall.tv/",                         ""],
+    ["Viaplay",                         "http://viaplay.no/",                       ""],
+    ["xHamster",                        "http://xhamster.com/",                     ""],
+    ["Your World of Text",              "http://www.yourworldoftext.com/",          ""],
+    ["YouTube",                         "http://youtube.com",                       ""],
+
+    ["", "", ""],
+
+    // Store -          mnu_5
+    ["AliExpress",                      "http://www.aliexpress.com/",               ""],
+    ["Amazon",                          "http://www.amazon.com/",                   ""],
+    ["Biltema",                         "http://www.biltema.no/no/",                ""],
+    ["Byggmakker",                      "http://www.byggmakker.no/",                "http://www.byggmakker.no/frontend/img/favicon.ico"],
+    ["Byggmax",                         "https://www.byggmax.no/",                  ""],
+    ["Clas Ohlson",                     "http://www.clasohlson.com/no/",            "http://images.clasohlson.com/web/images/favicon.ico"],
+    ["eBay",                            "http://www.ebay.com/",                     ""],
+    ["Elkjøp",                          "http://www.elkjop.no/",                    "http://www.elkjop.no/INTERSHOP/static/WFS/store-elkjop-Site/-/-/no_NO/images/site/elkjop/favicon.ico"],
+    ["ellos",                           "http://www.ellos.no/",                     ""],
+    ["Gausdal Landhandleri",            "http://www.gaus.no/",                      ""],
+    ["Jula",                            "http://www.jula.no/",                      ""],
+    ["Jysk",                            "http://jysk.no/",                          ""],
+    ["Komplett",                        "https://www.komplett.no/",                 "http://www.komplett.no/mlf/skins/komplettno/favicon.ico?v=331.02"],
+    ["Kondomeriet",                     "https://www.kondomeriet.no/",              ""],
+    ["Prisjakt",                        "http://www.prisjakt.no/",                  ""],
+    ["Rusta",                           "http://www.rusta.com/no/",                 ""],
+    ["Zalando",                         "https://www.zalando.no/herre-home/",       ""],
+
+    ["", "", ""],
+
+    // Other -          mnu_6
+    ["Altinn",                          "https://www.altinn.no/",                   ""],
+    ["CockMail",                        "https://mail.cock.li",                     "https://mail.cock.li/skins/larry/images/favicon.ico"],
+    ["DeviantArt",                      "http://deviantart.com/",                   ""],
+    ["DnB",                             "http://www.dnb.no/en/",                    ""],
+    ["DreamHost",                       "https://www.dreamhost.com/",               "https://www.dreamhost.com/assets/images/favicons/favicon.ico"],
+    ["DynDNS",                          "http://dyn.com/dns/",                      ""],
+    ["Facebook",                        "http://facebook.com",                      "https://static.xx.fbcdn.net/rsrc.php/yl/r/H3nktOa7ZMg.ico"],
+    ["GW2 Timer",                       "http://gw2timer.com/?enu_Language=en",     "http://gw2timer.com/img/ui/favicon.png"],
+    ["Norsk Freakforum",                "http://freak.no/",                         ""],
+    ["Outlook",                         "http://outlook.com",                       ""],
+    ["Pastebin",                        "http://pastebin.com/u/Twilypastes",        ""],
+    ["PayPal",                          "http://www.paypal.com/",                   ""],
+    ["Pomf.io",                         "https://pomf.io/",                         ""],
+    ["TriTrans.net",                    "http://www.tritrans.net/",                 ""],
+    ["twily.info",                      "http://twily.info",                        ""],
+    ["Userstyles",                      "http://userstyles.org/",                   ""],
+    ["Wallhaven",                       "http://alpha.wallhaven.cc",                ""],
+];
+
+var showFavicon=true;                                                           // Enable/Disable Favicons
+
+var chatAutosign=false;                                                         // Automatic chat join
+var chatNickname="";                                                            // Default chat nickname
+
+var wTimer=15;                                                                  // Seconds until next image
+var wOpacity=65;                                                                // 0 (Transparent) - 100 (Opaque)
+var filepath="file:///home/guest/Pictures/spring/";                             // Path to find images (filepath+imagelist[x])
+
+/*
+ *
+ *  Command to generate imagelist (GNU/Linux) [Requires find, sed and leafpad]
+ *
+ *  function list() { echo "var filepath=\"file://"$(pwd)"/\";" && find "$1" -maxdepth 2 -type f -regex ".*\.\(jpg\|jpeg\|png\)" -exec echo \"{}\", \; | sed "s/%/%25/g" | sed "s/\.\///g" | leafpad; }; list .
+ *
+ *  For generating the imagelist on Windows: http://pastebin.com/zkd1AZUs
+ *
+ *  If filenames (or the path) contain '%' they will need to be replaced by '%25' (Eg.: ..file%25name.. to ..file%2525name..)
+ *  (The command and script above does this automatically)
+ *
+ */
+var imagelist=[
+    "spring wallpaper 4.jpg",
+    "6903701-free-spring-wallpaper.jpg",
+    "images-of-spring-flowers-and-wallpapers-6.jpg",
+    "7xcPIws.jpg",
+    "spring-wallpaper-17.jpg",
+    "unnamed.jpg",
+    "Desktop-HD-Spring-Wallpaper-1920x1080-2.jpg",
+    "Desktop-HD-Spring-Wallpaper-1920x1080-9.jpg",
+    "Free-Spring-Wallpaper-HD-for-Desktop-44.jpg",
+    "Spring-In-Green-Forest-Wallpaper.jpg",
+    "7033561-spring-scenery-wallpaper-background.jpg",
+    "spring_wallpaper_hd_download_background_facebook_cover1.jpg",
+    "spring-wallpaper-8.jpg",
+    "Spring-wallpapers-HD-desktop-background-pink-flowers.jpg",
+    "latest-spring-wallpaper_031117234_25.jpg",
+    "spring-blossom-trees-alley.jpg",
+    "spring-wallpapers_03112196_25.jpg",
+    "54CWjzU.jpg",
+];
+
+// (Winter wallpaper pack download - https://u.pomf.is/iylewc.tar.gz)
+// (Spring wallpaper pack download - https://d2.maxfile.ro/tsgwclmeqd.tar.gz)
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  Settings (JS) End  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+var i,ss="";
+function init() {
+    for(i=0;i<search.length;i++) if(search[i][0]=="") ss=search[i][1];
+    if(ss=="") alert("Error: Missing default search engine!");
+
+    // ** Note: Internet Explorer may fail on the next two lines unless hosted on local webserver
+    //localStorage.clear();
+    if(localStorage['note']!=null) $('note').value=localStorage['note'];
+    if(IsJsonString(localStorage['rss'])) { rssread=JSON.parse(localStorage['rss']); }
+    else                                  { localStorage['rss']=null; }
+    $('note').addEventListener('change',function() { localStorage['note']=$('note').value; });
+
+    if(!enableRss) $('rss_btn').style.display="none";
+    build();
+
+    $('q').value="";
+    $('q').focus();
+
+    nextImage();                                                                // Show first image
+    if(imagelist.length>1) setInterval("nextImage();",wTimer*1000);             // Run the slideshow
+
+    time();
+}
+
+function build() { // Build menu & rss
+    $('mnu').innerHTML="";
+
+    for(i=0;i<menu.length;i++) { // Menu titles
+        $('mnu').innerHTML+="<li>"+menu[i]+"<ul><div id=\"mnu_"+(i+1)+"\"></div></ul></li>";
+    }
+
+    var m=1,skip=false;
+    for(i=0;i<links.length;i++) { // Menu links
+        if(links[i][0]==""    && links[i][1]=="")    skip=true;
+
+        if(!skip) {
+            var printimg="";
+
+            if(showFavicon) {
+                var favicon;
+                if(links[i][2]!="") favicon=links[i][2];
+                else                favicon=getFavicon(links[i][1]);
+
+                printimg="<div class=\"icon\"><img src=\""+favicon+"\""+" onload=\"javascript:this.style.visibility='inherit';\" /></div> ";
+            }
+
+            $('mnu_'+m).innerHTML+="<li><a href=\""+links[i][1]+"\" target=\"_blank\">"+printimg+links[i][0]+"</a></li>";
+        } else {
+            m++;
+            skip=false;
+        }
+    }
+
+    $('rss').innerHTML="";
+
+    for(i=0;i<feeds.length;i++) {
+        $('rss').innerHTML+="<li class=\"rssli\" onmouseover=\"feedLoad(event,"+i+");\">"+feeds[i][0]+"<ul><div id=\"rss_"+(i+1)+"\"></div></ul></li>";
+    }
+}
+
+/*
+    Optional patch for using "!i" before the search query: http://pastebin.com/nXf6em3C
+*/
+function handleQuery(e,q) { // Handle search query
+    var key=e.keyCode || e.which;
+
+    if(key==13) { // Enter
+        var x=q.lastIndexOf("!");
+
+        if(x!=-1 && x>=q.length-2) {
+            for(i=0;i<search.length;i++) {
+                if(search[i][0]==q.substr(x)) { // Find "*!i"
+                    window.open(search[i][1]+q.substr(0,x).replace(/&/g,"%26"));
+
+                    $('q').value="";
+                    $('q').focus();
+                    return true;
+                }
+            }
+            // Invalid "!i", use default
+            window.open(ss+q.substr(0,x).replace(/&/g,"%26"));
+        } else {
+            // "!i" where not specified, use default
+            window.open(ss+q.replace(/&/g,"%26"));
+        }
+
+        $('q').value="";
+        $('q').focus();
+    }
+}
+
+function getFavicon(url) {
+    var l=document.createElement("a");
+    l.href=url;
+
+    return l.protocol+"//"+l.hostname+"/favicon.ico";
+}
+
+var wshow="img1",whide="img2",newimg,curimg;
+function nextImage() { // Slideshow
+    curimg=newimg;
+    while(newimg==curimg) newimg=Math.floor(Math.random()*imagelist.length);    // Generate next random image
+    (new Image()).src=filepath+imagelist[newimg];                               // Preload next image
+
+    whide=[wshow,wshow=whide][0];                                               // Swap values
+    $(wshow).style.backgroundImage="url('"+filepath+imagelist[curimg]+"')";     // Show current image
+    $(wshow).style.opacity=wOpacity/100;
+    $(whide).style.opacity=0;
+
+    if(curimg==null) nextImage();                                               // Buffer one image ahead
+}
+
+var cT,tT=[];
+var MNT=["January","February","March","April","May","June","July","August","September","October","November","December"];
+var DAY=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+function time() { // Clock
+    clearTimeout(cT);
+
+    var today=new Date();
+    var month=MNT[today.getMonth()];
+    var date=today.getDate();
+    var day=DAY[today.getDay()];
+    var h=today.getHours();
+    var m=today.getMinutes();
+    if(m<10) m="0"+m;
+
+    tT[0]=day+" "+month+" "+date+", "+h+":"+m;
+    if(tT[0]!=tT[1]) $('time').innerHTML=tT[0];
+    tT[1]=tT[0];
+
+    cT=setTimeout("time();",1000);
+}
+
+if(enableRss) { google.load("feeds","1"); }
+
+function feedLoaded(result) { // Rss Load
+    if(!result.error) {
+        $('rss_'+rssMnu).innerHTML="";
+
+        var favicon,fL=false;
+        for(var i=0;i<result.feed.entries.length;i++) {
+            var entry=result.feed.entries[i];
+            var printimg="",readstyle="";
+
+            if(showFavicon) {
+                if(!fL) {
+                    if(feeds[(rssMnu-1)][2]!="") favicon=feeds[(rssMnu-1)][2];
+                    else                         favicon=getFavicon(entry.link);
+                }
+                fL=true;
+
+                printimg="<div class=\"icon\"><img src=\""+favicon+"\""+" onload=\"javascript:this.style.visibility='inherit';\" /></div> ";
+            }
+            if(rssread.indexOf(entry.link)>-1) readstyle=" style=\"background: transparent; opacity: .7;\"";
+
+            $('rss_'+rssMnu).innerHTML+="<li id=\"rli"+rssMnu+i+"\" "+readstyle+"><a href=\""+entry.link+"\" target=\"_blank\" onmouseup=\"rssmark(event,this.href,'rli"+rssMnu+i+"');\">"+printimg+entry.title+"</a>";
+        }
+    }
+}
+
+var rssSelected=-1,rssMnu;
+function feedLoad(event,i) { // Rss Initialize
+    if(event.target.className=="rssli") {
+        rssMnu=(i+1);
+        $('rss_'+rssMnu).innerHTML="";
+
+        var feed=new google.feeds.Feed(feeds[i][1]);
+        feed.setNumEntries(feedNum);
+        feed.load(feedLoaded);
+    }
+}
+
+var rssread=new Array();
+function rssmark(e,url,id) {
+    var lclick,mclick;
+    if(!e) var e=window.event;
+    if(e.which) {
+        lclick=(e.which==1);
+        mclick=(e.which==2);
+    } else if(e.button) {
+        lclick=(e.button==0);
+        mclick=(e.button==1);
+    }
+
+    if(lclick || mclick) {
+        rssread.push(url);
+        localStorage['rss']=JSON.stringify(rssread);
+
+        $(id).style.background="transparent";
+        $(id).style.opacity=".7";
+    }
+}
+function IsJsonString(str) { try { JSON.parse(str); } catch(e) { return false; } return true; }
+</script>
+</head>
+<body onload="init();">
+
+<div id="img1" class="slideshow"></div>
+<div id="img2" class="slideshow"></div>
+
+<div id="time"></div>
+
+<div id="rss_btn">
+    <ul id="rss"></ul>
+    <div id="rbg"></div>
+</div>
+
+<div id="sidebar">
+    <div class="tbl">
+        <div class="tbl-tr" id="tbl-links">
+            <div id="menu">
+                <ul id="mnu"></ul>
+                <div id="mbg"></div>
+            </div>
+            <textarea id="note" spellcheck="false" placeholder="Note to self..." rows="1"></textarea>
+            <input type="text" id="q" value="" placeholder="Search... (!g, !i, !m, !t, !u, !w, !y)" onkeypress="javascript:handleQuery(event,this.value);" onfocus="this.value=this.value" autocomplete="off" />
+        </div>
+        <div class="tbl-tr" id="tbl-chat"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+// Music Implementation (JS) Begin
+function createMusic() {
+    var i=document.createElement("iframe");
+    i.id="music";
+    //i.src="https://www.stereodose.com/";
+    //i.src="https://www.stereodose.com/user_playlist/21950/let-yourself-go";
+    //i.src="https://www.stereodose.com/user_playlist/26310/lovely-lysergic";
+    //i.src="https://www.stereodose.com/user_playlist/26895/vintage-news";
+    //i.src="https://www.stereodose.com/user_playlist/27482/dreamy";
+    //i.src="https://www.stereodose.com/user_playlist/16832/its-cold-out-dance";
+    i.src="https://www.stereodose.com/user_playlist/29717/inner-journey";
+    i.onload=function() {
+        i.style.visibility="visible";
+        $('time').style.bottom="calc(70px + 16px)";
+    };
+
+    document.body.appendChild(i);
+
+    var mtimer;
+    $('music').addEventListener('mouseover',function() {
+        clearTimeout(mtimer);
+        mtimer=setTimeout(function() {
+            $('music').style.zIndex=21;
+            $('rss_btn').style.zIndex=22;
+        },300);
+    });
+}
+
+var rtimer;
+$('rss_btn').addEventListener('mouseover',function() {
+    clearTimeout(rtimer);
+    rtimer=setTimeout(function() {
+        $('music').style.zIndex=22;
+        $('rss_btn').style.zIndex=21;
+    },300);
+});
+// Music Implementation (JS) End
+
+// Chat Implementation (JS) Begin
+var lt,l=0;
+function createChat() {
+    var i=document.createElement("iframe");
+    i.id="chat";
+    i.src="http://twily.info/chat/";
+    i.scrolling="no";
+    i.onload=function() {
+        i.style.visibility="visible";
+        if(l==0) {
+            clearTimeout(lt);
+            lt=setTimeout(function() { i.src=i.src; l++; },1000);
+        } else if(l==1) {
+            if(chatAutosign) $('chat').contentWindow.postMessage('autosign '+chatNickname,'*');
+            l++;
+        }
+    };
+
+    $('tbl-chat').appendChild(i);
+}
+
+var n=0,fI,fT=false,fL=false;
+window.addEventListener('message',function(event) {
+    var data=event.data.split(" ");
+
+    var title=document.title;
+    var link=document.createElement('link');
+    link.id="favicon";
+    link.type="image/x-icon";
+    link.rel="shortcut icon";
+
+    if(data[0]=="notify") {
+        if(!fL) {
+            fL=true;
+
+            fI=setInterval(function() {
+                fT=!fT;
+
+                if(fT) link.href="http://twily.info/favicon_red.ico";
+                else   link.href="http://twily.info/favicon.ico";
+
+                document.getElementsByTagName('head')[0].removeChild($('favicon'));
+                document.getElementsByTagName('head')[0].appendChild(link);
+            },500);
+        }
+
+        if(title.substr(0,1)!="(") n=1;
+        else n+=parseInt(data[1]); title=title.substr(title.indexOf(" ")+1);
+        document.title="("+n+") "+title;
+    } else {
+        clearInterval(fI);
+        fT=false;
+        fL=false;
+
+        link.href="http://twily.info/favicon.ico";
+
+        document.getElementsByTagName('head')[0].removeChild($('favicon'));
+        document.getElementsByTagName('head')[0].appendChild(link);
+
+        n=0;
+        if(title.substr(0,1)=="(") document.title=title.substr(title.indexOf(" ")+1);
+    }
+});
+// Chat Implementation (JS) End
+
+function createIframes() {
+    // Comment out to disable implementation
+    createChat();
+    createMusic();
+}
+if(window.addEventListener) window.addEventListener("load",createIframes,false);
+else if(window.attachEvent) window.attachEvent("onload",createIframes);
+else                        window.onload=createIframes;
+</script>
+
+</body>
+</html>
