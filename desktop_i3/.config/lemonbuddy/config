@@ -1,0 +1,462 @@
+[settings]
+; Limit the amount of events sent to lemonbar within a set timeframe:
+; - "Allow <throttle_limit> updates within <throttle_ms> of time"
+; Default values:
+
+throttle_limit = 5
+throttle_ms = 50
+monitor = DFP6
+
+
+[bar/top]
+monitor = DFP6
+width = 100%
+height = 20
+clickareas = 35
+
+background = #222222
+foreground = #eefafafa
+linecolor = ${bar/top.background}
+
+;separator = |
+
+spacing = 3
+lineheight = 14
+;padding_left = 5
+;padding_right = 2
+module_margin_left = 3
+module_margin_right = 3
+#NotoSans-Regular
+font-0 = hack:size=10;0
+font-1 = MaterialIcons:size=12;0
+font-2 = Termsynu:size=10;-1
+font-3 = FontAwesome:size=10;0
+
+modules-left = i3 mpd
+modules-right = volume wired-network date
+
+[bar/topother]
+monitor = DFP7
+width = 100%
+height = 20
+;clickareas = 25
+
+background = #111111
+foreground = #ccffffff
+linecolor = ${bar/topother.background}
+
+spacing = 3
+lineheight = 2
+;padding_left = 0
+padding_right = 4
+module_margin_left = 0
+module_margin_right = 6
+
+; font-idx = font:size=N;offsetY
+font-0 = hack:size=10;0
+font-1 = FontAwesome:size=8;-2
+font-2 = Unifont:size=6;-3
+font-3 = NotoSans-Regular:size=8;-1
+font-4 = MaterialIcons:size=10;-1
+
+modules-center = cpu memory
+modules-right = i3
+
+[bar/external_bottom]
+monitor = HDMI-1
+bottom = true
+width = 100%
+height = 10
+;clickareas = 25
+
+background = #111111
+foreground = #ccffffff
+linecolor = ${bar/external_bottom.background}
+
+spacing = 3
+lineheight = 2
+;padding_left = 0
+padding_right = 3
+module_margin_left = 0
+module_margin_right = 6
+
+font-0 = NotoSans-Regular:size=8;0
+font-1 = Unifont:size=6;-3
+font-2 = FontAwesome:size=10;
+font-3 = NotoSans-Regular:size=8;-1
+font-4 = MaterialIcons:size=10;0
+
+modules-left = i3
+modules-right = clock
+
+[module/i3]
+type = internal/i3
+
+; workspace_icon-[0-9]+ = label;icon
+; workspace_icon-default = icon
+workspace_icon-0 = 1;
+workspace_icon-1 = 2;
+workspace_icon-2 = 3;
+workspace_icon-3 = 4;&#xf1d7;
+workspace_icon-4 = 5;&#xf128;
+workspace_icon-5 = 6;&#xf128;
+workspace_icon-6 = 7;&#xf0e0;
+workspace_icon-7 = 8;
+workspace_icon-8 = 9;
+workspace_icon-9 = 10;&#xf128
+workspace_icon-default = 
+
+;label-focused = 
+;label-focused-padding = 1
+;label-unfocused = 
+;label-unfocused-padding = 1
+;label-visible = 
+;label-visible-padding = 1
+
+[module/cpu]
+type = internal/cpu
+
+; Seconds to sleep between updates
+interval = 0.5
+
+; Available tags:
+;   <label> (default)
+;   <bar-load>
+;   <ramp-load>
+;   <ramp-load_per_core>
+format = <label> <ramp-load_per_core>
+
+; Available tokens-
+;   %percentage% (default)
+label = CPU
+
+; Required if <ramp-core_load> is used
+ramp-load_per_core-0 = ▁
+ramp-load_per_core-0-font = 2
+ramp-load_per_core-0-foreground = #55aa55
+ramp-load_per_core-1 = ▂
+ramp-load_per_core-1-font = 2
+ramp-load_per_core-1-foreground = #55aa55
+ramp-load_per_core-2 = ▃
+ramp-load_per_core-2-font = 2
+ramp-load_per_core-2-foreground = #55aa55
+ramp-load_per_core-3 = ▄
+ramp-load_per_core-3-font = 2
+ramp-load_per_core-3-foreground = #55aa55
+ramp-load_per_core-4 = ▅
+ramp-load_per_core-4-font = 2
+ramp-load_per_core-4-foreground = #f5a70a
+ramp-load_per_core-5 = ▆
+ramp-load_per_core-5-font = 2
+ramp-load_per_core-5-foreground = #f5a70a
+ramp-load_per_core-6 = ▇
+ramp-load_per_core-6-font = 2
+ramp-load_per_core-6-foreground = #ff5555
+ramp-load_per_core-7 = █
+ramp-load_per_core-7-font = 2
+ramp-load_per_core-7-foreground = #ff5555
+
+; Required if <bar-total_load> is used
+;bar-total_load-width = 10
+;bar-total_load-indicator = |
+;bar-total_load-fill = =
+;bar-total_load-empty = =
+
+[module/date]
+type = internal/date
+
+; see "man date" for formatting
+; if date_detailed is defined, clicking the area will toggle between formats
+; if you want to use lemonbar tags here you need to use %%{...}
+date = %%{F#fff}%Y-%m-%d%%{F-}  %%{F#fff}%H:%M%%{F-}
+date_detailed = %%{F#fff}%A, %d %B %Y  %%{F#fff}%H:%M%%{F#fff}:%%{F#fba922}%S%%{F-}
+
+; Seconds to sleep between updates
+;interval = 1.0
+
+; Available tags:
+;   <date> (default)
+format =  <date>
+format-background = #222
+format-padding = 5
+
+[module/memory]
+type = internal/memory
+
+; Seconds to sleep between updates
+;interval = 1.0
+
+; Available tags:
+;   <label> (default)
+;   <bar-used>
+;   <bar-free>
+format = <label> <bar-used>
+
+; Available tokens-
+;   %percentage_used% (default)
+;   %percentage_free%
+;   %gb_used%
+;   %gb_free%
+;   %gb_total%
+;   %mb_used%
+;   %mb_free%
+;   %mb_total%
+label = RAM
+
+; Required if <bar-used> is used
+bar-used-width = 50
+bar-used-foreground-0 = #55aa55
+bar-used-foreground-1 = #557755
+bar-used-foreground-2 = #f5a70a
+bar-used-foreground-3 = #ff5555
+bar-used-indicator = ▐
+bar-used-indicator-font = 2
+bar-used-indicator-foreground = #ddffffff
+bar-used-fill = ▐
+bar-used-fill-font = 2
+bar-used-empty = ▐
+bar-used-empty-font = 2
+bar-used-empty-foreground = #444444
+
+; Required if <bar-free> is used
+;bar-free-width = 50
+;bar-free-foreground-0 = #ff5555
+;bar-free-foreground-1 = #f5a70a
+;bar-free-foreground-2 = #557755
+;bar-free-foreground-3 = #55aa55
+;bar-free-indicator = ▐
+;bar-free-indicator-font = 2
+;bar-free-indicator-foreground = #ddffffff
+;bar-free-fill = ▐
+;bar-free-fill-font = 2
+;bar-free-empty = ▐
+;bar-free-empty-font = 2
+;bar-free-empty-foreground = #444444
+
+[module/mpd]
+type = internal/mpd
+
+format-online = <icon-prev> <icon-stop> <toggle> <icon-next>  <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
+
+; Available tags:
+;   <label-offline>
+format-offline = <label-offline>
+format-offline-offset = -8
+
+; Available tokens:
+;   %artist%
+;   %album%
+;   %title%
+; Default- %artist% - %title%
+;label-song =   %artist% - %title%
+;label-song-foreground = ${BAR.foreground}
+
+; Available tokens:
+;   %elapsed%
+;   %total%
+; Default- %elapsed% / %total%
+;label-time = %elapsed% / %total%
+label-time-foreground = #FFFFFF
+
+; Available tokens:
+;   None
+label-offline =  mpd is off
+label-offline-foreground = #FFFFFF
+
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-random = 
+icon-repeat = 
+;icon-repeatone = 🔂
+
+; Used to display the state of random/repeat/repeatone
+toggle_on-foreground = #fba922
+toggle_off-foreground = #66
+
+; Required if <bar-progress> is used
+bar-progress-width = 25
+
+bar-progress-format = %fill%%indicator%%empty%
+
+bar-progress-indicator = ┃
+bar-progress-indicator-foreground = #990394
+bar-progress-indicator-font = 3
+bar-progress-fill = ━
+bar-progress-fill-foreground = #990394
+bar-progress-fill-font = 3
+bar-progress-empty = ─
+bar-progress-empty-font = 3
+bar-progress-empty-foreground = #990394
+
+[module/wired-network]
+type = internal/network
+
+interface = enp3s0
+
+; Seconds to sleep between updates
+interval = 2.0
+
+; Seconds to sleep between connectivity tests
+; A value of 0 disables the testing
+; Default- 0
+;connectivity_test_interval = 0
+
+; Available tags:
+;   <label-connected> (default)
+;   <ramp-signal>
+;format-connected = <label-connected>
+
+; Available tags:
+;   <label-disconnected> (default)
+;format-disconnected = <label-disconnected>
+
+; Available tags:
+;   <label-packetloss> (default)
+;   <animation-packetloss>
+; format-packetloss = <animation-packetloss> <label-packetloss>
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %linkspeed% [wired]
+; Default- %ifname% %local_ip%
+label-connected =    %{T3}%local_ip%%{T-}
+;label-connected-foreground = #eefafafa
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+; Default- (none)
+;label-disconnected =    not connected
+;label-disconnected-foreground = #66ffffff
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %linkspeed% [wired]
+; Default- %ifname% %local_ip%
+; ------------------------- NOT ACTIVATED (Needs more testing)
+;label-packetloss = %essid%
+;label-packetloss-foreground = #eefafafa
+
+
+[module/volume]
+type = internal/volume
+
+; Use the following command to list available mixer controls:
+; $ amixer scontrols | sed -nr "s/.*'([[:alnum:]]+)'.*/\1/p"
+  speaker_mixer = Front
+  headphone_mixer = Front
+
+; Use the following command to list available device controls
+; $ amixer controls | sed -r "/CARD/\!d; s/.*=([0-9]+).*name='([^']+)'.*/printf '%3.0f: %s\n' '\1' '\2'/e" | sort
+headphone_control_numid = 9
+
+; Available tags:
+;   <label-volume> (default)
+;   <ramp-volume>
+;   <bar-volume>
+format-volume = <ramp-volume> <label-volume>
+
+; Available tags:
+;   <label-muted> (default)
+;   <ramp-volume>
+;   <bar-volume>
+;format-muted = <label-muted>
+
+; Available tokens:
+;   %percentage% (default)
+;label-volume = %percentage%
+label-volume-foreground = #ffffff
+
+; Available tokens:
+;   %percentage% (default)
+label-muted =   muted
+label-muted-foreground = #66ffffff
+
+; Required if <ramp-volume> is used
+ramp-volume-0 = 
+ramp-volume-0-foreground = #99ffffff
+ramp-volume-1 = 
+ramp-volume-1-foreground = #bbffffff
+ramp-volume-2 = 
+ramp-volume-2-foreground = #ddffffff
+ramp-volume-3 = 
+ramp-volume-3-foreground = #ffffffff
+
+; Required if <bar-capacity> is used
+bar-volume-width = 10
+bar-volume-format = %fill%%empty%
+bar-volume-fill = █
+bar-volume-fill-foreground = #ddffffff
+bar-volume-fill-font = 3
+bar-volume-empty = █
+bar-volume-empty-font = 3
+bar-volume-empty-foreground = #44ffffff
+
+
+[module/text-example]
+type = custom/text
+
+; "content" has the same properties as "format-NAME"
+content = 
+content-background = #000
+content-foreground = #fff
+content-padding = 4
+
+; "click-(left|middle|right)" will be executed using "/usr/bin/env sh -c $COMMAND"
+click-left = echo left
+click-middle = echo middle
+click-right = echo right
+
+; "scroll-(up|down)" will be executed using "/usr/bin/env sh -c $COMMAND"
+scroll-up = echo scroll up
+scroll-down = echo scroll down
+
+[module/script-example]
+type = custom/script
+
+; Available tokens:
+;   %counter%
+;
+; The "exec" command will be executed using "/usr/bin/env sh -c [command]"
+exec = echo %counter%
+
+; Seconds to sleep between updates
+interval = 0.5
+
+; Available tags:
+;   <output> (default)
+;format = <output>
+format-background = #999
+format-foreground = #000
+format-padding = 4
+
+; Available tokens:
+;   %counter%
+;
+; "click-(left|middle|right)" will be executed using "/usr/bin/env sh -c [command]"
+click-left = echo left %counter%
+click-middle = echo middle %counter%
+click-right = echo right %counter%
+
+; Available tokens:
+;   %counter%
+;
+; "scroll-(up|down)" will be executed using "/usr/bin/env sh -c [command]"
+scroll-up = echo scroll up %counter%
+scroll-down = echo scroll down %counter%
+
+[module/clock]
+type = internal/date
+date = %%{T3}%Y-%m-%d %H:%M%%{T-}
+interval = 5
+
+; vim:ft=dosini
+

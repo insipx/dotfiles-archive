@@ -1,0 +1,633 @@
+2016-06-01 15:19:23	ℹ	irc: connecting to server irc.inspircd.org/6667...
+2016-06-01 15:19:23	ℹ	irc: connected to irc.inspircd.org/6667 (2a03:b0c0:1:d0::186:f001)
+2016-06-01 15:19:23	ℹ	zoidberg.chatspike.net: *** Looking up your hostname...
+2016-06-01 15:19:23	ℹ	zoidberg.chatspike.net: *** Could not resolve your hostname: Domain name not found; using your IP address (2601:89:c501:100:330b:249a:7be3:e034) instead.
+2016-06-01 15:19:24	ℹ	zoidberg.chatspike.net: Welcome to ChatSpike!
+2016-06-01 15:19:24	ℹ	Welcome to the ChatSpike IRC Network insidious!insidious@2601:89:c501:100:330b:249a:7be3:e034
+2016-06-01 15:19:24	ℹ	Your host is zoidberg.chatspike.net, running version InspIRCd-2.0
+2016-06-01 15:19:24	ℹ	This server was created 13:17:02 May 10 2015
+2016-06-01 15:19:24	ℹ	zoidberg.chatspike.net InspIRCd-2.0 BGHIRSWcdghikorswx ABCDFGIJKLMNOPQRSTabcefghijklmnopqrstuv FIJLabefghjkloqv
+2016-06-01 15:19:24	ℹ	AWAYLEN=200 CALLERID=g CASEMAPPING=rfc1459 CHANMODES=Ibeg,k,FJLfjl,ABCDGKMNOPQRSTcimnprstu CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcjmrs FNC INVEX=I :are supported by this server
+2016-06-01 15:19:24	ℹ	KICKLEN=255 MAP MAXBANS=60 MAXCHANNELS=20 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=ChatSpike NICKLEN=31 OVERRIDE PREFIX=(qaohv)~&@%+ REMOVE :are supported by this server
+2016-06-01 15:19:24	ℹ	SILENCE=32 SSL=178.62.119.156:6697 STARTTLS STATUSMSG=~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-06-01 15:19:24	ℹ	598ABHAQJ :your unique ID
+2016-06-01 15:19:24	ℹ	zoidberg.chatspike.net message of the day
+2016-06-01 15:19:24	ℹ	-               ,---.|         |    ,---.     o|
+2016-06-01 15:19:24	ℹ	-               |    |---.,---.|--- `---.,---..|__/ ,---.
+2016-06-01 15:19:24	ℹ	-               |    |   |,---||        ||   |||  \ |---'
+2016-06-01 15:19:24	ℹ	-               `---'`   '`---^`---'`---'|---'``   ``---'
+2016-06-01 15:19:24	ℹ	-                                        |
+2016-06-01 15:19:24	ℹ	-
+2016-06-01 15:19:24	ℹ	-                        .ZBMMMMMMMMMMM0;|
+2016-06-01 15:19:24	ℹ	-                      MMWaSX7r;;rrrr7720MMi
+2016-06-01 15:19:24	ℹ	-                    rM2XXXXXXXXXXXSSXXXXXXWMZ
+2016-06-01 15:19:24	ℹ	-                    M77XXXXXXXXX7XX7XXXXXXXX8Ma
+2016-06-01 15:19:24	ℹ	-                   iM7XXXXXXXXXXXXXXSXX7XXXXXXBM
+2016-06-01 15:19:24	ℹ	-                   a@r7XXXXXX7XXXXXX7X7XXXXXXXXXMr
+2016-06-01 15:19:24	ℹ	-                   ;MrSS7XXX7XXXXZ0MM0a2XXXX7X8MMMM,
+2016-06-01 15:19:24	ℹ	-                    MX77XXXXXXXZMZ    8Ma7XXaMX    :8;
+2016-06-01 15:19:24	ℹ	-                    0Z7X2XXXXrS@        MS7rM        a;
+2016-06-01 15:19:24	ℹ	-                     MXr7XXX77@          MrrM         W
+2016-06-01 15:19:24	ℹ	-                     aMXXXXXXXBi     MM ,Brr@    ;MZ S;
+2016-06-01 15:19:24	ℹ	-                      W07XXXXXSM        @XX7aMS     2i
+2016-06-01 15:19:24	ℹ	-                       MX7SSX772BM0S2aM8SXX7XX8@MMM8
+2016-06-01 15:19:24	ℹ	-                        M77XXXX7XS2aZ2SXXXXXS7Xr0@M.
+2016-06-01 15:19:24	ℹ	-                        B27XXXXXXSXSX7XXXXXXXXX7;ia0:
+2016-06-01 15:19:24	ℹ	-                         MrSXXXX7777X7X7XXXXXX77X77SWM
+2016-06-01 15:19:24	ℹ	-                         M7XXXXXXSXXrSrXX7XrXrS7XXr772M
+2016-06-01 15:19:24	ℹ	-                         8a7XX7SXXXXiM;XX:MiXrM2rXSWr72M
+2016-06-01 15:19:24	ℹ	-                         2ZX7SXXXXXX:M:7X:M:S7SZr77@iXrM
+2016-06-01 15:19:24	ℹ	-                         X7XXXXXXXXX:M;r7:Mi7;aa7XiMirrM
+2016-06-01 15:19:24	ℹ	-                      SMMM.;XXXSSX7Xr2W:r M.i.Mi;riMX8M0
+2016-06-01 15:19:24	ℹ	-                  :MMMMMMM@ rXXX7XXX7;8M@WMWWM@Z, ;  :.
+2016-06-01 15:19:24	ℹ	-               .WMBZMMB00@MZ.7XXXXXXXX;iii:;;i.aMMMM:
+2016-06-01 15:19:24	ℹ	-             WMMS7i.rMBWBBWMi:XXXXX7XXXXX7X7XXr;MW@MMMM:
+2016-06-01 15:19:24	ℹ	-          SMMS77XXSX MMB@MMMMirXXXXXXX7XXXX7SX7,MMMMMMSBM
+2016-06-01 15:19:24	ℹ	-        WM87XXX7XX7X:rMMMMBXiMX;XXXXXXXXXXXXX7X:0     M:SM8
+2016-06-01 15:19:24	ℹ	-      MMaX7X7XXXXXX77.Z     .,Mr7XXXXXXXXXXXXXXiM,;rr.aZ;7BM
+2016-06-01 15:19:24	ℹ	-    @MS7rXXXXXXXXSSSXiM irrr;,;M;rXXXXXXXXXXXXXi@:ir7; MiX7aM
+2016-06-01 15:19:24	ℹ	-   M2XXXXXXXXXXXXX77X:M:777rrr:7M7r77XXXXXXXXXX;Mirrrr.M7rXXSB
+2016-06-01 15:19:24	ℹ	-  B277XXXXXXXXXXXXXXXiM;ii,,     S,i777XXX7XXX;.2       8iXX7r
+2016-06-01 15:19:24	ℹ	-  rXXXX7XXXXXXX7XXXSX;Z.  .:SZW@MWMr :r7XXX7;. MMMMMMMMMM.XXSX
+2016-06-01 15:19:24	ℹ	-  XXXXXXXXXXXXXXXXX7Xr7MMMMMMMMMMMMMM2.     .ZMM@MWW@@MMM 7XXX
+2016-06-01 15:19:24	ℹ	-  XXX77XXXXXXX7XXXXXXi;MBBW@WBWBBBBWMMMMMMMMMM@0B0B@BBBBM ,7XX
+2016-06-01 15:19:24	ℹ	-  7XX7XXXXXXXXXXXXXX7;BMBBB0BBBBBBBB0BBBW@@WB0BBBBW00WBB@MBrXX
+2016-06-01 15:19:24	ℹ	-           +-----------------------------------------------+
+2016-06-01 15:19:24	ℹ	-           |     Welcome to the ChatSpike IRC Network!     |
+2016-06-01 15:19:24	ℹ	-           | You are connecting via zoidberg.chatspike.net |
+2016-06-01 15:19:24	ℹ	-           |                                               |
+2016-06-01 15:19:24	ℹ	-           |    My slinky! my lovely cuddly pet slinky!    |
+2016-06-01 15:19:24	ℹ	-        +--+-----------------------------------------------+-+
+2016-06-01 15:19:24	ℹ	-        |            N E T W O R K   S T A F F               |
+2016-06-01 15:19:24	ℹ	-        +----------------------------------------------------+
+2016-06-01 15:19:24	ℹ	-        |         http://www.chatspike.net/staff/            |
+2016-06-01 15:19:24	ℹ	-        +----------------------------------------------------+
+2016-06-01 15:19:24	ℹ	-
+2016-06-01 15:19:24	ℹ	-        +----------------------------------------------------+
+2016-06-01 15:19:24	ℹ	-        |                    R U L E S                       |
+2016-06-01 15:19:24	ℹ	-        +----------------------------------------------------+
+2016-06-01 15:19:24	ℹ	-        |  http://www.chatspike.net/cms/index.php?z=79&t=2   |
+2016-06-01 15:19:24	ℹ	-        +----------------------------------------------------+
+2016-06-01 15:19:24	ℹ	-
+2016-06-01 15:19:24	ℹ	End of message of the day.
+2016-06-01 15:19:24	ℹ	There are 6 users and 428 invisible on 5 servers
+2016-06-01 15:19:24	ℹ	16 :operator(s) online
+2016-06-01 15:19:24	ℹ	177 :channels formed
+2016-06-01 15:19:24	ℹ	I have 125 clients and 1 servers
+2016-06-01 15:19:24	ℹ	Current Local Users: 125  Max: 520
+2016-06-01 15:19:24	ℹ	Current Global Users: 434  Max: 747
+2016-06-01 15:19:24	ℹ	ChatSpikencqqvg.br12.vlav.0089.2601.IP :is now your displayed host
+2016-06-01 15:19:24	ℹ	User mode [+ixw] by insidious
+2016-06-01 15:19:25	ℹ	NickServ (NickServ@chatspike.net): Welcome to ChatSpike, insidious! Here on ChatSpike, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2016-06-01 15:19:48	ℹ	Channel Users Name
+2016-06-01 15:19:48	ℹ	#ReGaL(3): [+nt] Welcome to the ReGaL Development Channel! We have cookies!
+2016-06-01 15:19:48	ℹ	#nintendoplus(2): [+nt]
+2016-06-01 15:19:48	ℹ	#systemshock(2): [+nt]
+2016-06-01 15:19:48	ℹ	#inspircd.qa(2): [+nt] InspIRCd Quality Assurance (QA) | http://www.inspircd.org/wiki/QA | To apply (or chat) speak to eggy or w00t | Running a QA server? Build WITH debug symbols (make debug) and make sure your system clock is correct (ntpd et al)
+2016-06-01 15:19:48	ℹ	#ordo(2): [+nt] Loading ... Loading ... Loading ...
+2016-06-01 15:19:48	ℹ	#mwops(5): [+nt] <Hvalek> i'm trying to learn spainish || <JAM3SKILLZON3> yeah give me a hour or 2 as i am busy making a town that like 7 miles square || <Dmitry> Anyone seen a porn replacer of the Boetiah Pillow Book?
+2016-06-01 15:19:48	ℹ	#save-point(6): [+mnt] Welcome to the official Save-Point IRC chatroom. We <3 you! https://www.youtube.com/watch?v=1_Z5q152GSQ
+2016-06-01 15:19:48	ℹ	#nintendo-idlerpg(1): [+nt]
+2016-06-01 15:19:48	ℹ	#trspam(2): [+nt]
+2016-06-01 15:19:48	ℹ	#synth(1): [+nt]
+2016-06-01 15:19:48	ℹ	#tamriel(18): [+nt] Welcome to the Tamriel Rebuilt IRC Channel (NSFW) | http://www.tamriel-rebuilt.org | Velk and Velk... Vivelc?
+2016-06-01 15:19:48	ℹ	#nigel(3): [+nt] || #nigel IN MY VEINS | #nigel TITLE http://bit.ly/nigTITLE | STATS http://bit.ly/nigSTATS | TLKiller990 supports #EnzoAmoreTheGoogleMaps | oddset supports #IWGPChampionJayWhite | ¯\_(ツ)_/¯ http://imgur.com/a/ZSpLs ||
+2016-06-01 15:19:48	ℹ	#smithy(2): [+nt] I AM GOING TO RAPE YOU, ALTERNATING BETWEEN USING A BLUNT PIZZA CUTTER AND A SHARPENED NIGHTSTICK, EVERY DAY FOR THE REST OF YOUR LIFE, NOW THAT YOU READ THIS MESSAGE
+2016-06-01 15:19:48	ℹ	#dragonage(2): [+nt] Welcome to the Dragon Age channel. | https://www.youtube.com/watch?v=yHeWOQvVRd8&feature=youtu.be
+2016-06-01 15:19:48	ℹ	#escapist(13): [+Sfnt 8:10] WELCOME TO THE THUNDERDOME, ffronw!
+2016-06-01 15:19:48	ℹ	#wrestling(7): [+nt] || #wrestling - No one man should all that flour ||
+2016-06-01 15:19:48	ℹ	#k-pdt(4): [+nt] why not?
+2016-06-01 15:19:48	ℹ	#japan-tv(2): [+nt] Welcome to http://www.jtv-drama.net/ READ !rules !list !releases !frules DON'T ASK ABOUT RELEASES |Released Oishii Gohan ep 8 || BT: http://jtv-drama.net/bt/ Forum http://jtv-forum.clubbed.org IRC GUIDE: http://www.questie.com/ma
+2016-06-01 15:19:48	ℹ	#Falling(29): [+Blnt 50] Falling Up and Floating Down || Stats! http://bit.ly/fallingstats || This week in 1791: The United States Bill of Rights becomes law when ratified by the Virginia General Assembly. || Word of the Week: Zarzuela  || December 19: SpaceX is back! ORBCOMM Launch 20:26 EST/1:26 UTC
+2016-06-01 15:19:48	ℹ	#dxl.projects(3): [+nt]
+2016-06-01 15:19:48	ℹ	#ElectroShells(2): [+nt]
+2016-06-01 15:19:48	ℹ	#yolo(1): [+nt]
+2016-06-01 15:19:48	ℹ	#finale(2): [+nt] Help and conversation about Finale music notation software (and other music-related stuff if the mood strikes)
+2016-06-01 15:19:48	ℹ	#sirlin(1): [+nt]
+2016-06-01 15:19:48	ℹ	#benriya(2): [+nt] [ Benriya ] [  Status: Come join us at irc.quakenet.org #benriya =) ] [ MIA: Miyo(sober), Cho(work/lazy), Chu(working), Aya(hk), Infi(banned), Shiro(hk), and more... ;_; ]
+2016-06-01 15:19:48	ℹ	#morrowind(6): [+nt] Morrowind IRC - http://youtu.be/mSRj6JsBNhs | Bethsoft Thread: http://tinyurl.com/6fexxmo | Steam Group: http://tinyurl.com/6j7w7fr | http://bit.ly/AD4aZO
+2016-06-01 15:19:48	ℹ	#Splatterai(3): [+nt] https://twitter.com/LiquidHbox/status/735154006624849920
+2016-06-01 15:19:48	ℹ	#struct.ws(2): [+nt]
+2016-06-01 15:19:48	ℹ	#(5): [+nt] https://www.youtube.com/watch?v=PL2A_KSdoc4 | Every Arlen get up, it's time to Arlen now. | ARLEN DEST ARLEN DEST MEEBA MEEBA MEEBA | please add us to your autojoin ty | Now with 100% more Sporks!
+2016-06-01 15:19:48	ℹ	#Chat(5): [+jnt 2:16] Welcome to #Chat | Talk about (almost) anything and everything. | Basic Rules: Use English and don't be an asshole.
+2016-06-01 15:19:48	ℹ	#a2ka-fansubs(2): [+nt] A2KA-subbing. Nothing.  Mamotte Lollipop is licensed  :( . Please look for TLs and TL-checkers! typesetter pls.  Maybe pick something else up.(doubt it) I still have that script (and DVD-raws) for traditional Japanese kiddie fairytales, I can TL, time, encode, but need a typesetter. (Blues)
+2016-06-01 15:19:48	ℹ	#f1(2): [+nt] #F1 - Totally obsessed with Vicky Piria since 2011 | F1 Fantasy League 2015 is up! | http://f1.udt.co.za/f1fantasy/restricted/Dashboard.j | League Code: 6359573745343
+2016-06-01 15:19:48	ℹ	#Inspigen(1): [+nt]
+2016-06-01 15:19:48	ℹ	#EscapistVIP(1): [+nt]
+2016-06-01 15:19:48	ℹ	#metal-rules(1): [+nt]
+2016-06-01 15:19:48	ℹ	#Plot(2): [+nt]
+2016-06-01 15:19:48	ℹ	#help(3): [+nt] Please join #chatspike for IRC help
+2016-06-01 15:19:48	ℹ	#BOOOOOOOORED(4): [+nt]
+2016-06-01 15:19:48	ℹ	#physics(2): [+nt] Physics
+2016-06-01 15:19:48	ℹ	#inspircd.dev(52): [+nt] Interpreting the RFC literally will result in the same type of bad decisions as interpreting other religious texts literally. | http://i.imgur.com/J8rNqD2.png | http://i.imgur.com/A0Mtbjv.png | http://i.imgur.com/ZSPGVZr.gif
+2016-06-01 15:19:48	ℹ	#a2000a(15): [+Cnt] Welcome to #a2000a - [insert topic here]
+2016-06-01 15:19:48	ℹ	#bluehat(1): [+nt]
+2016-06-01 15:19:48	ℹ	#theawesomelounge(2): [+nt] R.I.P The Awesome Lounge
+2016-06-01 15:19:48	ℹ	#TheKitchen(2): [+nt] I am not a clever man. http://i.imgur.com/8rtrB.jpg || What's in your pantry? || April 29th, National Shrimp Scampi Day
+2016-06-01 15:19:48	ℹ	#PURGE(2): [+nt] PURGE Development Channel -- Project dead until Python fixes GIL
+2016-06-01 15:19:48	ℹ	#Chattle(3): [+nt]
+2016-06-01 15:19:48	ℹ	#TheLab(2): [+nt]
+2016-06-01 15:19:48	ℹ	#chuggle(2): [+nt]
+2016-06-01 15:19:48	ℹ	#Characters(3): [+nt]
+2016-06-01 15:19:48	ℹ	#maidlab(1): [+nt]
+2016-06-01 15:19:48	ℹ	#ElectroCode-Appeals(3): [+nt]
+2016-06-01 15:19:48	ℹ	#chatspike(71): [+CJKSfjnt 5 8:6 8:6] Welcome to ChatSpike (fixed!) | RULES: http://is.gd/3Jzhv | STC: 15 | FACEBOOK: http://facebook.com/ChatSpike | Song of the last decade: http://tinyurl.com/cwerrp8
+2016-06-01 15:19:48	ℹ	#kyndlr(2): [+nt]
+2016-06-01 15:19:48	ℹ	#elderscrolls(22): [+Jfnt 30 6:2] *Official Unofficial Elder Scrolls Chat!*|| NO SPOILERS or whaling please!||For ALL game help and spoiler talk type /join #ESHELP or #UESPwiki ||No Warez or Piracy or Snow Whaling||Behave or be Banned||  Congrats on graduating Slyvos!!!!!
+2016-06-01 15:19:48	ℹ	#loranna_RP(2): [+nt]
+2016-06-01 15:19:48	ℹ	#Inspigen-Ops(1): [+nt]
+2016-06-01 15:19:48	ℹ	#c(1): [+nt]
+2016-06-01 15:19:48	ℹ	#air(1): [+nt]
+2016-06-01 15:19:48	ℹ	#cah(1): [+nt]
+2016-06-01 15:19:48	ℹ	#anime-faith(2): [+nt]
+2016-06-01 15:19:48	ℹ	#f(1): [+nt]
+2016-06-01 15:19:48	ℹ	#tomaw(1): [+nt]
+2016-06-01 15:19:48	ℹ	#darkgalaxy(1): [+nt] Welcome to DarkGalaxy  || Nv Gnn Gv Y P. Nv Gnn Lt Y Dwn.
+2016-06-01 15:19:48	ℹ	#CastleChortles(3): [+nt] This is still the Topic.
+2016-06-01 15:19:48	ℹ	#ircdgen.ops(2): [+nt]
+2016-06-01 15:19:48	ℹ	#lindaa(4): [+nt] please come and chat with us :)
+2016-06-01 15:19:48	ℹ	#Finance(2): [+nt] Welcome to #Finance! Need help with investments? Ask here! | Use this link for 6 months free at Betterment: https://www.betterment.com/invite/shawnsmith4 | A list of various referral links can be found here: https://goo.gl/4PEUxd | Visit irc.darkscience.net:6697 #Finance for the main channel
+2016-06-01 15:19:48	ℹ	#weetest(1): [+nt]
+2016-06-01 15:19:48	ℹ	#intelligentdestruction(1): [+nt] || Welcome to #intelligentdestruction ||
+2016-06-01 15:19:48	ℹ	#Zyferus(2): [+nt] "Something, Something, Something, Dark Side" Friends are welcome.
+2016-06-01 15:19:48	ℹ	#ElectroCode(3): [+nt]
+2016-06-01 15:19:48	ℹ	#inspircd(122): [+CJfjnt 10 6:3 8:6] GIT: https://github.com/inspircd | RELEASE: 2.0.21 | WIKI: http://wiki.inspircd.org | DOWNLOADS: https://github.com/inspircd/inspircd/releases | DEVELOPMENT: #inspircd.dev
+2016-06-01 15:19:48	ℹ	#sota(1): [+nt]
+2016-06-01 15:19:48	ℹ	#groping(3): [+nt] [ Our motto - Be Unreasonable (Deftly) ] [ Rinsaikeru - Can't stay long at them somebody ] [ http://i.imgur.com/68BOCn5.jpg ] [ Word: basileiolatry ]
+2016-06-01 15:19:48	ℹ	#nochicktrix(6): [+nt] < stancakes> let's all kill ourselves | < _stink_> i did that last monday. maybe today, we should kill each other.
+2016-06-01 15:19:48	ℹ	#inspired(1): [+nt]
+2016-06-01 15:19:48	ℹ	#shotn(4): [+nt] Welcome to the Skyrim: Home of the Nords IRC Channel! | Visit us at http://project-tamriel.com/viewforum.php?f=20 |
+2016-06-01 15:19:48	ℹ	#cosmology(1): [+nt]
+2016-06-01 15:19:48	ℹ	#ProjectCosmos(2): [+nt] Current Agenda: Make Story Plot, Music, character sprites. | we need one of the areas to litterally be inside a computer at this rate.
+2016-06-01 15:19:48	ℹ	*(5)
+2016-06-01 15:19:48	ℹ	#brainfail(1): [+nt]
+2016-06-01 15:19:48	ℹ	#idlerpg(5): [+nt]
+2016-06-01 15:19:48	ℹ	#vickdale_RP(2): [+nt]
+2016-06-01 15:19:48	ℹ	#do-kyu-say(2): [+nt] backup channel i hope its still mine :P
+2016-06-01 15:19:48	ℹ	#derpfish(7): [+Fcfjnt 8:6 8:6 8:6] Welcome to #derpfish, where interesting things sometimes get talked about, and the points don't matter! | This channel has gone [[INF]] days without a pigeon kicking incident. We would "never" kick anyone.
+2016-06-01 15:19:48	ℹ	#slaughteredsaints(4): [+nt] herp.  || ffxiv server: Odin || gw2: Blackgate || mumbles: ask peri :D
+2016-06-01 15:19:48	ℹ	#Bar-En-Dandwedh(5): [+nt]
+2016-06-01 15:19:48	ℹ	#botnix(4): [+nt] http://www.botnix.org -- Got botnix? || svn co https://brainbox.cc/repository/trunk/botnix/ || Botnix wiki fixed, and FORUMS NOW OPEN! http://botnix.org/forums/
+2016-06-01 15:19:48	ℹ	#survivors(2): [+nt] Where we survived #survivors.
+2016-06-01 15:19:48	ℹ	#fruitloops(2): [+int]
+2016-06-01 15:19:48	ℹ	#boardgames(1): [+nt] Board, card, dice, and other tabletop game discussion!
+2016-06-01 15:19:48	ℹ	#AceCoding(2): [+ACTnt] 🂱🂡🃁🃑 | Keeping coding Ace since 2015 | This channel is some kind of a joke/placeholder as #coding is too sexual | ChatSpike doesn't have exttargets :( | 🂱🂡🃁🃑
+2016-06-01 15:19:48	ℹ	#eshelp(5): [+nt] Welcome to #ESHelp, The #elderscrolls help and spoiler channel||Quest walkthroughs: http://www.uesp.net/ ||If no one answers type /join #elderscrolls and ask for game help, sometimes we don't notice in here|CS Help http://cs.elderscrolls.com || Arkngthand.
+2016-06-01 15:19:48	ℹ	#inspired.dev(1): [+nt]
+2016-06-01 15:19:48	ℹ	#eternalstorm(2): [+nt] Welcome to the home of the Eternal Storm || The game which has gone through 3 redesigns, 5 recodes and i STILL didn't like it :p || Project Suspended Indefinitely
+2016-06-01 15:19:48	ℹ	#logcabin(2): [+nt] Kids can be a pain in the ass, specially when you think they are sleep, and then sat outside it listening to you go at it ;)
+2016-06-01 15:19:48	ℹ	#trivia(4): [+Cjlmnt 8:6 9] Welcome to #trivia!!!  | [Scores/Stats]: http://trivia.chatspike.net/ | [Feature Requests]: http://trivia.chatspike.net/forums/ | It's not winning that matters, it's taking part. *wink* | BRING YOUR FRIENDS AND YOUR ENEMIES and your puppies! | If trivia is down, BUG BRAIN
+2016-06-01 15:19:48	ℹ	#coding(48): [+Jfjnt 5 10:5 2:5] I am w00t, deleter of worlds. | /topic curl -F file=@/path/to/file https://upl.io | w00tle's blog: http://blog.rburchell.com
+2016-06-01 15:19:48	ℹ	#Anime-Empire(3): [+Cnt] [ www.anime-empire.net ] -[ !list ]- BT -[ http://a.scarywater.net/ae ]- | I think we've graduated..  Dead since 2009
+2016-06-01 15:19:48	ℹ	#defender(3): [+fjnt 5:6 5:6] Website http://key2peace.github.com/defender/ | Download https://github.com/key2peace/defender/tarball/master | Git git clone git://github.com/key2peace/defender.git | InspIRCD 1.2 users -> use git version | Flood module currently doesn't work with InspIRCd. TH is working on it.
+2016-06-01 15:19:49	ℹ	#licca-fansubs(7): [+nt] Welcome to Licca Fansubs! Released: Lucy-May 3 (L 489,490,491), Anne Frank (P 657,658,659), Annette 48 (L 331,332,333), Little Women II 40 (L 346,347,348), Buurin 7 (P 950,951,952), MMPPP Pure 24 (P 974,975,976), Eriko 10BD (P 983,984,985) 25BD (P 980,981,982)
+2016-06-01 15:19:49	ℹ	#struct(2): [+nt]
+2016-06-01 15:19:49	ℹ	#c++(1): [+nt]
+2016-06-01 15:19:49	ℹ	#lgs(2): [+nt] Completely unofficial Looking Glass Studios memorial chat.
+2016-06-01 15:19:49	ℹ	#cyrodiil(4): [+nt] Welcome to the Province: Cyrodiil IRC channel! | Come visit us at http://project-tamriel.com/viewforum.php?f=5 |
+2016-06-01 15:19:49	ℹ	#til(2): [+nt] The Imperial Library | http://www.imperial-library.info
+2016-06-01 15:19:49	ℹ	#IndependentX(4): [+nt] Fawful is starting his massive project and Blazing is finishing his. Also, Maxim is in between | Progress on crumble Cliffs: https://www.youtube.com/watch?v=WpfU0xF3UwU
+2016-06-01 15:19:49	ℹ	#blackjack(3): [+nt] Welcome to #blackjack! | Commands: @deal, @hit, @stand (@double, @split and more to come when I feel like it)
+2016-06-01 15:19:49	ℹ	#lgbt(4): [+Rcnt] Welcome to #lgbt | Remember the three R's: R #1, R #2, and R #3 | Harassment = Banned. No exceptions.
+2016-06-01 15:19:49	ℹ	#peregrine3(1): [+nt]
+2016-06-01 15:19:49	ℹ	#irc-standard(1): [+nt]
+2016-06-01 15:19:49	ℹ	#ircdgen.dev(2): [+nt]
+2016-06-01 15:19:49	ℹ	#landofnas(4): [+nt] Welcome to #LandOfNas the IRC Channel for https://www.WorldOfImago.com | "Mulder, the Internet isn't good for you." | <neveza> I have transcended clicking. || http://www.theverge.com/2016/5/11/11640726/civilization-6-vi-announcement-release-date KALISTO - CIV 6!!
+2016-06-01 15:19:49	ℹ	#uespwiki(23): [+nt] Welcome to #uespwiki, the chat for www.uesp.net. | The UESPWiki – Your source for The Elder Scrolls since 1995 | Please be patient as it takes time to type a response.
+2016-06-01 15:19:49	ℹ	#parlipro(1): [+nt]
+2016-06-01 15:19:49	ℹ	#nyanya(4): [+nt] #flatline || Now I've lost it. I know I can kill. || R.I.P #nyanya 2008-2012 || Reggae plays forever now. || The OF clan ain't nothing to fuck with
+2016-06-01 15:19:49	ℹ	#Flames(4): [+nt] BURN! GO DIE IN AN AGENT! MUAHAHAHA! That being said, Welcome to #Flames! The true hell, of actually watching some weird guy like me. Of course, that last part will become more relevant once LPs become a thing. | bit.ly/1pcdYKO |
+2016-06-01 15:19:49	ℹ	#Conclave-Forum(3): [+nt] Welcome to CC's Conclave-Forum. Home of the free bans and dead silence
+2016-06-01 15:19:49	ℹ	#debate(16): [+Sfnt 5:2] [ Rules : Be Polite. Try not to swamp people. Tag links. !ops for help. ]Topic: Shhhh
+2016-06-01 15:19:49	ℹ	#wolf(2): [+nt]
+2016-06-01 15:19:49	ℹ	#orangeanime(2): [+nt] Orange Anime - The place where dreams were born, and memories were made. R.I.P 03-17-2011 | Use my nick to hilight me
+2016-06-01 15:19:49	ℹ	#hate(3): [+nt] | Welcome to #hate: The Channel where Damien Sandow is your father..
+2016-06-01 15:19:49	ℹ	#nintendo-uno(5): [+nt] http://wiki.nin10doh.com/wiki/Nintendo-Uno | http://nin10doh.com/?page=chat_unostats The person with the most Uno Points Won gets the "Uno Champion" rank! | [00:43:41] <TEC> A new game of Uno is starting in #nintendo-uno! | [04:58:20] <TEC> Hero wins!
+2016-06-01 15:19:49	ℹ	#ircdgen(2): [+nt]
+2016-06-01 15:19:49	ℹ	#ultima(1): [+nt]
+2016-06-01 15:19:49	ℹ	#bots(2): [+nt]
+2016-06-01 15:19:49	ℹ	#bounty-hunters(3): [+Cnt] Welcome to Bounty Hunters! | Current topic:  Japan was cool Nexus.
+2016-06-01 15:19:49	ℹ	#Zivoid(2): [+nt]
+2016-06-01 15:19:49	ℹ	#freebsd(2): [+CMSnt] FreeBSD -- Current version : 6.2 -- for all info see : http://www.freebsd.org/ -- for all your ports needs, see : http://www.freshports.org/ -- 2007-01-15 : 6.2 released
+2016-06-01 15:19:49	ℹ	#luigiman(2): [+nt] #luigiman || Channel with the most topic changes
+2016-06-01 15:19:49	ℹ	#test(3): [+nt] abc
+2016-06-01 15:19:49	ℹ	#nintendo(30): [+Cnt] Welcome to #nintendo | Today's Topic: The importance of replacing household disposables when you empty them
+2016-06-01 15:19:49	ℹ	#nintendp(2): [+nt]
+2016-06-01 15:19:49	ℹ	#random(3): [+nt] COME IN HERE AND TALK (we'll give you ice cream sandwiches ... tell 20 other people about #random, and you'll also get a phone call from a dead relative telling you the winning numbers on tonight's lottery,|it really works!!) | Ah ah ah, you didn't say the magic word!
+2016-06-01 15:19:49	ℹ	#nintendo-trivia(2): [+nt]
+2016-06-01 15:19:49	ℹ	#butts(2): [+nt] if(butts >= 1) lookAtButts(butts); | The only rule is that there are no rules, except when I state otherwise, then sometimes there are rules.
+2016-06-01 15:19:49	ℹ	End of channel list.
+2016-06-01 15:19:57	ℹ	Channel Users Name
+2016-06-01 15:19:57	ℹ	End of channel list.
+2016-06-02 12:52:23	ℹ	irc: connecting to server irc.inspircd.org/6667...
+2016-06-02 12:52:23	ℹ	irc: connected to irc.inspircd.org/6667 (2001:470:1c:884::2)
+2016-06-02 12:52:23	ℹ	stitch.chatspike.net: *** Looking up your hostname...
+2016-06-02 12:52:23	ℹ	stitch.chatspike.net: *** Could not resolve your hostname: Domain name not found; using your IP address (2601:89:c501:100:330b:249a:7be3:e034) instead.
+2016-06-02 12:52:24	ℹ	stitch.chatspike.net: Welcome to ChatSpike!
+2016-06-02 12:52:24	ℹ	Welcome to the ChatSpike IRC Network insidious!insidious@2601:89:c501:100:330b:249a:7be3:e034
+2016-06-02 12:52:24	ℹ	Your host is stitch.chatspike.net, running version InspIRCd-2.0
+2016-06-02 12:52:24	ℹ	This server was created 14:05:30 May 10 2015
+2016-06-02 12:52:24	ℹ	stitch.chatspike.net InspIRCd-2.0 BGHIRSWcdghikorswx ABCDFGIJKLMNOPQRSTabcefghijklmnopqrstuv FIJLabefghjkloqv
+2016-06-02 12:52:24	ℹ	AWAYLEN=200 CALLERID=g CASEMAPPING=rfc1459 CHANMODES=Ibeg,k,FJLfjl,ABCDGKMNOPQRSTcimnprstu CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcjmrs FNC INVEX=I :are supported by this server
+2016-06-02 12:52:24	ℹ	KICKLEN=255 MAP MAXBANS=60 MAXCHANNELS=20 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=ChatSpike NICKLEN=31 OVERRIDE PREFIX=(qaohv)~&@%+ REMOVE :are supported by this server
+2016-06-02 12:52:24	ℹ	SILENCE=32 SSL=38.99.188.143:6697 STARTTLS STATUSMSG=~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-06-02 12:52:24	ℹ	347AKA7DN :your unique ID
+2016-06-02 12:52:24	ℹ	stitch.chatspike.net message of the day
+2016-06-02 12:52:24	ℹ	-
+2016-06-02 12:52:24	ℹ	-               ,---.|         |    ,---.     o|
+2016-06-02 12:52:24	ℹ	-               |    |---.,---.|--- `---.,---..|__/ ,---.
+2016-06-02 12:52:24	ℹ	-               |    |   |,---||        ||   |||  \ |---'
+2016-06-02 12:52:24	ℹ	-               `---'`   '`---^`---'`---'|---'``   ``---'
+2016-06-02 12:52:24	ℹ	-              .,                        |
+2016-06-02 12:52:24	ℹ	-         BMB0ZXS;                       |
+2016-06-02 12:52:24	ℹ	-          Ma0B88B
+2016-06-02 12:52:24	ℹ	-       :r @2aZ8B2
+2016-06-02 12:52:24	ℹ	-    :M@08Za2aZ8B.
+2016-06-02 12:52:24	ℹ	-   .MaX7S22aZ8a8                                       ZMMM
+2016-06-02 12:52:24	ℹ	-   MaXX7S22aZ2XM                                      ZWSSZ@,
+2016-06-02 12:52:24	ℹ	-   WXX7X22aaS7MM                                     7MXXXXaM
+2016-06-02 12:52:24	ℹ	-  .8XXXSSaaXXWZM            i2                      MMZrXXXXW
+2016-06-02 12:52:24	ℹ	-   0XSSS2aXSM7SM         2MMM8.                    MMBXrXXXX0.
+2016-06-02 12:52:24	ℹ	-   WS2SSaS7MX;XM     MMMM8r:iS0WBBS              Z0MM8XrXXXXB
+2016-06-02 12:52:24	ℹ	-   M2SSa2;MX7i2B  aMMX  0,,,,...,:X@M0         ;BSSMZ0XrXXXXM
+2016-06-02 12:52:24	ℹ	-   i@aSS7BM;;:W  MM;:ii. 2X7r;r;;iii.8MM      S8X78M20SrXXXaM
+2016-06-02 12:52:24	ℹ	-    BM8aSMZiiXMXMS:;a0Si.0a2ZZSS2XXSrM rM    20XSa@M2827XXSM.
+2016-06-02 12:52:24	ℹ	-     WMM0M07a@M8rirM  MM 2ZZZXXX7BWaZZ:;S@  iMXS2ZMBZZ277SB2
+2016-06-02 12:52:24	ℹ	-      ,MMMMaBMMrX,MM. BM.7W@WMMMMW020X2MM0i MZ2ZaWM2ZZS72M2
+2016-06-02 12:52:24	ℹ	-        0MMMW@8X2rM@MMMMZ:08X7X2aaBM2 Z 0MW.MZZZ0MMMMM0WM
+2016-06-02 12:52:24	ℹ	-          0MMB2Sa,M0Z0@MWrMZXX22S2aWZXMrMMSMMZZ0MMM  M@
+2016-06-02 12:52:24	ℹ	-            MMWa2,7MMMMMSXMMMM8MMWZW;MM@BM,0BZWMMMM
+2016-06-02 12:52:24	ℹ	-             MMaM2.     :aXMMMX7XSMMrMM0MMrMMMMMMW
+2016-06-02 12:52:24	ℹ	-              MMrMMBMMMM8Sr;S@MB@MMX.;BMX:M@:
+2016-06-02 12:52:24	ℹ	-                Z80ZZ  :WMMW8@MB22S8@Si:8MM
+2016-06-02 12:52:24	ℹ	-                    XZZ   .:XMMZMM.rMX@MMi
+2016-06-02 12:52:24	ℹ	-                     MMM827  ;     2 X8
+2016-06-02 12:52:24	ℹ	-                    MMM@0WMMMZ:MMMMMMMM
+2016-06-02 12:52:24	ℹ	-                    MZWMMMMMMM8MMMM@B80M
+2016-06-02 12:52:24	ℹ	-                    Maa8B0MB, i ;XMMMMMMMMS
+2016-06-02 12:52:24	ℹ	-                    MZa2ZZM2     rMBi    rMM
+2016-06-02 12:52:24	ℹ	-              ;Z2. Ma;;72BMSXX 7Sa;  .:ir20M
+2016-06-02 12:52:24	ℹ	-          . aMMMMMM02r::;ZMiWMM2WMrr7XXSa88M          XS
+2016-06-02 12:52:24	ℹ	-        MMMMMMMZMMZZaS;::;MX. ;Mr@S2aZZ8008WMMMMMM: XMMMM
+2016-06-02 12:52:24	ℹ	-        MMM@MZB:rMSZZaXr;i8M:BMM0MMWWZ88a28M2X2XB8WWWM@MM8
+2016-06-02 12:52:24	ℹ	-        B2rrZZMMMMSZZa2XrrXMrX,.;ZB M2Z80MM0Sa2SMMMMZaBSBMM
+2016-06-02 12:52:24	ℹ	-      MMMrri;72S70XZZa2S7rrMBiX7BMM@MZ0MMMBX22SZMM8ZXX2XMM
+2016-06-02 12:52:24	ℹ	-      MMMWai7,XZ.MaaZa2SSX7WM;772:  ZaSMB0Z80Z8WB;;aS;iSM
+2016-06-02 12:52:24	ℹ	-         M@2X7aaZMMSSSSSXX7MMX,,:i7S8MMMWMMMMMMM@8r@r7SMM
+2016-06-02 12:52:24	ℹ	-         MMMMMMMMM@MWBS72BZBWMMMMMMMMMMMMM@8ZWMMMMMMMMMM
+2016-06-02 12:52:24	ℹ	-          rBMMMMMMBMM2MMMaMMMMMMW                 iBMMa
+2016-06-02 12:52:24	ℹ	-                   B;;   @X
+2016-06-02 12:52:24	ℹ	-           +---------------------------------------------+
+2016-06-02 12:52:24	ℹ	-           |    Welcome to the ChatSpike IRC Network!    |
+2016-06-02 12:52:24	ℹ	-           | You are connecting via stitch.chatspike.net |
+2016-06-02 12:52:24	ℹ	-           |                                             |
+2016-06-02 12:52:24	ℹ	-           |            Aloha! My name Stitch            |
+2016-06-02 12:52:24	ℹ	-        +----------------------------------------------------+
+2016-06-02 12:52:24	ℹ	-        |            N E T W O R K   S T A F F               |
+2016-06-02 12:52:24	ℹ	-        +----------------------------------------------------+
+2016-06-02 12:52:24	ℹ	-        |         http://www.chatspike.net/staff/            |
+2016-06-02 12:52:24	ℹ	-        +----------------------------------------------------+
+2016-06-02 12:52:24	ℹ	-
+2016-06-02 12:52:24	ℹ	-        +----------------------------------------------------+
+2016-06-02 12:52:24	ℹ	-        |                    R U L E S                       |
+2016-06-02 12:52:24	ℹ	-        +----------------------------------------------------+
+2016-06-02 12:52:24	ℹ	-        |  http://www.chatspike.net/cms/index.php?z=79&t=0   |
+2016-06-02 12:52:24	ℹ	-        +----------------------------------------------------+
+2016-06-02 12:52:24	ℹ	-
+2016-06-02 12:52:24	ℹ	End of message of the day.
+2016-06-02 12:52:24	ℹ	There are 5 users and 428 invisible on 5 servers
+2016-06-02 12:52:24	ℹ	16 :operator(s) online
+2016-06-02 12:52:24	ℹ	171 :channels formed
+2016-06-02 12:52:24	ℹ	I have 141 clients and 4 servers
+2016-06-02 12:52:24	ℹ	Current Local Users: 141  Max: 285
+2016-06-02 12:52:24	ℹ	Current Global Users: 433  Max: 747
+2016-06-02 12:52:24	ℹ	ChatSpikencqqvg.br12.vlav.0089.2601.IP :is now your displayed host
+2016-06-02 12:52:24	ℹ	User mode [+ixw] by insidious
+2016-06-02 12:52:24	ℹ	NickServ (NickServ@chatspike.net): Welcome to ChatSpike, insidious! Here on ChatSpike, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2016-06-02 13:45:23	ℹ	irc: connecting to server irc.inspircd.org/6667...
+2016-06-02 13:46:23	⚠	irc: timeout
+2016-06-02 13:46:23	ℹ	irc: reconnecting to server in 10 seconds
+2016-06-02 13:46:33	ℹ	irc: reconnecting to server...
+2016-06-02 13:46:33	ℹ	irc: connecting to server irc.inspircd.org/6667...
+2016-06-02 13:46:33	ℹ	irc: connected to irc.inspircd.org/6667 (38.99.188.143)
+2016-06-02 13:46:33	ℹ	stitch.chatspike.net: *** Looking up your hostname...
+2016-06-02 13:46:33	ℹ	stitch.chatspike.net: *** Found your hostname (c-69-142-165-107.hsd1.nj.comcast.net)
+2016-06-02 13:46:34	ℹ	stitch.chatspike.net: Welcome to ChatSpike!
+2016-06-02 13:46:34	ℹ	Welcome to the ChatSpike IRC Network insidious!insidious@c-69-142-165-107.hsd1.nj.comcast.net
+2016-06-02 13:46:34	ℹ	Your host is stitch.chatspike.net, running version InspIRCd-2.0
+2016-06-02 13:46:34	ℹ	This server was created 14:05:30 May 10 2015
+2016-06-02 13:46:34	ℹ	stitch.chatspike.net InspIRCd-2.0 BGHIRSWcdghikorswx ABCDFGIJKLMNOPQRSTabcefghijklmnopqrstuv FIJLabefghjkloqv
+2016-06-02 13:46:34	ℹ	AWAYLEN=200 CALLERID=g CASEMAPPING=rfc1459 CHANMODES=Ibeg,k,FJLfjl,ABCDGKMNOPQRSTcimnprstu CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcjmrs FNC INVEX=I :are supported by this server
+2016-06-02 13:46:34	ℹ	KICKLEN=255 MAP MAXBANS=60 MAXCHANNELS=20 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=ChatSpike NICKLEN=31 OVERRIDE PREFIX=(qaohv)~&@%+ REMOVE :are supported by this server
+2016-06-02 13:46:34	ℹ	SILENCE=32 SSL=38.99.188.143:6697 STARTTLS STATUSMSG=~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-06-02 13:46:34	ℹ	347AKA7FR :your unique ID
+2016-06-02 13:46:34	ℹ	stitch.chatspike.net message of the day
+2016-06-02 13:46:34	ℹ	-
+2016-06-02 13:46:34	ℹ	-               ,---.|         |    ,---.     o|
+2016-06-02 13:46:34	ℹ	-               |    |---.,---.|--- `---.,---..|__/ ,---.
+2016-06-02 13:46:34	ℹ	-               |    |   |,---||        ||   |||  \ |---'
+2016-06-02 13:46:34	ℹ	-               `---'`   '`---^`---'`---'|---'``   ``---'
+2016-06-02 13:46:34	ℹ	-              .,                        |
+2016-06-02 13:46:34	ℹ	-         BMB0ZXS;                       |
+2016-06-02 13:46:34	ℹ	-          Ma0B88B
+2016-06-02 13:46:34	ℹ	-       :r @2aZ8B2
+2016-06-02 13:46:34	ℹ	-    :M@08Za2aZ8B.
+2016-06-02 13:46:34	ℹ	-   .MaX7S22aZ8a8                                       ZMMM
+2016-06-02 13:46:34	ℹ	-   MaXX7S22aZ2XM                                      ZWSSZ@,
+2016-06-02 13:46:34	ℹ	-   WXX7X22aaS7MM                                     7MXXXXaM
+2016-06-02 13:46:34	ℹ	-  .8XXXSSaaXXWZM            i2                      MMZrXXXXW
+2016-06-02 13:46:34	ℹ	-   0XSSS2aXSM7SM         2MMM8.                    MMBXrXXXX0.
+2016-06-02 13:46:34	ℹ	-   WS2SSaS7MX;XM     MMMM8r:iS0WBBS              Z0MM8XrXXXXB
+2016-06-02 13:46:34	ℹ	-   M2SSa2;MX7i2B  aMMX  0,,,,...,:X@M0         ;BSSMZ0XrXXXXM
+2016-06-02 13:46:34	ℹ	-   i@aSS7BM;;:W  MM;:ii. 2X7r;r;;iii.8MM      S8X78M20SrXXXaM
+2016-06-02 13:46:34	ℹ	-    BM8aSMZiiXMXMS:;a0Si.0a2ZZSS2XXSrM rM    20XSa@M2827XXSM.
+2016-06-02 13:46:34	ℹ	-     WMM0M07a@M8rirM  MM 2ZZZXXX7BWaZZ:;S@  iMXS2ZMBZZ277SB2
+2016-06-02 13:46:34	ℹ	-      ,MMMMaBMMrX,MM. BM.7W@WMMMMW020X2MM0i MZ2ZaWM2ZZS72M2
+2016-06-02 13:46:34	ℹ	-        0MMMW@8X2rM@MMMMZ:08X7X2aaBM2 Z 0MW.MZZZ0MMMMM0WM
+2016-06-02 13:46:34	ℹ	-          0MMB2Sa,M0Z0@MWrMZXX22S2aWZXMrMMSMMZZ0MMM  M@
+2016-06-02 13:46:34	ℹ	-            MMWa2,7MMMMMSXMMMM8MMWZW;MM@BM,0BZWMMMM
+2016-06-02 13:46:34	ℹ	-             MMaM2.     :aXMMMX7XSMMrMM0MMrMMMMMMW
+2016-06-02 13:46:34	ℹ	-              MMrMMBMMMM8Sr;S@MB@MMX.;BMX:M@:
+2016-06-02 13:46:34	ℹ	-                Z80ZZ  :WMMW8@MB22S8@Si:8MM
+2016-06-02 13:46:34	ℹ	-                    XZZ   .:XMMZMM.rMX@MMi
+2016-06-02 13:46:34	ℹ	-                     MMM827  ;     2 X8
+2016-06-02 13:46:34	ℹ	-                    MMM@0WMMMZ:MMMMMMMM
+2016-06-02 13:46:34	ℹ	-                    MZWMMMMMMM8MMMM@B80M
+2016-06-02 13:46:34	ℹ	-                    Maa8B0MB, i ;XMMMMMMMMS
+2016-06-02 13:46:34	ℹ	-                    MZa2ZZM2     rMBi    rMM
+2016-06-02 13:46:34	ℹ	-              ;Z2. Ma;;72BMSXX 7Sa;  .:ir20M
+2016-06-02 13:46:34	ℹ	-          . aMMMMMM02r::;ZMiWMM2WMrr7XXSa88M          XS
+2016-06-02 13:46:34	ℹ	-        MMMMMMMZMMZZaS;::;MX. ;Mr@S2aZZ8008WMMMMMM: XMMMM
+2016-06-02 13:46:34	ℹ	-        MMM@MZB:rMSZZaXr;i8M:BMM0MMWWZ88a28M2X2XB8WWWM@MM8
+2016-06-02 13:46:34	ℹ	-        B2rrZZMMMMSZZa2XrrXMrX,.;ZB M2Z80MM0Sa2SMMMMZaBSBMM
+2016-06-02 13:46:34	ℹ	-      MMMrri;72S70XZZa2S7rrMBiX7BMM@MZ0MMMBX22SZMM8ZXX2XMM
+2016-06-02 13:46:34	ℹ	-      MMMWai7,XZ.MaaZa2SSX7WM;772:  ZaSMB0Z80Z8WB;;aS;iSM
+2016-06-02 13:46:34	ℹ	-         M@2X7aaZMMSSSSSXX7MMX,,:i7S8MMMWMMMMMMM@8r@r7SMM
+2016-06-02 13:46:34	ℹ	-         MMMMMMMMM@MWBS72BZBWMMMMMMMMMMMMM@8ZWMMMMMMMMMM
+2016-06-02 13:46:34	ℹ	-          rBMMMMMMBMM2MMMaMMMMMMW                 iBMMa
+2016-06-02 13:46:34	ℹ	-                   B;;   @X
+2016-06-02 13:46:34	ℹ	-           +---------------------------------------------+
+2016-06-02 13:46:34	ℹ	-           |    Welcome to the ChatSpike IRC Network!    |
+2016-06-02 13:46:34	ℹ	-           | You are connecting via stitch.chatspike.net |
+2016-06-02 13:46:34	ℹ	-           |                                             |
+2016-06-02 13:46:34	ℹ	-           |            Aloha! My name Stitch            |
+2016-06-02 13:46:34	ℹ	-        +----------------------------------------------------+
+2016-06-02 13:46:34	ℹ	-        |            N E T W O R K   S T A F F               |
+2016-06-02 13:46:34	ℹ	-        +----------------------------------------------------+
+2016-06-02 13:46:34	ℹ	-        |         http://www.chatspike.net/staff/            |
+2016-06-02 13:46:34	ℹ	-        +----------------------------------------------------+
+2016-06-02 13:46:34	ℹ	-
+2016-06-02 13:46:34	ℹ	-        +----------------------------------------------------+
+2016-06-02 13:46:34	ℹ	-        |                    R U L E S                       |
+2016-06-02 13:46:34	ℹ	-        +----------------------------------------------------+
+2016-06-02 13:46:34	ℹ	-        |  http://www.chatspike.net/cms/index.php?z=79&t=0   |
+2016-06-02 13:46:34	ℹ	-        +----------------------------------------------------+
+2016-06-02 13:46:34	ℹ	-
+2016-06-02 13:46:34	ℹ	End of message of the day.
+2016-06-02 13:46:34	ℹ	There are 5 users and 426 invisible on 5 servers
+2016-06-02 13:46:34	ℹ	16 :operator(s) online
+2016-06-02 13:46:34	ℹ	175 :channels formed
+2016-06-02 13:46:34	ℹ	I have 144 clients and 4 servers
+2016-06-02 13:46:34	ℹ	Current Local Users: 144  Max: 285
+2016-06-02 13:46:34	ℹ	Current Global Users: 431  Max: 747
+2016-06-02 13:46:34	ℹ	ChatSpikeqr2ej1.nj.comcast.net :is now your displayed host
+2016-06-02 13:46:34	ℹ	User mode [+ixw] by insidious
+2016-06-02 13:46:34	ℹ	NickServ (NickServ@chatspike.net): Welcome to ChatSpike, insidious! Here on ChatSpike, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2016-06-02 14:12:14	ℹ	irc: connecting to server irc.inspircd.org/6667...
+2016-06-02 14:12:14	ℹ	irc: connected to irc.inspircd.org/6667 (2a03:b0c0:1:d0::186:f001)
+2016-06-02 14:12:15	ℹ	zoidberg.chatspike.net: *** Looking up your hostname...
+2016-06-02 14:12:15	ℹ	zoidberg.chatspike.net: *** Could not resolve your hostname: Domain name not found; using your IP address (2601:89:c501:100:330b:249a:7be3:e034) instead.
+2016-06-02 14:12:16	ℹ	zoidberg.chatspike.net: Welcome to ChatSpike!
+2016-06-02 14:12:16	ℹ	Welcome to the ChatSpike IRC Network insidious!insidious@2601:89:c501:100:330b:249a:7be3:e034
+2016-06-02 14:12:16	ℹ	Your host is zoidberg.chatspike.net, running version InspIRCd-2.0
+2016-06-02 14:12:16	ℹ	This server was created 13:17:02 May 10 2015
+2016-06-02 14:12:16	ℹ	zoidberg.chatspike.net InspIRCd-2.0 BGHIRSWcdghikorswx ABCDFGIJKLMNOPQRSTabcefghijklmnopqrstuv FIJLabefghjkloqv
+2016-06-02 14:12:16	ℹ	AWAYLEN=200 CALLERID=g CASEMAPPING=rfc1459 CHANMODES=Ibeg,k,FJLfjl,ABCDGKMNOPQRSTcimnprstu CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcjmrs FNC INVEX=I :are supported by this server
+2016-06-02 14:12:16	ℹ	KICKLEN=255 MAP MAXBANS=60 MAXCHANNELS=20 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=ChatSpike NICKLEN=31 OVERRIDE PREFIX=(qaohv)~&@%+ REMOVE :are supported by this server
+2016-06-02 14:12:16	ℹ	SILENCE=32 SSL=178.62.119.156:6697 STARTTLS STATUSMSG=~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-06-02 14:12:16	ℹ	598ABHBY2 :your unique ID
+2016-06-02 14:12:16	ℹ	zoidberg.chatspike.net message of the day
+2016-06-02 14:12:16	ℹ	-               ,---.|         |    ,---.     o|
+2016-06-02 14:12:16	ℹ	-               |    |---.,---.|--- `---.,---..|__/ ,---.
+2016-06-02 14:12:16	ℹ	-               |    |   |,---||        ||   |||  \ |---'
+2016-06-02 14:12:16	ℹ	-               `---'`   '`---^`---'`---'|---'``   ``---'
+2016-06-02 14:12:16	ℹ	-                                        |
+2016-06-02 14:12:16	ℹ	-
+2016-06-02 14:12:16	ℹ	-                        .ZBMMMMMMMMMMM0;|
+2016-06-02 14:12:16	ℹ	-                      MMWaSX7r;;rrrr7720MMi
+2016-06-02 14:12:16	ℹ	-                    rM2XXXXXXXXXXXSSXXXXXXWMZ
+2016-06-02 14:12:16	ℹ	-                    M77XXXXXXXXX7XX7XXXXXXXX8Ma
+2016-06-02 14:12:16	ℹ	-                   iM7XXXXXXXXXXXXXXSXX7XXXXXXBM
+2016-06-02 14:12:16	ℹ	-                   a@r7XXXXXX7XXXXXX7X7XXXXXXXXXMr
+2016-06-02 14:12:16	ℹ	-                   ;MrSS7XXX7XXXXZ0MM0a2XXXX7X8MMMM,
+2016-06-02 14:12:16	ℹ	-                    MX77XXXXXXXZMZ    8Ma7XXaMX    :8;
+2016-06-02 14:12:16	ℹ	-                    0Z7X2XXXXrS@        MS7rM        a;
+2016-06-02 14:12:16	ℹ	-                     MXr7XXX77@          MrrM         W
+2016-06-02 14:12:16	ℹ	-                     aMXXXXXXXBi     MM ,Brr@    ;MZ S;
+2016-06-02 14:12:16	ℹ	-                      W07XXXXXSM        @XX7aMS     2i
+2016-06-02 14:12:16	ℹ	-                       MX7SSX772BM0S2aM8SXX7XX8@MMM8
+2016-06-02 14:12:16	ℹ	-                        M77XXXX7XS2aZ2SXXXXXS7Xr0@M.
+2016-06-02 14:12:16	ℹ	-                        B27XXXXXXSXSX7XXXXXXXXX7;ia0:
+2016-06-02 14:12:16	ℹ	-                         MrSXXXX7777X7X7XXXXXX77X77SWM
+2016-06-02 14:12:16	ℹ	-                         M7XXXXXXSXXrSrXX7XrXrS7XXr772M
+2016-06-02 14:12:16	ℹ	-                         8a7XX7SXXXXiM;XX:MiXrM2rXSWr72M
+2016-06-02 14:12:16	ℹ	-                         2ZX7SXXXXXX:M:7X:M:S7SZr77@iXrM
+2016-06-02 14:12:16	ℹ	-                         X7XXXXXXXXX:M;r7:Mi7;aa7XiMirrM
+2016-06-02 14:12:16	ℹ	-                      SMMM.;XXXSSX7Xr2W:r M.i.Mi;riMX8M0
+2016-06-02 14:12:16	ℹ	-                  :MMMMMMM@ rXXX7XXX7;8M@WMWWM@Z, ;  :.
+2016-06-02 14:12:16	ℹ	-               .WMBZMMB00@MZ.7XXXXXXXX;iii:;;i.aMMMM:
+2016-06-02 14:12:16	ℹ	-             WMMS7i.rMBWBBWMi:XXXXX7XXXXX7X7XXr;MW@MMMM:
+2016-06-02 14:12:16	ℹ	-          SMMS77XXSX MMB@MMMMirXXXXXXX7XXXX7SX7,MMMMMMSBM
+2016-06-02 14:12:16	ℹ	-        WM87XXX7XX7X:rMMMMBXiMX;XXXXXXXXXXXXX7X:0     M:SM8
+2016-06-02 14:12:16	ℹ	-      MMaX7X7XXXXXX77.Z     .,Mr7XXXXXXXXXXXXXXiM,;rr.aZ;7BM
+2016-06-02 14:12:16	ℹ	-    @MS7rXXXXXXXXSSSXiM irrr;,;M;rXXXXXXXXXXXXXi@:ir7; MiX7aM
+2016-06-02 14:12:16	ℹ	-   M2XXXXXXXXXXXXX77X:M:777rrr:7M7r77XXXXXXXXXX;Mirrrr.M7rXXSB
+2016-06-02 14:12:16	ℹ	-  B277XXXXXXXXXXXXXXXiM;ii,,     S,i777XXX7XXX;.2       8iXX7r
+2016-06-02 14:12:16	ℹ	-  rXXXX7XXXXXXX7XXXSX;Z.  .:SZW@MWMr :r7XXX7;. MMMMMMMMMM.XXSX
+2016-06-02 14:12:16	ℹ	-  XXXXXXXXXXXXXXXXX7Xr7MMMMMMMMMMMMMM2.     .ZMM@MWW@@MMM 7XXX
+2016-06-02 14:12:16	ℹ	-  XXX77XXXXXXX7XXXXXXi;MBBW@WBWBBBBWMMMMMMMMMM@0B0B@BBBBM ,7XX
+2016-06-02 14:12:16	ℹ	-  7XX7XXXXXXXXXXXXXX7;BMBBB0BBBBBBBB0BBBW@@WB0BBBBW00WBB@MBrXX
+2016-06-02 14:12:16	ℹ	-           +-----------------------------------------------+
+2016-06-02 14:12:16	ℹ	-           |     Welcome to the ChatSpike IRC Network!     |
+2016-06-02 14:12:16	ℹ	-           | You are connecting via zoidberg.chatspike.net |
+2016-06-02 14:12:16	ℹ	-           |                                               |
+2016-06-02 14:12:16	ℹ	-           |    My slinky! my lovely cuddly pet slinky!    |
+2016-06-02 14:12:16	ℹ	-        +--+-----------------------------------------------+-+
+2016-06-02 14:12:16	ℹ	-        |            N E T W O R K   S T A F F               |
+2016-06-02 14:12:16	ℹ	-        +----------------------------------------------------+
+2016-06-02 14:12:16	ℹ	-        |         http://www.chatspike.net/staff/            |
+2016-06-02 14:12:16	ℹ	-        +----------------------------------------------------+
+2016-06-02 14:12:16	ℹ	-
+2016-06-02 14:12:16	ℹ	-        +----------------------------------------------------+
+2016-06-02 14:12:16	ℹ	-        |                    R U L E S                       |
+2016-06-02 14:12:16	ℹ	-        +----------------------------------------------------+
+2016-06-02 14:12:16	ℹ	-        |  http://www.chatspike.net/cms/index.php?z=79&t=2   |
+2016-06-02 14:12:16	ℹ	-        +----------------------------------------------------+
+2016-06-02 14:12:16	ℹ	-
+2016-06-02 14:12:16	ℹ	End of message of the day.
+2016-06-02 14:12:16	ℹ	There are 5 users and 422 invisible on 5 servers
+2016-06-02 14:12:16	ℹ	16 :operator(s) online
+2016-06-02 14:12:16	ℹ	175 :channels formed
+2016-06-02 14:12:16	ℹ	I have 122 clients and 1 servers
+2016-06-02 14:12:16	ℹ	Current Local Users: 122  Max: 520
+2016-06-02 14:12:16	ℹ	Current Global Users: 427  Max: 747
+2016-06-02 14:12:16	ℹ	ChatSpikencqqvg.br12.vlav.0089.2601.IP :is now your displayed host
+2016-06-02 14:12:16	ℹ	User mode [+ixw] by insidious
+2016-06-02 14:12:16	ℹ	NickServ (NickServ@chatspike.net): Welcome to ChatSpike, insidious! Here on ChatSpike, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2016-06-02 15:25:28	ℹ	irc: connecting to server irc.inspircd.org/6667...
+2016-06-02 15:25:28	ℹ	irc: connected to irc.inspircd.org/6667 (2001:470:1c:884::2)
+2016-06-02 15:25:28	ℹ	stitch.chatspike.net: *** Looking up your hostname...
+2016-06-02 15:25:29	ℹ	stitch.chatspike.net: *** Could not resolve your hostname: Domain name not found; using your IP address (2601:89:c501:100:330b:249a:7be3:e034) instead.
+2016-06-02 15:25:29	ℹ	stitch.chatspike.net: Welcome to ChatSpike!
+2016-06-02 15:25:29	ℹ	Welcome to the ChatSpike IRC Network insidious!insidious@2601:89:c501:100:330b:249a:7be3:e034
+2016-06-02 15:25:29	ℹ	Your host is stitch.chatspike.net, running version InspIRCd-2.0
+2016-06-02 15:25:29	ℹ	This server was created 14:05:30 May 10 2015
+2016-06-02 15:25:29	ℹ	stitch.chatspike.net InspIRCd-2.0 BGHIRSWcdghikorswx ABCDFGIJKLMNOPQRSTabcefghijklmnopqrstuv FIJLabefghjkloqv
+2016-06-02 15:25:29	ℹ	AWAYLEN=200 CALLERID=g CASEMAPPING=rfc1459 CHANMODES=Ibeg,k,FJLfjl,ABCDGKMNOPQRSTcimnprstu CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcjmrs FNC INVEX=I :are supported by this server
+2016-06-02 15:25:29	ℹ	KICKLEN=255 MAP MAXBANS=60 MAXCHANNELS=20 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=ChatSpike NICKLEN=31 OVERRIDE PREFIX=(qaohv)~&@%+ REMOVE :are supported by this server
+2016-06-02 15:25:29	ℹ	SILENCE=32 SSL=38.99.188.143:6697 STARTTLS STATUSMSG=~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-06-02 15:25:29	ℹ	347AKA7I6 :your unique ID
+2016-06-02 15:25:29	ℹ	stitch.chatspike.net message of the day
+2016-06-02 15:25:29	ℹ	-
+2016-06-02 15:25:29	ℹ	-               ,---.|         |    ,---.     o|
+2016-06-02 15:25:29	ℹ	-               |    |---.,---.|--- `---.,---..|__/ ,---.
+2016-06-02 15:25:29	ℹ	-               |    |   |,---||        ||   |||  \ |---'
+2016-06-02 15:25:29	ℹ	-               `---'`   '`---^`---'`---'|---'``   ``---'
+2016-06-02 15:25:29	ℹ	-              .,                        |
+2016-06-02 15:25:29	ℹ	-         BMB0ZXS;                       |
+2016-06-02 15:25:29	ℹ	-          Ma0B88B
+2016-06-02 15:25:29	ℹ	-       :r @2aZ8B2
+2016-06-02 15:25:29	ℹ	-    :M@08Za2aZ8B.
+2016-06-02 15:25:29	ℹ	-   .MaX7S22aZ8a8                                       ZMMM
+2016-06-02 15:25:29	ℹ	-   MaXX7S22aZ2XM                                      ZWSSZ@,
+2016-06-02 15:25:29	ℹ	-   WXX7X22aaS7MM                                     7MXXXXaM
+2016-06-02 15:25:29	ℹ	-  .8XXXSSaaXXWZM            i2                      MMZrXXXXW
+2016-06-02 15:25:29	ℹ	-   0XSSS2aXSM7SM         2MMM8.                    MMBXrXXXX0.
+2016-06-02 15:25:29	ℹ	-   WS2SSaS7MX;XM     MMMM8r:iS0WBBS              Z0MM8XrXXXXB
+2016-06-02 15:25:29	ℹ	-   M2SSa2;MX7i2B  aMMX  0,,,,...,:X@M0         ;BSSMZ0XrXXXXM
+2016-06-02 15:25:29	ℹ	-   i@aSS7BM;;:W  MM;:ii. 2X7r;r;;iii.8MM      S8X78M20SrXXXaM
+2016-06-02 15:25:29	ℹ	-    BM8aSMZiiXMXMS:;a0Si.0a2ZZSS2XXSrM rM    20XSa@M2827XXSM.
+2016-06-02 15:25:29	ℹ	-     WMM0M07a@M8rirM  MM 2ZZZXXX7BWaZZ:;S@  iMXS2ZMBZZ277SB2
+2016-06-02 15:25:29	ℹ	-      ,MMMMaBMMrX,MM. BM.7W@WMMMMW020X2MM0i MZ2ZaWM2ZZS72M2
+2016-06-02 15:25:29	ℹ	-        0MMMW@8X2rM@MMMMZ:08X7X2aaBM2 Z 0MW.MZZZ0MMMMM0WM
+2016-06-02 15:25:29	ℹ	-          0MMB2Sa,M0Z0@MWrMZXX22S2aWZXMrMMSMMZZ0MMM  M@
+2016-06-02 15:25:29	ℹ	-            MMWa2,7MMMMMSXMMMM8MMWZW;MM@BM,0BZWMMMM
+2016-06-02 15:25:29	ℹ	-             MMaM2.     :aXMMMX7XSMMrMM0MMrMMMMMMW
+2016-06-02 15:25:29	ℹ	-              MMrMMBMMMM8Sr;S@MB@MMX.;BMX:M@:
+2016-06-02 15:25:29	ℹ	-                Z80ZZ  :WMMW8@MB22S8@Si:8MM
+2016-06-02 15:25:29	ℹ	-                    XZZ   .:XMMZMM.rMX@MMi
+2016-06-02 15:25:29	ℹ	-                     MMM827  ;     2 X8
+2016-06-02 15:25:29	ℹ	-                    MMM@0WMMMZ:MMMMMMMM
+2016-06-02 15:25:29	ℹ	-                    MZWMMMMMMM8MMMM@B80M
+2016-06-02 15:25:29	ℹ	-                    Maa8B0MB, i ;XMMMMMMMMS
+2016-06-02 15:25:29	ℹ	-                    MZa2ZZM2     rMBi    rMM
+2016-06-02 15:25:29	ℹ	-              ;Z2. Ma;;72BMSXX 7Sa;  .:ir20M
+2016-06-02 15:25:29	ℹ	-          . aMMMMMM02r::;ZMiWMM2WMrr7XXSa88M          XS
+2016-06-02 15:25:29	ℹ	-        MMMMMMMZMMZZaS;::;MX. ;Mr@S2aZZ8008WMMMMMM: XMMMM
+2016-06-02 15:25:29	ℹ	-        MMM@MZB:rMSZZaXr;i8M:BMM0MMWWZ88a28M2X2XB8WWWM@MM8
+2016-06-02 15:25:29	ℹ	-        B2rrZZMMMMSZZa2XrrXMrX,.;ZB M2Z80MM0Sa2SMMMMZaBSBMM
+2016-06-02 15:25:29	ℹ	-      MMMrri;72S70XZZa2S7rrMBiX7BMM@MZ0MMMBX22SZMM8ZXX2XMM
+2016-06-02 15:25:29	ℹ	-      MMMWai7,XZ.MaaZa2SSX7WM;772:  ZaSMB0Z80Z8WB;;aS;iSM
+2016-06-02 15:25:29	ℹ	-         M@2X7aaZMMSSSSSXX7MMX,,:i7S8MMMWMMMMMMM@8r@r7SMM
+2016-06-02 15:25:29	ℹ	-         MMMMMMMMM@MWBS72BZBWMMMMMMMMMMMMM@8ZWMMMMMMMMMM
+2016-06-02 15:25:29	ℹ	-          rBMMMMMMBMM2MMMaMMMMMMW                 iBMMa
+2016-06-02 15:25:29	ℹ	-                   B;;   @X
+2016-06-02 15:25:29	ℹ	-           +---------------------------------------------+
+2016-06-02 15:25:29	ℹ	-           |    Welcome to the ChatSpike IRC Network!    |
+2016-06-02 15:25:29	ℹ	-           | You are connecting via stitch.chatspike.net |
+2016-06-02 15:25:29	ℹ	-           |                                             |
+2016-06-02 15:25:29	ℹ	-           |            Aloha! My name Stitch            |
+2016-06-02 15:25:29	ℹ	-        +----------------------------------------------------+
+2016-06-02 15:25:29	ℹ	-        |            N E T W O R K   S T A F F               |
+2016-06-02 15:25:29	ℹ	-        +----------------------------------------------------+
+2016-06-02 15:25:29	ℹ	-        |         http://www.chatspike.net/staff/            |
+2016-06-02 15:25:29	ℹ	-        +----------------------------------------------------+
+2016-06-02 15:25:29	ℹ	-
+2016-06-02 15:25:29	ℹ	-        +----------------------------------------------------+
+2016-06-02 15:25:29	ℹ	-        |                    R U L E S                       |
+2016-06-02 15:25:29	ℹ	-        +----------------------------------------------------+
+2016-06-02 15:25:29	ℹ	-        |  http://www.chatspike.net/cms/index.php?z=79&t=0   |
+2016-06-02 15:25:29	ℹ	-        +----------------------------------------------------+
+2016-06-02 15:25:29	ℹ	-
+2016-06-02 15:25:29	ℹ	End of message of the day.
+2016-06-02 15:25:29	ℹ	There are 5 users and 422 invisible on 5 servers
+2016-06-02 15:25:29	ℹ	16 :operator(s) online
+2016-06-02 15:25:29	ℹ	177 :channels formed
+2016-06-02 15:25:29	ℹ	I have 144 clients and 4 servers
+2016-06-02 15:25:29	ℹ	Current Local Users: 144  Max: 285
+2016-06-02 15:25:29	ℹ	Current Global Users: 427  Max: 747
+2016-06-02 15:25:29	ℹ	ChatSpikencqqvg.br12.vlav.0089.2601.IP :is now your displayed host
+2016-06-02 15:25:29	ℹ	User mode [+ixw] by insidious
+2016-06-02 15:25:29	ℹ	NickServ (NickServ@chatspike.net): Welcome to ChatSpike, insidious! Here on ChatSpike, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2016-06-03 14:16:37	ℹ	irc: connecting to server irc.inspircd.org/6667...
+2016-06-03 14:17:37	⚠	irc: timeout
+2016-06-03 14:17:37	ℹ	irc: reconnecting to server in 10 seconds
+2016-06-03 14:17:47	ℹ	irc: reconnecting to server...
+2016-06-03 14:17:47	ℹ	irc: connecting to server irc.inspircd.org/6667...
+2016-06-03 14:17:47	ℹ	irc: connected to irc.inspircd.org/6667 (158.69.114.198)
+2016-06-03 14:17:47	ℹ	kenny.chatspike.net: *** Looking up your hostname...
+2016-06-03 14:17:47	ℹ	kenny.chatspike.net: *** Found your hostname (c-69-142-165-107.hsd1.nj.comcast.net)
+2016-06-03 14:17:48	ℹ	kenny.chatspike.net: Welcome to ChatSpike!
+2016-06-03 14:17:48	ℹ	Welcome to the ChatSpike IRC Network insidious!insidious@c-69-142-165-107.hsd1.nj.comcast.net
+2016-06-03 14:17:48	ℹ	Your host is kenny.chatspike.net, running version InspIRCd-2.0
+2016-06-03 14:17:48	ℹ	This server was created 09:17:17 May 10 2015
+2016-06-03 14:17:48	ℹ	kenny.chatspike.net InspIRCd-2.0 BGHIRSWcdghikorswx ABCDFGIJKLMNOPQRSTabcefghijklmnopqrstuv FIJLabefghjkloqv
+2016-06-03 14:17:48	ℹ	AWAYLEN=200 CALLERID=g CASEMAPPING=rfc1459 CHANMODES=Ibeg,k,FJLfjl,ABCDGKMNOPQRSTcimnprstu CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcjmrs FNC INVEX=I :are supported by this server
+2016-06-03 14:17:48	ℹ	KICKLEN=255 MAP MAXBANS=60 MAXCHANNELS=20 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=ChatSpike NICKLEN=31 OVERRIDE PREFIX=(qaohv)~&@%+ REMOVE :are supported by this server
+2016-06-03 14:17:48	ℹ	SILENCE=32 SSL=158.69.114.198:6697 STARTTLS STATUSMSG=~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-06-03 14:17:48	ℹ	388AAX66S :your unique ID
+2016-06-03 14:17:48	ℹ	kenny.chatspike.net message of the day
+2016-06-03 14:17:48	ℹ	-             ,---.|         |    ,---.     o|
+2016-06-03 14:17:48	ℹ	-             |    |---.,---.|--- `---.,---..|__/ ,---.
+2016-06-03 14:17:48	ℹ	-             |    |   |,---||        ||   |||  \ |---'
+2016-06-03 14:17:48	ℹ	-             `---'`   '`---^`---'`---'|---'``   ``---'
+2016-06-03 14:17:48	ℹ	-              __.----.__              |        __________
+2016-06-03 14:17:48	ℹ	-           .-'          `-.           |     .-'          `-.
+2016-06-03 14:17:48	ℹ	-         .'       __       `.             .'                '.
+2016-06-03 14:17:48	ℹ	-        /  #  _.-'..`-._     \           /                    \
+2016-06-03 14:17:48	ℹ	-       /  ## /  .'  `.  \   `.\         /       K E N N Y      \
+2016-06-03 14:17:48	ℹ	-      |  ## /  /-.  .-\  \     |       |     M c o r m i c k    |
+2016-06-03 14:17:48	ℹ	-      |    ;  /   ''   \  :    |       |                        |
+2016-06-03 14:17:48	ℹ	-      |    | ;  # || #  | |    |       |   Sleep well little    |
+2016-06-03 14:17:48	ℹ	-      |    : |   _/\_   ; ;    |       | child, the lord holds  |
+2016-06-03 14:17:48	ℹ	-      :     \ \-'    '-/ /   , ;       |        ye now          |
+2016-06-03 14:17:48	ℹ	-       \     \ \      / /     /        |                        |
+2016-06-03 14:17:48	ℹ	-        `.    `.=.__.=.'    .'         |                        |
+2016-06-03 14:17:48	ℹ	-        / `.    `'/\''    .' \         |                        |
+2016-06-03 14:17:48	ℹ	-       /    `-.._/__\_..-'    \        |       Welcome to       |
+2016-06-03 14:17:48	ℹ	-      /    /      ||      \    \       |   kenny.chatspike.net  |
+2016-06-03 14:17:48	ℹ	-     <.   /       ||       \   .>      |   -------------------  |
+2016-06-03 14:17:48	ℹ	-    |  `./        ||        \.'  |     |  Caution: This server  |
+2016-06-03 14:17:48	ℹ	-    `._.'|        ||        |`._.'     |  is not to be used as  |
+2016-06-03 14:17:48	ℹ	-         \________||________/          |   embalming fluid...   |
+2016-06-03 14:17:48	ℹ	-   _______|________________|___________"________________________"_
+2016-06-03 14:17:48	ℹ	-
+2016-06-03 14:17:48	ℹ	-           +---------------------------------------------+
+2016-06-03 14:17:48	ℹ	-           |    Welcome to the ChatSpike IRC Network!    |
+2016-06-03 14:17:48	ℹ	-           | You are connecting via kenny.chatspike.net  |
+2016-06-03 14:17:48	ℹ	-           |                                             |
+2016-06-03 14:17:48	ℹ	-           |     Oh My God! Kross Killed Kenny! You...   |
+2016-06-03 14:17:48	ℹ	-        +----------------------------------------------------+
+2016-06-03 14:17:48	ℹ	-        |            N E T W O R K   S T A F F               |
+2016-06-03 14:17:48	ℹ	-        +----------------------------------------------------+
+2016-06-03 14:17:48	ℹ	-        |         http://www.chatspike.net/staff/            |
+2016-06-03 14:17:48	ℹ	-        +----------------------------------------------------+
+2016-06-03 14:17:48	ℹ	-
+2016-06-03 14:17:48	ℹ	-        +----------------------------------------------------+
+2016-06-03 14:17:48	ℹ	-        |                    R U L E S                       |
+2016-06-03 14:17:48	ℹ	-        +----------------------------------------------------+
+2016-06-03 14:17:48	ℹ	-        |  http://www.chatspike.net/cms/index.php?z=79&t=0   |
+2016-06-03 14:17:48	ℹ	-        +----------------------------------------------------+
+2016-06-03 14:17:48	ℹ	-
+2016-06-03 14:17:48	ℹ	End of message of the day.
+2016-06-03 14:17:48	ℹ	There are 4 users and 428 invisible on 5 servers
+2016-06-03 14:17:48	ℹ	16 :operator(s) online
+2016-06-03 14:17:48	ℹ	167 :channels formed
+2016-06-03 14:17:48	ℹ	I have 103 clients and 1 servers
+2016-06-03 14:17:48	ℹ	Current Local Users: 103  Max: 125
+2016-06-03 14:17:48	ℹ	Current Global Users: 432  Max: 612
+2016-06-03 14:17:48	ℹ	ChatSpikeqr2ej1.nj.comcast.net :is now your displayed host
+2016-06-03 14:17:48	ℹ	User mode [+ixw] by insidious
+2016-06-03 14:17:48	ℹ	NickServ (NickServ@chatspike.net): Welcome to ChatSpike, insidious! Here on ChatSpike, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2016-06-03 14:33:22	ℹ	MSG(nickserv): identify **********
+2016-06-03 14:33:22	ℹ	NickServ (NickServ@chatspike.net): insidious is not a registered nickname.

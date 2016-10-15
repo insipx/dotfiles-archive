@@ -1,0 +1,49 @@
+[options]
+font = Hack 12
+dynamic_title = true
+clickable_url = true
+search_wrap = true
+padding = 5
+cursor_blink = system
+browser = firefox
+
+[colors]
+
+# special
+foreground      = #cdd0cc
+foreground_bold = #cdd0cc
+cursor          = #cdd0cc
+background      = #1d1d1d
+
+# black
+color0  = #666666
+color8  = #999999
+
+# red
+color1  = #ba580c
+color9  = #c37c09
+
+# green
+color2  = #2a8d1d
+color10 = #3ca32e
+
+# yellow
+color3  = #cc9966
+color11 = #ffcc99
+
+# blue
+color4  = #6699cc
+color12 = #368496
+
+# magenta
+color5  = #cc6699
+color13 = #ff99cc
+
+# cyan
+color6  = #576dc7
+color14 = #498dff
+
+# white
+color7  = #cccccc
+color15 = #ffffff
+

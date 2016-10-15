@@ -1,0 +1,642 @@
+2016-09-09 00:26:51	⤍ 	insidious15 (~insidious@unaffiliated/insidious15) has joined #hackerrank
+2016-09-09 00:26:51	ℹ	Topic for #hackerrank is "HackerRank Community IRC Channel | Signup for upcoming contests here: https://www.hackerrank.com/contests | Global contest calendar: https://www.hackerrank.com/calendar | For support queries, please fill in the form here: https://www.hackerrank.com/support/irc | For posting code snippets use http://dpaste.com"
+2016-09-09 00:26:51	ℹ	Topic set by idlecool (sid370@gateway/web/irccloud.com/x-ovuycbsvhcajraha) on Thu, 28 Apr 2016 16:47:12
+2016-09-09 00:26:51	ℹ	Channel #hackerrank: 94 nicks (0 ops, 0 voices, 94 normals)
+2016-09-09 00:26:52	insidious15	eyyy
+2016-09-09 00:26:55	ℹ	Channel created on Wed, 20 Jun 2012 14:20:21
+2016-09-09 00:27:02	insidious15	i've decided that my weekends will now consists totally of hacker rank
+2016-09-09 00:36:40	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (Quit: FreedomFighter)
+2016-09-09 00:38:12	⤍ 	squelch (~squelch@99-53-229-4.lightspeed.irvnca.sbcglobal.net) has joined #hackerrank
+2016-09-09 00:38:37	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-09 00:42:59	insidious15	anybody even in here? :O
+2016-09-09 00:44:51	⤍ 	nanoz (~nanoz@unaffiliated/nanoz) has joined #hackerrank
+2016-09-09 00:45:46	⤍ 	lolz (499e4bb4@gateway/web/freenode/ip.73.158.75.180) has joined #hackerrank
+2016-09-09 00:45:56	lolz	yo
+2016-09-09 00:46:39	insidious15	suuup
+2016-09-09 00:46:40	insidious15	lolz: 
+2016-09-09 00:46:59	lolz	nm u
+2016-09-09 00:47:10	lolz	gotta do these problems yo
+2016-09-09 00:47:17	lolz	get the jobz
+2016-09-09 00:47:38	insidious15	kek
+2016-09-09 00:47:51	insidious15	I'm doing AI because i've wanted to learn about it for a while
+2016-09-09 00:48:09	lolz	nice
+2016-09-09 00:48:15	insidious15	but my U isn't offering it this semester and I'm taking OS which is turning out to be quiet easy because I'm pretty good at C n shit
+2016-09-09 00:48:16	lolz	how far are you
+2016-09-09 00:48:23	lolz	nice
+2016-09-09 00:48:28	lolz	what school
+2016-09-09 00:48:32	insidious15	I just started like an hour or two ago, i'm on botClean
+2016-09-09 00:48:40	insidious15	lolz: University of Scranton
+2016-09-09 00:48:47	lolz	nice nice
+2016-09-09 00:49:06	lolz	I took an AI class already, but that was a few years ago
+2016-09-09 00:49:13	insidious15	nice, what school was it?
+2016-09-09 00:49:20	lolz	I'm probably gonna do the AI challenges later as a refresher
+2016-09-09 00:49:23	insidious15	I'm going to apply to a few REU's to try and do some research in AI
+2016-09-09 00:49:29	lolz	Emory
+2016-09-09 00:49:33	insidious15	ahok nice
+2016-09-09 00:50:07	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (Quit: FreedomFighter)
+2016-09-09 00:50:08	lolz	what do you want to do with AI
+2016-09-09 00:50:13	lolz	like, what sort of subfield
+2016-09-09 00:50:26	insidious15	I really don't know haha, i'm just interested so seeing how it pans out
+2016-09-09 00:50:36	lolz	nice
+2016-09-09 00:50:41	insidious15	if i can get through most of HackerRanks course and still am interested, maybe i'll pursue it
+2016-09-09 13:28:23	ℹ	irc: disconnected from server
+2016-09-09 13:28:51	⤍ 	insidious15 (~insidious@unaffiliated/insidious15) has joined #hackerrank
+2016-09-09 13:28:51	ℹ	Topic for #hackerrank is "HackerRank Community IRC Channel | Signup for upcoming contests here: https://www.hackerrank.com/contests | Global contest calendar: https://www.hackerrank.com/calendar | For support queries, please fill in the form here: https://www.hackerrank.com/support/irc | For posting code snippets use http://dpaste.com"
+2016-09-09 13:28:51	ℹ	Topic set by idlecool (sid370@gateway/web/irccloud.com/x-ovuycbsvhcajraha) on Thu, 28 Apr 2016 16:47:12
+2016-09-09 13:28:51	ℹ	Channel #hackerrank: 103 nicks (0 ops, 0 voices, 103 normals)
+2016-09-09 13:29:01	ℹ	Channel created on Wed, 20 Jun 2012 14:20:21
+2016-09-09 13:34:40	⤎ 	pieisgood (~pieisgood@c-73-25-210-71.hsd1.wa.comcast.net) has quit (Quit: pieisgood)
+2016-09-09 13:39:44	⤍ 	savvi (~savvi@185.52.1.106) has joined #hackerrank
+2016-09-09 13:40:18	⤍ 	bam_ (43f5fc78@gateway/web/freenode/ip.67.245.252.120) has joined #hackerrank
+2016-09-09 13:46:37	⤍ 	mari_ (a8ebce53@gateway/web/freenode/ip.168.235.206.83) has joined #hackerrank
+2016-09-09 13:49:18	⤍ 	freecoder_ (~freecoder@103.21.83.10) has joined #hackerrank
+2016-09-09 13:50:04	⤍ 	anushah1411 (7449af24@gateway/web/freenode/ip.116.73.175.36) has joined #hackerrank
+2016-09-09 13:51:26	⤎ 	mari_ (a8ebce53@gateway/web/freenode/ip.168.235.206.83) has quit (Ping timeout: 264 seconds)
+2016-09-09 13:51:37	anushah1411	hello guys. Are there any bugs which a newbie can solve?
+2016-09-09 14:01:50	⤎ 	savvi (~savvi@185.52.1.106) has quit (Quit: savvi)
+2016-09-09 14:15:48	⤎ 	sp1rs (~sp1rs@106.51.130.61) has quit (Remote host closed the connection)
+2016-09-09 14:17:19	⤎ 	mangas (uid168018@gateway/web/irccloud.com/x-fbgsaooobihggusd) has quit (Quit: Connection closed for inactivity)
+2016-09-09 14:17:59	⤍ 	siddhant_ (3120287b@gateway/web/freenode/ip.49.32.40.123) has joined #hackerrank
+2016-09-09 14:18:15	⤎ 	siddhant_ (3120287b@gateway/web/freenode/ip.49.32.40.123) has quit (Client Quit)
+2016-09-09 14:25:54	⤍ 	sp1rs (~sp1rs@106.51.130.61) has joined #hackerrank
+2016-09-09 14:27:31	⤍ 	Dinsfire (5d1aae84@gateway/web/freenode/ip.93.26.174.132) has joined #hackerrank
+2016-09-09 14:29:28	⤎ 	Dinsfire (5d1aae84@gateway/web/freenode/ip.93.26.174.132) has quit (Client Quit)
+2016-09-09 14:29:33	⤍ 	GreenF (~inteligen@201.20.137.1) has joined #hackerrank
+2016-09-09 14:30:02	⤎ 	freecoder_ (~freecoder@103.21.83.10) has quit (Quit: Leaving)
+2016-09-09 14:30:03	⤎ 	sp1rs (~sp1rs@106.51.130.61) has quit (Ping timeout: 240 seconds)
+2016-09-09 14:33:43	⤎ 	GreenR (~inteligen@201.20.137.1) has quit (Ping timeout: 252 seconds)
+2016-09-09 14:38:40	⤍ 	hyper_ (9bf6cd5d@gateway/web/freenode/ip.155.246.205.93) has joined #hackerrank
+2016-09-09 14:38:50	hyper_	I think there is a problem with input one one problem
+2016-09-09 14:39:01	hyper_	for https://www.hackerrank.com/challenges/super-digit I'm timing out on reading from stdin
+2016-09-09 14:44:13	hyper_	this is my solution, line 32 never executes
+2016-09-09 14:44:14	hyper_	http://pastebin.com/HXy0pe2A
+2016-09-09 14:50:57	louiloui	hyper_ I'm pretty sure that means it runs for too long to be eligible to pass the challenge
+2016-09-09 14:51:19	hyper_	yes, but thats happening because it hangs on the input line
+2016-09-09 14:51:32	hyper_	I never get to the computational part of the program
+2016-09-09 14:51:37	⤎ 	bam_ (43f5fc78@gateway/web/freenode/ip.67.245.252.120) has quit (Quit: Page closed)
+2016-09-09 14:55:27	⤍ 	sp1rs (~sp1rs@106.51.130.61) has joined #hackerrank
+2016-09-09 14:58:10	⤎ 	anushah1411 (7449af24@gateway/web/freenode/ip.116.73.175.36) has quit (Quit: Page closed)
+2016-09-09 14:58:49	hyper_	I think its because hackerrank isn't sending any input for this one, since all my other ocaml programs work
+2016-09-09 15:21:18	⤍ 	psp (42e4a22c@gateway/web/freenode/ip.66.228.162.44) has joined #hackerrank
+2016-09-09 15:21:31	⤎ 	psp (42e4a22c@gateway/web/freenode/ip.66.228.162.44) has quit (Client Quit)
+2016-09-09 15:26:27	⤍ 	meme-lord1 (~Mei@31.186.38.218) has joined #hackerrank
+2016-09-09 15:28:39	⤎ 	meme-lord (~Mei@31.186.38.218) has quit (Ping timeout: 264 seconds)
+2016-09-09 15:30:05	louiloui	maybe, I'm very new
+2016-09-09 15:34:24	⤎ 	sp1rs (~sp1rs@106.51.130.61) has quit (Remote host closed the connection)
+2016-09-09 15:34:32	louiloui	question on the https://www.hackerrank.com/challenges/strange-code "easy" challenge. I believe I have a hacky way to make it faster by using boundaries (max & min) for t. On a level of 1 - 10 how evil is that? My only other recourse is a while loop which is O(n)
+2016-09-09 15:41:59	⤎ 	kalohu (~kalo@54010EC3.catv.pool.telekom.hu) has quit (Quit: bye)
+2016-09-09 15:47:51	⤎ 	squelch (~squelch@169.235.216.150) has quit (Ping timeout: 265 seconds)
+2016-09-09 15:53:50	⤎ 	hyper_ (9bf6cd5d@gateway/web/freenode/ip.155.246.205.93) has quit (Ping timeout: 264 seconds)
+2016-09-09 16:20:19	parsnip	--> blah joined... yo what up, anyone here? ... <-- blah quit
+2016-09-09 16:22:38	⤍ 	hyper__ (9bf6ed12@gateway/web/freenode/ip.155.246.237.18) has joined #hackerrank
+2016-09-09 16:38:43	⤎ 	nanoz] (~nanoz@45.121.116.37) has quit (Read error: Connection reset by peer)
+2016-09-09 16:40:11	⤍ 	hellman (~hellman@2001:7e8:d4d4:b001:fcb4:6011:d7e4:1c1b) has joined #hackerrank
+2016-09-09 16:42:55	⤍ 	blackbird1 (~blackbird@197.2.160.31) has joined #hackerrank
+2016-09-09 16:43:33	⤎ 	blackbird1 (~blackbird@197.2.160.31) has quit (Remote host closed the connection)
+2016-09-09 16:43:47	⤍ 	blackbird1 (~blackbird@197.2.160.31) has joined #hackerrank
+2016-09-09 16:48:58	⤍ 	gabrieliv (~gabriel@86.127.18.178) has joined #hackerrank
+2016-09-09 16:53:56	⤍ 	freecoder_ (~freecoder@103.21.83.10) has joined #hackerrank
+2016-09-09 16:54:54	⤎ 	gabrieliv (~gabriel@86.127.18.178) has quit (Remote host closed the connection)
+2016-09-09 17:04:48	⤍ 	squelch (~squelch@169.235.217.37) has joined #hackerrank
+2016-09-09 17:08:24	⤎ 	squelch (~squelch@169.235.217.37) has quit (Read error: Connection reset by peer)
+2016-09-09 17:16:39	⤍ 	james (807d346a@gateway/web/freenode/ip.128.125.52.106) has joined #hackerrank
+2016-09-09 17:17:02	ℹ	james is now known as Guest14204
+2016-09-09 17:17:20	Guest14204	sup
+2016-09-09 17:17:51	⤎ 	Guest14204 (807d346a@gateway/web/freenode/ip.128.125.52.106) has quit (Client Quit)
+2016-09-09 17:25:45	⤍ 	savvi (~savvi@185.52.1.106) has joined #hackerrank
+2016-09-09 17:29:44	⤎ 	freecoder_ (~freecoder@103.21.83.10) has quit (Quit: Leaving)
+2016-09-09 17:31:41	⤍ 	freecoder_ (~freecoder@103.21.83.10) has joined #hackerrank
+2016-09-09 17:38:06	⤎ 	savvi (~savvi@185.52.1.106) has quit (Ping timeout: 255 seconds)
+2016-09-09 17:38:55	⤍ 	vakka (vakka@gateway/shell/panicbnc/x-nnvjfqlmltmlcjaq) has joined #hackerrank
+2016-09-09 17:41:54	⤎ 	psd (uid62508@gateway/web/irccloud.com/x-ukreazydjrvertiz) has quit (Quit: Connection closed for inactivity)
+2016-09-09 17:46:02	⤎ 	freecoder_ (~freecoder@103.21.83.10) has quit (Quit: Leaving)
+2016-09-09 17:47:45	⤍ 	squelch (~squelch@169.235.217.37) has joined #hackerrank
+2016-09-09 17:47:56	⤍ 	freecoder_ (~freecoder@103.21.83.10) has joined #hackerrank
+2016-09-09 17:51:24	⤎ 	Blkt (~Blkt@2a01:4f8:200:2425::adda) has quit (Read error: Connection reset by peer)
+2016-09-09 17:51:40	⤍ 	Blkt (~Blkt@2a01:4f8:200:2425::adda) has joined #hackerrank
+2016-09-09 17:52:08	⤍ 	nagendra81 (31cfb800@gateway/web/freenode/ip.49.207.184.0) has joined #hackerrank
+2016-09-09 17:52:09	⤍ 	savvi (~savvi@185.52.1.106) has joined #hackerrank
+2016-09-09 17:52:50	⤎ 	Blkt (~Blkt@2a01:4f8:200:2425::adda) has quit (Read error: Connection reset by peer)
+2016-09-09 17:53:04	⤍ 	Blkt (~Blkt@2a01:4f8:200:2425::adda) has joined #hackerrank
+2016-09-09 17:54:04	⤎ 	Blkt (~Blkt@2a01:4f8:200:2425::adda) has quit (Read error: Connection reset by peer)
+2016-09-09 17:54:19	⤍ 	Blkt (~Blkt@2a01:4f8:200:2425::adda) has joined #hackerrank
+2016-09-09 17:57:18	⤎ 	nwkj86 (~nwkj86@31.216.63.18) has quit (Ping timeout: 276 seconds)
+2016-09-09 18:00:11	⤍ 	Drew__ (~drew@108.67.115.167) has joined #hackerrank
+2016-09-09 18:02:12	⤎ 	freecoder_ (~freecoder@103.21.83.10) has quit (Quit: Leaving)
+2016-09-09 18:04:07	⤍ 	souravbadami (~sourav@unaffiliated/souravbadami) has joined #hackerrank
+2016-09-09 18:04:08	⤍ 	freecoder_ (~freecoder@103.21.83.10) has joined #hackerrank
+2016-09-09 18:04:57	⤍ 	nwkj86 (~nwkj86@31.216.63.18) has joined #hackerrank
+2016-09-09 18:05:33	⤎ 	hellman (~hellman@2001:7e8:d4d4:b001:fcb4:6011:d7e4:1c1b) has quit (Ping timeout: 255 seconds)
+2016-09-09 18:07:50	⤎ 	freecoder_ (~freecoder@103.21.83.10) has quit (Remote host closed the connection)
+2016-09-09 18:08:14	ℹ	Drew__ is now known as Drew_
+2016-09-09 18:10:07	⤎ 	Drew_ (~drew@108.67.115.167) has quit (Read error: Connection reset by peer)
+2016-09-09 18:10:38	⤍ 	freecoder_ (~freecoder@103.21.83.10) has joined #hackerrank
+2016-09-09 18:16:07	⤎ 	freecoder_ (~freecoder@103.21.83.10) has quit (Remote host closed the connection)
+2016-09-09 18:16:08	⤍ 	Drew_ (~drew@108.67.115.167) has joined #hackerrank
+2016-09-09 18:19:13	⤍ 	freecoder_ (~freecoder@103.21.83.10) has joined #hackerrank
+2016-09-09 18:21:58	⤎ 	freecoder_ (~freecoder@103.21.83.10) has quit (Remote host closed the connection)
+2016-09-09 18:24:53	⤍ 	freecoder_ (~freecoder@103.21.83.10) has joined #hackerrank
+2016-09-09 18:27:09	⤎ 	freecoder_ (~freecoder@103.21.83.10) has quit (Remote host closed the connection)
+2016-09-09 18:31:43	⤎ 	squelch (~squelch@169.235.217.37) has quit (Ping timeout: 244 seconds)
+2016-09-09 18:31:57	⤍ 	freecoder_ (~freecoder@103.21.83.10) has joined #hackerrank
+2016-09-09 18:32:25	⤍ 	deathstar (8036fb83@gateway/web/freenode/ip.128.54.251.131) has joined #hackerrank
+2016-09-09 18:32:58	⤎ 	deathstar (8036fb83@gateway/web/freenode/ip.128.54.251.131) has quit (Client Quit)
+2016-09-09 18:33:19	⤎ 	nagendra81 (31cfb800@gateway/web/freenode/ip.49.207.184.0) has quit (Quit: Page closed)
+2016-09-09 18:38:15	⤎ 	reedip (~reedip@115.249.196.105) has quit (Ping timeout: 276 seconds)
+2016-09-09 18:50:55	⤎ 	freecoder_ (~freecoder@103.21.83.10) has quit (Remote host closed the connection)
+2016-09-09 18:51:12	⤍ 	reedip (~reedip@14.140.114.207) has joined #hackerrank
+2016-09-09 18:52:45	⤎ 	citizen-stig (~citizen-s@89.221.207.219) has quit (Remote host closed the connection)
+2016-09-09 18:53:56	⤍ 	freecoder_ (~freecoder@103.21.83.10) has joined #hackerrank
+2016-09-09 18:54:32	⤍ 	cold_sauce (~cold_sauc@border.phoenix.squiffypwn.com) has joined #hackerrank
+2016-09-09 18:59:48	⤍ 	citizen-stig (~citizen-s@89.221.207.219) has joined #hackerrank
+2016-09-09 19:02:41	⤎ 	freecoder_ (~freecoder@103.21.83.10) has quit (Remote host closed the connection)
+2016-09-09 19:04:33	⤎ 	citizen-stig (~citizen-s@89.221.207.219) has quit (Ping timeout: 240 seconds)
+2016-09-09 19:05:14	⤍ 	freecoder_ (~freecoder@103.21.83.10) has joined #hackerrank
+2016-09-09 19:13:39	⤎ 	freecoder_ (~freecoder@103.21.83.10) has quit (Quit: Leaving)
+2016-09-09 19:18:06	⤎ 	meme-lord1 (~Mei@31.186.38.218) has quit (Quit: Leaving.)
+2016-09-09 19:35:57	⤍ 	blackbird_ (~blackbird@197.1.162.99) has joined #hackerrank
+2016-09-09 19:38:49	⤎ 	blackbird1 (~blackbird@197.2.160.31) has quit (Ping timeout: 250 seconds)
+2016-09-09 19:39:27	⤍ 	sar_ (62cbf8d6@gateway/web/freenode/ip.98.203.248.214) has joined #hackerrank
+2016-09-09 19:40:00	sar_	Hi There,
+2016-09-09 19:40:11	sar_	I just took the Day 2: Operators challenge
+2016-09-09 19:40:45	sar_	The code logic and test case is matching.
+2016-09-09 19:41:00	sar_	the expected output
+2016-09-09 19:41:24	sar_	but I get the message test case failed
+2016-09-09 19:41:37	sar_	its frustrating and disappointing to see the result
+2016-09-09 19:42:07	sar_	Please fix ASAP. Thanks!
+2016-09-09 19:42:12	⤎ 	sar_ (62cbf8d6@gateway/web/freenode/ip.98.203.248.214) has quit (Client Quit)
+2016-09-09 19:47:19	⤍ 	Blaxter_x (~Blaxter@181.128.97.109) has joined #hackerrank
+2016-09-09 19:48:22	⤎ 	Blaxter_x (~Blaxter@181.128.97.109) has quit (Changing host)
+2016-09-09 19:48:22	⤍ 	Blaxter_x (~Blaxter@unaffiliated/blaxterx/x-8673009) has joined #hackerrank
+2016-09-09 20:03:42	⤍ 	citizen-stig (~citizen-s@89.221.207.219) has joined #hackerrank
+2016-09-09 20:08:20	⤎ 	citizen-stig (~citizen-s@89.221.207.219) has quit (Ping timeout: 244 seconds)
+2016-09-09 20:13:02	⤎ 	hyper__ (9bf6ed12@gateway/web/freenode/ip.155.246.237.18) has quit (Ping timeout: 264 seconds)
+2016-09-09 20:17:35	⤍ 	FreedomFighter (~anonymous@heffner-wl-70.dynamic.rpi.edu) has joined #hackerrank
+2016-09-09 20:40:04	⤎ 	savvi (~savvi@185.52.1.106) has quit (Ping timeout: 240 seconds)
+2016-09-09 20:41:09	⤍ 	savvi (~savvi@185.52.1.106) has joined #hackerrank
+2016-09-09 20:50:55	⤍ 	ravig_ (49da3543@gateway/web/freenode/ip.73.218.53.67) has joined #hackerrank
+2016-09-09 20:51:09	⤎ 	ravig_ (49da3543@gateway/web/freenode/ip.73.218.53.67) has quit (Client Quit)
+2016-09-09 21:03:27	parsnip	10
+2016-09-09 21:08:42	⤍ 	petroav (~petroav@c-66-31-47-149.hsd1.ma.comcast.net) has joined #hackerrank
+2016-09-09 21:08:58	⤎ 	Drew_ (~drew@108.67.115.167) has quit (Ping timeout: 244 seconds)
+2016-09-09 21:09:09	⤍ 	Drew__ (~drew@2602:306:c491:9af0:5514:bb3a:804:2f6) has joined #hackerrank
+2016-09-09 21:18:15	⤎ 	Drew__ (~drew@2602:306:c491:9af0:5514:bb3a:804:2f6) has quit (Read error: Connection reset by peer)
+2016-09-09 21:22:24	⤎ 	petroav (~petroav@c-66-31-47-149.hsd1.ma.comcast.net) has quit (Read error: Connection reset by peer)
+2016-09-09 21:23:41	⤍ 	squelch (~squelch@99-53-229-4.lightspeed.irvnca.sbcglobal.net) has joined #hackerrank
+2016-09-09 21:30:01	⤍ 	smiley1983 (~smiley@115-64-6-216.static.tpgi.com.au) has joined #hackerrank
+2016-09-09 21:30:32	⤎ 	squelch (~squelch@99-53-229-4.lightspeed.irvnca.sbcglobal.net) has quit (Ping timeout: 265 seconds)
+2016-09-09 21:34:39	⤍ 	yoaa (b185b679@gateway/web/freenode/ip.177.133.182.121) has joined #hackerrank
+2016-09-09 21:36:32	⤎ 	blackbird_ (~blackbird@197.1.162.99) has quit (Quit: Leaving)
+2016-09-09 21:39:44	⤍ 	m0ham3d (29239394@gateway/web/freenode/ip.41.35.147.148) has joined #hackerrank
+2016-09-09 21:40:00	m0ham3d	Hello folks
+2016-09-09 21:41:38	m0ham3d	I'd like to ask a question: does any one know when the medals of the machine learning codesprint be available?
+2016-09-09 21:43:01	⤎ 	m0ham3d (29239394@gateway/web/freenode/ip.41.35.147.148) has quit (Client Quit)
+2016-09-09 21:47:17	⤎ 	yoaa (b185b679@gateway/web/freenode/ip.177.133.182.121) has quit (Quit: Page closed)
+2016-09-09 21:49:44	⤍ 	riekhan (3288c961@gateway/web/freenode/ip.50.136.201.97) has joined #hackerrank
+2016-09-09 21:52:46	⤍ 	citizen-stig (~citizen-s@89.221.207.219) has joined #hackerrank
+2016-09-09 21:54:55	⤎ 	AtumT (~IRC@177.205.119.134.dynamic.adsl.gvt.net.br) has quit (Remote host closed the connection)
+2016-09-09 21:57:19	⤎ 	citizen-stig (~citizen-s@89.221.207.219) has quit (Ping timeout: 255 seconds)
+2016-09-09 22:08:19	⤍ 	GSikes (02507317@gateway/web/freenode/ip.2.80.115.23) has joined #hackerrank
+2016-09-09 22:09:56	⤎ 	GSikes (02507317@gateway/web/freenode/ip.2.80.115.23) has quit (Client Quit)
+2016-09-09 22:30:10	⤍ 	sp1rs (~sp1rs@106.51.130.61) has joined #hackerrank
+2016-09-09 23:06:01	⤍ 	feojeda (be1467eb@gateway/web/freenode/ip.190.20.103.235) has joined #hackerrank
+2016-09-09 23:06:12	⤎ 	FreedomFighter (~anonymous@heffner-wl-70.dynamic.rpi.edu) has quit (Quit: FreedomFighter)
+2016-09-09 23:06:17	feojeda	hello everyone
+2016-09-09 23:07:19	⤎ 	sp1rs (~sp1rs@106.51.130.61) has quit (Remote host closed the connection)
+2016-09-09 23:26:37	⤍ 	rtcoder (~rohan@2601:646:8380:4de3:dcf:4a0c:bd3f:1fa8) has joined #hackerrank
+2016-09-09 23:41:30	⤍ 	citizen-stig (~citizen-s@89.221.207.219) has joined #hackerrank
+2016-09-09 23:43:23	⤍ 	Drew_ (~drew@108.207.228.94) has joined #hackerrank
+2016-09-09 23:46:28	⤎ 	citizen-stig (~citizen-s@89.221.207.219) has quit (Ping timeout: 252 seconds)
+2016-09-09 23:50:00	⤍ 	sp1rs (~sp1rs@106.51.64.172) has joined #hackerrank
+2016-09-09 23:57:32	⤎ 	rtcoder (~rohan@2601:646:8380:4de3:dcf:4a0c:bd3f:1fa8) has quit (Ping timeout: 250 seconds)
+2016-09-09 23:58:43	⤍ 	rtcoder (~rohan@2601:646:8380:4de3:dcf:4a0c:bd3f:1fa8) has joined #hackerrank
+2016-09-10 00:01:17	⤎ 	riekhan (3288c961@gateway/web/freenode/ip.50.136.201.97) has quit (Quit: Page closed)
+2016-09-10 00:10:32	⤎ 	rtcoder (~rohan@2601:646:8380:4de3:dcf:4a0c:bd3f:1fa8) has quit (Ping timeout: 250 seconds)
+2016-09-10 00:12:55	⤍ 	rtcoder (~rohan@2601:646:8380:4de3:dcf:4a0c:bd3f:1fa8) has joined #hackerrank
+2016-09-10 00:15:21	⤍ 	saddy (0825e643@gateway/web/freenode/ip.8.37.230.67) has joined #hackerrank
+2016-09-10 00:20:14	⤎ 	saddy (0825e643@gateway/web/freenode/ip.8.37.230.67) has quit (Ping timeout: 264 seconds)
+2016-09-10 00:20:51	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-10 00:22:25	⤎ 	sp1rs (~sp1rs@106.51.64.172) has quit (Remote host closed the connection)
+2016-09-10 00:22:40	⤎ 	rtcoder (~rohan@2601:646:8380:4de3:dcf:4a0c:bd3f:1fa8) has quit (Ping timeout: 250 seconds)
+2016-09-10 00:22:59	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (Client Quit)
+2016-09-10 00:23:17	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-10 00:26:36	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (Client Quit)
+2016-09-10 00:30:46	⤍ 	rtcoder (~rohan@2601:646:8380:4de3:dcf:4a0c:bd3f:1fa8) has joined #hackerrank
+2016-09-10 00:47:44	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-10 00:49:21	⤍ 	sp1rs (~sp1rs@106.51.64.172) has joined #hackerrank
+2016-09-10 01:04:42	⤎ 	rtcoder (~rohan@2601:646:8380:4de3:dcf:4a0c:bd3f:1fa8) has quit (Ping timeout: 250 seconds)
+2016-09-10 01:07:18	⤎ 	navyjeff[PSU] (~navyjeff|@2601:98a:4200:9d54:c0c3:617d:c80f:62c3) has quit (*.net *.split)
+2016-09-10 01:07:18	⤎ 	bluezone (uid104970@gateway/web/irccloud.com/x-jwpufjurgydvqway) has quit (*.net *.split)
+2016-09-10 01:07:18	⤎ 	SuprDewd (~quassel@2001:41d0:8:1754::) has quit (*.net *.split)
+2016-09-10 01:07:19	⤎ 	sctt (~sctt@107-141-7-158.lightspeed.nsvltn.sbcglobal.net) has quit (*.net *.split)
+2016-09-10 01:07:19	⤎ 	elfoxx (~foxx@karada.ahju.eu) has quit (*.net *.split)
+2016-09-10 01:07:19	⤎ 	w4and0er96 (uid177896@gateway/web/irccloud.com/x-qcvmqilczivfxqxj) has quit (*.net *.split)
+2016-09-10 01:07:19	⤎ 	Hercules (thurman@unaffiliated/genkei) has quit (*.net *.split)
+2016-09-10 01:07:19	⤎ 	verdoc (~quassel@2605:f700:c0:1::745e:407a) has quit (*.net *.split)
+2016-09-10 01:07:20	⤎ 	mra (mra@gateway/shell/far/x-lgdgeroocmhmhwhh) has quit (*.net *.split)
+2016-09-10 01:07:20	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (*.net *.split)
+2016-09-10 01:07:20	⤎ 	abruanese (~a@45.63.97.181) has quit (*.net *.split)
+2016-09-10 01:07:20	⤎ 	jhelwig (~jhelwig@puppetlabs/development/jhelwig) has quit (*.net *.split)
+2016-09-10 01:07:20	⤎ 	harrow (~harrow@68.ip-149-56-14.net) has quit (*.net *.split)
+2016-09-10 01:07:20	⤎ 	rgabor (~rgabor@212.250.200.210) has quit (*.net *.split)
+2016-09-10 01:07:21	⤎ 	LongyanG (~long@15255.s.t4vps.eu) has quit (*.net *.split)
+2016-09-10 01:07:21	⤎ 	vnz (~vnz@unaffiliated/vnz) has quit (*.net *.split)
+2016-09-10 01:07:21	⤎ 	mouche (~ubuntu@unaffiliated/mouche) has quit (*.net *.split)
+2016-09-10 01:07:22	⤎ 	tctara (~quassel@128.199.61.169) has quit (*.net *.split)
+2016-09-10 01:07:22	⤎ 	nhandler (~nhandler@freenode/staff/ubuntu.member.nhandler) has quit (*.net *.split)
+2016-09-10 01:07:22	⤎ 	abra0 (moo@unaffiliated/abra0) has quit (*.net *.split)
+2016-09-10 01:07:23	⤎ 	coius (~coeus@dslb-178-001-004-245.178.001.pools.vodafone-ip.de) has quit (*.net *.split)
+2016-09-10 01:07:23	⤎ 	innocenat (sid8070@gateway/web/irccloud.com/x-xewqlwzfgpfnjsfk) has quit (*.net *.split)
+2016-09-10 01:07:23	⤎ 	bx0` (bx0@CHICKEN.Im.gonna.eat.you.PanicBNC.us) has quit (*.net *.split)
+2016-09-10 01:07:24	⤎ 	feojeda (be1467eb@gateway/web/freenode/ip.190.20.103.235) has quit (*.net *.split)
+2016-09-10 01:07:24	⤎ 	NightKhaos (~NK@203-109-234-72.dsl.dyn.ihug.co.nz) has quit (*.net *.split)
+2016-09-10 01:07:24	⤎ 	pitastrudl (~quassel@unaffiliated/pitastrudl) has quit (*.net *.split)
+2016-09-10 01:07:24	⤎ 	eventide (uid13502@gateway/web/irccloud.com/x-ihpxdobmirfjbayz) has quit (*.net *.split)
+2016-09-10 01:07:25	⤎ 	jesus_ (~jesus_@94-224-230-192.access.telenet.be) has quit (*.net *.split)
+2016-09-10 01:07:25	⤎ 	DLmass (~dlmass@84.ip-51-255-200.eu) has quit (*.net *.split)
+2016-09-10 01:07:25	⤎ 	ryanpcmcquen (sid124388@gateway/web/irccloud.com/x-ojoyakprrcggxjje) has quit (*.net *.split)
+2016-09-10 01:07:25	⤎ 	lancetw (sid27885@gateway/web/irccloud.com/x-axfiridkkxupvrlw) has quit (*.net *.split)
+2016-09-10 01:07:25	⤎ 	michaf (~quassel@2a03:4000:2:77::) has quit (*.net *.split)
+2016-09-10 01:07:26	⤎ 	Drew_ (~drew@108.207.228.94) has quit (*.net *.split)
+2016-09-10 01:07:26	⤎ 	lbtxyz (~lbtxyz@fs76eed5cc.tkyc305.ap.nuro.jp) has quit (*.net *.split)
+2016-09-10 01:07:26	⤎ 	clinth (~clint@unaffiliated/clinth) has quit (*.net *.split)
+2016-09-10 01:07:26	⤎ 	Enthralled (~Enthralle@65.19.183.157) has quit (*.net *.split)
+2016-09-10 01:07:26	⤎ 	fictive (espenja@vsop.online.ntnu.no) has quit (*.net *.split)
+2016-09-10 01:07:26	⤎ 	rhnvrm (~rhnvrm@128.199.199.233) has quit (*.net *.split)
+2016-09-10 01:07:27	⤎ 	Blkt (~Blkt@2a01:4f8:200:2425::adda) has quit (*.net *.split)
+2016-09-10 01:07:27	⤎ 	reveredge (~reveredge@111.119.209.212) has quit (*.net *.split)
+2016-09-10 01:07:28	⤎ 	rodgzilla (~greg@goodboys.u-pem.fr) has quit (*.net *.split)
+2016-09-10 01:07:28	⤎ 	Posterdati (~kvirc@host185-231-static.12-87-b.business.telecomitalia.it) has quit (*.net *.split)
+2016-09-10 01:07:28	⤎ 	r0bby (sid699@guifications/user/r0bby) has quit (*.net *.split)
+2016-09-10 01:07:28	⤎ 	caw (sid70005@gateway/web/irccloud.com/x-titguiphghfeoyhx) has quit (*.net *.split)
+2016-09-10 01:07:29	⤎ 	vidplace7 (sid14837@gateway/web/irccloud.com/x-pkhafrkagwqcoink) has quit (*.net *.split)
+2016-09-10 01:07:29	⤎ 	asunder (~g@nck.default.nickryder.uk0.bigv.io) has quit (*.net *.split)
+2016-09-10 01:07:29	⤎ 	deca (sid49788@gateway/web/irccloud.com/x-zgtrabzksgutsocc) has quit (*.net *.split)
+2016-09-10 01:07:29	⤎ 	michele (eraser@unaffiliated/michele) has quit (*.net *.split)
+2016-09-10 01:07:29	⤎ 	smiley1983 (~smiley@115-64-6-216.static.tpgi.com.au) has quit (*.net *.split)
+2016-09-10 01:07:30	⤎ 	braidn (~g3funk@192.34.61.224) has quit (*.net *.split)
+2016-09-10 01:07:30	⤎ 	Shayanjm (~Shayanjm@shayanmohanty.com) has quit (*.net *.split)
+2016-09-10 01:07:30	⤎ 	enuke (~enuke@40.85.97.253) has quit (*.net *.split)
+2016-09-10 01:07:30	⤎ 	marinintim (~mt@46.101.78.222) has quit (*.net *.split)
+2016-09-10 01:07:31	⤎ 	Haydos (~Haydos@unaffiliated/haydos) has quit (*.net *.split)
+2016-09-10 01:07:31	⤎ 	Judge-- (~NoEvil@187.22.210.4) has quit (*.net *.split)
+2016-09-10 01:07:31	⤎ 	idea_squirrel (~idea_squi@geruempel.dachb0den.net) has quit (*.net *.split)
+2016-09-10 01:07:31	⤎ 	PeErLesS (~PeErLesS@unaffiliated/peerless) has quit (*.net *.split)
+2016-09-10 01:07:32	⤎ 	AlgorithmWizard (~Algorithm@buranintu.com) has quit (*.net *.split)
+2016-09-10 01:07:32	⤎ 	GreenF (~inteligen@201.20.137.1) has quit (*.net *.split)
+2016-09-10 01:07:33	⤎ 	Norby (~norby@bender.gigo.com) has quit (*.net *.split)
+2016-09-10 01:07:33	⤎ 	Blaxter_x (~Blaxter@unaffiliated/blaxterx/x-8673009) has quit (*.net *.split)
+2016-09-10 01:07:33	⤎ 	Zialus (~RMF@117.26.60.94.rev.vodafone.pt) has quit (*.net *.split)
+2016-09-10 01:07:34	⤎ 	parsnip (~parsnip@unaffiliated/parsnip) has quit (*.net *.split)
+2016-09-10 01:07:34	⤎ 	parshimers (~parshimer@unaffiliated/parshimers) has quit (*.net *.split)
+2016-09-10 01:07:34	⤎ 	wittrup (~wittrup@ti0020a400-2045.bb.online.no) has quit (*.net *.split)
+2016-09-10 01:07:34	⤎ 	captn3m0 (~captn3m0@207.46.234.74) has quit (*.net *.split)
+2016-09-10 01:07:34	⤎ 	isomorphismes (~ubuntu@ec2-54-243-213-161.compute-1.amazonaws.com) has quit (*.net *.split)
+2016-09-10 01:07:34	⤎ 	abhgangwar (~abhgangwa@kde/developer/agangwar) has quit (*.net *.split)
+2016-09-10 01:07:34	⤎ 	srax (~srax@212.129.30.66) has quit (*.net *.split)
+2016-09-10 01:07:34	⤎ 	sirushti (~sirushti@unaffiliated/syrus) has quit (*.net *.split)
+2016-09-10 01:07:34	⤎ 	EmperorWilli (31088@ircbox.informatik.uni-erlangen.de) has quit (*.net *.split)
+2016-09-10 01:07:34	⤎ 	trkl (~trkl@mail.mack.space) has quit (*.net *.split)
+2016-09-10 01:07:34	⤎ 	ario (~ario@ks3094912.kimsufi.com) has quit (*.net *.split)
+2016-09-10 01:07:35	⤎ 	reedip (~reedip@14.140.114.207) has quit (*.net *.split)
+2016-09-10 01:07:35	⤎ 	nwkj86 (~nwkj86@31.216.63.18) has quit (*.net *.split)
+2016-09-10 01:07:35	⤎ 	att (~att@146.185.143.198) has quit (*.net *.split)
+2016-09-10 01:07:36	⤎ 	inz (inz@inz.fi) has quit (*.net *.split)
+2016-09-10 01:07:36	⤎ 	Lohengramm (sid1929@gateway/web/irccloud.com/x-uipslyqolroypnyn) has quit (*.net *.split)
+2016-09-10 01:07:36	⤎ 	dijit (~dijit@cthulhu.drk.sc) has quit (*.net *.split)
+2016-09-10 01:07:36	⤎ 	sp1rs (~sp1rs@106.51.64.172) has quit (*.net *.split)
+2016-09-10 01:07:37	⤎ 	Ewout (58fcc464@vanmansom.name) has quit (*.net *.split)
+2016-09-10 01:07:37	⤎ 	csharper (~csharper@80-108-92-247.cable.dynamic.surfer.at) has quit (*.net *.split)
+2016-09-10 01:07:37	⤎ 	swalladge (~swalladge@unaffiliated/swalladge) has quit (*.net *.split)
+2016-09-10 01:07:37	⤎ 	jcazevedo (~jcazevedo@243.11.166.178.rev.vodafone.pt) has quit (*.net *.split)
+2016-09-10 01:07:37	⤎ 	anosh (~anosh@unaffiliated/anosh) has quit (*.net *.split)
+2016-09-10 01:07:37	⤎ 	stacksmasher (sid141403@gateway/web/irccloud.com/x-dofyinmqnmefjwem) has quit (*.net *.split)
+2016-09-10 01:07:37	⤎ 	cold_sauce (~cold_sauc@border.phoenix.squiffypwn.com) has quit (*.net *.split)
+2016-09-10 01:07:38	⤎ 	defionscode (~defionsco@ec2-54-174-243-240.compute-1.amazonaws.com) has quit (*.net *.split)
+2016-09-10 01:09:02	⤎ 	savvi (~savvi@185.52.1.106) has quit (Ping timeout: 250 seconds)
+2016-09-10 01:09:54	⤎ 	vikram__________ (sid62188@gateway/web/irccloud.com/x-wuqdifkwqmntyzzq) has quit (Ping timeout: 250 seconds)
+2016-09-10 01:09:54	⤎ 	zpconn__________ (sid17862@gateway/web/irccloud.com/x-iekefmstnvexvjep) has quit (Ping timeout: 250 seconds)
+2016-09-10 01:23:52	⤍ 	verdoc (~quassel@2605:f700:c0:1::745e:407a) has joined #hackerrank
+2016-09-10 01:27:26	⤍ 	vikram__________ (sid62188@gateway/web/irccloud.com/session) has joined #hackerrank
+2016-09-10 02:05:48	⤎ 	souravbadami (~sourav@unaffiliated/souravbadami) has quit (Ping timeout: 250 seconds)
+2016-09-10 02:08:52	⤍ 	rtcoder (~rohan@2601:646:8380:4de3:dcf:4a0c:bd3f:1fa8) has joined #hackerrank
+2016-09-10 02:13:53	⤎ 	rtcoder (~rohan@2601:646:8380:4de3:dcf:4a0c:bd3f:1fa8) has quit (Remote host closed the connection)
+2016-09-10 02:21:53	⤎ 	verdoc (~quassel@2605:f700:c0:1::745e:407a) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2016-09-10 02:22:09	⤍ 	verdoc (~quassel@2605:f700:c0:1::745e:407a) has joined #hackerrank
+2016-09-10 02:22:33	⤎ 	verdoc (~quassel@2605:f700:c0:1::745e:407a) has quit (Client Quit)
+2016-09-10 02:23:11	⤍ 	verdoc (~quassel@2605:f700:c0:1::745e:407a) has joined #hackerrank
+2016-09-10 14:53:26	ℹ	irc: disconnected from server
+2016-09-10 14:53:54	⤍ 	insidious15 (~insidious@unaffiliated/insidious15) has joined #hackerrank
+2016-09-10 14:53:54	ℹ	Topic for #hackerrank is "HackerRank Community IRC Channel | Signup for upcoming contests here: https://www.hackerrank.com/contests | Global contest calendar: https://www.hackerrank.com/calendar | For support queries, please fill in the form here: https://www.hackerrank.com/support/irc | For posting code snippets use http://dpaste.com"
+2016-09-10 14:53:54	ℹ	Topic set by idlecool (sid370@gateway/web/irccloud.com/x-ovuycbsvhcajraha) on Thu, 28 Apr 2016 16:47:12
+2016-09-10 14:53:54	ℹ	Channel #hackerrank: 103 nicks (0 ops, 0 voices, 103 normals)
+2016-09-10 14:54:04	ℹ	Channel created on Wed, 20 Jun 2012 14:20:21
+2016-09-10 14:59:43	insidious15	hello
+2016-09-10 15:00:47	⤎ 	prth (~prth@106.51.16.164) has quit (Quit: Leaving)
+2016-09-10 15:10:34	louiloui	"isqrl  watching pictures of cats is very important, _very_, _very_ important" <3 this
+2016-09-10 15:11:42	louiloui	You are going to love this http://giphy.com/search/cat
+2016-09-10 15:12:46	⤎ 	Phoenix_ (312050ba@gateway/web/freenode/ip.49.32.80.186) has left #hackerrank
+2016-09-10 15:16:43	isqrl	oh, moving pictures of cats :3
+2016-09-10 15:38:16	⤎ 	abhinand_ (uid103467@gateway/web/irccloud.com/x-kshkmzqfndnxnmpu) has quit (Quit: Connection closed for inactivity)
+2016-09-10 15:41:56	⤍ 	squelch (~squelch@99-53-229-4.lightspeed.irvnca.sbcglobal.net) has joined #hackerrank
+2016-09-10 15:50:20	⤍ 	fatsausage (59e54219@gateway/web/freenode/ip.89.229.66.25) has joined #hackerrank
+2016-09-10 15:52:48	⤎ 	fatsausage (59e54219@gateway/web/freenode/ip.89.229.66.25) has quit (Client Quit)
+2016-09-10 16:03:26	⤍ 	nikivi (~nikivi@dhcp-077-250-172-150.chello.nl) has joined #hackerrank
+2016-09-10 16:07:21	⤍ 	citizen-stig (~citizen-s@89.221.207.219) has joined #hackerrank
+2016-09-10 16:11:20	⤍ 	rtcoder (~rohan@2601:646:8380:4de3:1913:57f9:757c:393) has joined #hackerrank
+2016-09-10 16:11:49	⤎ 	citizen-stig (~citizen-s@89.221.207.219) has quit (Ping timeout: 244 seconds)
+2016-09-10 16:22:12	⤍ 	m0use (~m0use@66-169-183-83.dhcp.ftwo.tx.charter.com) has joined #hackerrank
+2016-09-10 16:31:37	⤎ 	nikivi (~nikivi@dhcp-077-250-172-150.chello.nl) has quit (Quit: irc)
+2016-09-10 16:32:57	⤍ 	nikivi (~nikivi@dhcp-077-250-172-150.chello.nl) has joined #hackerrank
+2016-09-10 16:35:18	⤍ 	Ahmed_ (4d778342@gateway/web/freenode/ip.77.119.131.66) has joined #hackerrank
+2016-09-10 16:35:23	Ahmed_	hi all
+2016-09-10 16:35:37	Ahmed_	I know introduction to algorithms, but I need a more easier book
+2016-09-10 16:35:42	ℹ	Ahmed_ is now known as Guest33304
+2016-09-10 16:35:45	Guest33304	I get stuck a lot in hackerrank problems
+2016-09-10 16:35:49	ℹ	Guest33304 is now known as Ahmeds
+2016-09-10 16:47:50	⤍ 	Satheish (44cb105b@gateway/web/freenode/ip.68.203.16.91) has joined #hackerrank
+2016-09-10 16:52:06	⤎ 	Satheish (44cb105b@gateway/web/freenode/ip.68.203.16.91) has quit (Client Quit)
+2016-09-10 16:59:36	⤎ 	kalohu (~kalo@54010EC3.catv.pool.telekom.hu) has quit (Quit: bye)
+2016-09-10 17:01:10	⤍ 	prth (~prth@106.51.16.164) has joined #hackerrank
+2016-09-10 17:04:25	⤍ 	tristondor5 (49300dd8@gateway/web/freenode/ip.73.48.13.216) has joined #hackerrank
+2016-09-10 17:07:28	⤍ 	Idanwekhai (c5fd06fd@gateway/web/freenode/ip.197.253.6.253) has joined #hackerrank
+2016-09-10 17:07:56	⤎ 	Idanwekhai (c5fd06fd@gateway/web/freenode/ip.197.253.6.253) has quit (Client Quit)
+2016-09-10 17:13:42	Ahmeds	would someone help me
+2016-09-10 17:18:58	Ahmeds	hii
+2016-09-10 17:19:02	parsnip	hi
+2016-09-10 17:19:11	hulkbuster	hey
+2016-09-10 17:19:21	parsnip	i'm beginner, i think i should try to get this book too.
+2016-09-10 17:19:42	parsnip	it's a difficult book?
+2016-09-10 17:20:48	⤎ 	prth (~prth@106.51.16.164) has quit (Quit: Leaving)
+2016-09-10 17:24:43	⤍ 	anil215 (b6132b01@gateway/web/freenode/ip.182.19.43.1) has joined #hackerrank
+2016-09-10 17:24:58	⤎ 	anil215 (b6132b01@gateway/web/freenode/ip.182.19.43.1) has quit (Client Quit)
+2016-09-10 17:27:10	⤎ 	FreedomFighter (~anonymous@heffner-wl-70.dynamic.rpi.edu) has quit (Quit: FreedomFighter)
+2016-09-10 17:29:31	Ahmeds	parsnip: its hard book
+2016-09-10 17:29:42	Ahmeds	I'm looking for something easier
+2016-09-10 17:29:50	Ahmeds	what does it mean by string[i] - 'a'
+2016-09-10 17:29:53	Ahmeds	why I subtract a
+2016-09-10 17:30:46	parsnip	Ahmeds: oh, to number the letters. is that expression in the book?
+2016-09-10 17:30:59	parsnip	Ahmeds: http://bradyt.com/posts/2016-07-31-The-ascii-few-know-control-beep-escape/
+2016-09-10 17:31:34	parsnip	Ahmeds: letters are represented by integers. 'A' is 65 for instance.
+2016-09-10 17:31:36	Ahmeds	no its not in the book
+2016-09-10 17:31:52	Ahmeds	parsnip: can you solve hackerrank problems ?
+2016-09-10 17:31:54	parsnip	Ahmeds: which language do you use?
+2016-09-10 17:32:16	parsnip	Ahmeds: i haven't done many. i've been doing euler problems so far.
+2016-09-10 17:32:34	parsnip	'a' is 97
+2016-09-10 17:32:58	Ahmeds	I use c++
+2016-09-10 17:33:14	parsnip	Ahmeds: so that subtraction looks like it would make 'a' as 0, 'b' as 1, etc.
+2016-09-10 17:33:45	parsnip	what language is intro to algos written with? >.<
+2016-09-10 17:35:12	Ahmeds	pesudo code
+2016-09-10 17:35:17	parsnip	ah, nice
+2016-09-10 17:35:20	Ahmeds	horrible code :D
+2016-09-10 17:35:58	parsnip	well, i guess one issue i'll have is, many algorithms don't translate to haskell very well :(
+2016-09-10 17:36:10	parsnip	maybe i'll have to try python some more
+2016-09-10 17:36:49	Ahmeds	yea
+2016-09-10 17:36:56	Ahmeds	I don't know why people are silent here
+2016-09-10 17:36:57	Ahmeds	:/
+2016-09-10 17:37:01	Ahmeds	need their advices
+2016-09-10 17:37:45	parsnip	Ahmeds: in my short experience here, many people come on this channel for 2 mintues looking for help then disappear.
+2016-09-10 17:37:57	parsnip	i don't think that's how irc works in general.
+2016-09-10 17:38:13	Ahmeds	yea correct
+2016-09-10 17:38:30	parsnip	Ahmeds: does your irc client allow you to search channel names and topics?
+2016-09-10 17:38:38	⤎ 	rtcoder (~rohan@2601:646:8380:4de3:1913:57f9:757c:393) has quit (Remote host closed the connection)
+2016-09-10 17:38:47	Ahmeds	its webchat
+2016-09-10 17:39:32	parsnip	Ahmeds: searching freenode channels names and topics for "algorithm" gives me a few results. ##c++-general has the word algorithm in topic. there's also a #algorithms channel. might find a busier channel to ask if there's a book before intro to algos.
+2016-09-10 17:39:59	parsnip	Ahmeds: my irc client runs in a terminal in a remote server, so it's always on ;)
+2016-09-10 17:40:17	parsnip	in fact, it's weechat, so it relays to a phone app too :)
+2016-09-10 17:41:37	Ahmeds	parsnip: I joined algorithms now
+2016-09-10 17:41:42	Ahmeds	they are active
+2016-09-10 17:42:12	parsnip	Ahmeds: yeah, my channel search tool orders by number of members by default.
+2016-09-10 17:46:45	⤍ 	jj_ (ac4b56e2@gateway/web/freenode/ip.172.75.86.226) has joined #hackerrank
+2016-09-10 17:47:39	jj_	Anyone on that can give advice on solving test cases with
+2016-09-10 17:47:45	jj_	JavaScript?
+2016-09-10 17:49:11	⤎ 	jj_ (ac4b56e2@gateway/web/freenode/ip.172.75.86.226) has quit (Client Quit)
+2016-09-10 17:53:52	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-10 17:54:34	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (Client Quit)
+2016-09-10 17:54:51	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-10 18:06:26	⤎ 	Ahmeds (4d778342@gateway/web/freenode/ip.77.119.131.66) has quit (Ping timeout: 264 seconds)
+2016-09-10 18:08:13	⤎ 	reveredge (~reveredge@111.119.209.201) has quit (Ping timeout: 250 seconds)
+2016-09-10 18:24:42	⤍ 	sergio_ (58f0dbc8@gateway/web/freenode/ip.88.240.219.200) has joined #hackerrank
+2016-09-10 18:25:38	sergio_	hi
+2016-09-10 18:25:38	⤎ 	sergio_ (58f0dbc8@gateway/web/freenode/ip.88.240.219.200) has quit (Client Quit)
+2016-09-10 18:40:34	⤎ 	nikivi (~nikivi@dhcp-077-250-172-150.chello.nl) has quit (Quit: irc)
+2016-09-10 18:40:57	parsnip	i think a web-driven site like hackerrank is oddly paired with having an irc channel.
+2016-09-10 18:41:30	⤎ 	reedip (~reedip@14.140.114.207) has quit (Ping timeout: 264 seconds)
+2016-09-10 18:41:30	⤍ 	Hacker2000 (18066ffd@gateway/web/freenode/ip.24.6.111.253) has joined #hackerrank
+2016-09-10 18:41:30	⤍ 	Blkt_ (~Blkt@2a01:4f8:200:2425::adda) has joined #hackerrank
+2016-09-10 18:41:30	Hacker2000	does anyone understand the instructions to ByteLandian Tours program?
+2016-09-10 18:41:30	⤎ 	Blkt (~Blkt@2a01:4f8:200:2425::adda) has quit (Ping timeout: 260 seconds)
+2016-09-10 18:48:55	⤍ 	reedip (~reedip@14.140.114.207) has joined #hackerrank
+2016-09-10 18:50:43	⤎ 	Drew_ (~drew@108.207.228.94) has quit (Read error: Connection reset by peer)
+2016-09-10 18:52:12	⤍ 	Drew_ (~drew@108.207.228.94) has joined #hackerrank
+2016-09-10 18:54:37	⤎ 	hellman (~hellman@2001:7e8:c01a:cc02:fcb4:6011:d7e4:1c1b) has quit (Ping timeout: 255 seconds)
+2016-09-10 18:59:32	⤍ 	rylaw (~croans@c-73-170-61-130.hsd1.ca.comcast.net) has joined #hackerrank
+2016-09-10 19:04:20	⤎ 	Blkt_ (~Blkt@2a01:4f8:200:2425::adda) has quit (Quit: No Ping reply in 180 seconds.)
+2016-09-10 19:05:19	⤍ 	Blkt (~Blkt@2a01:4f8:200:2425::adda) has joined #hackerrank
+2016-09-10 19:54:31	ℹ	irc: disconnected from server
+2016-09-10 19:54:58	⤍ 	insidious15 (~insidious@unaffiliated/insidious15) has joined #hackerrank
+2016-09-10 19:54:58	ℹ	Topic for #hackerrank is "HackerRank Community IRC Channel | Signup for upcoming contests here: https://www.hackerrank.com/contests | Global contest calendar: https://www.hackerrank.com/calendar | For support queries, please fill in the form here: https://www.hackerrank.com/support/irc | For posting code snippets use http://dpaste.com"
+2016-09-10 19:54:58	ℹ	Topic set by idlecool (sid370@gateway/web/irccloud.com/x-ovuycbsvhcajraha) on Thu, 28 Apr 2016 16:47:12
+2016-09-10 19:54:58	ℹ	Channel #hackerrank: 100 nicks (0 ops, 0 voices, 100 normals)
+2016-09-10 19:55:08	ℹ	Channel created on Wed, 20 Jun 2012 14:20:21
+2016-09-10 20:16:09	⤍ 	citizen-stig (~citizen-s@89.221.207.219) has joined #hackerrank
+2016-09-10 20:17:27	⤎ 	hulkbuster (~hulkbuste@171.60.136.55) has quit (Ping timeout: 276 seconds)
+2016-09-10 20:21:57	⤍ 	Judge-- (~NoEvil@187.22.210.4) has joined #hackerrank
+2016-09-10 20:23:34	⤎ 	meme-lord1 (~Mei@31.186.38.218) has quit (Quit: Leaving.)
+2016-09-10 20:28:17	⤍ 	rtcoder (~rohan@2601:646:8380:4de3:8919:20be:c492:145e) has joined #hackerrank
+2016-09-10 20:58:41	⤍ 	souravbadami (~sourav@unaffiliated/souravbadami) has joined #hackerrank
+2016-09-10 21:04:36	⤎ 	souravbadami (~sourav@unaffiliated/souravbadami) has quit (Remote host closed the connection)
+2016-09-10 21:04:52	⤍ 	souravbadami (~sourav@unaffiliated/souravbadami) has joined #hackerrank
+2016-09-10 21:08:42	⤍ 	zotherstupidguy (~zotherstu@unaffiliated/zotherstupidguy) has joined #hackerrank
+2016-09-10 21:09:30	⤎ 	zotherstupidguy (~zotherstu@unaffiliated/zotherstupidguy) has quit (Client Quit)
+2016-09-10 21:18:31	⤍ 	Blaxter_x (~Blaxter@181.128.30.112) has joined #hackerrank
+2016-09-10 21:21:11	⤍ 	Blaxter (~Blaxter@181.128.94.15) has joined #hackerrank
+2016-09-10 21:22:08	⤎ 	citizen-stig (~citizen-s@89.221.207.219) has quit (Remote host closed the connection)
+2016-09-10 21:23:12	⤎ 	Blaxter_x (~Blaxter@181.128.30.112) has quit (Ping timeout: 244 seconds)
+2016-09-10 21:31:13	⤍ 	Blaxter_X (~Blaxter@181.128.75.89) has joined #hackerrank
+2016-09-10 21:31:40	⤎ 	Blaxter_X (~Blaxter@181.128.75.89) has quit (Client Quit)
+2016-09-10 21:32:07	⤍ 	Blaxter_x (~Blaxter@181.128.75.89) has joined #hackerrank
+2016-09-10 21:32:21	⤎ 	Blaxter_x (~Blaxter@181.128.75.89) has quit (Changing host)
+2016-09-10 21:32:21	⤍ 	Blaxter_x (~Blaxter@unaffiliated/blaxterx/x-8673009) has joined #hackerrank
+2016-09-10 21:33:32	⤎ 	Blaxter (~Blaxter@181.128.94.15) has quit (Ping timeout: 244 seconds)
+2016-09-10 21:38:21	⤍ 	smiley1983 (~smiley@115-64-6-216.static.tpgi.com.au) has joined #hackerrank
+2016-09-10 21:42:47	⤎ 	souravbadami (~sourav@unaffiliated/souravbadami) has quit (Remote host closed the connection)
+2016-09-10 21:43:10	⤍ 	souravbadami (~sourav@unaffiliated/souravbadami) has joined #hackerrank
+2016-09-10 22:14:21	⤎ 	rtcoder (~rohan@2601:646:8380:4de3:8919:20be:c492:145e) has quit (Ping timeout: 250 seconds)
+2016-09-10 22:23:50	⤍ 	stardiviner (~stardivin@unaffiliated/stardiviner) has joined #hackerrank
+2016-09-10 22:25:54	⤍ 	confusedcoder (4428b4b9@gateway/web/freenode/ip.68.40.180.185) has joined #hackerrank
+2016-09-10 22:26:19	confusedcoder	Hi i submitted my code for 30days of code number25
+2016-09-10 22:26:46	confusedcoder	and the test case number 5
+2016-09-10 22:27:03	confusedcoder	says i didnt get it even tho when i put in the input i get the correct output
+2016-09-10 22:27:04	⤍ 	rtcoder (~rohan@2601:646:8380:4de3:8919:20be:c492:145e) has joined #hackerrank
+2016-09-10 22:32:59	⤍ 	citizen-stig (~citizen-s@89.221.207.219) has joined #hackerrank
+2016-09-10 22:36:40	⤎ 	confusedcoder (4428b4b9@gateway/web/freenode/ip.68.40.180.185) has quit (Quit: Page closed)
+2016-09-10 22:38:08	⤎ 	citizen-stig (~citizen-s@89.221.207.219) has quit (Ping timeout: 265 seconds)
+2016-09-10 22:43:23	⤎ 	rtcoder (~rohan@2601:646:8380:4de3:8919:20be:c492:145e) has quit (Ping timeout: 250 seconds)
+2016-09-10 22:44:14	⤎ 	xerebz (181e67de@gateway/web/freenode/ip.24.30.103.222) has quit (Ping timeout: 264 seconds)
+2016-09-10 22:44:18	⤍ 	navyjeff (~navyjeff|@2601:98a:4200:9d54:c0c3:617d:c80f:62c3) has joined #hackerrank
+2016-09-10 22:47:47	⤎ 	AtumT (~IRC@177.205.119.134.dynamic.adsl.gvt.net.br) has quit (Remote host closed the connection)
+2016-09-10 23:06:56	⤍ 	Blaxter (~Blaxter@181.128.113.132) has joined #hackerrank
+2016-09-10 23:09:12	⤎ 	Blaxter_x (~Blaxter@unaffiliated/blaxterx/x-8673009) has quit (Ping timeout: 240 seconds)
+2016-09-10 23:20:36	⤍ 	cr321 (~croans@c-73-170-61-130.hsd1.ca.comcast.net) has joined #hackerrank
+2016-09-10 23:22:31	⤎ 	rylaw (~croans@c-73-170-61-130.hsd1.ca.comcast.net) has quit (Ping timeout: 265 seconds)
+2016-09-10 23:29:52	⤍ 	reveredge (~reveredge@111.119.209.201) has joined #hackerrank
+2016-09-10 23:35:15	⤎ 	reveredge (~reveredge@111.119.209.201) has quit (Ping timeout: 264 seconds)
+2016-09-10 23:38:37	⤎ 	feojeda (be1467eb@gateway/web/freenode/ip.190.20.103.235) has quit (Quit: Page closed)
+2016-09-10 23:50:17	⤍ 	reveredge (~reveredge@115.110.126.75) has joined #hackerrank
+2016-09-11 00:08:15	⤎ 	Blaxter (~Blaxter@181.128.113.132) has quit (Quit: Leaving)
+2016-09-11 00:21:18	⤎ 	stardiviner (~stardivin@unaffiliated/stardiviner) has quit (Ping timeout: 250 seconds)
+2016-09-11 00:22:01	⤍ 	stardiviner (~stardivin@unaffiliated/stardiviner) has joined #hackerrank
+2016-09-11 00:22:55	⤍ 	citizen-stig (~citizen-s@89.221.207.219) has joined #hackerrank
+2016-09-11 00:27:42	⤎ 	citizen-stig (~citizen-s@89.221.207.219) has quit (Ping timeout: 276 seconds)
+2016-09-11 00:39:25	⤍ 	hulkbuster (~hulkbuste@171.60.136.55) has joined #hackerrank
+2016-09-11 01:02:04	⤎ 	souravbadami (~sourav@unaffiliated/souravbadami) has quit (Remote host closed the connection)
+2016-09-11 01:02:26	⤍ 	souravbadami (~sourav@unaffiliated/souravbadami) has joined #hackerrank
+2016-09-11 01:10:31	⤎ 	stardiviner (~stardivin@unaffiliated/stardiviner) has quit (Ping timeout: 252 seconds)
+2016-09-11 01:10:36	⤎ 	reveredge (~reveredge@115.110.126.75) has quit (Ping timeout: 276 seconds)
+2016-09-11 01:11:46	⤍ 	reveredge (~reveredge@115.110.126.75) has joined #hackerrank
+2016-09-11 01:11:49	⤎ 	souravbadami (~sourav@unaffiliated/souravbadami) has quit (Read error: Connection timed out)
+2016-09-11 01:12:15	⤍ 	souravbadami (~sourav@unaffiliated/souravbadami) has joined #hackerrank
+2016-09-11 01:20:26	⤍ 	ARPIT (70c4b8f0@gateway/web/freenode/ip.112.196.184.240) has joined #hackerrank
+2016-09-11 01:20:31	⤎ 	ARPIT (70c4b8f0@gateway/web/freenode/ip.112.196.184.240) has quit (Client Quit)
+2016-09-11 01:20:58	⤍ 	arpit (70c4b8f0@gateway/web/freenode/ip.112.196.184.240) has joined #hackerrank
+2016-09-11 01:24:28	⤍ 	stardiviner (~stardivin@unaffiliated/stardiviner) has joined #hackerrank
+2016-09-11 15:26:39	ℹ	irc: disconnected from server
+2016-09-11 15:27:03	⤍ 	insidious15 (~insidious@unaffiliated/insidious15) has joined #hackerrank
+2016-09-11 15:27:03	ℹ	Topic for #hackerrank is "HackerRank Community IRC Channel | Signup for upcoming contests here: https://www.hackerrank.com/contests | Global contest calendar: https://www.hackerrank.com/calendar | For support queries, please fill in the form here: https://www.hackerrank.com/support/irc | For posting code snippets use http://dpaste.com"
+2016-09-11 15:27:03	ℹ	Topic set by idlecool (sid370@gateway/web/irccloud.com/x-ovuycbsvhcajraha) on Thu, 28 Apr 2016 16:47:12
+2016-09-11 15:27:03	ℹ	Channel #hackerrank: 108 nicks (0 ops, 0 voices, 108 normals)
+2016-09-11 15:27:13	ℹ	Channel created on Wed, 20 Jun 2012 14:20:21
+2016-09-11 15:30:58	⤍ 	reveredge (~reveredge@111.119.209.201) has joined #hackerrank
+2016-09-11 15:34:05	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (Quit: FreedomFighter)
+2016-09-11 15:47:02	⤎ 	Drew_ (~drew@108.67.112.113) has quit (Read error: Connection reset by peer)
+2016-09-11 15:48:44	⤍ 	Drew__ (~drew@2602:306:c437:710:d5fa:b8ef:7c0:a243) has joined #hackerrank
+2016-09-11 16:04:10	⤎ 	cr321 (~croans@c-73-170-61-130.hsd1.ca.comcast.net) has quit (Read error: Connection reset by peer)
+2016-09-11 16:06:28	⤍ 	rylaw (~croans@c-73-170-61-130.hsd1.ca.comcast.net) has joined #hackerrank
+2016-09-11 16:16:10	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-11 16:21:48	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (Quit: FreedomFighter)
+2016-09-11 16:23:11	⤍ 	OhYash (~ohyash@115.249.130.58) has joined #hackerrank
+2016-09-11 16:24:36	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-11 16:28:30	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (Client Quit)
+2016-09-11 16:29:10	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-11 16:32:53	⤎ 	shookees (~Paulius@unaffiliated/doublestring) has quit (Remote host closed the connection)
+2016-09-11 16:37:03	⤎ 	kalohu (~kalo@54010EC3.catv.pool.telekom.hu) has quit (Quit: bye)
+2016-09-11 16:44:51	⤎ 	hulkbuster (~hulkbuste@171.60.136.55) has quit (Ping timeout: 264 seconds)
+2016-09-11 16:53:45	⤍ 	JavaBoyAnt (6cf8df4d@gateway/web/freenode/ip.108.248.223.77) has joined #hackerrank
+2016-09-11 16:54:31	JavaBoyAnt	Hi
+2016-09-11 16:55:02	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (Quit: FreedomFighter)
+2016-09-11 16:55:58	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-11 16:56:34	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (Client Quit)
+2016-09-11 16:56:53	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-11 17:00:10	⤎ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has quit (Client Quit)
+2016-09-11 17:01:43	⤎ 	sctt (~sctt@107-141-7-158.lightspeed.nsvltn.sbcglobal.net) has quit (Remote host closed the connection)
+2016-09-11 17:01:55	maxbo	hello
+2016-09-11 17:02:12	⤍ 	FreedomFighter (~anonymous@cpe-24-194-59-253.nycap.res.rr.com) has joined #hackerrank
+2016-09-11 17:04:18	⤍ 	sctt (~sctt@107-141-7-158.lightspeed.nsvltn.sbcglobal.net) has joined #hackerrank
+2016-09-11 17:09:44	⤍ 	ac_hunter (48defe02@gateway/web/freenode/ip.72.222.254.2) has joined #hackerrank
+2016-09-11 17:15:08	⤎ 	sctt (~sctt@107-141-7-158.lightspeed.nsvltn.sbcglobal.net) has quit (Remote host closed the connection)
+2016-09-11 17:17:14	⤎ 	ac_hunter (48defe02@gateway/web/freenode/ip.72.222.254.2) has quit (Ping timeout: 264 seconds)
+2016-09-11 17:18:26	⤎ 	JavaBoyAnt (6cf8df4d@gateway/web/freenode/ip.108.248.223.77) has quit (Ping timeout: 264 seconds)
+2016-09-11 17:21:03	⤎ 	OhYash (~ohyash@115.249.130.58) has quit (Remote host closed the connection)
+2016-09-11 17:43:06	⤍ 	nikivi (~nikivi@dhcp-077-250-172-150.chello.nl) has joined #hackerrank
+2016-09-11 18:06:09	⤎ 	nikivi (~nikivi@dhcp-077-250-172-150.chello.nl) has quit (Quit: irc)
+2016-09-11 18:07:50	⤍ 	lacexd (5cf9df69@gateway/web/freenode/ip.92.249.223.105) has joined #hackerrank
+2016-09-11 18:09:10	⤎ 	hellman (~hellman@2001:7e8:c020:1c01:9962:eae2:bc03:d2a9) has quit (Ping timeout: 255 seconds)
+2016-09-11 18:10:55	⤎ 	lacexd (5cf9df69@gateway/web/freenode/ip.92.249.223.105) has quit (Client Quit)
+2016-09-11 18:34:11	⤎ 	maxbo (4a0fe6b4@gateway/web/freenode/ip.74.15.230.180) has quit (Quit: Page closed)
+2016-09-11 19:30:26	⤎ 	hyper__ (9bf6ed12@gateway/web/freenode/ip.155.246.237.18) has quit (Ping timeout: 264 seconds)
+2016-09-11 19:58:21	⤍ 	zotherstupidguy (~zotherstu@unaffiliated/zotherstupidguy) has joined #hackerrank
+2016-09-11 20:01:52	⤍ 	meme-lord (~Mei@31.186.38.218) has joined #hackerrank
+2016-09-11 20:02:16	insidious15	damn some people are mad good at C
+2016-09-11 20:04:03	⤎ 	meme-lord1 (~Mei@31.186.38.218) has quit (Ping timeout: 264 seconds)
+2016-09-11 20:09:49	⤎ 	meme-lord (~Mei@31.186.38.218) has quit (Quit: Leaving.)
+2016-09-11 20:17:06	⤍ 	sctt (~sctt@107-141-7-158.lightspeed.nsvltn.sbcglobal.net) has joined #hackerrank
+2016-09-11 20:18:18	insidious15	looked at a submission and he was shifting bytes n shit and it was crazy
+2016-09-11 20:18:29	insidious15	I mean, my code is more readable to the average person, but that shit was some skill
+2016-09-11 20:18:44	insidious15	wish I could program C like that X.x
+2016-09-11 20:20:19	⤎ 	_nwkj86 (~nwkj86@31.216.63.18) has quit (Ping timeout: 250 seconds)
+2016-09-11 20:35:51	⤎ 	sctt (~sctt@107-141-7-158.lightspeed.nsvltn.sbcglobal.net) has quit (Ping timeout: 264 seconds)
+2016-09-11 20:49:26	⤍ 	sctt (~sctt@95.143.198.99) has joined #hackerrank
+2016-09-11 22:43:18	ℹ	irc: disconnected from server
+2016-09-11 22:43:45	⤍ 	insidious15 (~insidious@unaffiliated/insidious15) has joined #hackerrank
+2016-09-11 22:43:45	ℹ	Topic for #hackerrank is "HackerRank Community IRC Channel | Signup for upcoming contests here: https://www.hackerrank.com/contests | Global contest calendar: https://www.hackerrank.com/calendar | For support queries, please fill in the form here: https://www.hackerrank.com/support/irc | For posting code snippets use http://dpaste.com"
+2016-09-11 22:43:45	ℹ	Topic set by idlecool (sid370@gateway/web/irccloud.com/x-ovuycbsvhcajraha) on Thu, 28 Apr 2016 16:47:12
+2016-09-11 22:43:45	ℹ	Channel #hackerrank: 101 nicks (0 ops, 0 voices, 101 normals)
+2016-09-11 22:43:51	⤎ 	pieisgood (~pieisgood@c-73-25-210-71.hsd1.wa.comcast.net) has quit (Quit: pieisgood)
+2016-09-11 22:43:55	ℹ	Channel created on Wed, 20 Jun 2012 14:20:21
+2016-09-11 22:51:04	⤍ 	pieisgood (~pieisgood@c-73-25-210-71.hsd1.wa.comcast.net) has joined #hackerrank
+2016-09-11 22:53:42	⤍ 	abbh62 (4b8ae54d@gateway/web/freenode/ip.75.138.229.77) has joined #hackerrank
+2016-09-11 22:56:09	⤎ 	abbh62 (4b8ae54d@gateway/web/freenode/ip.75.138.229.77) has quit (Client Quit)
+2016-09-11 23:14:38	⤎ 	savvi (~savvi@185.52.1.106) has quit (Ping timeout: 265 seconds)
+2016-09-11 23:16:05	⤎ 	pieisgood (~pieisgood@c-73-25-210-71.hsd1.wa.comcast.net) has quit (Quit: pieisgood)
+2016-09-12 19:02:28	ℹ	irc: disconnected from server
+2016-09-12 19:02:52	⤍ 	insidious15 (~insidious@unaffiliated/insidious15) has joined #hackerrank
+2016-09-12 19:02:52	ℹ	Topic for #hackerrank is "HackerRank Community IRC Channel | Signup for upcoming contests here: https://www.hackerrank.com/contests | Global contest calendar: https://www.hackerrank.com/calendar | For support queries, please fill in the form here: https://www.hackerrank.com/support/irc | For posting code snippets use http://dpaste.com"
+2016-09-12 19:02:52	ℹ	Topic set by idlecool (sid370@gateway/web/irccloud.com/x-ovuycbsvhcajraha) on Thu, 28 Apr 2016 16:47:12
+2016-09-12 19:02:52	ℹ	Channel #hackerrank: 108 nicks (0 ops, 0 voices, 108 normals)
+2016-09-12 19:03:02	ℹ	Channel created on Wed, 20 Jun 2012 14:20:21
+2016-09-12 19:05:49	⤎ 	roma_ (49479a72@gateway/web/freenode/ip.73.71.154.114) has quit (Ping timeout: 264 seconds)
+2016-09-12 19:14:37	⤎ 	sp1rs (~sp1rs@106.51.64.172) has quit (Remote host closed the connection)
+2016-09-12 19:19:37	⤍ 	sp1rs (~sp1rs@106.51.64.172) has joined #hackerrank
+2016-09-12 19:21:23	⤎ 	sp1rs (~sp1rs@106.51.64.172) has quit (Remote host closed the connection)
+2016-09-12 19:21:31	⤍ 	sp1rs (~sp1rs@106.51.64.172) has joined #hackerrank
+2016-09-12 19:31:36	ℹ	Drew__ is now known as Drew_
+2016-09-12 19:39:59	⤍ 	mcihanozer (84cc1a19@gateway/web/freenode/ip.132.204.26.25) has joined #hackerrank
+2016-09-12 19:45:20	⤎ 	pieisgood (~pieisgood@host-200-117.pubnet.pdx.edu) has quit (Quit: pieisgood)
+2016-09-12 19:45:38	⤍ 	prth (~prth@106.51.16.164) has joined #hackerrank
+2016-09-12 19:45:42	⤎ 	prth (~prth@106.51.16.164) has quit (Client Quit)
+2016-09-12 19:47:02	mcihanozer	Hey!
+2016-09-12 19:47:14	mcihanozer	How we can report a bug for the test cases?
+2016-09-12 19:48:12	⤎ 	mcihanozer (84cc1a19@gateway/web/freenode/ip.132.204.26.25) has quit (Quit: Page closed)
+2016-09-12 19:53:43	⤍ 	cpcool (0e8bf432@gateway/web/freenode/ip.14.139.244.50) has joined #hackerrank
+2016-09-12 19:55:04	⤍ 	Pavan (671ba407@gateway/web/freenode/ip.103.27.164.7) has joined #hackerrank
+2016-09-12 19:55:12	Pavan	hi
+2016-09-12 19:56:00	⤎ 	cpcool (0e8bf432@gateway/web/freenode/ip.14.139.244.50) has quit (Client Quit)
+2016-09-12 19:59:54	⤎ 	sp1rs (~sp1rs@106.51.64.172) has quit (Remote host closed the connection)
+2016-09-12 20:00:28	⤎ 	c0mrad3 (uid26809@fedora/dhanvi) has quit (Quit: Connection closed for inactivity)
+2016-09-12 20:03:10	⤍ 	john (46fa71d8@gateway/web/freenode/ip.70.250.113.216) has joined #hackerrank
+2016-09-12 20:03:33	ℹ	john is now known as Guest94921
+2016-09-12 20:03:45	⤎ 	Guest94921 (46fa71d8@gateway/web/freenode/ip.70.250.113.216) has quit (Client Quit)
+2016-09-12 20:05:21	⤍ 	FreedomFighter (~anonymous@cpe-72-231-128-250.nycap.res.rr.com) has joined #hackerrank
+2016-09-12 20:06:03	⤎ 	FreedomFighter (~anonymous@cpe-72-231-128-250.nycap.res.rr.com) has quit (Client Quit)
+2016-09-12 20:14:03	⤎ 	aditi_aro (uid124140@gateway/web/irccloud.com/x-hlirsftxtzsmzpgf) has quit (Quit: Connection closed for inactivity)
+2016-09-12 20:15:09	⤍ 	sp1rs (~sp1rs@106.51.64.172) has joined #hackerrank
+2016-09-12 20:16:01	⤎ 	sp1rs (~sp1rs@106.51.64.172) has quit (Remote host closed the connection)
+2016-09-12 20:30:48	⤎ 	lbtxyz (~lbtxyz@fs76eed5cc.tkyc305.ap.nuro.jp) has quit (Quit: Leaving)
+2016-09-12 20:50:19	⤍ 	ion__ (185a6d6b@gateway/web/freenode/ip.24.90.109.107) has joined #hackerrank
+2016-09-12 20:50:43	ℹ	ion__ is now known as Guest53838
+2016-09-12 20:51:08	Guest53838	Hey, how do I get out of the thirty days of code? I do not want to be signed up for that.
+2016-09-12 20:55:22	⤍ 	smiley1983 (~smiley@115-64-6-216.static.tpgi.com.au) has joined #hackerrank
+2016-09-12 20:58:02	⤎ 	Guest53838 (185a6d6b@gateway/web/freenode/ip.24.90.109.107) has quit (Ping timeout: 264 seconds)
+2016-09-12 21:09:59	⤍ 	bluezone (uid104970@gateway/web/irccloud.com/x-wlscpbgqvznundah) has joined #hackerrank
+2016-09-12 21:11:50	⤎ 	Pavan (671ba407@gateway/web/freenode/ip.103.27.164.7) has quit (Ping timeout: 264 seconds)
+2016-09-12 21:18:10	⤍ 	himanshu (6a331c2c@gateway/web/freenode/ip.106.51.28.44) has joined #hackerrank
+2016-09-12 21:18:34	ℹ	himanshu is now known as Guest79822
+2016-09-12 21:19:13	⤎ 	Guest79822 (6a331c2c@gateway/web/freenode/ip.106.51.28.44) has left #hackerrank
+2016-09-12 21:19:54	⤎ 	bv (~keith@2601:603:100:4192:a407:bef2:586c:6ece) has quit (Remote host closed the connection)
+2016-09-12 21:20:17	⤍ 	bv (~keith@2601:603:100:4192:9cee:ebfb:573c:31e4) has joined #hackerrank
+2016-09-12 21:21:58	⤍ 	sp1rs (~sp1rs@106.51.141.148) has joined #hackerrank
+2016-09-12 21:22:42	⤍ 	pieisgood (~pieisgood@c-71-237-193-20.hsd1.or.comcast.net) has joined #hackerrank
+2016-09-12 21:25:16	⤍ 	rylaw (~croans@c-73-170-61-130.hsd1.ca.comcast.net) has joined #hackerrank
+2016-09-12 21:30:09	⤎ 	pieisgood (~pieisgood@c-71-237-193-20.hsd1.or.comcast.net) has quit (Quit: pieisgood)
+2016-09-12 21:34:56	⤍ 	pieisgood (~pieisgood@c-71-237-193-20.hsd1.or.comcast.net) has joined #hackerrank
+2016-09-12 21:42:18	⤍ 	vipaca (~textual@unaffiliated/vipaca) has joined #hackerrank
+2016-09-12 21:42:19	⤎ 	vipaca (~textual@unaffiliated/vipaca) has quit (Max SendQ exceeded)
+2016-09-12 21:42:56	⤍ 	vipaca (~textual@unaffiliated/vipaca) has joined #hackerrank
+2016-09-12 21:46:36	SlimmyJimmy	you can't they own you now
+2016-09-12 21:55:49	⤎ 	jcazevedo (~jcazevedo@243.11.166.178.rev.vodafone.pt) has quit (Ping timeout: 244 seconds)
+2016-09-12 22:03:09	⤎ 	pieisgood (~pieisgood@c-71-237-193-20.hsd1.or.comcast.net) has quit (Quit: pieisgood)
+2016-09-12 22:06:08	⤍ 	cranndarach (~cranndara@71-80-126-152.dhcp.wlmn.ct.charter.com) has joined #hackerrank
+2016-09-12 22:08:12	⤍ 	pieisgood (~pieisgood@c-71-237-193-20.hsd1.or.comcast.net) has joined #hackerrank
+2016-09-12 22:10:28	⤍ 	rtcoder (~rohan@2601:646:8380:4de3:f030:e198:d902:1d7c) has joined #hackerrank
+2016-09-12 22:12:28	⤍ 	prth (~prth@106.51.16.164) has joined #hackerrank
+2016-09-12 22:14:40	⤎ 	sp1rs (~sp1rs@106.51.141.148) has quit (Remote host closed the connection)
+2016-09-12 22:15:07	⤍ 	jcazevedo (~jcazevedo@243.11.166.178.rev.vodafone.pt) has joined #hackerrank
+2016-09-12 22:17:27	⤎ 	prth (~prth@106.51.16.164) has quit (Ping timeout: 265 seconds)
+2016-09-12 22:18:47	⤍ 	prth (~prth@106.51.16.164) has joined #hackerrank
+2016-09-12 22:23:22	⤎ 	pieisgood (~pieisgood@c-71-237-193-20.hsd1.or.comcast.net) has quit (Quit: pieisgood)
+2016-09-12 22:24:44	⤍ 	sp1rs (~sp1rs@106.51.141.148) has joined #hackerrank
+2016-09-12 22:25:05	⤍ 	pieisgood (~pieisgood@c-71-237-193-20.hsd1.or.comcast.net) has joined #hackerrank
+2016-09-12 22:27:48	⤎ 	pieisgood (~pieisgood@c-71-237-193-20.hsd1.or.comcast.net) has quit (Client Quit)
+2016-09-12 22:29:22	⤎ 	sp1rs (~sp1rs@106.51.141.148) has quit (Ping timeout: 244 seconds)
+2016-09-12 22:29:41	⤍ 	pieisgood (~pieisgood@c-71-237-193-20.hsd1.or.comcast.net) has joined #hackerrank

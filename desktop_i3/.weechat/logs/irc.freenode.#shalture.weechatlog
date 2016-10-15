@@ -1,0 +1,23 @@
+2016-06-02 15:28:13	⤍ 	insidious15 (~insidious@unaffiliated/insidious15) has joined #shalture
+2016-06-02 15:28:13	ℹ	Topic for #shalture is "Shaltúre IRC services, a fork of Atheme | db-write-fork could use testing | https://github.com/shalture/shalture | https://travis-ci.org/shalture/shalture"
+2016-06-02 15:28:13	ℹ	Topic set by ilbelkyr on Sun, 08 Nov 2015 08:50:26
+2016-06-02 15:28:13	ℹ	Channel #shalture: 44 nicks (1 op, 1 voice, 42 normals)
+2016-06-02 15:28:13	ℹ	PvNotice(ChanServ): Please identify to services to talk
+2016-06-02 15:28:14	insidious15	hey all
+2016-06-02 15:28:22	ℹ	Channel created on Thu, 25 Sep 2014 18:06:40
+2016-06-02 15:28:35	insidious15	NickServ isn't working at all for me, just always returns 'no such nick/channel' no matter the command
+2016-06-02 15:29:12	insidious15	it was working fine, but i screwed up the permissoins for inspircd server and inspircd.conf. I fixed those, though, but now NickServ isn't working. I don't think those two are related, though
+2016-06-02 15:29:21	tacocat	what commands have you tried
+2016-06-02 15:29:35	tacocat	and are services linked properly? (see /map)
+2016-06-02 15:31:06	insidious15	'/map just the domain 'irc.whatever.com' and the server, users and avg user
+2016-06-02 15:31:15	insidious15	i'm trying to do /NickServ identify password
+2016-06-02 15:31:16	insidious15	for my nick
+2016-06-02 15:31:25	insidious15	or /NickServ help register
+2016-06-02 15:31:35	insidious15	both return 'no such nick/channel'
+2016-06-02 15:32:25	tacocat	if it doesn't show the services server it means that services haven't linked correctly
+2016-06-02 15:32:27	tacocat	check your logs
+2016-06-02 15:33:19	insidious15	where are the logs? sorry haha this is my second day doing this stuff
+2016-06-02 15:35:52	insidious15	nvm
+2016-06-02 15:36:00	insidious15	seems like i just didn't start the service
+2016-06-02 15:36:13	insidious15	need to edit the service file so that it starts when I reboot my server
+2016-06-02 15:36:15	insidious15	duh

@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# Description: Toggle screen dimming 0-100% with one keybinding
+#              (Bind hotkey to execute this script; eg.: W-A-d)
+# Requires:    xset, xbacklight
+#
+
+XBL=$(xbacklight -get)
+
+if [[ "$XBL" == "0."* ]]; then
+    xset dpms 600 600 600 && xset s on # reset dpms
+    xbacklight -set 100
+else
+    xset dpms 0 0 0 && xset -dpms && xset s off # disable dpms (monitor 'off' timer)
+    xbacklight -set 0
+fi
+
+exit 0

@@ -1,0 +1,82 @@
+#!/bin/bash
+#
+#   Author:         Twily                                                  2014 - 2015
+#   Description:    Locks the screen once the monitor goes to 'off' state w/ slideshow
+#   Requires:       xset, xbacklight, xtrlock, xdotool, feh || firefox || surf
+#
+#   Usage:          Use keybind to '$ sh ./slocker lock' to trigger manually
+#                   (if MLOCK=false and slocker is running in the background)
+#
+#                   Use '$ sh ./slocker' to lock if MLOCK=true
+#
+
+MLOCK=false         # Lock manually only? [true|false]
+PLOCK=false         # Lock with password? [true|false]
+
+function displaypic() {
+    # Open fullscreen picture w/ feh
+
+    # Slideshow
+    #feh -zxFY -D 5 --auto-zoom ~/Pictures/lewd\ pony/ponyporn/*/*
+
+    # How to make Firefox "fullscreen" Profile http://pastebin.com/Gi5ke4WK
+    # homepage.html: http://twily.info/firefox/homepage-sidebar.html#view
+    firefox-nightly -P "fullscreen" -no-remote ~/sidebar-homepage.porn.html
+
+    # slideshow.html: http://twily.info/firefox/slideshow.html#view
+    #surf -f ~/slideshow.porn.html
+
+    # Static
+    #feh -xFY --zoom fill ~/lewd-twily.jpg
+}
+
+function lockscreen() {
+    # Attempt to dim the screen backlight
+    XBL=$(xbacklight -get)
+    xbacklight -set 0
+
+    # Optional: Turn monitor back on once locked
+    xset dpms force on
+
+    echo -e "slocker: \033[1;31mScreen has been locked.\033[0m"
+    if $PLOCK; then
+        displaypic &
+
+        # Lock screen w/ xtrlock
+        if $MLOCK; then sleep .2 && xtrlock
+        else xtrlock; fi
+
+        ### Waiting for password input ###
+
+        # Kill feh
+        pkill -P $!
+    else displaypic; fi
+    echo -e "slocker: \033[1;32mScreen has been unlocked.\033[0m"
+
+    # Reset backlight to $XBL
+    xbacklight -set $XBL
+}
+
+if [ "$1" == "lock" ]; then
+    if ! $MLOCK; then
+        # Turn monitor off
+        sleep .2 && xset dpms force off
+        exit 0
+    fi
+fi
+if $MLOCK; then lockscreen && exit 0; fi
+
+echo -e "slocker: \033[1;33mWaiting for monitor 'off' state...\033[0m"
+
+while true; do
+    MON=$(xset -q|grep 'Monitor is')
+	
+    if [[ $MON == *Off* ]]; then
+        lockscreen
+        echo -e "slocker: \033[1;33mWaiting for monitor 'off' state...\033[0m"
+    fi
+
+    sleep 1
+done
+
+exit 0
