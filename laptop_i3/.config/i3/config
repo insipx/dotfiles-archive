@@ -1,0 +1,297 @@
+##
+## i3 config
+##
+
+
+##
+## Autostart
+##
+#exec --no-startup-id "dunst -config ~/.dunstrc"
+#exec --no-startup-id "volnoti"
+#exec --no-startup-id "dropbox"
+exec --no-startup-id "feh --bg-fill ~/pictures/wallpapers/wallpaper.jpg"
+exec --no-startup-id "i3-msg 'workspace 0:::ArchLinux'"
+exec --no-startup-id "nm-applet"
+##
+## Variables
+##
+## Mod-keys ##
+set $alt Mod1
+set $super Mod4
+
+## Terminal ##
+set $tmx urxvt -e ~/bin/zsh
+set $term urxvt
+
+## Navigation ##
+set $left h
+set $down j
+set $up k
+set $right l
+
+## Workspaces ##
+set $ws1  "1:term1 "
+set $ws2  "2:web1 "
+set $ws3  "3:web2 "
+set $ws4  "4:term2 "
+set $ws5  "5:dev "
+set $ws6  "6:work "
+set $ws7  "7:music ♬"
+set $ws8  "8:chat "
+set $ws0  "0:emp "
+set $ws9  "9:reb "
+
+
+##
+## Borders, and titles
+##
+
+font pango:Terminus 10
+for_window [class="Obshutdown"] floating enable
+
+## Hide titles ##
+#for_window [class="Firefox" instance="Navigator"] border none
+#for_window [class="utox" instance="utox"] border none
+#for_window [class="NetBeans IDE 8.0.2" instance="sun-awt-X11-XFramePeer"] border none
+
+## Size of border ##
+new_window pixel 3
+
+
+##
+## Colors
+##
+
+## Default ##
+# client.focused            #1990B7 #1990B7 #1990B7 #1990B7
+# client.focused_inactive   #333333 #5f676a #ffffff #484e50
+# client.unfocused          #333333 #222222 #888888 #292d2e
+# client.urgent             #2f343a #900000 #ffffff #900000
+
+# class                   border  backgr. text    indicator
+client.focused            #1990B7 #1990B7 #111111 #1990B7
+client.focused_inactive   #1c1c1c #1c1c1c #5f676a
+client.unfocused          #1c1c1c #1c1c1c #888888 #222222
+client.urgent             #2f343a #009000 #ffffff #009000
+
+
+##
+## Keys
+##
+
+## Use Controlouse ##
+floating_modifier $super
+
+## Functional keys ##
+
+#bindsym XF86AudioMute exec "amixer set Master toggle; if [[ -n $(amixer get Master | #grep 'Mono:' | grep -o \"\[off\]\") ]] ; then volnoti-show -m -v; else amixer get #Master | egrep -o \"([0-9]+)%\" | egrep -o \"[0-9]+\" | xargs -0 volnoti-show; fi"
+#bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+ && amixer get Master | egrep -#o \"([0-9]+)%\" | egrep -o \"[0-9]+\" | xargs -0 volnoti-show"
+#bindsym XF86AudioLowerVolume exec "amixer set Master 5%- && amixer get Master | egrep -#o \"([0-9]+)%\" | egrep -o \"[0-9]+\" | xargs -0 volnoti-show"
+
+## Screenshot ##
+bindsym Print exec --no-startup-id import -window root ~/pic/scr/`date +%d%m%y%H%M%S`.png
+
+## Start a terminal ##
+bindsym $super+Return exec --no-startup-id $term
+
+## Start dmenu (a program launcher) ##
+
+bindsym $super+d exec --no-startup-id rofi -show run -opacity 80
+
+
+
+# lock screen
+bindsym $super+Ctrl+l exec --no-startup-id i3lock-fancy
+
+# atom
+bindsym $super+m exec --no-startup-id atom
+
+# Screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id "light -U 5"
+bindsym XF86MonBrightnessUp exec --no-startup-id "light -A 5"
+
+bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -c 0 set Master 1dB- && amixer -c 0 set PCM 1db-"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -c 0 set Master 1dB+ && amixer -c 0 set PCM 1dB+"
+bindsym XF86AudioMute exec --no-startup-id "amixer -c 0 set Master 100dB- && amixer -c 0 set PCM 100dB-"
+
+##
+## MPD integration
+##
+
+bindsym F10 exec mpc toggle
+bindsym F11 exec mpc prev
+bindsym F12 exec mpc next
+
+# Move to monitor VGA-1
+bindsym $super+Ctrl+o exec --no-startup-id "i3-msg move workspace to output VGA-1"
+bindsym $super+Ctrl+p exec --no-startup-id "i3-msg move workspace to output eDP-2"
+
+##
+## WND mode
+##
+
+bindsym $super+r mode "WND"
+
+mode "WND" {
+    
+    bindsym $left resize shrink width 1 px or 1 ppt
+    bindsym $down resize shrink height 1 px or 1 ppt
+    bindsym $up resize grow height 1 px or 1 ppt
+    bindsym $right resize grow width 1 px or 1 ppt
+
+    ## Title / show / hide border ##
+    bindsym o border toggle
+
+    ## Back to normal ##
+    bindsym Escape mode "default"
+}
+
+
+##
+## Tiles
+##
+
+## Kill focused window ##
+bindsym $super+c kill
+
+## Focus tile ##
+bindsym $super+$left focus left
+bindsym $super+$down focus down
+bindsym $super+$up focus up
+bindsym $super+$right focus right
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $super+s layout stacking
+bindsym $super+t layout tabbed
+bindsym $super+e layout toggle split
+
+## Move focused window ##
+bindsym $super+Shift+$left move left
+bindsym $super+Shift+$up move up
+bindsym $super+Shift+$down move down
+bindsym $super+Shift+$right move right
+
+## Split in horizontal orientation ##
+bindsym $super+g split h
+
+## Split in vertical orientation ##
+bindsym $super+v split v
+
+## Enter fullscreen mode for the focused container ##
+bindsym $super+f fullscreen toggle
+
+## Change container layout (stacked, tabbed, toggle split) ##
+bindsym $super+Ctrl+s layout stacking
+bindsym $super+Ctrl+w layout tabbed
+# bindsym $super+Ctrl+e layout toggle split
+
+## Toggle tiling / floating ##
+bindsym $alt+space floating toggle
+
+## Change focus between tiling / floating windows ##
+bindsym $super+space focus mode_toggle
+
+## Focus the parent container ##
+bindsym $super+a focus parent
+
+# Set inner/outer gaps
+gaps inner 13
+gaps outer 0
+
+##
+## Power control buttons
+##
+
+## Reload the configuration file ##
+bindsym $alt+Shift+R reload
+
+## Restart i3 inplace ##
+bindsym $alt+r restart && pkill barsh
+
+## Obshutdown ##
+bindsym $alt+o exec obshutdown -c ~/.config/obshutdown.rc
+
+## i3shutdown ##
+bindsym $alt+i exec ~/bin/i3shutdown
+
+## Exit in i3 ##
+# bindsym $alt+e exit
+
+
+##
+## Workspaces
+##
+
+## Support NumPad with code-keys ##
+#     [+] [-] |      [86] [82]
+# [7] [8] [9] | [79] [80] [81]
+# [4] [5] [6] | [83] [84] [85]
+# [1] [2] [3] | [87] [88] [89]
+#     [0]     |      [90]
+
+## Terminal with administrator permisions ##
+
+
+
+##
+## Bar
+##
+
+bar {
+    #i3bar_command           ~/.config/i3/lemonbar/i3_lemonbar.py
+    #strip_workspace_numbers yes
+    font                    pango:Terminus 10
+    status_command          i3blocks -c ~/.config/i3/i3blocks.conf 
+    workspace_buttons       yes
+    #tray_output            none
+    separator_symbol        " "
+    position                top    colors {
+        background #1b1b1b
+        separator  #ffffff
+        statusline #999999
+        focused_workspace  #000000 #1990B7 #1c1c1c
+        active_workspace   #000000 #333333 #999999
+        inactive_workspace #000000 #333333 #999999
+        urgent_workspace   #000000 #ff5151 #1c1c1c
+    }
+}
+
+
+set $audiomenu "volume:  [+]10%  [-]10%  [m]ute  [r]eset"
+bindsym $super+F12         mode $audiomenu
+
+mode $audiomenu {
+    bindsym r             exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -- 100%
+    bindsym plus          exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -- +10%
+    bindsym KP_Add        exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -- +10%
+    bindsym minus         exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -- -10%
+    bindsym KP_Subtract   exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -- -10%
+    bindsym m             exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym Return        mode "default"
+    bindsym Escape        mode "default"
+}
+
+
+
+bindsym $super+1 workspace $ws1
+bindsym $super+2 workspace $ws2
+bindsym $super+3 workspace $ws3
+bindsym $super+4 workspace $ws4
+bindsym $super+5 workspace $ws5
+bindsym $super+6 workspace $ws6
+bindsym $super+7 workspace $ws7
+bindsym $super+8 workspace $ws8
+bindsym $super+9 workspace $ws9
+bindsym $super+0 workspace $ws0
+
+
+bindsym $super+Shift+1 move container to workspace $ws1
+bindsym $super+Shift+2 move container to workspace $ws2
+bindsym $super+Shift+3 move container to workspace $ws3
+bindsym $super+Shift+4 move container to workspace $ws4
+bindsym $super+Shift+5 move container to workspace $ws5
+bindsym $super+Shift+6 move container to workspace $ws6
+bindsym $super+Shift+7 move container to workspace $ws7
+bindsym $super+Shift+8 move container to workspace $ws8
+bindsym $super+Shift+9 move container to workspace $ws9
+bindsym $super+Shift+0 move container to workspace $ws10

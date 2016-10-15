@@ -1,0 +1,337 @@
+2016-10-11 12:21:04	--	irc: connecting to server irc.animebytes.tv/6667...
+2016-10-11 12:21:04	--	irc: connected to irc.animebytes.tv/6667 (2001:41d0:2:b740::)
+2016-10-11 12:21:04	--	akiko.animebytes.tv: *** Looking up your hostname...
+2016-10-11 12:21:05	--	akiko.animebytes.tv: *** Couldn't resolve your hostname; using your IP address instead
+2016-10-11 12:21:05	--	Welcome to the irc.animebytes.tv IRC Network insi!insi@2601:89:c501:100:2ef5:81d2:3989:e007
+2016-10-11 12:21:05	--	Your host is akiko.animebytes.tv, running version Unreal3.2.10.4
+2016-10-11 12:21:05	--	This server was created Wed 17 Jun 2015 at 02:59:37 CEST
+2016-10-11 12:21:05	--	akiko.animebytes.tv Unreal3.2.10.4 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2016-10-11 12:21:05	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2016-10-11 12:21:05	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=irc.animebytes.tv CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
+2016-10-11 12:21:05	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2016-10-11 12:21:05	--	There are 1 users and 689 invisible on 2 servers
+2016-10-11 12:21:05	--	13 :operator(s) online
+2016-10-11 12:21:05	--	150 :channels formed
+2016-10-11 12:21:05	--	I have 683 clients and 1 servers
+2016-10-11 12:21:05	--	683 1361 :Current local users 683, max 1361
+2016-10-11 12:21:05	--	690 1368 :Current global users 690, max 1368
+2016-10-11 12:21:05	--	- akiko.animebytes.tv Message of the Day -
+2016-10-11 12:21:05	--	- 17/6/2015 4:07
+2016-10-11 12:21:05	--	-
+2016-10-11 12:21:05	--	-                d8888aa,_                    a8888888a   __a88888888b
+2016-10-11 12:21:05	--	-               d8P   `Y88ba.                a8P'~~~~Y88a888P""~~~~Y88b
+2016-10-11 12:21:05	--	-              d8P      ~"Y88a____aaaaa_____a8P        888          Y88
+2016-10-11 12:21:05	--	-             d8P          ~Y88"8~~~~~~~88888P          88g          88
+2016-10-11 12:21:05	--	-            d8P                           88      ____ _88y__       88b
+2016-10-11 12:21:05	--	-            88                           a88    _a88~8888"8M88a_____888
+2016-10-11 12:21:05	--	-            88                           88P    88  a8"'     `888888888b_
+2016-10-11 12:21:05	--	-           a8P                           88     88 a88         88b     Y8,
+2016-10-11 12:21:05	--	-            8b                           88      8888P         388      88b
+2016-10-11 12:21:05	--	-           a88a                          Y8b       88L         8888.    88P
+2016-10-11 12:21:05	--	-          a8P                             Y8_     _888       _a8P 88   a88
+2016-10-11 12:21:05	--	-         _8P                               ~Y88a888~888g_   a888yg8'  a88'
+2016-10-11 12:21:05	--	-         88                                   ~~~~    ~""8888        a88P
+2016-10-11 12:21:05	--	-        d8'                                                Y8,      888L
+2016-10-11 12:21:05	--	-        8E                                                  88a___a8"888
+2016-10-11 12:21:05	--	-       d8P                                                   ~Y888"   88L
+2016-10-11 12:21:05	--	-       88                                                      ~~      88
+2016-10-11 12:21:05	--	-       88                                                              88
+2016-10-11 12:21:05	--	-       88                                                              88b
+2016-10-11 12:21:05	--	-   ____88a_.      a8a                                                __881
+2016-10-11 12:21:05	--	- 88""P~888        888b                                 __          8888888888
+2016-10-11 12:21:05	--	-       888        888P                                d88b             88
+2016-10-11 12:21:05	--	-      _888ba       ~            aaaa.                 8888            d8P
+2016-10-11 12:21:05	--	-  a888~"Y88                    888888                 "8P          8aa888_
+2016-10-11 12:21:05	--	-         Y8b                   Y888P"                                88""888a
+2016-10-11 12:21:05	--	-         _88g8                  ~~~                                 a88    ~~
+2016-10-11 12:21:05	--	-     __a8"888_                                                  a_ a88
+2016-10-11 12:21:05	--	-    88"'    "88g                                                 "888g_
+2016-10-11 12:21:05	--	-    ~         `88a_                                            _a88'"Y88gg,
+2016-10-11 12:21:05	--	-                 "888aa_.                                   _a88"'      ~88
+2016-10-11 12:21:05	--	-                    ~~""8888aaa______                ____a888P'
+2016-10-11 12:21:05	--	-                            ~~""""""888888888888888888""~~~
+2016-10-11 12:21:05	--	- akiko.animebytes.tv                   ~~~~~~~~~~~~
+2016-10-11 12:21:05	--	-
+2016-10-11 12:21:05	--	-
+2016-10-11 12:21:05	--	- How to access official channels:
+2016-10-11 12:21:05	--	-
+2016-10-11 12:21:05	--	- 1) Make sure you have set your IRC key in your profile on the site
+2016-10-11 12:21:05	--	- 2) /msg Satsuki enter #AnimeBytes <sitenick> <irckey>
+2016-10-11 12:21:05	--	-
+2016-10-11 12:21:05	--	- Thats all!
+2016-10-11 12:21:05	--	-
+2016-10-11 12:21:05	--	- If you have any problems, pop into #support
+2016-10-11 12:21:05	--	-
+2016-10-11 12:21:05	--	End of /MOTD command.
+2016-10-11 12:21:05	--	User mode [+iwx] by insi
+2016-10-11 12:21:05	--	NickServ (services@services.animebytes.tv): Your nickname is not registered. To register it, use: /msg NickServ REGISTER password email
+2016-10-11 12:21:38	--	You are now known as insidious15
+2016-10-11 12:21:48	--	#animebytes: Cannot join channel (+i)
+2016-10-11 12:22:23	--	MSG(Satsuki): enter #animebytes insidious15 ZPlHkskWD6QFEq77
+2016-10-11 12:22:24	--	akiko.animebytes.tv: *** You were forced to join #animebytes
+2016-10-11 13:14:20	--	You have been marked as being away
+2016-10-11 13:36:29	--	You are no longer marked as being away
+2016-10-11 14:09:30	--	Channel Users  Name
+2016-10-11 14:09:30	--	#discusstoys(1)
+2016-10-11 14:09:30	--	#developers(6)
+2016-10-11 14:09:30	--	#(4): [+tu] the void
+2016-10-11 14:09:30	--	#code(3)
+2016-10-11 14:09:30	--	#BTN-Announce(1)
+2016-10-11 14:09:30	--	#hell(1)
+2016-10-11 14:09:30	--	#help(3):  You're probably looking for #support
+2016-10-11 14:09:30	--	#gohomeyou'redrunk(3)
+2016-10-11 14:09:30	--	#mofu(1)
+2016-10-11 14:09:30	--	#kuma(1)
+2016-10-11 14:09:30	--	#Pokémon(14): [+ntr] #Pokémon, you can't spell it without the é | http://fi.twitch.tv/fishplayspokemon | https://www.youtube.com/watch?v=4qeAuz0Qm9w
+2016-10-11 14:09:30	--	#w(2)
+2016-10-11 14:09:30	--	#chess(9): [+ntr] Animebyte's Chess club! | remember your daily 7-up sips | http://imgs.xkcd.com/comics/chess_enlightenment.png
+2016-10-11 14:09:30	--	#porn(2)
+2016-10-11 14:09:30	--	#anime(69): [+ntrR] Aotf #145 is Hajime no Ippo
+2016-10-11 14:09:30	--	#games(71): [+ntrRS] ♥♥♥ Come game with us! Also VNs♥ http://steamcommunity.com/groups/AnimeBytes ♥♡♥
+2016-10-11 14:09:30	--	#wiki(5):  RIP #wiki
+2016-10-11 14:09:30	--	#testing(1)
+2016-10-11 14:09:30	--	#unix(3):  flame wars r us!
+2016-10-11 14:09:30	--	#apple(2)
+2016-10-11 14:09:30	--	#solaris(1)
+2016-10-11 14:09:30	--	#comfy(1)
+2016-10-11 14:09:30	--	#idols(7): [+nt] Welcome To RaibuBytes! https://animebytes.tv/forums.php?action=viewthread&threadid=15667
+2016-10-11 14:09:30	--	#manga(43): [+ntrR] Manga rules!
+2016-10-11 14:09:30	--	#countkrew(2)
+2016-10-11 14:09:30	--	#dough(4):  Join #classical for some dank arrangememes.
+2016-10-11 14:09:30	--	#2D2D2D(1)
+2016-10-11 14:09:30	--	#butts(1)
+2016-10-11 14:09:30	--	#radio(37): [+nti] RADIO IS LIVE!! https://animebytes.tv/radio/listen.m3u | Add suggestions https://animebytes.tv/forums.php?action=viewthread&threadid=17076
+2016-10-11 14:09:30	--	#korea(7): [+ntir] 오빠~ 안녕하세요!! -- https://i.imgur.com/GtG9O12.gifv -- [February 4th, 2016 - Sse sse sse] -- Told you ain't nobody do it like me, 무서워!! -- https://www.youtube.com/watch?v=xKMT44GBaUI
+2016-10-11 14:09:30	--	#linux(121): [+ntr] #bsd in a shellnut: Type GO POWER and press F16 | https://i.imgur.com/MvNXcyT.gif | http://i.imgur.com/j5yJ0IX.jpg | just enable wtf8 | http://i.imgur.com/uOFoS60.jpg | <chinatsu> imagine rms in the gnude | https://i.imgur.com/el36Jy8.png | http://i.imgur.com/ZULRI9F.jpg
+2016-10-11 14:09:30	--	#gameboyfort(2)
+2016-10-11 14:09:30	--	#oppai(1)
+2016-10-11 14:09:30	--	#ABboardGameClub(5): [+mtS] Play boardgames here. :D | Monopoly @ http://pogo.com | Cards Against Humanity @ http://pyx-2.pretendyoure.xyz/zy/game.jsp | Thread on Site @ https://animebytes.tv/forums.php?action=viewthread&threadid=19577
+2016-10-11 14:09:30	--	#music(66): [+ntrR] [Pick 280] Seaside Lovers - Memories in Beach House | https://animebytes.tv/forums.php?action=viewthread&threadid=20170
+2016-10-11 14:09:30	--	#rp(1)
+2016-10-11 14:09:30	--	#announce(226): [+mntirKu] AnimeBytes upload announcements. Don't worry if you don't see any non-ops, this room is +u.
+2016-10-11 14:09:30	--	#lesderid2(1)
+2016-10-11 14:09:30	--	#hardware(14): [+ntr] AB Hardware: Got a problem? #RMA
+2016-10-11 14:09:30	--	#tsuki(1)
+2016-10-11 14:09:30	--	#aldySm2016(1)
+2016-10-11 14:09:30	--	#fermis(3)
+2016-10-11 14:09:30	--	#arnold(4)
+2016-10-11 14:09:30	--	#support(18): [+sntrS] AnimeBytes Support | Join #invites for application questions | Please /part the channel once your questions have been answered | Do not ask for invites! | Do not PM or highlight staff
+2016-10-11 14:09:30	--	#hentai(2)
+2016-10-11 14:09:30	--	*(4)
+2016-10-11 14:09:30	--	#kamiko(1)
+2016-10-11 14:09:30	--	#vocaloid(1)
+2016-10-11 14:09:30	--	#animenews(25): [+R]
+2016-10-11 14:09:30	--	#classical(2)
+2016-10-11 14:09:30	--	#krabba(2):  Welcome to krabba's safe-space » https://youtu.be/62jZENi1ed8 | Don't forget to take your soma, goyim! https://i.imgur.com/xFruh3Y.jpg | NUMQUAM RETRO: https://i.imgur.com/hxyjKtB.jpg | /k/ is my waifu edition:  http://i.imgur.com/ASDYZ4k.jpg
+2016-10-11 14:09:30	--	#keyboards(4):  wasd up?
+2016-10-11 14:09:30	--	#zeroxv2017(8): [+ntr] Akemi spam once again
+2016-10-11 14:09:30	--	#kancolle(2):  Set sail for #kancolle!
+2016-10-11 14:09:30	--	#gundam(1): [+ntr] GUNDAM | http://gundam.wikia.com/wiki/Category:Timelines | http://mei.animebytes.tv/images/69eaf3da8d01dedcc9fa1992059558e8.jpeg
+2016-10-11 14:09:30	--	#erogewatch(4): [+nt] Current VNTL statuses @ http://erogegames.com/eroge-visual-novels/eroge-news/
+2016-10-11 14:09:30	--	#funtoo(1)
+2016-10-11 14:09:30	--	#ABBuddies(14): [+mtS] ジンピさんはどこですか。
+2016-10-11 14:09:31	--	#scj643@AB|Radio(2)
+2016-10-11 14:09:31	--	#echochamber(2)
+2016-10-11 14:09:31	--	*(1)
+2016-10-11 14:09:31	--	#mahou-seinen(2)
+2016-10-11 14:09:31	--	#channel(1)
+2016-10-11 14:09:31	--	*(1)
+2016-10-11 14:09:31	--	##testing(4)
+2016-10-11 14:09:31	--	#fbi(1): [+r] Next meeting: better surveillance, and follow up with Airbus about our private jet order.
+2016-10-11 14:09:31	--	#movies(1)
+2016-10-11 14:09:31	--	#idc(70): [+ntrRcCTG] ︻╦╤-♥♡♥ DEFEND #IDC ♥♡♥─╤╦︻  peppyroni
+2016-10-11 14:09:31	--	#bsd(5)
+2016-10-11 14:09:31	--	#aud(1)
+2016-10-11 14:09:31	--	#rekyuu(1)
+2016-10-11 14:09:31	--	#foreveralone(1)
+2016-10-11 14:09:31	--	#vapers(2)
+2016-10-11 14:09:31	--	#michikos_bed(5)
+2016-10-11 14:09:31	--	#FSN(3)
+2016-10-11 14:09:31	--	#gto(3)
+2016-10-11 14:09:31	--	#granblue(1)
+2016-10-11 14:09:31	--	#tea(1)
+2016-10-11 14:09:31	--	#ptg(1)
+2016-10-11 14:09:31	--	#mahou-shoujo(2): [+r] ／人◕ ‿‿ ◕人＼ Would you like to make a contract?
+2016-10-11 14:09:31	--	#osu(3): [+nt] Touhou FOR the mouse | or more recently: nvm, it's actually an Osu! channel these days, heh | osu's back IN vogue, supportergots | bros only | Everyone give A warm goodbye to: Minorin, banned April 16th, 2011 ;~;
+2016-10-11 14:09:31	--	#supportchanold(2)
+2016-10-11 14:09:31	--	#Alleyne(2)
+2016-10-11 14:09:31	--	#Pok?mon(2)
+2016-10-11 14:09:31	--	#watson(2)
+2016-10-11 14:09:31	--	#yakuza(3)
+2016-10-11 14:09:31	--	#cymaland(2)
+2016-10-11 14:09:31	--	#ABboardGamesClub(1)
+2016-10-11 14:09:31	--	#deutsch(20): [+ntr] German talk ♥♥ Tuturu! ♥♥ Liliana (^ω^) ♥♥ Oppai Gwanak Style ♥♥ Ich bin der Killa! ♥♥ Nur Duden-konformes Deutsch (^_-)-☆ ♥♥ Hayate - #deutsch's own legend ♥♥ aka #tunte
+2016-10-11 14:09:31	--	#syncplay(5)
+2016-10-11 14:09:31	--	#mysecrethideoutkeepout(1)
+2016-10-11 14:09:31	--	#cooking(6):  Cooking, baking, searing, smoking! Share recipies, tips & tricks, and mouthwatering pictures
+2016-10-11 14:09:31	--	#animebytes(448): [+sntirSKT] Welcome to AnimeBytes! | Exclusive: AB user admits to having friends in real life.
+2016-10-11 14:09:31	--	#animebytez(1)
+2016-10-11 14:09:31	--	#support3.1415926535897932384626(1)
+2016-10-11 14:09:31	--	#opentrackers.org(2)
+2016-10-11 14:09:31	--	#mahjong(2)
+2016-10-11 14:09:31	--	#supporttest(1)
+2016-10-11 14:09:31	--	#rudesters(1)
+2016-10-11 14:09:31	--	#helpbread(1)
+2016-10-11 14:09:31	--	#abpodcast(3)
+2016-10-11 14:09:31	--	#math-help(3):  Math is PASSION: http://www.twiddla.com for writing formulae or use LaTex coding in channel. Help with LaTeX also available.
+2016-10-11 14:09:31	--	#4chanwatching(6)
+2016-10-11 14:09:31	--	#RustyHearts(1)
+2016-10-11 14:09:31	--	#Harmony-Project(2)
+2016-10-11 14:09:31	--	#onaholes(2)
+2016-10-11 14:09:31	--	#nihongo(32): [+ntr] 今月の諺：「河童の川流れ・猿も木から落ちる・弘法も筆の誤り」| 今月の四字熟語：「千慮一失」| Feel free to ask questions. | For starters: http://www.guidetojapanese.org/ | Dictionary: http://www.edrdg.org/cgi-bin/wwwjdic/wwwjdic http://beta.jisho.org/ | Kanji: http
+2016-10-11 14:09:31	--	#fledermäuse(1)
+2016-10-11 14:09:31	--	#skypenight(5)
+2016-10-11 14:09:31	--	#fansub-support(2)
+2016-10-11 14:09:31	--	#thegame(1)
+2016-10-11 14:09:31	--	#support-test(3)
+2016-10-11 14:09:31	--	#support-test2(3)
+2016-10-11 14:09:31	--	#CountToOneMillion(16): [+ntrC] ヘ（。□°）ヘ  ●  Last page: https://animebytes.tv/forums.php?action=viewthread&threadid=556&page=12142  ●  18135 (+1) seconds per page, 27012 (+8198) last page · Only about 16 years and 6 days left!
+2016-10-11 14:09:31	--	#baka(15):  ≖ 3 ≖ ⑨ Baka of the day: lame⑨ https://i.imgur.com/kCwaS0K.png ⑨
+2016-10-11 14:09:31	--	End of /LIST
+2016-10-11 15:20:48	--	akiko.animebytes.tv: *** You were forced to part #support
+2016-10-11 15:20:48	--	akiko.animebytes.tv: *** You were forced to join #support-session1
+2016-10-11 15:20:48	--	Sakuya (Sakuya@bakus.dungeon): insidious15, you are now being helped by Chii in #support-session1.
+2016-10-11 15:48:47	=!=	irc: reading data on socket: error 101 Network is unreachable
+2016-10-11 15:48:47	--	irc: disconnecting from server...
+2016-10-11 15:48:47	--	irc: disconnected from server
+2016-10-11 15:48:47	--	irc: reconnecting to server in 10 seconds
+2016-10-11 15:48:57	--	irc: reconnecting to server...
+2016-10-11 15:48:57	--	irc: connecting to server irc.animebytes.tv/6667...
+2016-10-11 15:48:58	--	irc: connected to irc.animebytes.tv/6667 (2001:41d0:2:b740::)
+2016-10-11 15:48:58	--	akiko.animebytes.tv: *** Looking up your hostname...
+2016-10-11 15:48:59	--	akiko.animebytes.tv: *** Couldn't resolve your hostname; using your IP address instead
+2016-10-11 15:48:59	--	Welcome to the irc.animebytes.tv IRC Network insidious15!insi@2601:89:c501:100:2ef5:81d2:3989:e007
+2016-10-11 15:48:59	--	Your host is akiko.animebytes.tv, running version Unreal3.2.10.4
+2016-10-11 15:48:59	--	This server was created Wed 17 Jun 2015 at 02:59:37 CEST
+2016-10-11 15:48:59	--	akiko.animebytes.tv Unreal3.2.10.4 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2016-10-11 15:48:59	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2016-10-11 15:48:59	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=irc.animebytes.tv CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
+2016-10-11 15:48:59	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2016-10-11 15:48:59	--	There are 1 users and 686 invisible on 2 servers
+2016-10-11 15:48:59	--	13 :operator(s) online
+2016-10-11 15:48:59	--	150 :channels formed
+2016-10-11 15:48:59	--	I have 680 clients and 1 servers
+2016-10-11 15:48:59	--	680 1361 :Current local users 680, max 1361
+2016-10-11 15:48:59	--	687 1368 :Current global users 687, max 1368
+2016-10-11 15:48:59	--	- akiko.animebytes.tv Message of the Day -
+2016-10-11 15:48:59	--	- 17/6/2015 4:07
+2016-10-11 15:48:59	--	-
+2016-10-11 15:48:59	--	-                d8888aa,_                    a8888888a   __a88888888b
+2016-10-11 15:48:59	--	-               d8P   `Y88ba.                a8P'~~~~Y88a888P""~~~~Y88b
+2016-10-11 15:48:59	--	-              d8P      ~"Y88a____aaaaa_____a8P        888          Y88
+2016-10-11 15:48:59	--	-             d8P          ~Y88"8~~~~~~~88888P          88g          88
+2016-10-11 15:48:59	--	-            d8P                           88      ____ _88y__       88b
+2016-10-11 15:48:59	--	-            88                           a88    _a88~8888"8M88a_____888
+2016-10-11 15:48:59	--	-            88                           88P    88  a8"'     `888888888b_
+2016-10-11 15:48:59	--	-           a8P                           88     88 a88         88b     Y8,
+2016-10-11 15:48:59	--	-            8b                           88      8888P         388      88b
+2016-10-11 15:48:59	--	-           a88a                          Y8b       88L         8888.    88P
+2016-10-11 15:48:59	--	-          a8P                             Y8_     _888       _a8P 88   a88
+2016-10-11 15:48:59	--	-         _8P                               ~Y88a888~888g_   a888yg8'  a88'
+2016-10-11 15:48:59	--	-         88                                   ~~~~    ~""8888        a88P
+2016-10-11 15:48:59	--	-        d8'                                                Y8,      888L
+2016-10-11 15:48:59	--	-        8E                                                  88a___a8"888
+2016-10-11 15:48:59	--	-       d8P                                                   ~Y888"   88L
+2016-10-11 15:48:59	--	-       88                                                      ~~      88
+2016-10-11 15:48:59	--	-       88                                                              88
+2016-10-11 15:48:59	--	-       88                                                              88b
+2016-10-11 15:48:59	--	-   ____88a_.      a8a                                                __881
+2016-10-11 15:48:59	--	- 88""P~888        888b                                 __          8888888888
+2016-10-11 15:48:59	--	-       888        888P                                d88b             88
+2016-10-11 15:48:59	--	-      _888ba       ~            aaaa.                 8888            d8P
+2016-10-11 15:48:59	--	-  a888~"Y88                    888888                 "8P          8aa888_
+2016-10-11 15:48:59	--	-         Y8b                   Y888P"                                88""888a
+2016-10-11 15:48:59	--	-         _88g8                  ~~~                                 a88    ~~
+2016-10-11 15:48:59	--	-     __a8"888_                                                  a_ a88
+2016-10-11 15:48:59	--	-    88"'    "88g                                                 "888g_
+2016-10-11 15:48:59	--	-    ~         `88a_                                            _a88'"Y88gg,
+2016-10-11 15:48:59	--	-                 "888aa_.                                   _a88"'      ~88
+2016-10-11 15:48:59	--	-                    ~~""8888aaa______                ____a888P'
+2016-10-11 15:48:59	--	-                            ~~""""""888888888888888888""~~~
+2016-10-11 15:48:59	--	- akiko.animebytes.tv                   ~~~~~~~~~~~~
+2016-10-11 15:48:59	--	-
+2016-10-11 15:48:59	--	-
+2016-10-11 15:48:59	--	- How to access official channels:
+2016-10-11 15:48:59	--	-
+2016-10-11 15:48:59	--	- 1) Make sure you have set your IRC key in your profile on the site
+2016-10-11 15:48:59	--	- 2) /msg Satsuki enter #AnimeBytes <sitenick> <irckey>
+2016-10-11 15:48:59	--	-
+2016-10-11 15:48:59	--	- Thats all!
+2016-10-11 15:48:59	--	-
+2016-10-11 15:48:59	--	- If you have any problems, pop into #support
+2016-10-11 15:48:59	--	-
+2016-10-11 15:48:59	--	End of /MOTD command.
+2016-10-11 15:48:59	--	User mode [+iwx] by insidious15
+2016-10-11 15:48:59	--	NickServ (services@services.animebytes.tv): Your nickname is not registered. To register it, use: /msg NickServ REGISTER password email
+2016-10-11 16:04:00	--	You have been marked as being away
+2016-10-11 17:00:45	--	You are no longer marked as being away
+2016-10-11 17:20:50	--	You have been marked as being away
+2016-10-11 17:35:36	--	You are no longer marked as being away
+2016-10-12 01:06:55	--	irc: connecting to server irc.animebytes.tv/6667...
+2016-10-12 01:07:00	--	irc: connected to irc.animebytes.tv/6667 (188.165.236.64)
+2016-10-12 01:07:00	--	akiko.animebytes.tv: *** Looking up your hostname...
+2016-10-12 01:07:01	--	akiko.animebytes.tv: *** Couldn't resolve your hostname; using your IP address instead
+2016-10-12 01:07:01	--	Welcome to the irc.animebytes.tv IRC Network insi!insi@134.198.67.109
+2016-10-12 01:07:01	--	Your host is akiko.animebytes.tv, running version Unreal3.2.10.4
+2016-10-12 01:07:01	--	This server was created Wed 17 Jun 2015 at 02:59:37 CEST
+2016-10-12 01:07:01	--	akiko.animebytes.tv Unreal3.2.10.4 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2016-10-12 01:07:01	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2016-10-12 01:07:01	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=irc.animebytes.tv CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
+2016-10-12 01:07:01	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2016-10-12 01:07:01	--	There are 1 users and 668 invisible on 2 servers
+2016-10-12 01:07:01	--	13 :operator(s) online
+2016-10-12 01:07:01	--	150 :channels formed
+2016-10-12 01:07:01	--	I have 662 clients and 1 servers
+2016-10-12 01:07:01	--	662 1361 :Current local users 662, max 1361
+2016-10-12 01:07:01	--	669 1368 :Current global users 669, max 1368
+2016-10-12 01:07:01	--	- akiko.animebytes.tv Message of the Day -
+2016-10-12 01:07:01	--	- 17/6/2015 4:07
+2016-10-12 01:07:01	--	-
+2016-10-12 01:07:01	--	-                d8888aa,_                    a8888888a   __a88888888b
+2016-10-12 01:07:01	--	-               d8P   `Y88ba.                a8P'~~~~Y88a888P""~~~~Y88b
+2016-10-12 01:07:01	--	-              d8P      ~"Y88a____aaaaa_____a8P        888          Y88
+2016-10-12 01:07:01	--	-             d8P          ~Y88"8~~~~~~~88888P          88g          88
+2016-10-12 01:07:01	--	-            d8P                           88      ____ _88y__       88b
+2016-10-12 01:07:01	--	-            88                           a88    _a88~8888"8M88a_____888
+2016-10-12 01:07:01	--	-            88                           88P    88  a8"'     `888888888b_
+2016-10-12 01:07:01	--	-           a8P                           88     88 a88         88b     Y8,
+2016-10-12 01:07:01	--	-            8b                           88      8888P         388      88b
+2016-10-12 01:07:01	--	-           a88a                          Y8b       88L         8888.    88P
+2016-10-12 01:07:01	--	-          a8P                             Y8_     _888       _a8P 88   a88
+2016-10-12 01:07:01	--	-         _8P                               ~Y88a888~888g_   a888yg8'  a88'
+2016-10-12 01:07:01	--	-         88                                   ~~~~    ~""8888        a88P
+2016-10-12 01:07:01	--	-        d8'                                                Y8,      888L
+2016-10-12 01:07:01	--	-        8E                                                  88a___a8"888
+2016-10-12 01:07:01	--	-       d8P                                                   ~Y888"   88L
+2016-10-12 01:07:01	--	-       88                                                      ~~      88
+2016-10-12 01:07:01	--	-       88                                                              88
+2016-10-12 01:07:01	--	-       88                                                              88b
+2016-10-12 01:07:01	--	-   ____88a_.      a8a                                                __881
+2016-10-12 01:07:01	--	- 88""P~888        888b                                 __          8888888888
+2016-10-12 01:07:01	--	-       888        888P                                d88b             88
+2016-10-12 01:07:01	--	-      _888ba       ~            aaaa.                 8888            d8P
+2016-10-12 01:07:01	--	-  a888~"Y88                    888888                 "8P          8aa888_
+2016-10-12 01:07:01	--	-         Y8b                   Y888P"                                88""888a
+2016-10-12 01:07:01	--	-         _88g8                  ~~~                                 a88    ~~
+2016-10-12 01:07:01	--	-     __a8"888_                                                  a_ a88
+2016-10-12 01:07:01	--	-    88"'    "88g                                                 "888g_
+2016-10-12 01:07:01	--	-    ~         `88a_                                            _a88'"Y88gg,
+2016-10-12 01:07:01	--	-                 "888aa_.                                   _a88"'      ~88
+2016-10-12 01:07:01	--	-                    ~~""8888aaa______                ____a888P'
+2016-10-12 01:07:01	--	-                            ~~""""""888888888888888888""~~~
+2016-10-12 01:07:01	--	- akiko.animebytes.tv                   ~~~~~~~~~~~~
+2016-10-12 01:07:01	--	-
+2016-10-12 01:07:01	--	-
+2016-10-12 01:07:01	--	- How to access official channels:
+2016-10-12 01:07:01	--	-
+2016-10-12 01:07:01	--	- 1) Make sure you have set your IRC key in your profile on the site
+2016-10-12 01:07:01	--	- 2) /msg Satsuki enter #AnimeBytes <sitenick> <irckey>
+2016-10-12 01:07:01	--	-
+2016-10-12 01:07:01	--	- Thats all!
+2016-10-12 01:07:01	--	-
+2016-10-12 01:07:01	--	- If you have any problems, pop into #support
+2016-10-12 01:07:01	--	-
+2016-10-12 01:07:01	--	End of /MOTD command.
+2016-10-12 01:07:01	--	User mode [+iwx] by insi
+2016-10-12 01:07:01	--	NickServ (services@services.animebytes.tv): Your nickname is not registered. To register it, use: /msg NickServ REGISTER password email
+2016-10-12 01:07:20	--	irc: disconnected from server

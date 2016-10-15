@@ -1,0 +1,366 @@
+q##
+## i3 config
+##
+
+
+##
+## Autostart
+##
+#exec --no-startup-id "dunst -config ~/.dunstrc"
+#exec --no-startup-id "volnoti"
+#exec --no-startup-id "dropbox"
+exec --no-startup-id "feh --bg-fill ~/pictures/wallpapers/dark-blue-anime.jpg"
+exec --no-startup-id "i3-msg 'workspace 0:::ArchLinux'"
+exec --no-startup-id "nm-applet"
+##
+## Variables
+##
+## Mod-keys ##
+set $alt Mod1
+set $super Mod4
+
+## Terminal ##
+set $tmx urxvt -e ~/bin/zsh
+set $term urxvt
+
+## Navigation ##
+set $left h
+set $down j
+set $up k
+set $right l
+
+## Workspaces ##
+set $ws1  "1: ::web1 "
+set $ws2  "2: ::web2 "
+set $ws3  "3: ::term1 "
+set $ws4  "4: ::term2 "
+set $ws5  "5: ::dev1 "
+set $ws6  "6: ::dev2 "
+set $ws7  "7: ♬::music "
+set $ws8  "8: ::mail "
+set $ws0  "0: ::emp "
+set $ws9  "9: ::reb "
+
+
+##
+## Borders, and titles
+##
+
+font pango:Terminus 10
+for_window [class="Obshutdown"] floating enable
+
+## Hide titles ##
+#for_window [class="Firefox" instance="Navigator"] border none
+#for_window [class="utox" instance="utox"] border none
+#for_window [class="Deadbeef" instance="deadbeef"] border none
+#for_window [class="Gimp" instance="gimp"] border none
+#for_window [class="NetBeans IDE 8.0.2" instance="sun-awt-X11-XFramePeer"] border none
+
+## Size of border ##
+new_window pixel 3
+
+
+##
+## Colors
+##
+
+## Default ##
+# client.focused            #1990B7 #1990B7 #1990B7 #1990B7
+# client.focused_inactive   #333333 #5f676a #ffffff #484e50
+# client.unfocused          #333333 #222222 #888888 #292d2e
+# client.urgent             #2f343a #900000 #ffffff #900000
+
+# class                   border  backgr. text    indicator
+client.focused            #1990B7 #1990B7 #111111 #1990B7
+client.focused_inactive   #1c1c1c #1c1c1c #5f676a
+client.unfocused          #1c1c1c #1c1c1c #888888 #222222
+client.urgent             #2f343a #009000 #ffffff #009000
+
+
+##
+## Keys
+##
+
+## Use Controlouse ##
+floating_modifier $super
+
+## Functional keys ##
+
+#bindsym XF86AudioMute exec "amixer set Master toggle; if [[ -n $(amixer get Master | #grep 'Mono:' | grep -o \"\[off\]\") ]] ; then volnoti-show -m -v; else amixer get #Master | egrep -o \"([0-9]+)%\" | egrep -o \"[0-9]+\" | xargs -0 volnoti-show; fi"
+#bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+ && amixer get Master | egrep -#o \"([0-9]+)%\" | egrep -o \"[0-9]+\" | xargs -0 volnoti-show"
+#bindsym XF86AudioLowerVolume exec "amixer set Master 5%- && amixer get Master | egrep -#o \"([0-9]+)%\" | egrep -o \"[0-9]+\" | xargs -0 volnoti-show"
+
+## Screenshot ##
+bindsym Print exec --no-startup-id import -window root ~/pic/scr/`date +%d%m%y%H%M%S`.png
+
+## Start a terminal ##
+bindsym $super+Return exec --no-startup-id $term
+bindsym $super+t exec --no-startup-id $tmx
+
+## Start dmenu (a program launcher) ##
+bindsym $super+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -b -i -p 'Arch Linux' -fn 'profont-11' -nb '#111111' -nf '#1990B7' -sb '#1990B7' -sf '#000000'"
+
+bindsym $super+r exec --no-startup-id rofi -show run -config .config/rofi
+
+
+
+
+
+# lock screen
+bindsym $super+Shift+L exec --no-startup-id lock
+bindsym $super+Ctrl+l exec --no-startup-id slimlock
+
+# emacs
+bindsym $super+e exec --no-startup-id emacsclient -c
+
+# sublime
+bindsym $super+s exec --no-startup-id subl
+
+# atom
+bindysm $super+m exec --no-startup-id atom
+
+# Screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id "light -U 100"
+bindsym XF86MonBrightnessUp exec --no-startup-id "light -A 100"
+
+##
+## MPD integration
+##
+
+bindsym F10 exec mpc toggle
+bindsym F11 exec mpc prev
+bindsym F12 exec mpc next
+
+# Move to monitor VGA-1
+bindsym $super+Ctrl+o exec --no-startup-id "i3-msg move workspace to output VGA-1"
+bindsym $super+Ctrl+p exec --no-startup-id "i3-msg move workspace to output eDP-2"
+
+##
+## WND mode
+##
+
+bindsym $super+r mode "WND"
+mode "WND" {
+    bindsym $left resize shrink width 1 px or 1 ppt
+    bindsym $down resize shrink height 1 px or 1 ppt
+    bindsym $up resize grow height 1 px or 1 ppt
+    bindsym $right resize grow width 1 px or 1 ppt
+
+    ## Title / show / hide border ##
+    bindsym o border toggle
+
+    ## Back to normal ##
+    bindsym $super+w  mode "default"
+}
+
+
+##
+## Tiles
+##
+
+## Kill focused window ##
+bindsym $super+c kill
+
+## Focus tile ##
+bindsym $super+$left focus left
+bindsym $super+$down focus down
+bindsym $super+$up focus up
+bindsym $super+$right focus right
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $super+Shift+s layout stacking
+bindsym $super+Shift+w layout tabbed
+bindsym $super+Shift+e layout toggle split
+
+## Move focused window ##
+bindsym $super+Shift+$left move left
+bindsym $super+Shift+$up move up
+bindsym $super+Shift+$down move down
+bindsym $super+Shift+$right move right
+
+## Split in horizontal orientation ##
+bindsym $super+g split h
+
+## Split in vertical orientation ##
+bindsym $super+v split v
+
+## Enter fullscreen mode for the focused container ##
+bindsym $super+f fullscreen toggle
+
+## Change container layout (stacked, tabbed, toggle split) ##
+bindsym $super+Ctrl+s layout stacking
+bindsym $super+Ctrl+w layout tabbed
+# bindsym $super+Ctrl+e layout toggle split
+
+## Toggle tiling / floating ##
+bindsym $alt+space floating toggle
+
+## Change focus between tiling / floating windows ##
+bindsym $super+space focus mode_toggle
+
+## Focus the parent container ##
+bindsym $super+a focus parent
+
+# Set inner/outer gaps
+gaps inner 13
+gaps outer 0
+
+##
+## Power control buttons
+##
+
+## Reload the configuration file ##
+bindsym $alt+Shift+R reload
+
+## Restart i3 inplace ##
+bindsym $alt+r restart && pkill barsh
+
+## Obshutdown ##
+bindsym $alt+o exec obshutdown -c ~/.config/obshutdown.rc
+
+## i3shutdown ##
+bindsym $alt+i exec ~/bin/i3shutdown
+
+## Exit in i3 ##
+# bindsym $alt+e exit
+
+
+##
+## Workspaces
+##
+
+## Support NumPad with code-keys ##
+#     [+] [-] |      [86] [82]
+# [7] [8] [9] | [79] [80] [81]
+# [4] [5] [6] | [83] [84] [85]
+# [1] [2] [3] | [87] [88] [89]
+#     [0]     |      [90]
+
+## Terminal with administrator permisions ##
+workspace $WS0 output PRIMARY_OUTPUT
+bindsym $super+0 workspace $WS0
+bindsym $alt+0 move container to workspace $WS0
+bindcode $super+90 workspace $WS0
+bindcode $alt+90 move container to workspace $WS0
+
+
+## Firefox or any other web browser ##
+workspace $WS2  output PRIMARY_OUTPUT
+bindsym $super+2 workspace $WS2
+bindsym $alt+2 move container to workspace $WS2
+bindcode $super+88 workspace $WS2
+bindcode $alt+88 move container to workspace $WS2
+
+##  IRC, TOX, etc... ##
+workspace $WS3 output PRIMARY_OUTPUT
+bindsym $super+3 workspace $WS3
+bindsym $alt+3 move container to workspace $WS3
+bindcode $super+89 workspace $WS3
+bindcode $alt+89 move container to workspace $WS3
+
+## View films or listen music ##
+workspace $WS4 output PRIMARY_OUTPUT
+bindsym $super+4 workspace $WS4
+bindsym $alt+4 move container to workspace $WS4
+bindcode $super+83 workspace $WS4
+bindcode $alt+83 move container to workspace $WS4
+
+## NetBeans / IDEA or pseudo IDE ##
+workspace $WS5  output PRIMARY_OUTPUT
+bindsym $super+5 workspace $WS5
+bindsym $alt+5 move container to workspace $WS5
+bindcode $super+84 workspace $WS5
+bindcode $alt+84 move container to workspace $WS5
+
+## Usualy GIMP ##
+workspace $WS6 output PRIMARY_OUTPUT
+bindsym $super+6 workspace $WS6
+bindsym $alt+6 move container to workspace $WS6
+bindcode $super+85 workspace $WS6
+bindcode $alt+85 move container to workspace $WS6
+
+## Files ##
+workspace $WS7 output PRIMARY_OUTPUT
+bindsym $super+7 workspace $WS7
+bindsym $alt+7 move container to workspace $WS7
+bindcode $super+79 workspace $WS7
+bindcode $alt+79 move container to workspace $WS7
+
+## Misc ##
+workspace $WS8 output PRIMARY_OUTPUT
+bindsym $super+8 workspace $WS8
+bindsym $alt+8 move container to workspace $WS8
+bindcode $super+80 workspace $WS8
+bindcode $alt+80 move container to workspace $WS8
+
+## Misc ##
+workspace $WS9 output PRIMARY_OUTPUT
+bindsym $super+9 workspace $WS9
+bindsym $alt+9 move container to workspace $WS9
+bindcode $super+81 workspace $WS9
+bindcode $alt+81 move container to workspace $WS9
+
+## Navigation of workspaces (go to, move to) ##
+bindcode $super+86 workspace next
+bindsym $super+Right workspace next
+bindcode $alt+86 move container to workspace next
+bindsym $alt+Right move container to workspace next
+bindcode $super+82 workspace prev
+bindsym $super+Left workspace prev
+bindcode $alt+82 move container to workspace prev
+bindsym $alt+Left move container to workspace prev
+
+
+
+
+##
+## Bar
+##
+
+bar {
+    #i3bar_command           ~/.config/i3/lemonbar/i3_lemonbar.py
+    strip_workspace_numbers yes
+    font                    pango:Terminus 11
+    status_command          i3blocks -c ~/.config/i3/i3blocks.conf 
+    workspace_buttons       yes
+    tray_output             primary
+    separator_symbol        " "
+    position                top    colors {
+        background #1b1b1b
+        separator  #ffffff
+        statusline #999999
+        focused_workspace  #000000 #1990B7 #1c1c1c
+        active_workspace   #000000 #333333 #999999
+        inactive_workspace #000000 #333333 #999999
+        urgent_workspace   #000000 #ff5151 #1c1c1c
+    }
+}
+
+# Shutdown, Reboot, Lock Screen, and Logout
+#1990B7
+set $sysmenu "system:  [P]oweroff  re[B]oot  [L]ock  logou[T] "
+bindsym $super+Shift+Return      mode $sysmenu
+mode $sysmenu {
+    bindsym p         exec shutdown -P now
+    bindsym b         exec shutdown -r now
+    bindsym l         exec lock
+    bindsym t         exec --no-startup-id i3-msg exit, mode "default"
+    bindsym Return    mode "default"
+    bindsym Escape    mode "default"
+}
+
+
+set $audiomenu "volume:  [+]10%  [-]10%  [m]ute  [r]eset"
+bindsym $super+F12         mode $audiomenu
+
+mode $audiomenu {
+    bindsym r             exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -- 100%
+    bindsym plus          exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -- +10%
+    bindsym KP_Add        exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -- +10%
+    bindsym minus         exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -- -10%
+    bindsym KP_Subtract   exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -- -10%
+    bindsym m             exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym Return        mode "default"
+    bindsym Escape        mode "default"
+}
+

@@ -1,0 +1,38 @@
+#!/bin/bash
+#
+# Profile:     http://www.ugra.ch/iso-color-profiles.phtml
+#
+# Author:      Twily                               2014
+# Description: Capture a window with a margin around it
+# Requires:    imagemagic, xwininfo, ISOcoated_v2_300_eci.icc
+# Usage:       $ sh ./importw filename.png
+#
+
+M=`expr 24 + 0`    # Margin (+ 0 for border)
+D=0                # Decoration (0 = none)
+
+if [ -z $1 ]; then set -- "importw.png"; fi
+
+echo -e "\nimportw: Please select the window you would like to\n" \
+            "        capture by clicking the mouse in that window.\n"
+
+unset X Y W H
+eval $(xwininfo | 
+    sed -n -e "s/^ \+Absolute upper-left X: \+\([0-9]\+\).*/X=\1/p" \
+           -e "s/^ \+Absolute upper-left Y: \+\([0-9]\+\).*/Y=\1/p" \
+           -e "s/^ \+Width: \+\([0-9]\+\).*/W=\1/p" \
+           -e "s/^ \+Height: \+\([0-9]\+\).*/H=\1/p" )
+
+W=`expr $W + $M \* 2`
+H=`expr $H + $M \* 2 + $D`
+X=`expr $X - $M`
+Y=`expr $Y - $M - $D`
+
+import -window root -crop $W'x'$H+$X+$Y ~/importw.tmp.png || exit 1
+convert ~/importw.tmp.png -profile ~/.icc/ISOcoated_v2_300_eci.icc ~/$1 &>/dev/null || exit 1
+
+rm ~/importw.tmp.png
+
+echo -e "Window captured and saved to \"\e[1;32m~/$1\e[0m\"."
+exit 0
+

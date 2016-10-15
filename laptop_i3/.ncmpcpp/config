@@ -1,7 +1,7 @@
 #~~~~~~~~~~~~~~~~~~~~
 MPD Settings
 #~~~~~~~~~~~~~~~~~~~
-mpd_music_dir = "/home/insidious/music"
+mpd_music_dir = "/home/insi/music"
 mpd_host = "127.0.0.1"
 mpd_port = "6600"
 mpd_connection_timeout = "5"
@@ -42,8 +42,8 @@ song_columns_list_format              = "(30)[green]{a} (40)[]{t|f} (30)[blue]{b
 now_playing_prefix                    = "$b$8> $/b$9"
 now_playing_suffix                    = ""
 #progressbar_look                      = "━━╸"
-progressbar_look                     = "─  "
-#progressbar_look                     = "╼·"
+#progressbar_look                     = "─  "
+progressbar_look                     = "╼·"
 progressbar_boldness                  = "no"
 user_interface                        = "alternative"
 playlist_display_mode                 = "columns"
@@ -62,8 +62,8 @@ ignore_leading_the                    = "yes"
 
 main_window_color           = "default"
 main_window_highlight_color = "default"
-progressbar_color           = "red"
-active_column_color         = "yellow"
+progressbar_color           = "default"
+active_column_color         = "default"
 enable_window_title         = "yes"
 
 #COLORSCHEME DARK
@@ -101,13 +101,13 @@ enable_window_title         = "yes"
 
 
 
-visualizer_fifo_path = "/home/insidious/.mpd.fifo"
+visualizer_fifo_path = "/home/insi/.mpd.fifo"
 visualizer_output_name = "my_fifo"
 #visualizer_sync_interval = "1"
 visualizer_in_stereo = "yes"
 #visualizer_type = "wave" (spectrum/wave)
 visualizer_type = "spectrum" #(spectrum/wave)
-visualizer_look="+|"
-#visualizer_look="◆▋"
+#visualizer_look="+|"
+visualizer_look="◆▋"
 #visualizer_look="∙▋"
-visualizer_color="green"
+visualizer_color="blue"

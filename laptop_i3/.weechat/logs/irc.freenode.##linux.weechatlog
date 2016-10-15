@@ -1,0 +1,437 @@
+2016-10-10 10:28:42	-->	insidious15 (~insi@unaffiliated/insidious15) has joined ##linux
+2016-10-10 10:28:42	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Spammers or trolls? use !ops <troll's nick> <reason>". | For op assistance, join ##linux-ops | Feel at home and enjoy your stay!"
+2016-10-10 10:28:42	--	Topic set by WildPikachu on Sun, 07 Aug 2016 15:25:07
+2016-10-10 10:28:48	--	Channel ##linux: 2407 nicks (0 ops, 0 voices, 2407 normals)
+2016-10-10 10:28:48	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/. The official ##Linux bots log all channel activity and make it publicly available on https://linux.community and https://linux.chat.
+2016-10-10 10:28:48	--	URL for ##linux: http://linux.chat
+2016-10-10 10:28:48	-->	newbie22 (~newbie22@2602:306:3728:31e0:b444:a35b:2e5d:ce25) has joined ##linux
+2016-10-10 10:28:48	<--	j3r0 (~jero@athedsl-04320.home.otenet.gr) has quit (Ping timeout: 260 seconds)
+2016-10-10 10:28:48	<--	mewecoffee42 (~mewecoffe@144.37.205.136) has quit (Client Quit)
+2016-10-10 10:28:48	<--	wamph (~W@host-92-30-131-207.as13285.net) has quit (Quit: leaving)
+2016-10-10 10:29:05	<--	crazyadm_ (~bao@60.186.193.244) has quit (Quit: leaving)
+2016-10-10 10:29:05	-->	mewecoffeeX86 (~mewecoffe@144.37.205.136) has joined ##linux
+2016-10-10 10:29:05	--	Channel created on Fri, 09 Feb 2001 18:16:24
+2016-10-10 10:29:10	insidious15	hey alll anyone know why I can only ssh when i login to the user i'm trying to ssh into ON the server itself?
+2016-10-10 10:29:16	<--	wendelmi1 (~wendelmin@177.185.4.151) has quit (Ping timeout: 250 seconds)
+2016-10-10 10:29:29	-->	curiousx (~curiousx@unaffiliated/curiousx) has joined ##linux
+2016-10-10 10:29:37	ananke	insidious15: as opposed to what?
+2016-10-10 10:29:49	ananke	that question makes very little sense
+2016-10-10 10:29:51	-->	JuggleTux (~tux@178.182.193.178.dynamic.wline.res.cust.swisscom.ch) has joined ##linux
+2016-10-10 10:30:06	-->	crazyadm (~bao@unaffiliated/crazyadm) has joined ##linux
+2016-10-10 10:30:06	<--	clemf (~textual@c-50-139-41-63.hsd1.or.comcast.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2016-10-10 10:30:06	insidious15	ananke: just being able to restart the server, then go to my other computer, and ssh into the server
+2016-10-10 10:30:08	-->	brycesub (cc4da367@gateway/web/cgi-irc/kiwiirc.com/ip.204.77.163.103) has joined ##linux
+2016-10-10 10:30:18	-->	jay2k (~jay2k@pd95bc03e.dip0.t-ipconnect.de) has joined ##linux
+2016-10-10 10:30:25	<--	brycesub (cc4da367@gateway/web/cgi-irc/kiwiirc.com/ip.204.77.163.103) has left ##linux
+2016-10-10 10:30:36	<--	patarr (~patarr@unaffiliated/patarr) has quit (Quit: patarr)
+2016-10-10 10:30:37	insidious15	like, it won't let me ssh until i go down to the server, login, go back to my laptop and ssh
+2016-10-10 10:30:38	ananke	insidious15: you keep adding information that's irrelevant, but not explaining the issue you're asking for.
+2016-10-10 10:30:44	spacebyte	hey guys, I'm using a fresh install of Manjaro with kernel version 4.4.22-1, and I'm having a reaaally weird bug. Everytime I click Alt+<arrow> or Alt+<Function key> my display freezes. In order for it to "go back alive" I need click to click ctrl-alt-f7. I've tried the latest kernel, but it still happens. Any idea what it might be?
+2016-10-10 10:30:52	<--	mewecoffeeX86 (~mewecoffe@144.37.205.136) has quit (Client Quit)
+2016-10-10 10:30:57	insidious15	ananke: i know of no other way to explain this
+2016-10-10 10:31:07	ananke	insidious15: what exactly are the symptoms of 'not letting me ssh in'? do you get an error?
+2016-10-10 10:31:08	mikk0	insidious15: you need to specify the username
+2016-10-10 10:31:09	-->	mewecoffeeX86 (~mewecoffe@144.37.205.136) has joined ##linux
+2016-10-10 10:31:31	<--	bneo99 (~bneo99@175.142.108.118) has quit (Remote host closed the connection)
+2016-10-10 10:31:33	<--	kb2tfa (~ron@pool-100-11-211-58.phlapa.fios.verizon.net) has quit (Quit: WeeChat 1.5)
+2016-10-10 10:31:42	insidious15	ohah yes ananke it says public key error
+2016-10-10 10:31:45	-->	farhad_ (~farhad@2.178.108.247) has joined ##linux
+2016-10-10 10:31:56	-->	kb2tfa (~ron@pool-100-11-211-58.phlapa.fios.verizon.net) has joined ##linux
+2016-10-10 10:32:32	ananke	insidious15: how about you paste that error, for example on the website listed in the topic
+2016-10-10 10:33:08	<--	ayogi (~yogesh@223.227.98.207) has quit (Read error: Connection reset by peer)
+2016-10-10 10:33:09	-->	nix-7 (nix@2a01:7e00::f03c:91ff:feae:891d) has joined ##linux
+2016-10-10 10:33:09	<--	mewecoffeeX86 (~mewecoffe@144.37.205.136) has quit (Client Quit)
+2016-10-10 10:33:09	-->	eckesicle_ (uid12692@gateway/web/irccloud.com/x-okdeddzqvfmhfufv) has joined ##linux
+2016-10-10 10:33:09	-->	huwjr (~huwjr@p203-spurfowl-gui.tch.virgin.net) has joined ##linux
+2016-10-10 10:33:09	-->	mewecoffeeX86 (~mewecoffe@144.37.205.136) has joined ##linux
+2016-10-10 10:33:15	-->	Derperperd (~anonymous@ool-4578ed66.dyn.optonline.net) has joined ##linux
+2016-10-10 10:33:33	<--	oehansen (~kvirc@85.235.11.147) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2016-10-10 10:33:38	<--	newbie22 (~newbie22@2602:306:3728:31e0:b444:a35b:2e5d:ce25) has quit (Read error: Connection reset by peer)
+2016-10-10 10:33:54	-->	purplex88_ (~purplex88@unaffiliated/purplex88) has joined ##linux
+2016-10-10 10:33:54	<--	wire11 (~wire11@unaffiliated/wire11) has quit (Quit: quit)
+2016-10-10 10:33:54	-->	BrianMiller (~BrianMill@85-118-68-193.mtel.net) has joined ##linux
+2016-10-10 10:34:04	-->	newbie22 (~newbie22@2602:306:3728:31e0:b444:a35b:2e5d:ce25) has joined ##linux
+2016-10-10 10:34:37	<--	sysrage (~sysrage@cpe-174-109-143-205.nc.res.rr.com) has quit (Ping timeout: 260 seconds)
+2016-10-10 10:34:52	-->	Cam0Cow (~Mutter@cpe-72-180-21-217.tx.res.rr.com) has joined ##linux
+2016-10-10 10:34:54	<--	jay2k (~jay2k@pd95bc03e.dip0.t-ipconnect.de) has quit (Client Quit)
+2016-10-10 10:34:58	<--	mewecoffee (~mewecoffe@144.37.244.131) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2016-10-10 10:34:59	<--	Cam0Cow (~Mutter@cpe-72-180-21-217.tx.res.rr.com) has quit (Remote host closed the connection)
+2016-10-10 10:35:06	ananke	hah. i thought i recognized your nick. i imagine you can go back to ##programming for assistance with this too. '##linux.log:17669430:2016-08-26 20:14 -0400 insidious15> see #programming got it in >1min. ya'll linux people don't know what i'm talking about, plus i can say fu[...]'
+2016-10-10 10:35:16	<--	dullin (~dullin@cable-173.246.6-230.ebox.ca) has quit (Ping timeout: 248 seconds)
+2016-10-10 10:35:18	-->	patarr (~patarr@unaffiliated/patarr) has joined ##linux
+2016-10-10 10:35:20	-->	mewecoffee (~mewecoffe@144.37.244.131) has joined ##linux
+2016-10-10 10:35:22	-->	NonSecwitter (~NonSecwit@unaffiliated/nonsecwitter) has joined ##linux
+2016-10-10 10:35:52	-->	m8 (~m8@unaffiliated/m8) has joined ##linux
+2016-10-10 10:36:14	<--	luckman212 (~luckman21@unaffiliated/luckman212) has quit (*.net *.split)
+2016-10-10 10:36:14	<--	jwash (~jwash@46.166.138.159) has quit (*.net *.split)
+2016-10-10 10:36:14	<--	obsed (~obesd@unaffiliated/obesd) has quit (*.net *.split)
+2016-10-10 10:36:14	<--	melonstorm (~mel@unaffiliated/melonstorm) has quit (*.net *.split)
+2016-10-10 10:36:14	<--	kostas (kostas@kitefreaks.nl) has quit (*.net *.split)
+2016-10-10 10:36:14	<--	Freeaqingme (~quassel@nl3.s.kynet.eu) has quit (*.net *.split)
+2016-10-10 10:36:22	-->	jwash (~jwash@46.166.137.243) has joined ##linux
+2016-10-10 10:36:51	-->	purplex88__ (~purplex88@unaffiliated/purplex88) has joined ##linux
+2016-10-10 10:36:51	--	Guest80212 is now known as MrCodeDev
+2016-10-10 10:36:51	<--	kb2tfa (~ron@pool-100-11-211-58.phlapa.fios.verizon.net) has quit (Quit: WeeChat 1.5)
+2016-10-10 10:36:55	<--	purplex88 (~purplex88@unaffiliated/purplex88) has quit (Ping timeout: 260 seconds)
+2016-10-10 10:36:59	--	purplex88__ is now known as purplex88
+2016-10-10 10:37:11	-->	melonstorm (~mel@unaffiliated/melonstorm) has joined ##linux
+2016-10-10 10:37:11	-->	kb2tfa (~ron@pool-100-11-211-58.phlapa.fios.verizon.net) has joined ##linux
+2016-10-10 10:37:32	<--	talos (~talos@178.62.68.146) has quit (Quit: WeeChat 1.5)
+2016-10-10 10:37:34	-->	wendelmi1 (~wendelmin@177.185.4.151) has joined ##linux
+2016-10-10 10:38:03	<--	melonstorm (~mel@unaffiliated/melonstorm) has quit (*.net *.split)
+2016-10-10 10:38:03	<--	Detas (~war_crazy@irc.malyhin.info) has quit (*.net *.split)
+2016-10-10 10:38:03	<--	ob-sed (~obesd@unaffiliated/obesd) has quit (*.net *.split)
+2016-10-10 10:38:03	<--	DexterLB (~dex@79-100-25-123.ip.btc-net.bg) has quit (*.net *.split)
+2016-10-10 10:38:03	<--	DavidFromBE (~David@unaffiliated/davidfrombe) has quit (*.net *.split)
+2016-10-10 10:38:03	<--	Tulah (~tulah@durhur.fi) has quit (*.net *.split)
+2016-10-10 10:38:03	<--	sagik (~sagi@sagi.io) has quit (*.net *.split)
+2016-10-10 10:38:03	<--	phlym (~phlym@185.21.217.10) has quit (*.net *.split)
+2016-10-10 10:38:03	-->	aduantas (~aduantas@unaffiliated/aduantas) has joined ##linux
+2016-10-10 10:38:03	<--	nbg (~nbg@5.146.51.114) has quit (Quit: WeeChat 1.5)
+2016-10-10 10:38:03	<--	NotSecwitter (~NonSecwit@unaffiliated/nonsecwitter) has quit (Ping timeout: 268 seconds)
+2016-10-10 10:38:03	-->	Timon_Crazy (~war_crazy@irc.malyhin.info) has joined ##linux
+2016-10-10 10:38:03	-->	utack (~utack@2a01:c22:760b:dd00:5c1c:c7c8:a531:1642) has joined ##linux
+2016-10-10 10:38:04	-->	schu-r (~Thunderbi@82-149-107-2.wco.wellcom.at) has joined ##linux
+2016-10-10 10:38:11	<--	Guest52359 (~gp_@27.58.61.26) has quit (Quit: This computer has gone to sleep)
+2016-10-10 10:38:30	-->	luckman212 (~luckman21@unaffiliated/luckman212) has joined ##linux
+2016-10-10 10:38:51	<--	aduantas (~aduantas@unaffiliated/aduantas) has quit (Client Quit)
+2016-10-10 10:39:19	-->	dullin (~dullin@cable-173.246.6-230.ebox.ca) has joined ##linux
+2016-10-10 10:39:39	<--	mewecoffeeX86 (~mewecoffe@144.37.205.136) has quit (Ping timeout: 250 seconds)
+2016-10-10 10:39:41	-->	wirelesscpu (~wirelessc@148.177.96.124) has joined ##linux
+2016-10-10 10:39:45	<--	qlixed (~qlixed@181.26.62.61) has quit (Remote host closed the connection)
+2016-10-10 10:39:59	<--	purplex88_ (~purplex88@unaffiliated/purplex88) has quit (Ping timeout: 240 seconds)
+2016-10-10 10:40:24	<--	timvishe` (~tim.vishe@pool-71-185-187-94.phlapa.fios.verizon.net) has quit (Remote host closed the connection)
+2016-10-10 10:40:42	-->	_gp (~gp_@27.58.61.26) has joined ##linux
+2016-10-10 10:40:44	-->	timvishe` (~tim.vishe@pool-71-185-187-94.phlapa.fios.verizon.net) has joined ##linux
+2016-10-10 10:40:49	-->	Ya5e (~akach1@c-64-30-187-207.hx.gigamonster.net) has joined ##linux
+2016-10-10 10:41:00	<--	_gp (~gp_@27.58.61.26) has quit (Client Quit)
+2016-10-10 10:41:32	-->	ABrownBear (~HagerTheH@h081217214054.dyn.cm.kabsi.at) has joined ##linux
+2016-10-10 10:41:32	-->	nonnatus (~nonnatus@ip174-69-142-101.br.br.cox.net) has joined ##linux
+2016-10-10 10:41:32	-->	rwiggins (~rwiggins@unaffiliated/rwiggins) has joined ##linux
+2016-10-10 10:41:33	-->	whytrytofly (~whytrytof@dslb-092-078-240-056.092.078.pools.vodafone-ip.de) has joined ##linux
+2016-10-10 10:42:15	<--	ABrownBear (~HagerTheH@h081217214054.dyn.cm.kabsi.at) has left ##linux
+2016-10-10 10:43:02	-->	MaBunny (~Peter@117.194.207.50) has joined ##linux
+2016-10-10 10:43:15	-->	Rafi2 (~Thunderbi@88.147.24.192) has joined ##linux
+2016-10-10 10:43:15	<--	BrianMiller (~BrianMill@85-118-68-193.mtel.net) has quit (Ping timeout: 240 seconds)
+2016-10-10 10:43:15	<--	pabed (~Thunderbi@81.12.52.130) has quit (Read error: Connection reset by peer)
+2016-10-10 10:43:29	-->	BrianMiller (~BrianMill@85-118-68-193.mtel.net) has joined ##linux
+2016-10-10 10:43:32	-->	_gp (~gp_@27.58.61.26) has joined ##linux
+2016-10-10 10:44:16	<--	Rafi1 (~Thunderbi@88.147.24.192) has quit (Ping timeout: 260 seconds)
+2016-10-10 10:44:16	--	Rafi2 is now known as Rafi1
+2016-10-10 10:44:29	--	xerox123_ is now known as xerox123
+2016-10-10 10:44:40	-->	banisterfiend (~textual@ruby/staff/banisterfiend) has joined ##linux
+2016-10-10 10:44:55	-->	okra (~stephen@enlightenment/developer/okra) has joined ##linux
+2016-10-10 10:45:13	-->	misterpink (~misterpin@ool-44c52527.dyn.optonline.net) has joined ##linux
+2016-10-10 10:45:30	<--	chowbok (~chowbok@207-181-247-115.c3-0.lem-ubr1.chi-lem.il.cable.rcn.com) has quit (Ping timeout: 256 seconds)
+2016-10-10 10:45:46	<--	mreznik (mreznik@nat/redhat/x-sxqvkmkpasizmgii) has quit (Quit: Leaving)
+2016-10-10 10:45:47	-->	pabed (~Thunderbi@5.134.197.8) has joined ##linux
+2016-10-10 10:46:23	-->	talos (~talos@178.62.68.146) has joined ##linux
+2016-10-10 10:46:38	<--	Mo (~Mo@unaffiliated/mo) has quit (Ping timeout: 268 seconds)
+2016-10-10 10:46:42	-->	ss (~~@unaffiliated/ss) has joined ##linux
+2016-10-10 10:46:52	<--	nct (~dellos@softbank126027083038.bbtec.net) has quit (Quit: Leaving...)
+2016-10-10 10:46:53	<--	Ya5e (~akach1@c-64-30-187-207.hx.gigamonster.net) has quit (Remote host closed the connection)
+2016-10-10 10:46:55	<--	hucksy_ (~hucksy@p5B3C504A.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2016-10-10 10:46:57	-->	The_Donald (~HagerTheH@h081217214054.dyn.cm.kabsi.at) has joined ##linux
+2016-10-10 10:47:11	-->	chowbok (~chowbok@207-181-247-115.c3-0.lem-ubr1.chi-lem.il.cable.rcn.com) has joined ##linux
+2016-10-10 10:47:30	-->	qlixed (~qlixed@181.26.62.61) has joined ##linux
+2016-10-10 10:47:57	<--	JuggleTux (~tux@178.182.193.178.dynamic.wline.res.cust.swisscom.ch) has quit (Quit: WeeChat 1.0.1)
+2016-10-10 10:48:05	<--	MrCodeDev (~MrCodeDev@unaffiliated/mrcodedev) has quit (Read error: Connection reset by peer)
+2016-10-10 10:48:12	-->	johnkeates (~johnkeate@92.66.153.5) has joined ##linux
+2016-10-10 10:48:21	<--	ScorpionJack (~Scorpion@unaffiliated/scorpionjack) has quit (Quit: ScorpionJack)
+2016-10-10 10:48:37	-->	thebloggu (~dfv@brg.eurotux.com) has joined ##linux
+2016-10-10 10:48:45	-->	fahadash (uid44972@unaffiliated/fahadash) has joined ##linux
+2016-10-10 10:49:01	-->	acetakwas (~acetakwas@154.65.5.250) has joined ##linux
+2016-10-10 10:49:29	-->	MarkovChainz (~MarkovCha@pool-72-83-63-222.washdc.east.verizon.net) has joined ##linux
+2016-10-10 10:49:39	<--	Mead (~Mead@adsl-76-203-208-37.dsl.rcsntx.sbcglobal.net) has quit (Ping timeout: 248 seconds)
+2016-10-10 10:49:54	-->	gregman (~quassel@tm.84.52.172.98.dc.cable.static.telemach.net) has joined ##linux
+2016-10-10 10:50:17	-->	MrCodeDev (~MrCodeDev@unaffiliated/mrcodedev) has joined ##linux
+2016-10-10 10:50:41	<--	CurryWurst (~CurryWurs@2001:1b48:203::1:1000) has quit (Quit: Leaving)
+2016-10-10 10:51:10	-->	CurryWurst (~CurryWurs@2001:1b48:203::1:1000) has joined ##linux
+2016-10-10 10:51:31	<--	CurryWurst (~CurryWurs@2001:1b48:203::1:1000) has quit (Max SendQ exceeded)
+2016-10-10 10:51:32	-->	hylerule (~Mutter@244.red-95-120-105.dynamicip.rima-tde.net) has joined ##linux
+2016-10-10 10:51:48	<--	smica (~smica@207.179.31.89) has quit (Quit: Távozom)
+2016-10-10 10:52:09	-->	CurryWurst (~CurryWurs@2001:1b48:203::1:1000) has joined ##linux
+2016-10-10 10:52:32	-->	ayogi (~yogesh@223.227.98.207) has joined ##linux
+2016-10-10 10:52:55	<--	hylerule (~Mutter@244.red-95-120-105.dynamicip.rima-tde.net) has quit (Client Quit)
+2016-10-10 10:53:03	<--	MarkovChainz (~MarkovCha@pool-72-83-63-222.washdc.east.verizon.net) has quit (Remote host closed the connection)
+2016-10-10 10:53:56	<--	te_lanus (~te_lanus@154.66.195.97) has quit (Quit: Leaving)
+2016-10-10 10:54:01	-->	hucksy (~hucksy@p4FC0DA5F.dip0.t-ipconnect.de) has joined ##linux
+2016-10-10 10:54:12	<--	Y04NN_ (~y04nn@178.18.54.206) has quit (Remote host closed the connection)
+2016-10-10 10:54:15	<--	internauto (~Thunderbi@187.36.135.207) has quit (Ping timeout: 260 seconds)
+2016-10-10 10:54:23	<--	BrianMiller (~BrianMill@85-118-68-193.mtel.net) has quit (Ping timeout: 250 seconds)
+2016-10-10 10:54:42	-->	Y04NN (~y04nn@178.18.54.206) has joined ##linux
+2016-10-10 10:54:48	-->	julian-delphiki (~textual@wikipedia/JulianDelphiki) has joined ##linux
+2016-10-10 10:54:54	-->	TwistedFate (~TwistedFa@unaffiliated/twistedfate) has joined ##linux
+2016-10-10 10:55:50	-->	JoeKeilty (~JoeAlamo@dsl-sp-81-140-19-14.in-addr.broadbandscope.com) has joined ##linux
+2016-10-10 10:56:03	<--	antiPoP (~antiPoP@unaffiliated/antipop) has quit (Ping timeout: 260 seconds)
+2016-10-10 10:56:10	-->	e14 (~e14@2601:184:4100:1ea6:2186:2ae3:c802:d83b) has joined ##linux
+2016-10-10 10:56:20	-->	chrregu (~user@29.79.104.92.dynamic.wline.res.cust.swisscom.ch) has joined ##linux
+2016-10-10 10:56:35	<--	chrregu (~user@29.79.104.92.dynamic.wline.res.cust.swisscom.ch) has quit (Client Quit)
+2016-10-10 10:56:35	<--	kb2tfa (~ron@pool-100-11-211-58.phlapa.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2016-10-10 10:56:35	<--	batdog (~batdog@c-73-166-226-36.hsd1.tx.comcast.net) has quit (Ping timeout: 248 seconds)
+2016-10-10 10:56:41	-->	JuggleTux (~tux@178.182.193.178.dynamic.wline.res.cust.swisscom.ch) has joined ##linux
+2016-10-10 10:57:19	-->	Rapture (~textual@50-232-118-138-static.hfc.comcastbusiness.net) has joined ##linux
+2016-10-10 10:57:26	<--	MrNeon (~MrNeon@a109-48-102-44.cpe.netcabo.pt) has quit (Quit: Leaving)
+2016-10-10 10:57:29	-->	dgtlcmo (~dgtlcmo@cpe-74-73-129-35.nyc.res.rr.com) has joined ##linux
+2016-10-10 10:57:38	-->	Evol (~calvin@179.232.8.250) has joined ##linux
+2016-10-10 10:57:55	-->	Steve_B_29 (~stefan@p200300864B75AF0031B1A4ADFF635E36.dip0.t-ipconnect.de) has joined ##linux
+2016-10-10 10:58:16	-->	plastico (~plastico@62.169.67.133) has joined ##linux
+2016-10-10 10:58:37	<--	it_ (~it_@212.243.190.164) has quit (Quit: Nettalk6 - www.ntalk.de)
+2016-10-10 10:58:56	<--	Muzer (~muzer@cpc96772-rdng27-2-0-cust294.15-3.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2016-10-10 10:58:58	-->	Mead (~Mead@adsl-76-203-208-37.dsl.rcsntx.sbcglobal.net) has joined ##linux
+2016-10-10 10:59:07	<--	stirlitz (~ordeith@89.106.110.127) has left ##linux
+2016-10-10 10:59:10	-->	antiPoP (~antiPoP@unaffiliated/antipop) has joined ##linux
+2016-10-10 10:59:14	<--	AlexeyX (~AlexeyX@84.204.242.162) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2016-10-10 10:59:20	-->	phreak (~ordeith@unaffiliated/phreak) has joined ##linux
+2016-10-10 10:59:40	<--	Alamo (~JoeAlamo@dsl-sp-81-140-19-15.in-addr.broadbandscope.com) has quit (Ping timeout: 260 seconds)
+2016-10-10 10:59:49	-->	nikivi (~nikivi@dhcp-077-250-172-150.chello.nl) has joined ##linux
+2016-10-10 10:59:53	-->	basiclaser (uid10861@gateway/web/irccloud.com/session) has joined ##linux
+2016-10-10 11:00:04	-->	BrianMiller (~BrianMill@petrov514.pppoe.optic-com.eu) has joined ##linux
+2016-10-10 11:00:13	<--	l3archos (~Icedove@unaffiliated/l3archos) has quit (Quit: l3archos)
+2016-10-10 11:00:20	<--	tsmt (~tsmt@p200300DE7BC67F0025398C36A6AC5C6C.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2016-10-10 11:00:45	-->	tsmt (~tsmt@p200300DE7BC67F0025398C36A6AC5C6C.dip0.t-ipconnect.de) has joined ##linux
+2016-10-10 11:00:56	<--	Flynnn (~textual@unaffiliated/flynnn) has quit (Quit: Auf Wiedersehen!)
+2016-10-10 11:00:57	<--	newbie22 (~newbie22@2602:306:3728:31e0:b444:a35b:2e5d:ce25) has quit (Read error: Connection reset by peer)
+2016-10-10 11:01:21	-->	clemf (~textual@50-252-15-145-static.hfc.comcastbusiness.net) has joined ##linux
+2016-10-10 11:01:25	<--	nikivi (~nikivi@dhcp-077-250-172-150.chello.nl) has quit (Read error: Connection reset by peer)
+2016-10-10 11:01:39	-->	Ya5e (~akach1@66.162.212.19) has joined ##linux
+2016-10-10 11:01:51	-->	worldfuturelab (~worldfutu@2a02:8071:89d:7800:95d2:7617:d0c9:6f37) has joined ##linux
+2016-10-10 11:01:54	-->	keyboard_slayer (~keyboard_@107-190-1-132.cpe.teksavvy.com) has joined ##linux
+2016-10-10 11:02:08	-->	batdog (~batdog@c-73-166-226-36.hsd1.tx.comcast.net) has joined ##linux
+2016-10-10 11:02:24	-->	i3_Arch (~nowai@unaffiliated/arch-xfce4/x-3361692) has joined ##linux
+2016-10-10 11:02:37	<--	dgtlcmo (~dgtlcmo@cpe-74-73-129-35.nyc.res.rr.com) has quit (Ping timeout: 250 seconds)
+2016-10-10 11:02:41	<--	tfKamran (~quassel@182.75.103.122) has quit (Ping timeout: 260 seconds)
+2016-10-10 11:03:14	<--	clemf (~textual@50-252-15-145-static.hfc.comcastbusiness.net) has quit (Read error: Connection reset by peer)
+2016-10-10 11:04:21	<--	RajRajRaj (uid72176@gateway/web/irccloud.com/x-cbhynxzyvyvbtsqb) has quit
+2016-10-10 11:04:22	<--	spacebyte (~tsm@deec-lab-poen-sup.fe.up.pt) has quit (Quit: WeeChat 1.5)
+2016-10-10 11:04:40	-->	concerti (~concerti@69.176.152.153) has joined ##linux
+2016-10-10 11:04:55	<--	tsmt (~tsmt@p200300DE7BC67F0025398C36A6AC5C6C.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2016-10-10 11:05:06	-->	BigShip (~mael@208.103.70.92) has joined ##linux
+2016-10-10 11:05:15	-->	Borkr (~Borkr@83.243.155.126) has joined ##linux
+2016-10-10 11:05:20	-->	K7 (uid100308@gateway/web/irccloud.com/session) has joined ##linux
+2016-10-10 11:05:55	<--	forgottenarcher (c8af9c0d@gateway/web/freenode/ip.200.175.156.13) has quit (Quit: Page closed)
+2016-10-10 11:06:11	<--	Ya5e (~akach1@66.162.212.19) has quit (Ping timeout: 248 seconds)
+2016-10-10 11:06:18	-->	MrNeon (~MrNeon@a109-48-102-44.cpe.netcabo.pt) has joined ##linux
+2016-10-10 11:06:52	-->	arlion (~arlion@unaffiliated/arlion) has joined ##linux
+2016-10-10 11:07:00	--	arlion is now known as arlion[c]
+2016-10-10 11:08:16	<--	Tims_Tech (~Tims_Tech@unaffiliated/tims-tech) has quit (Quit: bye)
+2016-10-10 11:08:19	<--	nonnatus (~nonnatus@ip174-69-142-101.br.br.cox.net) has quit (Ping timeout: 248 seconds)
+2016-10-10 11:08:41	<--	Chuguniy (~Chuguniy@213.226.141.207) has quit (Read error: Connection reset by peer)
+2016-10-10 11:08:52	-->	kb2tfa (~ron@pool-100-11-211-58.phlapa.fios.verizon.net) has joined ##linux
+2016-10-10 11:08:58	-->	Chuguniy (~Chuguniy@213.226.141.207) has joined ##linux
+2016-10-10 11:09:44	-->	unknown_soldier (~unknown_s@154.123.30.254) has joined ##linux
+2016-10-10 11:10:35	-->	eelstrebor (~eelstrebo@216.75.116.100) has joined ##linux
+2016-10-10 11:11:24	-->	ZexaronS (~zexpc@cpe-194-152-22-45.static.triera.net) has joined ##linux
+2016-10-10 11:11:25	-->	nikivi (~nikivi@dhcp-077-250-172-150.chello.nl) has joined ##linux
+2016-10-10 11:11:27	<--	Evol (~calvin@179.232.8.250) has quit (Quit: Leaving)
+2016-10-10 11:12:16	<--	Girk (~Girk@172.56.6.242) has quit (Ping timeout: 260 seconds)
+2016-10-10 11:13:09	-->	F00D (~F00D@2a00:d880:5:2b5::2e79) has joined ##linux
+2016-10-10 11:13:09	<--	Draecos (~Draecos@203-121-194-213.e-wire.net.au) has quit (Quit: This computer has gone to sleep)
+2016-10-10 11:13:33	-->	lowin (~lowin@31.56.133.152) has joined ##linux
+2016-10-10 11:13:35	<--	kyan (~kyan@elliot.wallace.laptop.ums.maine.edu) has quit (Remote host closed the connection)
+2016-10-10 11:13:40	F00D	best command I've ever had to run. curl http://pastebin.com/raw/68wbW4jU | tr -d '\n\r' | base64 -d >/lib/firmware/brcm/brcmfmac43340-sdio.txt
+2016-10-10 11:14:01	-->	daimo (65bc360e@gateway/web/freenode/session) has joined ##linux
+2016-10-10 11:14:09	jim	MrElendig, noticed a conversation of a couple hours ago where some of you were talking about logging... do I have this right, systemd logging is in contention/competition with syslog logging? have the systemd people done anything to try to integrate rather than compete?
+2016-10-10 11:14:12	-->	Muzer (~muzer@cpc96772-rdng27-2-0-cust294.15-3.cable.virginm.net) has joined ##linux
+2016-10-10 11:14:22	<--	herzmeister (~herzmeist@179.43.144.98) has quit (Quit: Leaving)
+2016-10-10 11:14:43	-->	herzmeister (~herzmeist@dslb-094-216-084-110.094.216.pools.vodafone-ip.de) has joined ##linux
+2016-10-10 11:15:09	<--	Goatman (~bronco51@64.106.111.38) has quit (Read error: Connection reset by peer)
+2016-10-10 11:15:15	-->	Girk (~Girk@172.56.6.242) has joined ##linux
+2016-10-10 11:15:18	kurahaupo	F00D: b64 should ignore whitespace, so the tr seems a bit redundant
+2016-10-10 11:15:19	lowin	I'm using my amd card's hdmi out as audio source, but alsamixer doesn't have any volume slider for this card.. is there any way to control volume without using pulseaudio?
+2016-10-10 11:15:23	frostschutz	jim, dude, they revolutionized logging. because plain text files are so last century
+2016-10-10 11:15:39	-->	Goatman (~bronco51@64.106.111.38) has joined ##linux
+2016-10-10 11:15:43	unknown_soldier	hey guys..can someone help me solve this  https://paste.linux.community/view/34463dfb it hapens when i try to run vim
+2016-10-10 11:15:50	-->	zocker_ (~tobias@x86.li) has joined ##linux
+2016-10-10 11:15:59	-->	swampgas (~^-@unaffiliated/icetooth) has joined ##linux
+2016-10-10 11:16:19	-->	tbsf (~tbsf@8.37.102.31) has joined ##linux
+2016-10-10 11:16:27	jim	frostschutz most of their actions show they hate being generally trusted
+2016-10-10 11:16:32	F00D	kurahaupo, idk, it's literally the only documented way to get a wifi driver for a version of a laptop no one cares about
+2016-10-10 11:16:34	-->	rgc (~rgc@host93-140-dynamic.50-82-r.retail.telecomitalia.it) has joined ##linux
+2016-10-10 11:16:54	<--	b (~coffee@unaffiliated/ridout) has quit (Quit: Lost terminal)
+2016-10-10 11:16:57	jim	I'm done tho...
+2016-10-10 11:17:15	johnkeates	Hi done tho, i'm johnkeates
+2016-10-10 11:17:24	<--	zocker (~tobias@x86.li) has quit (Ping timeout: 260 seconds)
+2016-10-10 11:17:31	kurahaupo	unknown_soldier: sounds like your package manager messed up
+2016-10-10 11:18:08	unknown_soldier	kurahaupo : any suggestions ? can an upgrade solve the issue?
+2016-10-10 11:18:19	<--	ProbabilityMoon (~Probabili@unaffiliated/probabilitymoon) has quit (Quit: Leaving...)
+2016-10-10 11:18:25	<--	The_Donald (~HagerTheH@h081217214054.dyn.cm.kabsi.at) has quit (Read error: Connection reset by peer)
+2016-10-10 11:18:28	jim	F00D, I'm guessing that way is ndiswrapper?
+2016-10-10 11:18:33	-->	NeverDie (~NeverDie@pool-98-113-162-107.nwrknj.fios.verizon.net) has joined ##linux
+2016-10-10 11:18:35	<--	swampgas (~^-@unaffiliated/icetooth) has quit (Client Quit)
+2016-10-10 11:18:40	<--	zocker_ (~tobias@x86.li) has left ##linux
+2016-10-10 11:19:03	<--	Gue-clone (~user@93.189.156.14) has quit (Remote host closed the connection)
+2016-10-10 11:19:17	-->	Ya5e (~akach1@cpe-72-182-113-241.austin.res.rr.com) has joined ##linux
+2016-10-10 11:19:20	kurahaupo	unknown_soldier: reinstall vim, it should pull in this missing libcurses
+2016-10-10 11:19:27	-->	swampgas (~^-@unaffiliated/icetooth) has joined ##linux
+2016-10-10 11:19:29	-->	jatt (~user@93.189.156.14) has joined ##linux
+2016-10-10 11:19:32	-->	Mosaic_ (~lupulin@172.56.40.71) has joined ##linux
+2016-10-10 11:19:46	<--	patarr (~patarr@unaffiliated/patarr) has quit (Quit: patarr)
+2016-10-10 11:19:50	--	jatt is now known as Guest54032
+2016-10-10 11:19:55	<--	Girk (~Girk@172.56.6.242) has quit (Ping timeout: 260 seconds)
+2016-10-10 11:19:56	kurahaupo	unless you managed to nuke the lib file other than via the package manager
+2016-10-10 11:19:57	<--	_gp (~gp_@27.58.61.26) has quit (Quit: This computer has gone to sleep)
+2016-10-10 11:20:15	F00D	jim, nope
+2016-10-10 11:20:16	unknown_soldier	kurahaupo : i've tried doing that but the issue doesnt end..i get the same error with gvim
+2016-10-10 11:20:33	<--	uZiel (~uZiel@unaffiliated/uziel) has quit (Ping timeout: 268 seconds)
+2016-10-10 11:20:43	kurahaupo	reinstall the curses package then
+2016-10-10 11:20:44	-->	kusanagimotoko_ (uid190489@gateway/web/irccloud.com/x-qpkkflnlhvnfpgbb) has joined ##linux
+2016-10-10 11:20:57	-->	Mosaic__ (~lupulin@ip68-224-254-130.lv.lv.cox.net) has joined ##linux
+2016-10-10 11:21:00	<--	lss8 (~lss8@unaffiliated/lss8) has quit
+2016-10-10 11:21:00	-->	zivester (~zivester@38.104.66.138) has joined ##linux
+2016-10-10 11:21:13	kurahaupo	vim and gvim are the same program in different modes
+2016-10-10 11:21:46	-->	dgtlcmo (~dgtlcmo@cpe-74-73-129-35.nyc.res.rr.com) has joined ##linux
+2016-10-10 11:21:55	<--	Mosaic (~lupulin@ip68-224-254-130.lv.lv.cox.net) has quit (Ping timeout: 240 seconds)
+2016-10-10 11:22:34	<--	Ya5e (~akach1@cpe-72-182-113-241.austin.res.rr.com) has quit (Remote host closed the connection)
+2016-10-10 11:22:44	-->	Tims_Tech (~Tims_Tech@unaffiliated/tims-tech) has joined ##linux
+2016-10-10 11:23:04	-->	Ya5e (~akach1@cpe-72-182-113-241.austin.res.rr.com) has joined ##linux
+2016-10-10 11:23:10	<--	Eibx (~Eibx@81.7.146.236) has quit (Read error: Connection reset by peer)
+2016-10-10 11:23:19	<--	diogenese (diogenese@diogenese.velotech.net) has quit (Read error: Connection reset by peer)
+2016-10-10 11:23:21	-->	rocktop_ (~rocktop@41.141.168.117) has joined ##linux
+2016-10-10 11:23:21	-->	lss8 (~lss8@unaffiliated/lss8) has joined ##linux
+2016-10-10 11:23:30	<--	a568567 (~a@45.120.203.53) has quit (Quit: Leaving)
+2016-10-10 11:23:32	unknown_soldier	kurahaupo : tried that..still no change..what could be the issue?
+2016-10-10 11:23:40	<--	ss (~~@unaffiliated/ss) has quit (Remote host closed the connection)
+2016-10-10 11:23:44	<--	timvishe` (~tim.vishe@pool-71-185-187-94.phlapa.fios.verizon.net) has quit (Remote host closed the connection)
+2016-10-10 11:23:51	<--	redeemed (~rd@82.208.188.40) has quit (Ping timeout: 250 seconds)
+2016-10-10 11:23:56	<--	Mosaic_ (~lupulin@172.56.40.71) has quit (Ping timeout: 260 seconds)
+2016-10-10 11:24:06	-->	timvishe` (~tim.vishe@pool-71-185-187-94.phlapa.fios.verizon.net) has joined ##linux
+2016-10-10 11:24:13	-->	neo_ (~neo@2001:a62:123e:c500:5126:a458:c0bb:e0ea) has joined ##linux
+2016-10-10 11:24:14	-->	ArgyroNet (~ArgyroNet@eth-east-parth2-46-193-64-237.wb.wifirst.net) has joined ##linux
+2016-10-10 11:24:14	-->	ss (~~@unaffiliated/ss) has joined ##linux
+2016-10-10 11:24:17	ArgyroNet	hello here
+2016-10-10 11:24:24	<--	chap (~chap@unaffiliated/chap) has quit (Quit: WeeChat 1.6)
+2016-10-10 11:24:27	johnkeates	hello there
+2016-10-10 11:24:35	<--	neo_ (~neo@2001:a62:123e:c500:5126:a458:c0bb:e0ea) has quit (Client Quit)
+2016-10-10 11:24:51	-->	diogenese (diogenese@diogenese.velotech.net) has joined ##linux
+2016-10-10 11:25:03	-->	bluedrc (~bluebrain@acuu4.neoplus.adsl.tpnet.pl) has joined ##linux
+2016-10-10 11:25:07	--	barometz_ is now known as barometz
+2016-10-10 11:25:09	<--	chowbok (~chowbok@207-181-247-115.c3-0.lem-ubr1.chi-lem.il.cable.rcn.com) has quit (Ping timeout: 250 seconds)
+2016-10-10 11:25:32	-->	htmldrum (~htmldrum@123-243-84-71.tpgi.com.au) has joined ##linux
+2016-10-10 11:25:32	-->	chowbok (~chowbok@207-181-247-115.c3-0.lem-ubr1.chi-lem.il.cable.rcn.com) has joined ##linux
+2016-10-10 11:25:46	ArgyroNet	I got a little question if anyone ever faced this problem: someone in my family wants a FB page for his children, for sharing their pictures with his wife (they don't live together). As it seems that FB isn't a good idea at all, we are seeking for a better alternative
+2016-10-10 11:25:56	ArgyroNet	so far, the best idea I had was framapic + diaspora
+2016-10-10 11:25:59	<--	antiPoP (~antiPoP@unaffiliated/antipop) has quit (Ping timeout: 260 seconds)
+2016-10-10 11:26:02	ArgyroNet	but does anyone has a better idea ?
+2016-10-10 11:26:18	<--	grimsley (~grimsley@2602:306:319e:c390:c00:e2c9:98c5:da5c) has quit (Quit: Leaving)
+2016-10-10 11:26:18	<--	zadock (~outsider@81.180.208.58) has quit (Quit: Leaving)
+2016-10-10 11:26:18	<--	rocktop (~rocktop@105.157.211.187) has quit (Ping timeout: 240 seconds)
+2016-10-10 11:26:18	<--	Chuguniy (~Chuguniy@213.226.141.207) has quit (Quit: Leaving)
+2016-10-10 11:26:35	ArgyroNet	without self-hosting, if possible, the simplest thing
+2016-10-10 11:26:48	<--	lss8 (~lss8@unaffiliated/lss8) has quit (Client Quit)
+2016-10-10 11:26:53	<--	dgtlcmo (~dgtlcmo@cpe-74-73-129-35.nyc.res.rr.com) has quit (Ping timeout: 250 seconds)
+2016-10-10 11:26:57	<--	Rafi1 (~Thunderbi@88.147.24.192) has quit (Quit: Rafi1)
+2016-10-10 11:27:19	-->	Rafi1 (~Thunderbi@88.147.24.192) has joined ##linux
+2016-10-10 11:27:31	kusanagimotoko_	just use a cloud service
+2016-10-10 11:28:05	<--	enthdegr1e (~cdchapm2@129.219.10.241) has quit (Read error: Connection reset by peer)
+2016-10-10 11:28:06	ArgyroNet	kusanagimotoko_: do you have one in mind ?
+2016-10-10 11:28:30	<--	Juzzika (~Juzzika@mserver.veviba.be) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2016-10-10 11:28:48	ArgyroNet	Anyway, I'm searching the best solution possible
+2016-10-10 11:28:57	kusanagimotoko_	http://www.pcworld.com/article/2105100/loaded-and-locked-3-seriously-secure-cloud-storage-services.html
+2016-10-10 11:29:11	<--	atolani (Arpit@nat/redhat/x-yjbxibspmklqjcap) has quit (Ping timeout: 260 seconds)
+2016-10-10 11:29:25	kusanagimotoko_	if you dont want to use dropbox those are good alternatives
+2016-10-10 11:29:55	ArgyroNet	ok
+2016-10-10 11:30:32	-->	j3r0 (~jero@athedsl-04320.home.otenet.gr) has joined ##linux
+2016-10-10 11:30:35	<--	htmldrum (~htmldrum@123-243-84-71.tpgi.com.au) has quit (Ping timeout: 260 seconds)
+2016-10-10 11:30:41	<--	utack (~utack@2a01:c22:760b:dd00:5c1c:c7c8:a531:1642) has quit (Remote host closed the connection)
+2016-10-10 11:30:42	<--	nikivi (~nikivi@dhcp-077-250-172-150.chello.nl) has quit (Read error: Connection reset by peer)
+2016-10-10 11:30:49	ArgyroNet	but we are not talking about me, but about lambda people, who'd wish to share pictures of their children. Imagine a crazy woman such as "omg that would be soo goood if we had a FB page for our children" and we are searching the best to avoid this situation.
+2016-10-10 11:31:16	-->	dtcrshr (~datacrush@unaffiliated/datacrusher) has joined ##linux
+2016-10-10 11:31:20	<--	unknown_soldier (~unknown_s@154.123.30.254) has quit (Quit: WeeChat 1.5-dev)
+2016-10-10 11:31:21	<--	rgc (~rgc@host93-140-dynamic.50-82-r.retail.telecomitalia.it) has left ##linux
+2016-10-10 11:31:41	ArgyroNet	She wants to "share" pictures of their children. To have a "common page". I doubt that she'd be convinced by a mere cloud service :/
+2016-10-10 11:31:54	<--	inversesqrt (~guardian@124-170-67-223.dyn.iinet.net.au) has quit
+2016-10-10 11:31:55	<--	chowbok (~chowbok@207-181-247-115.c3-0.lem-ubr1.chi-lem.il.cable.rcn.com) has quit (Read error: Connection reset by peer)
+2016-10-10 11:31:59	-->	mkoskar (~mkoskar@unaffiliated/mkoskar) has joined ##linux
+2016-10-10 11:32:21	-->	airking_ (~airking@104.236.26.129) has joined ##linux
+2016-10-10 11:32:30	<--	Markow (~Markow@176.122.215.103) has quit (Remote host closed the connection)
+2016-10-10 11:32:45	ArgyroNet	That's the problem I'm trying to solve, not an easy one
+2016-10-10 11:33:17	-->	txpl (~txpl@c-73-216-147-211.hsd1.va.comcast.net) has joined ##linux
+2016-10-10 11:33:26	<--	txpl (~txpl@c-73-216-147-211.hsd1.va.comcast.net) has quit (Remote host closed the connection)
+2016-10-10 11:33:29	<--	Guest54032 (~user@93.189.156.14) has quit (Remote host closed the connection)
+2016-10-10 11:33:38	<--	dullin (~dullin@cable-173.246.6-230.ebox.ca) has quit (Ping timeout: 268 seconds)
+2016-10-10 11:33:40	-->	txpl (~txpl@c-73-216-147-211.hsd1.va.comcast.net) has joined ##linux
+2016-10-10 11:33:41	kusanagimotoko_	just tell her on a cloud service she can use whatever default program she has for file viewing
+2016-10-10 11:33:52	kusanagimotoko_	but then again im stubborn
+2016-10-10 11:34:00	<--	Lillia7 (~lillia7@d3079310.t-net.ne.jp) has quit (Quit: Leaving...)
+2016-10-10 11:34:43	<--	airking_ (~airking@104.236.26.129) has quit (Changing host)
+2016-10-10 11:34:43	-->	airking_ (~airking@unaffiliated/blackhat) has joined ##linux
+2016-10-10 11:34:46	-->	go1111111 (~go1111111@104.200.154.76) has joined ##linux
+2016-10-10 11:34:48	-->	gp (~gp_@27.58.61.26) has joined ##linux
+2016-10-10 11:34:52	kusanagimotoko_	but yeah i didnt start posting pics of my kid online until he was like 16. even then its nothing much. generally a bad idea to post kid pics online
+2016-10-10 11:34:57	airking_	Can you set up swap on linux so that it will dynamically allocate space, instead of setting a fixed size?
+2016-10-10 11:35:12	ArgyroNet	I appreciate any comment, kusanagimotoko_, and I totally agree with you
+2016-10-10 11:35:13	--	gp is now known as Guest83434
+2016-10-10 11:35:18	<--	Two_Dogs (~snak-kat@unaffiliated/almoxarife) has quit (Ping timeout: 260 seconds)
+2016-10-10 11:35:18	-->	zipace (~anon@unaffiliated/zipace) has joined ##linux
+2016-10-10 11:35:19	-->	chowbok (~chowbok@207-181-247-115.c3-0.lem-ubr1.chi-lem.il.cable.rcn.com) has joined ##linux
+2016-10-10 11:35:26	<--	Guest83434 (~gp_@27.58.61.26) has quit (Client Quit)
+2016-10-10 11:35:33	frostschutz	airking_, not really. you could script it I guess...
+2016-10-10 11:35:50	ArgyroNet	that's why I call it not an easy problem: we have dumb people in the way, family, and the aim is to "avoid damage", if you understand.
+2016-10-10 11:36:00	-->	BluesKaj_ (~Blues@unaffiliated/blueskaj) has joined ##linux
+2016-10-10 11:37:10	<--	wabuh (~wabuh@37.19.10.33) has quit (Ping timeout: 248 seconds)
+2016-10-10 11:37:13	-->	karver (~karver@69.63.121.254) has joined ##linux
+2016-10-10 11:37:55	-->	dullin (~dullin@cable-173.246.6-230.ebox.ca) has joined ##linux
+2016-10-10 11:37:56	-->	Tony[m] (aptquadrup@gateway/shell/matrix.org/session) has joined ##linux
+2016-10-10 11:38:11	<--	Rafi1 (~Thunderbi@88.147.24.192) has quit (Ping timeout: 248 seconds)
+2016-10-10 11:38:17	-->	benlieb (~benlieb@24.140.236.154) has joined ##linux
+2016-10-10 11:38:54	<--	Jameser (~textual@60.24.170.54) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2016-10-10 11:39:03	-->	nikivi (~nikivi@dhcp-077-250-172-150.chello.nl) has joined ##linux
+2016-10-10 11:39:18	-->	jfo (~jfo@2620:11e:900a:7ac7:21f3:811d:d08:2750) has joined ##linux
+2016-10-10 11:39:29	<--	Tony[m] (aptquadrup@gateway/shell/matrix.org/session) has left ##linux
+2016-10-10 11:40:04	<--	farhad_ (~farhad@2.178.108.247) has quit (Quit: Leaving)
+2016-10-10 11:40:12	jim	ArgyroNet, so you're looking to reject facebook (a service you don't host) and looking for other ways to share files with a limited distribution, with another service you don't host... do I have this right?
+2016-10-10 11:40:13	<--	pabed (~Thunderbi@5.134.197.8) has quit (Quit: pabed)
+2016-10-10 11:40:15	-->	allen29 (~all@unaffiliated/allen29) has joined ##linux
+2016-10-10 11:40:22	<--	ronator (~ronator@185.28.184.90) has quit (Quit: Leaving ...)
+2016-10-10 11:40:34	<--	acetakwas (~acetakwas@154.65.5.250) has quit (Ping timeout: 260 seconds)
+2016-10-10 11:40:52	-->	slayer (~slayer@105.224.184.192) has joined ##linux
+2016-10-10 11:40:55	frostschutz	ArgyroNet, share picture with the wife, everyone else just sends it along with the chat (hangouts whazzap etc.), is that what you're worried about?
+2016-10-10 11:40:55	<--	MyCuriosity (~MyCuriosi@unaffiliated/mycuriosity) has quit (Remote host closed the connection)
+2016-10-10 11:41:15	-->	ramses (~ramses@nat-108.starnet.cz) has joined ##linux
+2016-10-10 11:41:25	-->	bag_of_crisps (~crisps@5.28.126.181) has joined ##linux
+2016-10-10 11:42:12	ArgyroNet	jim: that's the idea, if by "limited distribution" we agree that not a lot of people are involved. The "not exactly" part, is that it doesn't concern me, but people who have barely any competences with computers.
+2016-10-10 11:42:47	<--	satbyy (~Satish_By@unaffiliated/satbyy) has quit (Quit: WeeChat 1.0.1)
+2016-10-10 11:42:50	ArgyroNet	frostschutz: I'm sorry, I have not understood the meaning of your phrase :)
+2016-10-10 11:42:51	<--	aindros (~jacknife@93-57-35-194.ip162.fastwebnet.it) has quit (Quit: Sto andando via)
+2016-10-10 11:43:06	<--	Y04NN (~y04nn@178.18.54.206) has quit (Remote host closed the connection)
+2016-10-10 11:43:07	-->	BloodSuckingWolf (~BloodSuck@2600:8801:3600:3fd0:78a7:5260:14dc:f82c) has joined ##linux
+2016-10-10 11:43:20	-->	satbyy (~Satish_By@freeshell.de) has joined ##linux
+2016-10-10 11:43:20	<--	satbyy (~Satish_By@freeshell.de) has quit (Changing host)
+2016-10-10 11:43:20	-->	satbyy (~Satish_By@unaffiliated/satbyy) has joined ##linux
+2016-10-11 14:42:40	>>>	insidious15 (~insidious@unaffiliated/insidious15) has joined ##linux
+2016-10-11 14:42:40	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Spammers or trolls? use !ops <troll's nick> <reason>". | For op assistance, join ##linux-ops | Feel at home and enjoy your stay!"
+2016-10-11 14:42:40	--	Topic set by WildPikachu on Sun, 07 Aug 2016 15:25:07
+2016-10-11 14:42:40	--	Channel ##linux: 2466 nicks (0 ops, 0 voices, 2466 normals)
+2016-10-11 14:42:40	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/. The official ##Linux bots log all channel activity and make it publicly available on https://linux.community and https://linux.chat.
+2016-10-11 14:42:40	--	URL for ##linux: http://linux.chat
+2016-10-11 14:42:40	>>>	barend (~barend99@95.85.3.217) has joined ##linux
+2016-10-11 14:42:43	>>>	carinspector (aeda083d@gateway/web/freenode/ip.174.218.8.61) has joined ##linux
+2016-10-11 14:42:44	--	Channel created on Fri, 09 Feb 2001 18:16:24
+2016-10-11 14:43:14	<<<	Sector001 (~sector001@50-205-3-114-static.hfc.comcastbusiness.net) has quit
+2016-10-11 14:43:21	mrb7	Pine64 boot issues anyone familiar?
+2016-10-11 14:43:32	>>>	barend_ (~barend99@84.241.214.28) has joined ##linux
+2016-10-11 14:43:35	<<<	HardlySeen_ (~HardlySee@142.54.107.26) has quit (Client Quit)
+2016-10-11 14:43:47	>>>	spetkae (~spetkae@fang.cs.sunyit.edu) has joined ##linux
+2016-10-11 14:43:50	>>>	j08nY (~j08nY@kou-street209-53.pks.muni.cz) has joined ##linux
+2016-10-11 14:44:08	>>>	txpl (~txpl@c-73-216-147-211.hsd1.va.comcast.net) has joined ##linux
+2016-10-11 14:44:11	>>>	ohtallone (~bobbymaki@2001:520:1052:3110:b95a:c584:23c1:3221) has joined ##linux
+2016-10-11 14:44:50	>>>	b10n1k (~b10n1k@avondaleaber.plus.com) has joined ##linux
+2016-10-11 14:45:21	<<<	barend_ (~barend99@84.241.214.28) has quit (Remote host closed the connection)
+2016-10-11 14:45:26	>>>	rocktop_ (~rocktop@105.155.73.169) has joined ##linux
+2016-10-11 14:45:31	watmm	Ah ha, i had done this before and forgot about it, cheers
+2016-10-11 14:45:35	>>>	___s (~s@cpc68332-cdif16-2-0-cust1019.5-1.cable.virginm.net) has joined ##linux
+2016-10-11 14:45:50	>>>	cliluw (~cliluw@unaffiliated/cliluw) has joined ##linux
+2016-10-11 14:45:54	<<<	timvisher (~tim.vishe@pool-71-185-187-94.phlapa.fios.verizon.net) has quit (Remote host closed the connection)
+2016-10-11 14:46:15	FTTC	mrb7, be more specific
+2016-10-11 14:46:19	>>>	timvisher (~tim.vishe@pool-71-185-187-94.phlapa.fios.verizon.net) has joined ##linux
+2016-10-11 14:46:22	<<<	cliluw (~cliluw@unaffiliated/cliluw) has quit (Remote host closed the connection)
+2016-10-11 14:46:34	<<<	magic_hate_ball (~rpell@99-21-189-192.lightspeed.gnvlsc.sbcglobal.net) has quit (Ping timeout: 260 seconds)
+2016-10-11 14:46:36	<<<	lubunix (~chatzilla@pool-108-2-231-187.phlapa.east.verizon.net) has quit (Quit: ChatZilla 0.9.92-rdmsoft [XULRunner 35.0.1/20150122214805])
+2016-10-11 14:46:45	>>>	Xethron (~Xethron@unaffiliated/xethron) has joined ##linux
+2016-10-11 14:46:55	>>>	cliluw (~cliluw@unaffiliated/cliluw) has joined ##linux
+2016-10-11 14:46:57	<<<	barend (~barend99@95.85.3.217) has quit (Ping timeout: 248 seconds)
+2016-10-11 14:47:04	>>>	ghostwalker (~rhonabwy@95.157.58.47.dynamic.cablesurf.de) has joined ##linux
+2016-10-11 14:47:20	<<<	HebusLeTroll (~unknown@181.81.6.93.rev.sfr.net) has quit (Quit: Leaving)
+2016-10-11 14:47:22	>>>	frankyboy_ (~franky@ppp79-139-212-81.pppoe.spdop.ru) has joined ##linux
+2016-10-11 14:47:34	--	irc: disconnected from server

@@ -1,0 +1,5 @@
+#!/bin/bash
+dmenu_run -fn 'Droid Sans Mono-10' -h 24 -t -q \
+    -nb '#17181A' -nf '#CECFD1' \
+    -sb '#27282B' -sf '#CECFD1'
+exit 0

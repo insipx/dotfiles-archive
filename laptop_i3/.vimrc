@@ -101,7 +101,7 @@ let g:airline_right_alt_sep = ''
 let g:airline_theme = 'solarized'
 "ColorStuff
 let g:solarized_termtrans = 1
-colorscheme 0x7A69_dark  
+colorscheme 0x7A69_dark
 "slate
 "OUTdelek
 "elflord

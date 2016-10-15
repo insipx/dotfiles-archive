@@ -1,0 +1,29 @@
+2016-10-14 22:12:26	--	irc: connecting to server irc.thecybercult.net/6667...
+2016-10-14 22:12:26	--	irc: connected to irc.thecybercult.net/6667 (107.170.62.95)
+2016-10-14 22:12:26	--	irc.thecybercult.net: *** Looking up your hostname...
+2016-10-14 22:12:26	--	irc.thecybercult.net: *** Could not resolve your hostname: Domain name not found; using your IP address (134.198.142.206) instead.
+2016-10-14 22:12:27	--	irc.thecybercult.net: Welcome to CyberCult!
+2016-10-14 22:12:27	--	Welcome to the CyberCult IRC Network insi!insi@134.198.142.206
+2016-10-14 22:12:27	--	Your host is irc.thecybercult.net, running version InspIRCd-2.0
+2016-10-14 22:12:27	--	This server was created 13:10:33 Jun  1 2016
+2016-10-14 22:12:27	--	irc.thecybercult.net InspIRCd-2.0 IRdikorswx MPRabhiklmnopqrstv abhkloqv
+2016-10-14 22:12:27	--	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=b,k,l,MPRimnprst CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU EXTBAN=,RU FNC KICKLEN=255 MAP MAXBANS=60 MAXCHANNELS=20 :are supported by this server
+2016-10-14 22:12:27	--	MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=CyberCult NICKLEN=32 PREFIX=(qaohv)~&@%+ SSL=[::]:6697 STARTTLS STATUSMSG=~&@%+ TOPICLEN=307 UHNAMES VBANLIST :are supported by this server
+2016-10-14 22:12:27	--	WALLCHOPS WALLVOICES :are supported by this server
+2016-10-14 22:12:27	--	62FAAAAAD :your unique ID
+2016-10-14 22:12:27	--	irc.thecybercult.net message of the day
+2016-10-14 22:12:27	--	- CyberSec Group IRC channel. Go Ham.
+2016-10-14 22:12:27	--	End of message of the day.
+2016-10-14 22:12:27	--	There are 1 users and 9 invisible on 2 servers
+2016-10-14 22:12:27	--	2 :channels formed
+2016-10-14 22:12:27	--	I have 1 clients and 1 servers
+2016-10-14 22:12:27	--	Current Local Users: 1  Max: 1
+2016-10-14 22:12:27	--	Current Global Users: 10  Max: 10
+2016-10-14 22:12:27	--	CyberCult-qlp.i5k.otb5dg.IP :is now your displayed host
+2016-10-14 22:12:27	--	User mode [+x] by insi
+2016-10-14 22:12:27	--	NickServ (NickServ@CyberCult/services/NickServ): Welcome to CyberCult, insi! Here on CyberCult, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2016-10-14 22:12:31	--	You are now known as insidious
+2016-10-14 22:12:31	--	NickServ (NickServ@CyberCult/services/NickServ): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2016-10-14 22:12:37	--	MSG(NickServ): identify **********
+2016-10-14 22:12:37	--	NickServ (NickServ@CyberCult/services/NickServ): You are now identified for insidious.
+2016-10-14 22:12:37	--	You are now logged in as insidious (insidious!insi@CyberCult-qlp.i5k.otb5dg.IP)

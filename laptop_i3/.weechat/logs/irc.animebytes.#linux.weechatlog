@@ -1,0 +1,93 @@
+2016-10-11 14:00:31	>>>	insidious15 (44397@insidious15.Aka-chan.AnimeBytes) has joined #linux
+2016-10-11 14:00:31	--	Topic for #linux is "#bsd in a shellnut: Type GO POWER and press F16 | https://i.imgur.com/MvNXcyT.gif | http://i.imgur.com/j5yJ0IX.jpg | just enable wtf8 | http://i.imgur.com/uOFoS60.jpg | <chinatsu> imagine rms in the gnude | https://i.imgur.com/el36Jy8.png | http://i.imgur.com/ZULRI9F.jpg"
+2016-10-11 14:00:31	--	Topic set by Celediel on Mon, 20 Jun 2016 21:21:29
+2016-10-11 14:00:32	--	Channel #linux: 120 nicks (3 ops, 0 halfops, 0 voices, 117 normals)
+2016-10-11 14:00:32	--	Channel created on Fri, 11 Apr 2014 22:08:57
+2016-10-11 14:00:38	insidious15	suh
+2016-10-11 14:00:46	insidious15	linux is da bomb
+2016-10-11 14:01:10	Nycatelos	hiya
+2016-10-11 14:01:25	insidious15	sup'
+2016-10-11 14:05:08	insidious15	place seems dead
+2016-10-11 14:05:14	insidious15	What linux you all running?
+2016-10-11 14:05:50	ParadoxSpiral_	4.7.5-1-ARCH
+2016-10-11 14:05:57	ParadoxSpiral_	mfw xen AUR package is not building
+2016-10-11 14:06:09	>>>	Peri (pi@B8DB33D.B4E46B68.AE96F0D9.IP) has joined #linux
+2016-10-11 14:06:32	Nycatelos	mfw arch
+2016-10-11 14:06:36	Nycatelos	4.8.1
+2016-10-11 14:06:37	insidious15	nice, i'm on 4.7.6-1-ARCH myself
+2016-10-11 14:06:42	Nycatelos	and/or 4.7.6-grsec
+2016-10-11 14:07:40	insidious15	use i3 WM like a baws
+2016-10-11 14:16:54	jA_mOn	My favourite Linux distro is Android Gingerbread
+2016-10-11 14:17:18	jA_mOn	at least it doesn't have systemd
+2016-10-11 14:17:24	insidious15	hahahaha
+2016-10-11 14:17:27	q66	it has worse things
+2016-10-11 14:17:30	insidious15	systemd is a monolithic beast
+2016-10-11 14:17:40	q66	like the bionic libc
+2016-10-11 14:17:42	q66	what a piece of garbage
+2016-10-11 14:36:09	WhatsCS	I need to modularize my code, make everything callable. Issue is, I use a specific thing that's created in an init function
+2016-10-11 14:36:19	WhatsCS	how can I get that specific var
+2016-10-11 14:36:24	WhatsCS	and make it global
+2016-10-11 14:36:58	WhatsCS	I'll post code
+2016-10-11 14:37:44	insidious15	WhatsCS: what langauge/
+2016-10-11 14:38:02	WhatsCS	javascript
+2016-10-11 14:38:25	WhatsCS	I'm trying to make a fairly flushed out lightbox
+2016-10-11 14:38:50	WhatsCS	with a mix of css animations and js shit 
+2016-10-11 14:39:07	insidious15	ew javascript
+2016-10-11 14:39:11	WhatsCS	yeah
+2016-10-11 14:39:11	insidious15	Typescript :)
+2016-10-11 14:39:15	WhatsCS	https://0bin.whatscs.com/paste/Hw95qnZi#lHbObg0iXbYngwfWVGujaYl4U28C084Y4S8b4zlbyhG
+2016-10-11 14:39:16	@Satsuki	Link title: 0bin - encrypted pastebin
+2016-10-11 14:39:24	WhatsCS	Lumi, ^
+2016-10-11 14:39:26	WhatsCS	pls halp
+2016-10-11 14:40:52	insidious15	i'm not fond of JS :/ haha
+2016-10-11 14:41:17	Lumi	huh?
+2016-10-11 14:41:19	WhatsCS	yeah this is the most js I've done on my own
+2016-10-11 14:41:27	WhatsCS	Lumi, how do make everything callable
+2016-10-11 14:41:35	WhatsCS	I'm trying to get a slideshow type controls
+2016-10-11 14:41:40	Lumi	callable in what sense?
+2016-10-11 14:42:00	WhatsCS	and I feel like I need to make the creation of the image for the lightbox callable from outside the main run function
+2016-10-11 14:42:31	boussitzenne	so like lightbox('asd.jpg')?
+2016-10-11 14:42:37	WhatsCS	no
+2016-10-11 14:42:41	WhatsCS	well
+2016-10-11 14:42:42	WhatsCS	hmm
+2016-10-11 14:42:46	boussitzenne	but like...?
+2016-10-11 14:43:34	WhatsCS	I'm reading to double check how I want this to work
+2016-10-11 14:43:44	WhatsCS	I thought I did
+2016-10-11 14:44:02	WhatsCS	basically I have no clue how to call the next image on the page
+2016-10-11 14:44:16	WhatsCS	since .next() doesn't seem to be grabbing what I need it to
+2016-10-11 14:45:03	boussitzenne	so you want to show the next image?
+2016-10-11 14:45:22	WhatsCS	or prev
+2016-10-11 14:45:27	WhatsCS	and it isn't always an image
+2016-10-11 14:47:13	boussitzenne	you might want to grab all the elements that open the lightbox on the page and choose the next from from the current one
+2016-10-11 14:47:45	WhatsCS	that's what I thought it was doing in getNExt
+2016-10-11 14:47:48	WhatsCS	getNext()
+2016-10-11 14:48:00	WhatsCS	but it wasn't, or at least didn't seem like it was
+2016-10-11 14:48:25	boussitzenne	iirc .next() only works for siblings
+2016-10-11 14:48:32	WhatsCS	ah
+2016-10-11 14:48:38	WhatsCS	that would explain it then
+2016-10-11 14:50:00	boussitzenne	anyways, i'm off to sleep, good luck
+2016-10-11 14:50:10	WhatsCS	cya
+2016-10-11 14:54:16	insidious15	night
+2016-10-11 14:55:16	<<<	Peri (pi@B8DB33D.B4E46B68.AE96F0D9.IP) has quit (Input/output error)
+2016-10-11 15:11:28	>>>	Peri (pi@B8DB33D.B4E46B68.AE96F0D9.IP) has joined #linux
+2016-10-11 15:48:47	--	irc: disconnected from server
+2016-10-11 15:49:02	>>>	insidious15 (insi@503FB84A:F7B73D1F:32B77059:IP) has joined #linux
+2016-10-11 15:49:02	--	Topic for #linux is "#bsd in a shellnut: Type GO POWER and press F16 | https://i.imgur.com/MvNXcyT.gif | http://i.imgur.com/j5yJ0IX.jpg | just enable wtf8 | http://i.imgur.com/uOFoS60.jpg | <chinatsu> imagine rms in the gnude | https://i.imgur.com/el36Jy8.png | http://i.imgur.com/ZULRI9F.jpg"
+2016-10-11 15:49:02	--	Topic set by Celediel on Mon, 20 Jun 2016 21:21:29
+2016-10-11 15:49:02	--	Channel #linux: 121 nicks (3 ops, 0 halfops, 0 voices, 118 normals)
+2016-10-11 15:49:03	--	Channel created on Fri, 11 Apr 2014 22:08:57
+2016-10-11 16:02:26	<<<	Peri (pi@B8DB33D.B4E46B68.AE96F0D9.IP) has quit (Input/output error)
+2016-10-11 16:04:00		[insidious15 away: Idle]
+2016-10-11 16:33:21	>>>	BpArCuCTeMbI (kvirc@5F8233FB.670980D9.61E3CD27.IP) has joined #linux
+2016-10-11 16:43:14	>>>	kristall (33246@crystal.Elite.AnimeBytes) has joined #linux
+2016-10-11 16:45:37	<<<	crystal (33246@crystal.Elite.AnimeBytes) has quit (Ping timeout: 280 seconds)
+2016-10-11 17:00:13	--	kristall is now known as crystal
+2016-10-11 17:00:44		[insidious15 back: gone 00:56:44]
+2016-10-11 17:20:50		[insidious15 away: Idle]
+2016-10-11 17:35:36		[insidious15 back: gone 00:14:46]
+2016-10-12 01:07:01	>>>	insi (insi@92620C2F.D0960159.F8FE6C4C.IP) has joined #linux
+2016-10-12 01:07:01	--	Topic for #linux is "#bsd in a shellnut: Type GO POWER and press F16 | https://i.imgur.com/MvNXcyT.gif | http://i.imgur.com/j5yJ0IX.jpg | just enable wtf8 | http://i.imgur.com/uOFoS60.jpg | <chinatsu> imagine rms in the gnude | https://i.imgur.com/el36Jy8.png | http://i.imgur.com/ZULRI9F.jpg"
+2016-10-12 01:07:01	--	Topic set by Celediel on Mon, 20 Jun 2016 21:21:29
+2016-10-12 01:07:01	--	Channel #linux: 122 nicks (3 ops, 0 halfops, 0 voices, 119 normals)
+2016-10-12 01:07:03	--	Channel created on Fri, 11 Apr 2014 22:08:57
+2016-10-12 01:07:20	--	irc: disconnected from server
