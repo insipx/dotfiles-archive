@@ -1,0 +1,78 @@
+/*
+    Author: Twily      2014
+    
+  **This CSS Requires SirCmpwn's external player script
+    https://github.com/SirCmpwn/ExternalPlayer
+*/
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document regexp("https?://.*.(?!.*/embed)(youtube.com|googleapid.com|apis.google.com/u/).*") {
+    *:not([type="button"]):not(button):not(img):not(span):not(i) {
+        background: #17181A !important;
+        color: #AAABAD !important;
+    }
+    * { box-shadow: 0 0 0 0 !important; border-radius: 0 !important; }
+    
+    .title, .Ub, .vy, .bmd, .dp.d-s {
+        color: #8c86fc !important;
+    }
+    .related-list-item:hover .title { color: #ea75bc !important; }
+    
+    
+    /* Remove player in favor of SirCmpwn's script */
+    /**/
+    #player { display: none !important; }
+    #watch7-sidebar, .watch-siderbar { margin-top: 0 !important; }
+    #page div:nth-child(4) { display: none !important; }
+    /**/
+    
+    
+    li, div { border: none !important; }
+    
+    .yt-uix-button-text { color: #f66a79 !important; }
+    
+    .toggle { background: #17181A !important; }
+    
+    #search-btn, #appbar-guide-button, #upload-btn,
+    .yt-uix-button-subscribed-branded, .yt-uix-subscription-preferences-button,
+    #yt-picker-language-button, #yt-picker-country-button, #yt-picker-safetymode-button,
+    .yt-uix-button.footer-history.yt-uix-sessionlink.yt-uix-button-default.yt-uix-button-size-default.yt-uix-button-has-icon,
+    #google-help,/* .addto-button,*/ .yt-uix-button-shelf-slider-pager {
+        background: #27282B !important; color: #aaabad !important;
+        border: 0 !important;
+    }
+  
+    #yt-masthead-container {
+        border-bottom: 2px solid #27282B !important;
+        position: absolute !important;
+        top: 0 !important; left: 0 !important; right: 0 !important;
+        z-index: 1000 !important;
+    }
+    #masthead-search-terms * {
+        background: #27282B !important;
+        color: #cecfd1 !important;
+    }
+    
+    .watch-sidebar-separation-line { border-bottom: 1px solid #606163 !important; }
+    .yt-uix-button-expander { border-top: 1px solid #606163 !important; }
+    .yt-uix-button-expander:hover { color: #606163 !important; }
+    
+    /* Dim sections when not hovering */
+    /*.video-list-item, .yt-shelf-grid-item { opacity: .8 !important;}
+    .video-list-item:hover, .yt-shelf-grid-item:hover {
+        opacity: 1 !important;
+        transition: .3s ease-out !important;
+    }
+  
+    .watch-sidebar-body, #watch-header,
+    #action-panel-share, #action-panel-details,
+    #watch-discussion  {
+        opacity: .3 !important;
+        transition: .4s ease-out !important;
+    }
+  
+    .watch-sidebar-body:hover, #watch-header:hover,
+    #action-panel-share:hover, #action-panel-details:hover,
+    #watch-discussion:hover { opacity: 1 !important; }*/
+}
+
