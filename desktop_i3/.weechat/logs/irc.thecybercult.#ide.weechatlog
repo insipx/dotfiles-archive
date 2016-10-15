@@ -1,0 +1,641 @@
+2016-06-20 10:24:48	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-20 10:24:48	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-20 10:24:48	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-20 10:24:48	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-06-20 10:24:50	insidious	ls
+2016-06-20 10:24:52	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-20 10:31:00	insidious	yeah
+2016-06-20 11:53:01	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-20 11:53:01	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-20 11:53:01	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-20 11:53:01	ℹ	Channel #IDE: 2 nicks (0 ops, 0 halfops, 0 voices, 2 normals)
+2016-06-20 11:53:03	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-20 11:54:20	⤍ 	Killpot2 (180e4f43@CyberCult-ukl.lc0.v0iq8a.IP) has joined #IDE
+2016-06-20 11:56:02	⤍ 	Killa (180e4f43@CyberCult-ukl.lc0.v0iq8a.IP) has joined #IDE
+2016-06-20 11:56:23	⤎ 	Killa (180e4f43@CyberCult-ukl.lc0.v0iq8a.IP) has quit (Quit: http://www.mibbit.com ajax IRC Client)
+2016-06-20 11:56:43	⤍ 	Yay (180e4f43@CyberCult-705.uk4.p7b7lo.IP) has joined #IDE
+2016-06-20 11:57:32	⤍ 	insidious15 (458ea56b@CyberCult-705.uk4.p7b7lo.IP) has joined #IDE
+2016-06-20 11:57:36	insidious	lol
+2016-06-20 11:57:38	insidious	oh
+2016-06-20 11:57:38	⤎ 	Killpot2 (180e4f43@CyberCult-ukl.lc0.v0iq8a.IP) has quit (Quit: http://www.mibbit.com ajax IRC Client)
+2016-06-20 11:57:39	insidious	interesting
+2016-06-20 11:57:50	⤎ 	Yay (180e4f43@CyberCult-705.uk4.p7b7lo.IP) has quit (Quit: http://www.mibbit.com ajax IRC Client)
+2016-06-20 11:57:57	insidious	doesn't show up in desktop client wtf
+2016-06-20 11:59:44	⤎ 	insidious15 (458ea56b@CyberCult-705.uk4.p7b7lo.IP) has quit (Quit: http://www.mibbit.com ajax IRC Client)
+2016-06-20 12:01:23	⤍ 	insidious15 (458ea56b@CyberCult-io4.llj.ddqt29.IP) has joined #IDE
+2016-06-20 12:01:28	⤍ 	Steve (180e4f43@CyberCult-io4.llj.ddqt29.IP) has joined #IDE
+2016-06-20 12:01:29	insidious	sweet
+2016-06-20 12:01:45	⤎ 	Steve (180e4f43@CyberCult-io4.llj.ddqt29.IP) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2016-06-20 12:04:10	Killpot	Memes
+2016-06-20 12:05:14	insidious	yee
+2016-06-20 12:05:15	insidious	you're good
+2016-06-20 12:05:16	insidious	i see you
+2016-06-20 12:05:26	insidious	Kind of annoying to reg
+2016-06-20 12:05:50	⤎ 	insidious15 (458ea56b@CyberCult-io4.llj.ddqt29.IP) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2016-06-20 12:06:59	Killpot	meh, good for security
+2016-06-20 12:07:08	Killpot	can't have rando's loggin in as us
+2016-06-20 12:07:09	insidious	Yeah that's why I got it
+2016-06-20 12:07:19	insidious	used to have it so that you couldn't even join channel if you weren't regged
+2016-06-20 12:07:36	Killpot	so this is the link
+2016-06-20 12:07:37	Killpot	https://kiwiirc.com/client/irc.thecybercult.net:+6697/?&theme=cli#IDE
+2016-06-20 12:07:42	Killpot	tell people how to register n stuff
+2016-06-20 12:07:45	insidious	aight
+2016-06-20 12:08:07	Killpot	make sure u tell them to send the message in Cybercult channel not this one so people don't go posting passwords lel
+2016-06-20 12:08:13	Killpot	well, not they even could
+2016-06-20 12:08:28	insidious	heh
+2016-06-20 12:08:31	insidious	that would be funny
+2016-06-20 12:08:43	insidious	Already sent out a PM
+2016-06-20 12:08:46	insidious	i'll send another
+2016-06-20 12:09:03	insidious	Or maybe i'll just start a threadf
+2016-06-20 12:09:06	insidious	yeet
+2016-06-20 12:09:14	insidious	don't wanna send a new PM everytime someone joins IDE
+2016-06-20 12:09:30	Killpot	ye just make a thread on it
+2016-06-20 12:20:05	insidious	thread done
+2016-06-20 12:39:32	Killpot	kek, should I make an IRC bot, so when we enter in a Win32 API command it returns the prototype and description?
+2016-06-20 12:39:44	insidious	dudeyes
+2016-06-20 12:40:03	insidious	that would actually be really useful hah
+2016-06-22 09:10:00	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-22 09:10:00	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-22 09:10:00	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-22 09:10:00	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-06-22 09:10:02	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-22 09:10:02	insidious	yeet nigg
+2016-06-22 10:31:04	⤍ 	Killpot (180e4f43@CyberCult-io4.llj.ddqt29.IP) has joined #IDE
+2016-06-22 10:32:31	⤍ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has joined #IDE
+2016-06-22 10:33:29	Killpot	its lit
+2016-06-23 10:12:38	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-23 10:12:38	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-23 10:12:38	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-23 10:12:38	ℹ	Channel #IDE: 3 nicks (0 ops, 0 halfops, 0 voices, 3 normals)
+2016-06-23 10:12:40	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-23 19:15:09	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-23 19:15:09	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-23 19:15:09	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-23 19:15:09	ℹ	Channel #IDE: 2 nicks (0 ops, 0 halfops, 0 voices, 2 normals)
+2016-06-23 19:15:11	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-23 20:16:13	⤎ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has quit (Connection closed)
+2016-06-23 20:49:24	insidious	yeee
+2016-06-23 20:49:43	⤍ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has joined #IDE
+2016-06-23 20:50:06	⤍ 	Killpot (180e4f43@CyberCult-io4.llj.ddqt29.IP) has joined #IDE
+2016-06-23 20:52:27	insidious	eyy
+2016-06-23 20:52:31	insidious	cause i'm not seeing anything
+2016-06-23 20:52:38	⤎ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has quit (Connection closed)
+2016-06-23 20:52:42	insidious	./msg identify pass
+2016-06-23 20:52:48	⤍ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has joined #IDE
+2016-06-23 20:52:49	insidious	./msg nickserv identify pass
+2016-06-23 20:53:11	insidious	hey bot, lookup hi
+2016-06-23 20:53:11	API-Bot	Ok one moment, I'll look that up for you!
+2016-06-23 20:53:13	API-Bot	Index was outside the bounds of the array.
+2016-06-23 20:53:14	API-Bot	Well shit, I've run into an error. Give this stack trace to Killpot!
+2016-06-23 20:53:15	API-Bot	   at IDEWin32Query.Main.Lookup(String query) in K:\Users\Killpot\Documents\Visual Studio 2015\Projects\IDEWin32Query\IDEWin32Query\Main.vb:line 85
+2016-06-23 20:53:45	insidious	hey bot, you there?
+2016-06-23 20:53:45	API-Bot	O shit! Waddup!
+2016-06-23 20:54:17	Killpot	hey bot, you there?
+2016-06-23 20:54:17	API-Bot	O shit! Waddup!
+2016-06-23 20:54:20	insidious	lmfao
+2016-06-23 20:54:25	Killpot	hey bot, lookup memcmp
+2016-06-23 20:54:25	API-Bot	Ok one moment, I'll look that up for you!
+2016-06-23 20:54:28	API-Bot	Index was outside the bounds of the array.
+2016-06-23 20:54:29	API-Bot	Well shit, I've run into an error. Give this stack trace to Killpot!
+2016-06-23 20:54:30	API-Bot	   at IDEWin32Query.Main.Lookup(String query) in K:\Users\Killpot\Documents\Visual Studio 2015\Projects\IDEWin32Query\IDEWin32Query\Main.vb:line 85
+2016-06-23 20:54:38	Killpot	hey bot, lookup memcpy
+2016-06-23 20:54:38	API-Bot	Ok one moment, I'll look that up for you!
+2016-06-23 20:54:41	API-Bot	Alright, I think I've found what you're looking for! Here's what I've gathered...
+2016-06-23 20:54:41	API-Bot	The page is called: "memcpy"
+2016-06-23 20:54:42	API-Bot	The link to it on MSDN is: https://msdn.microsoft.com/en-us/library/dswaw1wk.aspx
+2016-06-23 20:54:44	API-Bot	Here's some technical info I found on it: 
+2016-06-23 20:54:45	API-Bot	Prototype(s): 
+2016-06-23 20:54:46	API-Bot	void *memcpy(
+2016-06-23 20:54:47	API-Bot	   void *dest,
+2016-06-23 20:54:48	API-Bot	   const void *src,
+2016-06-23 20:54:49	API-Bot	   size_t count 
+2016-06-23 20:54:50	API-Bot	);
+2016-06-23 20:54:51	API-Bot	wchar_t *wmemcpy(
+2016-06-23 20:54:52	API-Bot	   wchar_t *dest,
+2016-06-23 20:54:53	API-Bot	   const wchar_t *src,
+2016-06-23 20:54:54	API-Bot	   size_t count
+2016-06-23 20:54:55	API-Bot	);
+2016-06-23 20:54:57	API-Bot	Description: 
+2016-06-23 20:54:58	API-Bot	Copies bytes between buffers. More secure versions of these functions are available; see https://msdn.microsoft.com/en-us/library/wes2t00f.aspx memcpy_s, wmemcpy_s.
+2016-06-23 20:54:59	API-Bot	That's all I've got, if something seems off or missing, message Killpot and he'll fix me ASAP.
+2016-06-23 21:34:35	⤎ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has quit (Connection closed)
+2016-06-24 08:29:42	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-24 08:29:42	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-24 08:29:42	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-24 08:29:42	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-06-24 08:29:44	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-24 13:09:12	ℹ	irc: disconnected from server
+2016-06-24 13:09:27	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-24 13:09:27	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-24 13:09:27	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-24 13:09:27	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-06-24 13:09:31	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-24 16:36:15	⤍ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has joined #IDE
+2016-06-24 16:46:50	Axari	hello
+2016-06-24 16:54:56	⤍ 	Killpot (180e4f43@CyberCult-s62.s5c.ddqt29.IP) has joined #IDE
+2016-06-24 17:10:15	insidious	sup bro
+2016-06-24 18:20:17	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-24 18:20:17	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-24 18:20:17	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-24 18:20:17	ℹ	Channel #IDE: 3 nicks (0 ops, 0 halfops, 0 voices, 3 normals)
+2016-06-24 18:20:21	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-25 12:30:53	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-25 12:30:53	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-25 12:30:53	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-25 12:30:53	ℹ	Channel #IDE: 2 nicks (0 ops, 0 halfops, 0 voices, 2 normals)
+2016-06-25 12:30:57	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-25 12:44:17	⤍ 	Killpot (180e4f43@CyberCult-s62.s5c.ddqt29.IP) has joined #IDE
+2016-06-25 13:41:13	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-25 13:41:13	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-25 13:41:13	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-25 13:41:13	ℹ	Channel #IDE: 4 nicks (0 ops, 0 halfops, 0 voices, 4 normals)
+2016-06-25 13:41:15	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-25 13:42:29	insidious	finally
+2016-06-25 13:42:31	insidious	mug3n responded
+2016-06-25 13:50:37	mugen	procrastinating atm
+2016-06-25 13:50:45	insidious	it's all good
+2016-06-25 13:50:49	insidious	you're currently the first to respond
+2016-06-25 13:50:49	insidious	so
+2016-06-25 13:50:54	mugen	I think these classes are done in a week, then I'm finally gonna beon lol
+2016-06-25 13:50:55	insidious	you're ahead of the game
+2016-06-25 13:50:55	insidious	lmfao
+2016-06-25 13:51:01	insidious	hellllya
+2016-06-25 13:52:04	mugen	is that github repo gonna be a private one or nah 
+2016-06-25 13:52:23	insidious	if we have the funds for a private repo :P I have student pack so i can make a priv repo but it's not going to be IDE official
+2016-06-25 13:52:29	insidious	depends on what Killpot and Mafia want to do
+2016-06-25 13:52:33	insidious	odds are they won't pay for it tho
+2016-06-25 13:52:42	insidious	i think, haven't asked yet
+2016-06-25 13:53:10	insidious	hey bot, you there?
+2016-06-25 13:53:23	insidious	awww the bot isn't on :'(
+2016-06-25 13:53:58	mugen	yeah, I got student too but it's on my reg account =/ 
+2016-06-25 13:54:11	mugen	sucks that you don't get a couple for free
+2016-06-25 13:55:22	insidious	yeee
+2016-06-25 14:04:27	mugen	btw, did you send the github collab yet? Havent gotten the inv 
+2016-06-25 16:26:45	insidious	ye i sent it
+2016-06-25 16:26:47	insidious	a while ago
+2016-06-25 16:37:34	ℹ	irc: disconnected from server
+2016-06-25 16:37:42	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-25 16:37:42	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-25 16:37:42	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-25 16:37:42	ℹ	Channel #IDE: 4 nicks (0 ops, 0 halfops, 0 voices, 4 normals)
+2016-06-25 16:37:46	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-25 16:37:54	⤍ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has joined #IDE
+2016-06-25 16:37:59	Killpot	hey bot, lookup the posix function _longjmp
+2016-06-25 16:37:59	API-Bot	Ok one moment, I'll look that up for you!
+2016-06-25 16:38:00	API-Bot	Alright, I think I've found what you're looking for!
+2016-06-25 16:38:01	API-Bot	The page name is: 
+2016-06-25 16:38:02	API-Bot	_longjmp, _setjmp - non-local goto
+2016-06-25 16:38:03	API-Bot	Here's a link to the page: 
+2016-06-25 16:38:04	API-Bot	http://pubs.opengroup.org/onlinepubs/9699919799/functions/_longjmp.html
+2016-06-25 16:38:05	API-Bot	I've also discovered some more technical info, here's what I got...
+2016-06-25 16:38:06	API-Bot	Synopsis:
+2016-06-25 16:38:07	API-Bot	#include setjmp.h
+2016-06-25 16:38:08	API-Bot	 void _longjmp(jmp_buf env, int val);
+2016-06-25 16:38:09	API-Bot	 int _setjmp(jmp_buf env);
+2016-06-25 16:38:10	API-Bot	Description:
+2016-06-25 16:38:11	API-Bot	The _longjmp() and _setjmp() functions shall be equivalent to 
+2016-06-25 16:38:12	API-Bot	http://pubs.opengroup.org/onlinepubs/9699919799/functions/longjmp.html longjmp() and http://pubs.opengroup.org/onlinepubs/9699919799/functions/setjmp.html setjmp(), respectively, with the
+2016-06-25 16:38:13	API-Bot	additional restriction that _longjmp() and _setjmp() shall not manipulate the signal mask.
+2016-06-25 16:38:14	API-Bot	If _longjmp() is called even though env was never initialized by a call to _setjmp(), or when the last such
+2016-06-25 16:38:15	API-Bot	call was in a function that has since returned, the results are undefined.
+2016-06-25 16:38:16	API-Bot	That's all I've got, if something seems off or missing, message Killpot and he'll fix me ASAP.
+2016-06-25 16:38:30	insidious	mugen: you getting the invite/
+2016-06-25 16:38:32	insidious	sent it again
+2016-06-25 16:38:57	Killpot	boom
+2016-06-25 16:38:58	Killpot	posix query done
+2016-06-25 16:39:07	insidious	niiice
+2016-06-25 16:39:12	Killpot	give it a shot mugen
+2016-06-25 16:39:51	mugen	hey bot, lookup the posix function pthread_mutex_trylock
+2016-06-25 16:39:51	API-Bot	Ok one moment, I'll look that up for you!
+2016-06-25 16:39:51	⤎ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has quit (RecvQ exceeded)
+2016-06-25 16:40:02	mugen	bot is kill =(
+2016-06-25 16:40:10	insidious	kek
+2016-06-25 16:40:13	Killpot	uhhhh,
+2016-06-25 16:40:21	Killpot	it had an error in a really weird place
+2016-06-25 16:40:25	insidious	kinky
+2016-06-25 16:40:59	mugen	( ͡° ͜ʖ ͡°)
+2016-06-25 16:41:13	⤍ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has joined #IDE
+2016-06-25 16:41:37	Killpot	try again, for some reason it received an empty buffer and errored out trying to parse
+2016-06-25 16:42:02	mugen	hey bot, lookup the posix function pthread_mutex_trylock
+2016-06-25 16:42:02	API-Bot	Ok one moment, I'll look that up for you!
+2016-06-25 16:42:03	API-Bot	Alright, I think I've found what you're looking for!
+2016-06-25 16:42:03	⤎ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has quit (RecvQ exceeded)
+2016-06-25 16:42:15	Killpot	wtf man
+2016-06-25 16:42:26	Killpot	idk why it's having these weird ass errors
+2016-06-25 16:42:45	Killpot	http://prntscr.com/bl0sbs
+2016-06-25 16:42:49	Killpot	like wat
+2016-06-25 16:43:08	⤍ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has joined #IDE
+2016-06-25 16:43:15	Killpot	hey bot, lookup the posix function pthread_mutex_trylock
+2016-06-25 16:43:15	API-Bot	Ok one moment, I'll look that up for you!
+2016-06-25 16:43:16	API-Bot	Alright, I think I've found what you're looking for!
+2016-06-25 16:43:16	⤎ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has quit (RecvQ exceeded)
+2016-06-25 16:43:50	⤍ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has joined #IDE
+2016-06-25 16:43:57	Killpot	hey bot, lookup the posix function pthread_mutex_trylock
+2016-06-25 16:43:57	API-Bot	Ok one moment, I'll look that up for you!
+2016-06-25 16:43:57	⤎ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has quit (RecvQ exceeded)
+2016-06-25 16:44:09	mugen	killpot? morelike killbot
+2016-06-25 16:44:10	mugen	amirite
+2016-06-25 16:44:13	mugen	( ͡° ͜ʖ ͡°)
+2016-06-25 16:44:16	Killpot	-____________________________-
+2016-06-25 16:44:26	insidious	ohhellya mugen you got the inv
+2016-06-25 16:44:28	insidious	good
+2016-06-25 16:44:47	Killpot	https://www.youtube.com/watch?v=WQJBLO1Qa_I
+2016-06-25 16:44:50	Killpot	https://www.youtube.com/watch?v=WQJBLO1Qa_I
+2016-06-25 16:44:51	Killpot	https://www.youtube.com/watch?v=WQJBLO1Qa_I
+2016-06-25 16:45:28	insidious	lmfaoo
+2016-06-25 16:45:33	Killpot	i literally have it on repeat, it's my music
+2016-06-25 16:45:38	mugen	bwahahaha
+2016-06-25 16:46:09	mugen	you seen this 1 https://www.youtube.com/watch?v=yr_Rpk9HR1g
+2016-06-25 16:46:48	Killpot	haha yes, the jumping video instantly made me think of that
+2016-06-25 16:47:03	mugen	classic
+2016-06-25 16:47:46	⤍ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has joined #IDE
+2016-06-25 16:48:03	Killpot	hey bot, lookup the posix function _longjmp
+2016-06-25 16:48:03	API-Bot	Ok one moment, I'll look that up for you!
+2016-06-25 16:48:04	API-Bot	Alright, I think I've found what you're looking for!
+2016-06-25 16:48:05	API-Bot	The page name is: 
+2016-06-25 16:48:06	API-Bot	_longjmp, _setjmp - non-local goto
+2016-06-25 16:48:07	API-Bot	Here's a link to the page: 
+2016-06-25 16:48:08	API-Bot	http://pubs.opengroup.org/onlinepubs/9699919799/functions/_longjmp.html
+2016-06-25 16:48:09	API-Bot	I've also discovered some more technical info, here's what I got...
+2016-06-25 16:48:10	API-Bot	Synopsis:
+2016-06-25 16:48:11	API-Bot	#include setjmp.h
+2016-06-25 16:48:12	API-Bot	 void _longjmp(jmp_buf env, int val);
+2016-06-25 16:48:13	API-Bot	 int _setjmp(jmp_buf env);
+2016-06-25 16:48:14	API-Bot	Description:
+2016-06-25 16:48:15	API-Bot	The _longjmp() and _setjmp() functions shall be equivalent to 
+2016-06-25 16:48:16	API-Bot	http://pubs.opengroup.org/onlinepubs/9699919799/functions/longjmp.html longjmp() and http://pubs.opengroup.org/onlinepubs/9699919799/functions/setjmp.html setjmp(), respectively, with the
+2016-06-25 16:48:17	API-Bot	additional restriction that _longjmp() and _setjmp() shall not manipulate the signal mask.
+2016-06-25 16:48:18	API-Bot	If _longjmp() is called even though env was never initialized by a call to _setjmp(), or when the last such
+2016-06-25 16:48:19	API-Bot	call was in a function that has since returned, the results are undefined.
+2016-06-25 16:48:20	API-Bot	That's all I've got, if something seems off or missing, message Killpot and he'll fix me ASAP.
+2016-06-25 16:48:25	Killpot	o wait a sec
+2016-06-25 16:48:40	Killpot	ahhhhhhhhhhhhhhhh
+2016-06-25 16:48:59	Killpot	the html on that page is allot different from the one i was on
+2016-06-25 16:49:32	Killpot	+ thats a long ass fucking description with tables n' shit lmao
+2016-06-25 16:49:36	Killpot	http://pubs.opengroup.org/onlinepubs/9699919799/functions/pthread_mutex_trylock.html
+2016-06-25 16:50:35	⤎ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has quit (Connection closed)
+2016-06-25 16:51:23	mugen	You guys think it would be viable to make some adware that replaces reg ad frames with ones from you
+2016-06-25 16:51:31	⤍ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has joined #IDE
+2016-06-25 16:51:46	mugen	could just be a dns filter that swaps the lookup to your adhost 
+2016-06-25 16:52:04	Killpot	hmmm, I don't think it'd be that hard
+2016-06-25 16:52:04	mugen	for that crispy ad money
+2016-06-25 16:52:38	Killpot	hey bot, lookup the posix function pthread_mutex_trylock
+2016-06-25 16:52:38	API-Bot	Ok one moment, I'll look that up for you!
+2016-06-25 16:52:38	⤎ 	API-Bot (API-Bot@CyberCult-pm6.lhv.k2bv6g.IP) has quit (RecvQ exceeded)
+2016-06-25 16:52:49	Killpot	ffs
+2016-06-25 16:52:53	mugen	I fell like if you did that it most people wouldent notice it either, as long as you dont spawn popup ads 
+2016-06-25 16:52:56	mugen	*feel
+2016-06-25 16:53:27	Killpot	o ye, and mugen if you want I'm in discord if you wanna talk about crypters
+2016-06-25 16:53:55	mugen	I'll probably hop on voice a little bit later, got a project duetomorrow I'm working on
+2016-06-25 16:54:17	mugen	well, less working more procrastinating atm 
+2016-06-25 16:55:21	Killpot	kek
+2016-06-25 16:55:28	Killpot	whats the project?
+2016-06-25 16:57:55	mugen	tbh, I'm not really sure, I just skimmed over it earlier lol
+2016-06-25 16:58:24	mugen	I think I just have to just implement a way to prevent mutual exclusion w/o usingsemaphores
+2016-06-25 17:02:33	mugen	damn it, my laptop got knocked off ofthe couch yesterday and nowthe hinge is busted along with my keyboard not registering spaces all of the time -_-
+2016-06-25 17:09:26	insidious	guys need a quick opinion on something
+2016-06-25 17:09:40	insidious	being lazy and buying a theme for the ecommerce site i'm supposed to be designing
+2016-06-25 17:09:55	insidious	themeforest.net/item/megashop-responsive-shopify-theme/full_screen_preview/13740037
+2016-06-25 17:10:20	insidious	http://minimart-demo.myshopify.com/
+2016-06-25 17:10:34	insidious	https://ap-next-store.myshopify.com/
+2016-06-25 17:10:41	insidious	i'm fucking with the HTMl and CSS to customize
+2016-06-25 17:10:46	insidious	but out of those, for a party store, which is best
+2016-06-25 17:10:58	insidious	I have a choice i'm just looking for consensus
+2016-06-25 17:16:39	mugen	IMO the second one if you remove that massive 2x3 product grid that takes up like half the page
+2016-06-25 17:17:13	mugen	They all kind of look like flashy gimmick sites though, not realy a fan of any 
+2016-06-25 17:17:17	mugen	they just have too much going on
+2016-06-25 17:19:24	insidious	Yeah, he wants something gimicky like that. Whichever theme I use i'm definitely going to tone it down and make it less chaotic though
+2016-06-25 17:19:45	insidious	don't feel like spending 3+months working on a damn eccommerce site for this guy tho kek
+2016-06-25 18:07:04	mugen	I feel that, is he actually setting up an online party store? Is this some kind of money laundering scheme on his part lol 
+2016-06-25 18:07:47	mugen	Or is it just going to be a site for an existing store / wholesale party supplies 
+2016-06-25 18:10:08	Killpot	oi gents, need help, since @Axari is dodging the question, i guess I'll open it up to you guys. So with ven0m I'm working with a hypervisor, and to inject I have to pass it a structure with all the info etc. The problem I'm having is when I convert it to VB.Net, the driver won't take the structure and it fails, I've conversed a lot with the guy tha
+2016-06-25 18:10:08	Killpot	t made it and he doesn't know enough .Net to be of use.
+2016-06-25 18:10:12	Killpot	typedef struct _INJECT_DLL {
+2016-06-25 18:10:12	Killpot	    InjectType type;                // Type of injection
+2016-06-25 18:10:13	Killpot	    wchar_t    FullDllPath[512];    // Fully-qualified path to the target dll
+2016-06-25 18:10:14	Killpot	    wchar_t    initArg[512];        // Init routine argument
+2016-06-25 18:10:15	Killpot	    ULONG      initRVA;             // Init routine RVA, if 0 - no init routine
+2016-06-25 18:10:16	Killpot	    ULONG      pid;                 // Target process ID
+2016-06-25 18:10:17	Killpot	    BOOLEAN    wait;                // Wait on injection thread
+2016-06-25 18:10:18	Killpot	    BOOLEAN    unlink;              // Unlink module after injection
+2016-06-25 18:10:19	Killpot	    BOOLEAN    erasePE;             // Erase PE headers after injection
+2016-06-25 18:10:20	Killpot	    KMmapFlags flags;               // Manual map flags
+2016-06-25 18:10:21	Killpot	    ULONGLONG  imageBase;           // Image address in memory to manually map
+2016-06-25 18:10:22	Killpot	    ULONG      imageSize;           // Size of memory image
+2016-06-25 18:10:23	Killpot	    BOOLEAN    asImage;             // Memory chunk has image layout
+2016-06-25 18:10:24	Killpot	} INJECT_DLL, *PINJECT_DLL;
+2016-06-25 18:10:25	Killpot	that's the structure
+2016-06-25 18:10:45	Killpot	I converted it to VB and it with Marshal.SizeOf() it was around 63, but he says it SHOULD be around 2088
+2016-06-25 18:11:03	insidious	mugen: he has an existing retail store i used to work at, and then i told him i could design him a website so i designed him a like landing page for his party store
+2016-06-25 18:11:16	insidious	and now he wants an ecommerce site. he used to do ecommerce over Ebay so he apparently has exp
+2016-06-25 18:11:22	insidious	irdc tho as long as I get paid
+2016-06-25 18:11:43	insidious	I 'Log' My own hours, so if i buy this theme i just say i worked 16 hours designing a website and get paid lmfao
+2016-06-25 18:15:48	mugen	lel, that's a good idea for some easy money
+2016-06-25 18:16:26	mugen	@killpot can't help you there, ive never used visual basic lol 
+2016-06-25 18:31:53	Axari	gee thanks
+2016-06-25 18:31:57	Axari	i wasnt dodging ;_;
+2016-06-25 18:32:03	Axari	i didnt see your pm
+2016-06-25 18:32:23	Axari	Killpot .
+2016-06-25 18:33:10	Killpot	wow that hurts even more
+2016-06-25 18:33:15	Killpot	is that all I am to you ;_;
+2016-06-25 18:35:17	Axari	noooo im on mumble lol im busy
+2016-06-25 18:35:25	Axari	hop in general we can talk
+2016-06-25 18:36:09	mugen	does vb have pointers? or nah 
+2016-06-25 18:36:50	Killpot	yeah, IntPtr
+2016-06-25 18:38:43	Killpot	http://codepad.org/5TRUMpua
+2016-06-25 18:39:17	insidious	mugen: and I are C fegs
+2016-06-25 18:50:21	Killpot	http://prntscr.com/bl287u
+2016-06-25 18:52:17	Killpot	Enum InjectType As Integer
+2016-06-25 18:52:17	Killpot	        IT_Thread = 0
+2016-06-25 18:52:18	Killpot	        IT_Apc = 1
+2016-06-25 18:52:19	Killpot	        IT_MMap = 2
+2016-06-25 18:52:20	Killpot	    End Enum
+2016-06-25 18:52:21	Killpot	    Enum KMapFlags As Integer
+2016-06-25 18:52:22	Killpot	        KNoFlags = &H0          '// No flags
+2016-06-25 18:52:23	Killpot	        KManualImports = &H1    '// Manually map import libraries
+2016-06-25 18:52:24	Killpot	        KWipeHeader = &H4       '// Wipe image PE headers
+2016-06-25 18:52:25	Killpot	        KHideVAD = &H10         '// Make image appear as PAGE_NOACESS region
+2016-06-25 18:52:26	Killpot	        KRebaseProcess = &H40   '// If target image is an .exe file, process base address will be replaced with mapped module value
+2016-06-25 18:52:27	Killpot	        KNoExceptions = &H1000  '// Do not create custom exception handler
+2016-06-25 18:52:28	Killpot	        KNoSxS = &H8000         '// Do not apply SxS activation context
+2016-06-25 18:52:29	Killpot	        KNoTLS = &H10000        '// Skip TLS initialization and don't execute TLS callbacks
+2016-06-25 18:52:30	Killpot	    End Enum
+2016-06-25 19:20:46	⤍ 	Axari69 (Axari@CyberCult-112.fh6.epbp1a.IP) has joined #IDE
+2016-06-25 19:20:47	⤎ 	Axari69 (Axari@CyberCult-112.fh6.epbp1a.IP) has quit (Connection closed)
+2016-06-25 19:23:56	⤎ 	Axari (Axari@CyberCult-i6r.o5i.ajq9kt.IP) has quit (Ping timeout: 121 seconds)
+2016-06-25 20:50:01	⤍ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has joined #IDE
+2016-06-25 21:00:28	Axari	someone come back to voice
+2016-06-25 21:00:34	Axari	Killpot
+2016-06-25 21:00:36	Axari	anyone
+2016-06-25 21:08:03	Killpot	in voice
+2016-06-25 21:09:05	mugen	Ill hop on later if I eventually get some of this HW done lol 
+2016-06-25 21:15:29	Axari	insidious https://streamable.com/ktq6
+2016-06-25 23:31:22	⤎ 	mugen (mugen@CyberCult-fpc.mnb.ebcf1a.IP) has quit (Quit: finna overwatch)
+2016-06-26 00:26:57	insidious	duuuude switzx tied polan!?!?!?!
+2016-06-26 00:31:34	Axari	yep
+2016-06-26 00:31:44	Axari	but poland won the tiebreaker
+2016-06-26 00:31:53	Axari	POL-SWI
+2016-06-26 00:31:59	Axari	(5) - (4)
+2016-06-26 00:32:03	Axari	was soo narrow
+2016-06-26 00:32:10	Axari	Pinging insidious
+2016-06-26 00:34:38	insidious	di'm fuckin' drukn
+2016-06-26 00:34:41	insidious	i don't know
+2016-06-26 00:34:50	insidious	i accidentaly invited  my ffrrend
+2016-06-26 00:34:52	insidious	fuck
+2016-06-26 00:34:56	insidious	loool
+2016-06-26 00:35:00	insidious	fuuuck
+2016-06-26 00:35:05	insidious	HELLYA POLAND WON
+2016-06-26 00:35:07	insidious	FUCKYE
+2016-06-26 00:42:17	Killpot	http://prntscr.com/bl52sc
+2016-06-26 00:42:22	Killpot	64 bit driver in purebasic
+2016-06-26 00:42:23	Killpot	kek
+2016-06-26 00:42:59	Killpot	I'm gonna be gone for next 3 days
+2016-06-26 00:43:10	Killpot	in florida, fuckin bitches and getting laid
+2016-06-26 00:43:15	Killpot	see yall bitches later,
+2016-06-26 00:43:24	Killpot	and if there's any problems don't rely on mafia
+2016-06-26 00:43:28	Killpot	need to demote that fucker
+2016-06-26 00:43:36	Killpot	pce
+2016-06-26 00:55:14	⤎ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has quit (Connection closed)
+2016-06-26 01:17:25	⤎ 	Killpot (180e4f43@CyberCult-s62.s5c.ddqt29.IP) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2016-06-28 18:50:50	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-28 18:50:50	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-28 18:50:50	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-28 18:50:50	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-06-28 18:50:54	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-29 02:51:04	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-29 02:51:04	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-29 02:51:04	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-29 02:51:04	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-06-29 02:51:08	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-29 13:55:06	ℹ	irc: disconnected from server
+2016-06-29 13:55:21	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-29 13:55:21	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-29 13:55:21	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-29 13:55:21	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-06-29 13:55:25	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-29 15:12:43	⤍ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has joined #IDE
+2016-06-29 15:21:31	insidious	sup Axari 
+2016-06-29 15:31:07	Axari	hi
+2016-06-29 20:29:50	⤍ 	mugen (mugen@CyberCult-v30.mnb.ebcf1a.IP) has joined #IDE
+2016-06-29 20:29:56	mugen	yo yo yo
+2016-06-29 20:29:59	mugen	yo yo
+2016-06-29 20:30:00	mugen	yo
+2016-06-29 20:35:48	Axari	hi
+2016-06-29 20:39:25	mugen	what's new? 
+2016-06-29 20:44:04	mugen	brb gotta restar
+2016-06-29 20:44:22	⤎ 	mugen (mugen@CyberCult-v30.mnb.ebcf1a.IP) has quit (Quit: brb)
+2016-06-29 21:39:11	insidious	lol
+2016-06-29 23:09:55	⤍ 	Killpot (180e4f43@CyberCult-io4.llj.ddqt29.IP) has joined #IDE
+2016-06-29 23:10:06	Killpot	Yaaaa
+2016-06-29 23:13:58	insidious	eyyyy bby
+2016-06-29 23:28:23	Killpot	get in discord @insidious
+2016-06-29 23:34:43	⤎ 	Killpot (180e4f43@CyberCult-io4.llj.ddqt29.IP) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2016-06-29 23:49:00	Axari	///////////////////----------------------222222222222222222222222222222**********]
+2016-06-29 23:49:08	⤎ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has quit (Connection closed)
+2016-06-30 17:44:44	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-06-30 17:44:44	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-06-30 17:44:44	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-06-30 17:44:44	ℹ	Channel #IDE: 3 nicks (0 ops, 0 halfops, 0 voices, 3 normals)
+2016-06-30 17:44:47	insidious	x.x
+2016-06-30 17:44:50	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-06-30 18:19:23	mugen	-.-
+2016-06-30 18:53:26	Killpot	that discord is glorious
+2016-06-30 18:53:27	Killpot	@mugen
+2016-06-30 19:02:01	mugen	It's a strange one, I'll give it that lol
+2016-06-30 19:02:18	mugen	brb like 15
+2016-06-30 19:02:55	Killpot	kk, when back join gen on SL discord
+2016-06-30 19:03:08	mugen	kk
+2016-06-30 19:24:56	⤍ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has joined #IDE
+2016-06-30 22:59:52	⤎ 	mugen (mugen@CyberCult-v30.mnb.ebcf1a.IP) has quit (Quit: Leaving)
+2016-06-30 23:45:06	⤎ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has quit (Connection closed)
+2016-07-03 20:47:40	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-03 20:47:40	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-07-03 20:47:40	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-07-03 20:47:40	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-07-03 20:47:42	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-07-04 11:40:14	ℹ	irc: disconnected from server
+2016-07-04 11:40:29	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-04 11:40:29	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-07-04 11:40:29	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-07-04 11:40:29	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-07-04 11:40:33	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-07-04 13:36:11	⤍ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has joined #IDE
+2016-07-04 21:57:12	⤎ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has quit (Quit: Leaving)
+2016-07-05 13:41:05	ℹ	irc: disconnected from server
+2016-07-05 13:41:21	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-05 13:41:21	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-07-05 13:41:21	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-07-05 13:41:21	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-07-05 13:41:25	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-07-05 16:54:24	⤍ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has joined #IDE
+2016-07-05 22:27:42	⤎ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has quit (Quit: Leaving)
+2016-07-06 11:09:36	ℹ	irc: disconnected from server
+2016-07-06 11:09:51	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-06 11:09:51	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-07-06 11:09:51	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-07-06 11:09:51	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-07-06 11:09:55	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-07-06 19:31:55	⤍ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has joined #IDE
+2016-07-06 20:35:18	⤍ 	Killpot (180e4f43@CyberCult-s62.s5c.ddqt29.IP) has joined #IDE
+2016-07-06 20:35:35	Killpot	ayyy
+2016-07-06 20:37:55	⤍ 	root (root@CyberCult-pai.379.e5pifv.IP) has joined #IDE
+2016-07-06 20:38:22	⤎ 	root (root@CyberCult-pai.379.e5pifv.IP) has quit (Quit: leaving)
+2016-07-06 20:38:45	Axari	hey
+2016-07-06 20:39:40	⤍ 	root (root@CyberCult-pai.379.e5pifv.IP) has joined #IDE
+2016-07-06 20:39:53	Axari	fun fact thats my vps
+2016-07-06 20:40:11	Axari	it only says root because irssi takes your current username on the system and uses it
+2016-07-06 20:40:19	⤎ 	root (root@CyberCult-pai.379.e5pifv.IP) has quit (Quit: leaving)
+2016-07-06 20:40:30	⤍ 	root (root@CyberCult-pai.379.e5pifv.IP) has joined #IDE
+2016-07-06 20:40:36	⤎ 	root (root@CyberCult-pai.379.e5pifv.IP) has quit (Quit: leaving)
+2016-07-06 20:42:02	⤍ 	root_ (axi@CyberCult-7cf.4rq.7t3vet.IP) has joined #IDE
+2016-07-06 20:42:14	⤍ 	root (root@CyberCult-pai.379.e5pifv.IP) has joined #IDE
+2016-07-06 20:42:27	Axari	i should just keep getting the vpses in
+2016-07-06 20:44:09	⤎ 	root (root@CyberCult-pai.379.e5pifv.IP) has quit (Quit: leaving)
+2016-07-06 20:44:13	⤎ 	root_ (axi@CyberCult-7cf.4rq.7t3vet.IP) has quit (Quit: leaving)
+2016-07-06 20:44:18	Killpot	who tf is root
+2016-07-06 20:44:22	Killpot	oh
+2016-07-06 20:44:24	Killpot	i knew that
+2016-07-06 20:44:57	Axari	can i invite somebots real quick
+2016-07-06 20:45:05	Killpot	ye who cares lel
+2016-07-06 20:47:52	⤍ 	bot0561 (bot0561@CyberCult-197.7m3.g121nl.IP) has joined #IDE
+2016-07-06 20:48:29	⤎ 	bot0561 (bot0561@CyberCult-197.7m3.g121nl.IP) has quit (Client exited)
+2016-07-06 20:51:12	⤍ 	bot1 (bot1@CyberCult-pai.379.e5pifv.IP) has joined #IDE
+2016-07-06 20:51:17	⤎ 	bot1 (bot1@CyberCult-pai.379.e5pifv.IP) has quit (Client exited)
+2016-07-06 20:51:41	⤍ 	bot1 (bot1@CyberCult-197.7m3.g121nl.IP) has joined #IDE
+2016-07-06 20:51:51	⤎ 	bot1 (bot1@CyberCult-197.7m3.g121nl.IP) has quit (Client exited)
+2016-07-06 20:52:10	⤍ 	bot1 (bot1@CyberCult-197.7m3.g121nl.IP) has joined #IDE
+2016-07-06 20:52:13	⤎ 	bot1 (bot1@CyberCult-197.7m3.g121nl.IP) has quit (Client exited)
+2016-07-06 20:57:43	Axari	yo
+2016-07-06 20:57:52	Axari	join #testerino
+2016-07-06 20:58:12	Killpot	im here
+2016-07-06 20:58:28	Killpot	http://pastebin.com/raw/qnNpwuYg
+2016-07-06 20:58:32	Killpot	is good y/n
+2016-07-06 20:58:42	Killpot	works, but I imagine I'm fucking up in a lot of places
+2016-07-06 20:59:10	Axari	looking over
+2016-07-06 21:01:34	Axari	also
+2016-07-06 21:01:37	Axari	join #testerino
+2016-07-06 21:08:15	Axari	it looks good to me
+2016-07-06 21:09:07	Killpot	dank
+2016-07-06 21:10:23	Killpot	I'm thinking that every time a process starts, it will suspend it immediately, and then communicate with the client, and the client will pop up a message box, and whatever your answer is y/n it will then ask always or just this once
+2016-07-06 21:10:42	Killpot	and if it's always, it will add it to a pre-aproved list, so when it get's queried it will auto respond
+2016-07-06 21:10:57	Killpot	or vice-versa and auto-deny
+2016-07-06 21:48:45	Axari	you know how people say they have hoes in different area codes
+2016-07-06 21:48:48	Axari	im here like
+2016-07-06 21:48:53	Axari	i got roots in countries i cant map
+2016-07-06 21:48:59	Axari	i feel so good inside
+2016-07-06 21:49:02	Axari	warm n' fuzzy
+2016-07-06 22:15:55	Killpot	lmfao
+2016-07-06 22:16:12	Killpot	how do you think i should design this form?
+2016-07-06 22:16:37	Killpot	I'm thinking two list views, one on top, one on bottom
+2016-07-06 22:16:42	Killpot	top is for approved processes
+2016-07-06 22:16:49	Killpot	bottom is for denied processes
+2016-07-06 22:17:05	Killpot	right click context menu to manually add or delete
+2016-07-06 22:23:12	Killpot	and when an uknown process starts, it's suspended and a messagebox pops up asking for the user's decision, yes or no, then just this once or always, and if always add it to the list
+2016-07-06 22:23:16	Killpot	sounds gucci?
+2016-07-06 22:24:03	Killpot	@Axiari
+2016-07-06 22:24:05	Killpot	@Axari
+2016-07-06 22:38:41	Killpot	http://prntscr.com/bprqrx
+2016-07-06 22:40:03	Axari	awoo
+2016-07-06 22:40:12	Axari	and sounds gud
+2016-07-06 22:52:25	Killpot	why tf is VS form designer so autistic
+2016-07-06 22:53:02	Killpot	project works fucking perfectly, designing shit, but the moment I switch to a different tab, when I come back it says there's a warning, and my only option is to ignore and continue, and if I do it will wipe the form
+2016-07-06 22:53:09	Killpot	"to prevent data loss"
+2016-07-06 22:53:16	Killpot	it's fucking forcing data loss
+2016-07-06 22:53:25	Killpot	http://prntscr.com/bpruyc
+2016-07-06 22:57:50	Killpot	I'm about to loose my shit and do this in VB
+2016-07-06 22:59:32	Axari	lol check your form designer
+2016-07-06 22:59:34	Axari	code
+2016-07-06 22:59:38	Axari	autogenerator fucks things up
+2016-07-06 23:00:04	Killpot	jump in general, i need help, can't figure out wtf is going wrong
+2016-07-06 23:02:59	Axari	sorry, i cant talk right now
+2016-07-06 23:03:33	Killpot	http://prntscr.com/bprxrf
+2016-07-06 23:03:36	Killpot	thats the error
+2016-07-06 23:03:37	Killpot	right at the error
+2016-07-06 23:03:41	Killpot	arrow*
+2016-07-06 23:09:14	Axari	lol thats not a code issue
+2016-07-06 23:09:16	Axari	compile issue
+2016-07-06 23:09:42	Axari	its an issue thats kinda subtle; its combining managed and unmanaged code
+2016-07-06 23:09:55	Axari	@Killpot
+2016-07-06 23:10:11	Axari	what version of vs are you using
+2016-07-06 23:10:13	Axari	2015?
+2016-07-06 23:10:16	Killpot	ye
+2016-07-06 23:10:22	Killpot	all ive done is drag shit into the editor
+2016-07-06 23:10:27	Killpot	nothing else
+2016-07-06 23:10:33	Killpot	designer*
+2016-07-06 23:10:44	Axari	https://msdn.microsoft.com/en-us/library/ms173253(v=vs.140).aspx
+2016-07-06 23:10:56	Axari	that'll allow the mix of managed/unmanaged
+2016-07-06 23:11:02	Axari	tl;dr add /clr:pure to compiler opts
+2016-07-06 23:12:35	Axari	if that doesnt work
+2016-07-06 23:12:36	Killpot	http://prntscr.com/bps0fz
+2016-07-06 23:12:38	Killpot	no change
+2016-07-06 23:12:38	Axari	may god help you
+2016-07-06 23:12:41	Killpot	ri
+2016-07-06 23:12:42	Killpot	p
+2016-07-06 23:14:24	Axari	have you tried closing it and reopening it
+2016-07-06 23:14:29	Axari	Visual Studio i mean
+2016-07-06 23:15:30	Killpot	same error
+2016-07-06 23:15:38	Axari	yeah idk thats a VS issue
+2016-07-06 23:16:54	Killpot	its so fucking annoying
+2016-07-06 23:37:22	⤎ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has quit (Connection closed)
+2016-07-07 09:27:52	ℹ	irc: disconnected from server
+2016-07-07 09:28:07	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-07 09:28:07	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-07-07 09:28:07	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-07-07 09:28:07	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-07-07 09:28:11	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-07-07 12:53:36	⤍ 	Killpot (180e4f43@CyberCult-io4.llj.ddqt29.IP) has joined #IDE
+2016-07-07 14:01:36	⤎ 	Killpot (180e4f43@CyberCult-io4.llj.ddqt29.IP) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2016-07-07 14:47:37	⤍ 	Killpot (180e4f43@CyberCult-s62.s5c.ddqt29.IP) has joined #IDE
+2016-07-07 16:48:26	⤎ 	Killpot (180e4f43@CyberCult-s62.s5c.ddqt29.IP) has quit (Connection closed)
+2016-07-07 16:49:25	⤍ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has joined #IDE
+2016-07-07 17:15:34	⤎ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has quit (Quit: Leaving)
+2016-07-07 17:46:20	⤍ 	InsidiousM (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-07 18:26:57	⤍ 	Insidio82 (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-07 18:28:21	⤎ 	InsidiousM (insidious@CyberCult-eb0.kc8.6v551l.IP) has quit (Ping timeout: 121 seconds)
+2016-07-07 19:22:02	⤍ 	InsidiousM (insidious@CyberCult-g0p.9mu.ushgh7.IP) has joined #IDE
+2016-07-07 19:22:31	⤎ 	Insidio82 (insidious@CyberCult-eb0.kc8.6v551l.IP) has quit (Ping timeout: 121 seconds)
+2016-07-07 19:26:11	⤍ 	Insidio35 (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-07 19:28:12	⤎ 	InsidiousM (insidious@CyberCult-g0p.9mu.ushgh7.IP) has quit (Ping timeout: 121 seconds)
+2016-07-09 00:51:23	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-09 00:51:23	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-07-09 00:51:23	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-07-09 00:51:23	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-07-09 00:51:25	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-07-09 12:33:44	ℹ	irc: disconnected from server
+2016-07-09 12:33:59	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-09 12:33:59	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-07-09 12:33:59	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-07-09 12:33:59	ℹ	Channel #IDE: 2 nicks (0 ops, 0 halfops, 0 voices, 2 normals)
+2016-07-09 12:34:03	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-07-09 15:11:22	Axari	hi
+2016-07-09 15:12:41	insidious	sup
+2016-07-09 19:38:15	ℹ	irc: disconnected from server
+2016-07-09 19:38:30	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-09 19:38:30	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-07-09 19:38:30	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-07-09 19:38:30	ℹ	Channel #IDE: 2 nicks (0 ops, 0 halfops, 0 voices, 2 normals)
+2016-07-09 19:38:34	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-07-09 23:27:33	⤎ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has quit (Connection closed)
+2016-07-10 08:43:21	ℹ	irc: disconnected from server
+2016-07-10 08:43:36	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-10 08:43:36	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-07-10 08:43:36	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-07-10 08:43:36	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-07-10 08:43:40	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-07-11 18:47:55	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-07-11 18:47:55	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-07-11 18:47:55	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-07-11 18:47:55	ℹ	Channel #IDE: 2 nicks (0 ops, 0 halfops, 0 voices, 2 normals)
+2016-07-11 18:47:57	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-07-11 23:11:02	⤎ 	Axari (Axari@CyberCult-112.fh6.epbp1a.IP) has quit (Connection closed)
+2016-08-02 19:57:02	⤍ 	insidious (insidious@CyberCult-eb0.kc8.6v551l.IP) has joined #IDE
+2016-08-02 19:57:02	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-08-02 19:57:02	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-08-02 19:57:02	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-08-02 19:57:04	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09
+2016-08-02 22:06:11	⤍ 	Axari (Axari@CyberCult-h73.sho.aq3sm4.IP) has joined #IDE
+2016-09-05 22:28:36	⤍ 	insidious (insidious@CyberCult-0d5.tsr.otb5dg.IP) has joined #IDE
+2016-09-05 22:28:36	ℹ	Topic for #IDE is "IRC chat for IDE programming group on Sinister.ly"
+2016-09-05 22:28:36	ℹ	Topic set by irc.thecybercult.net on Mon, 20 Jun 2016 14:24:09
+2016-09-05 22:28:36	ℹ	Channel #IDE: 1 nick (0 ops, 0 halfops, 0 voices, 1 normal)
+2016-09-05 22:28:37	ℹ	Channel created on Mon, 20 Jun 2016 14:24:09

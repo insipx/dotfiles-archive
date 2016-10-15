@@ -1,0 +1,5 @@
+#!/bin/bash
+
+xrandr --output DFP6 --right-of DFP5
+xrandr --output DFP6 --left-of DFP7
+xrandr --output DFP7 --right-of DFP6

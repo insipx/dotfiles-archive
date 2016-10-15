@@ -1,0 +1,46 @@
+2016-06-03 13:51:48	ℹ	irc: connecting to server irc.thecybercult.net/6697 (SSL)...
+2016-06-03 13:51:49	ℹ	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2016-06-03 13:51:49	ℹ	gnutls: receiving 1 certificate
+2016-06-03 13:51:49	ℹ	 - certificate[1] info:
+2016-06-03 13:51:49	ℹ	   - subject `CN=irc.thecybercult.net', issuer `C=IL,O=StartCom Ltd.,OU=StartCom Certification Authority,CN=StartCom Class 1 DV Server CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2016-06-03 03:35:32 UTC', expires `2017-06-03 03:35:32 UTC', SHA-1 fingerprint `ba33691c4a5fb66b2f8cf1b098652ce71e3f4c0c'
+2016-06-03 13:51:49	⚠	gnutls: peer's certificate is NOT trusted
+2016-06-03 13:51:49	⚠	gnutls: peer's certificate issuer is unknown
+2016-06-03 13:51:49	⚠	irc: TLS handshake failed
+2016-06-03 13:51:49	⚠	irc: error: Error in the certificate.
+2016-06-03 13:51:49	ℹ	irc: reconnecting to server in 10 seconds
+2016-06-03 13:51:52		irc: auto-reconnection is cancelled
+2016-06-03 13:51:52	ℹ	irc: disconnected from server
+2016-06-03 14:15:45	ℹ	irc: connecting to server irc.thecybercult.net/6697 (SSL)...
+2016-06-03 14:15:45	ℹ	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2016-06-03 14:15:45	ℹ	gnutls: receiving 1 certificate
+2016-06-03 14:15:45	ℹ	 - certificate[1] info:
+2016-06-03 14:15:45	ℹ	   - subject `CN=irc.thecybercult.net', issuer `C=IL,O=StartCom Ltd.,OU=StartCom Certification Authority,CN=StartCom Class 1 DV Server CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2016-06-03 03:35:32 UTC', expires `2017-06-03 03:35:32 UTC', SHA-1 fingerprint `ba33691c4a5fb66b2f8cf1b098652ce71e3f4c0c'
+2016-06-03 14:15:45	⚠	gnutls: peer's certificate is NOT trusted
+2016-06-03 14:15:45	⚠	gnutls: peer's certificate issuer is unknown
+2016-06-03 14:15:45	⚠	irc: TLS handshake failed
+2016-06-03 14:15:45	⚠	irc: error: Error in the certificate.
+2016-06-03 14:15:45	ℹ	irc: reconnecting to server in 10 seconds
+2016-06-03 14:15:55	ℹ	irc: reconnecting to server...
+2016-06-03 14:15:55	ℹ	irc: connecting to server irc.thecybercult.net/6697 (SSL)...
+2016-06-03 14:15:55	ℹ	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2016-06-03 14:15:55	ℹ	gnutls: receiving 1 certificate
+2016-06-03 14:15:55	ℹ	 - certificate[1] info:
+2016-06-03 14:15:55	ℹ	   - subject `CN=irc.thecybercult.net', issuer `C=IL,O=StartCom Ltd.,OU=StartCom Certification Authority,CN=StartCom Class 1 DV Server CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2016-06-03 03:35:32 UTC', expires `2017-06-03 03:35:32 UTC', SHA-1 fingerprint `ba33691c4a5fb66b2f8cf1b098652ce71e3f4c0c'
+2016-06-03 14:15:55	⚠	gnutls: peer's certificate is NOT trusted
+2016-06-03 14:15:55	⚠	gnutls: peer's certificate issuer is unknown
+2016-06-03 14:15:55	⚠	irc: TLS handshake failed
+2016-06-03 14:15:55	⚠	irc: error: Error in the certificate.
+2016-06-03 14:15:55	ℹ	irc: reconnecting to server in 20 seconds
+2016-06-03 14:16:15	ℹ	irc: reconnecting to server...
+2016-06-03 14:16:15	ℹ	irc: connecting to server irc.thecybercult.net/6697 (SSL)...
+2016-06-03 14:16:15	ℹ	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2016-06-03 14:16:15	ℹ	gnutls: receiving 1 certificate
+2016-06-03 14:16:15	ℹ	 - certificate[1] info:
+2016-06-03 14:16:15	ℹ	   - subject `CN=irc.thecybercult.net', issuer `C=IL,O=StartCom Ltd.,OU=StartCom Certification Authority,CN=StartCom Class 1 DV Server CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2016-06-03 03:35:32 UTC', expires `2017-06-03 03:35:32 UTC', SHA-1 fingerprint `ba33691c4a5fb66b2f8cf1b098652ce71e3f4c0c'
+2016-06-03 14:16:15	⚠	gnutls: peer's certificate is NOT trusted
+2016-06-03 14:16:15	⚠	gnutls: peer's certificate issuer is unknown
+2016-06-03 14:16:15	⚠	irc: TLS handshake failed
+2016-06-03 14:16:15	⚠	irc: error: Error in the certificate.
+2016-06-03 14:16:15	ℹ	irc: reconnecting to server in 40 seconds
+2016-06-03 14:16:18		irc: auto-reconnection is cancelled
+2016-06-03 14:16:18	ℹ	irc: disconnected from server

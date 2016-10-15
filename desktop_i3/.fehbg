@@ -1,0 +1,2 @@
+#!/bin/sh
+feh  --bg-scale '/home/insidious/Pictures/Wallpapers/wallpaper.jpg' 

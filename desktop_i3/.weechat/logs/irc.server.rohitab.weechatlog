@@ -1,0 +1,159 @@
+2016-07-06 01:06:27	ℹ	irc: connecting to server irc.rohitab.com/6697...
+2016-07-06 01:06:27	ℹ	irc: connected to irc.rohitab.com/6697 (97.107.130.165)
+2016-07-06 01:06:27	⚠	irc: reading data on socket: error 104 Connection reset by peer
+2016-07-06 01:06:27	ℹ	irc: disconnecting from server...
+2016-07-06 01:06:27	ℹ	irc: disconnected from server
+2016-07-06 01:06:27	ℹ	irc: reconnecting to server in 10 seconds
+2016-07-06 01:06:34		irc: auto-reconnection is cancelled
+2016-07-06 01:06:34	ℹ	irc: disconnected from server
+2016-07-06 01:07:19	ℹ	irc: connecting to server irc.rohitab.com/6667...
+2016-07-06 01:07:19	ℹ	irc: connected to irc.rohitab.com/6667 (97.107.130.165)
+2016-07-06 01:07:19	ℹ	irc.rohitab.com: *** Looking up your hostname...
+2016-07-06 01:07:20	ℹ	irc.rohitab.com: *** Found your hostname
+2016-07-06 01:07:20	ℹ	Welcome to the Rohitab IRC IRC Network insidious!insidious@c-69-142-165-107.hsd1.nj.comcast.net
+2016-07-06 01:07:20	ℹ	Your host is irc.rohitab.com, running version Unreal3.2.8.1
+2016-07-06 01:07:20	ℹ	This server was created Sat Jun 4 2011 at 01:19:22 EDT
+2016-07-06 01:07:20	ℹ	irc.rohitab.com Unreal3.2.8.1 iowghraAsORTVSxNCWqBzvdHtGp lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGj
+2016-07-06 01:07:20	ℹ	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=10 CHANLIMIT=#:10 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2016-07-06 01:07:20	ℹ	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTG NETWORK=Rohitab-IRC CASEMAPPING=ascii EXTBAN=~,cqnr ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2016-07-06 01:07:20	ℹ	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP :are supported by this server
+2016-07-06 01:07:20	ℹ	There are 11 users and 17 invisible on 2 servers
+2016-07-06 01:07:20	ℹ	8 :operator(s) online
+2016-07-06 01:07:20	ℹ	4 :channels formed
+2016-07-06 01:07:20	ℹ	I have 16 clients and 1 servers
+2016-07-06 01:07:20	ℹ	Current Local Users: 16  Max: 90
+2016-07-06 01:07:20	ℹ	Current Global Users: 28  Max: 91
+2016-07-06 01:07:20	ℹ	- irc.rohitab.com Message of the Day -
+2016-07-06 01:07:20	ℹ	- 4/6/2011 1:46
+2016-07-06 01:07:20	ℹ	-            _     _ _        _
+2016-07-06 01:07:20	ℹ	-  _ __ ___ | |__ (_) |_ __ _| |__   ___ ___  _ __ ___
+2016-07-06 01:07:20	ℹ	- | '__/ _ \| '_ \| | __/ _` | '_ \ / __/ _ \| '_ ` _ \
+2016-07-06 01:07:20	ℹ	- | | | (_) | | | | | || (_| | |_) | (_| (_) | | | | | |
+2016-07-06 01:07:20	ℹ	- |_|  \___/|_| |_|_|\__\__,_|_.__(_)___\___/|_| |_| |_|
+2016-07-06 01:07:20	ℹ	-
+2016-07-06 01:07:20	ℹ	-
+2016-07-06 01:07:20	ℹ	-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+2016-07-06 01:07:20	ℹ	-    ^                                             ^
+2016-07-06 01:07:20	ℹ	-    ^      Official Rohitab IRC Chat Server       ^
+2016-07-06 01:07:20	ℹ	-    ^                                             ^
+2016-07-06 01:07:20	ℹ	-    ^                                             ^
+2016-07-06 01:07:20	ℹ	-    ^  Website:  http://www.rohitab.com/          ^
+2016-07-06 01:07:20	ℹ	-    ^  Forums:   http://www.rohitab.com/discuss/  ^
+2016-07-06 01:07:20	ℹ	-    ^  Code:     http://code.rohitab.com/         ^
+2016-07-06 01:07:20	ℹ	-    ^  PasteBin: http://paste.rohitab.com         ^
+2016-07-06 01:07:20	ℹ	-    ^                                             ^
+2016-07-06 01:07:20	ℹ	-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+2016-07-06 01:07:20	ℹ	-
+2016-07-06 01:07:20	ℹ	-       Web based IRC:   http://irc.rohitab.com/
+2016-07-06 01:07:20	ℹ	-
+2016-07-06 01:07:20	ℹ	-         Connect via SSL  : Port +6697
+2016-07-06 01:07:20	ℹ	-         Connect via IPv6 : [2600:3c03::1b:c003]
+2016-07-06 01:07:20	ℹ	-
+2016-07-06 01:07:20	ℹ	End of /MOTD command.
+2016-07-06 01:07:20	ℹ	User mode [+iwx] by insidious
+2016-07-06 01:07:20	ℹ	Global (services@irc.rohitab.com): [Logon News - Jun 23 2009] Rest In Peace F28
+2016-07-06 01:07:20	ℹ	Global (services@irc.rohitab.com): [Logon News - Feb 07 2011] No bots allowed without express permission of an IRCop. Unauthorized bots will be IP banned.
+2016-07-06 11:09:43	⚠	irc: reading data on socket: error 110 Connection timed out
+2016-07-06 11:09:43	ℹ	irc: disconnecting from server...
+2016-07-06 11:09:43	ℹ	irc: disconnected from server
+2016-07-06 11:09:43	ℹ	irc: reconnecting to server in 10 seconds
+2016-07-06 11:09:53	ℹ	irc: reconnecting to server...
+2016-07-06 11:09:53	ℹ	irc: connecting to server irc.rohitab.com/6667...
+2016-07-06 11:09:53	ℹ	irc: connected to irc.rohitab.com/6667 (97.107.130.165)
+2016-07-06 11:09:53	ℹ	irc.rohitab.com: *** Looking up your hostname...
+2016-07-06 11:09:54	ℹ	irc.rohitab.com: *** Found your hostname
+2016-07-06 11:09:54	ℹ	Welcome to the Rohitab IRC IRC Network insidious!insidious@c-69-142-165-107.hsd1.nj.comcast.net
+2016-07-06 11:09:54	ℹ	Your host is irc.rohitab.com, running version Unreal3.2.8.1
+2016-07-06 11:09:54	ℹ	This server was created Sat Jun 4 2011 at 01:19:22 EDT
+2016-07-06 11:09:54	ℹ	irc.rohitab.com Unreal3.2.8.1 iowghraAsORTVSxNCWqBzvdHtGp lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGj
+2016-07-06 11:09:54	ℹ	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=10 CHANLIMIT=#:10 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2016-07-06 11:09:54	ℹ	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTG NETWORK=Rohitab-IRC CASEMAPPING=ascii EXTBAN=~,cqnr ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2016-07-06 11:09:54	ℹ	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP :are supported by this server
+2016-07-06 11:09:54	ℹ	There are 11 users and 19 invisible on 2 servers
+2016-07-06 11:09:54	ℹ	8 :operator(s) online
+2016-07-06 11:09:54	ℹ	4 :channels formed
+2016-07-06 11:09:54	ℹ	I have 18 clients and 1 servers
+2016-07-06 11:09:54	ℹ	Current Local Users: 18  Max: 90
+2016-07-06 11:09:54	ℹ	Current Global Users: 30  Max: 91
+2016-07-06 11:09:54	ℹ	- irc.rohitab.com Message of the Day -
+2016-07-06 11:09:54	ℹ	- 4/6/2011 1:46
+2016-07-06 11:09:54	ℹ	-            _     _ _        _
+2016-07-06 11:09:54	ℹ	-  _ __ ___ | |__ (_) |_ __ _| |__   ___ ___  _ __ ___
+2016-07-06 11:09:54	ℹ	- | '__/ _ \| '_ \| | __/ _` | '_ \ / __/ _ \| '_ ` _ \
+2016-07-06 11:09:54	ℹ	- | | | (_) | | | | | || (_| | |_) | (_| (_) | | | | | |
+2016-07-06 11:09:54	ℹ	- |_|  \___/|_| |_|_|\__\__,_|_.__(_)___\___/|_| |_| |_|
+2016-07-06 11:09:54	ℹ	-
+2016-07-06 11:09:54	ℹ	-
+2016-07-06 11:09:54	ℹ	-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+2016-07-06 11:09:54	ℹ	-    ^                                             ^
+2016-07-06 11:09:54	ℹ	-    ^      Official Rohitab IRC Chat Server       ^
+2016-07-06 11:09:54	ℹ	-    ^                                             ^
+2016-07-06 11:09:54	ℹ	-    ^                                             ^
+2016-07-06 11:09:54	ℹ	-    ^  Website:  http://www.rohitab.com/          ^
+2016-07-06 11:09:54	ℹ	-    ^  Forums:   http://www.rohitab.com/discuss/  ^
+2016-07-06 11:09:54	ℹ	-    ^  Code:     http://code.rohitab.com/         ^
+2016-07-06 11:09:54	ℹ	-    ^  PasteBin: http://paste.rohitab.com         ^
+2016-07-06 11:09:54	ℹ	-    ^                                             ^
+2016-07-06 11:09:54	ℹ	-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+2016-07-06 11:09:54	ℹ	-
+2016-07-06 11:09:54	ℹ	-       Web based IRC:   http://irc.rohitab.com/
+2016-07-06 11:09:54	ℹ	-
+2016-07-06 11:09:54	ℹ	-         Connect via SSL  : Port +6697
+2016-07-06 11:09:54	ℹ	-         Connect via IPv6 : [2600:3c03::1b:c003]
+2016-07-06 11:09:54	ℹ	-
+2016-07-06 11:09:54	ℹ	End of /MOTD command.
+2016-07-06 11:09:54	ℹ	User mode [+iwx] by insidious
+2016-07-06 11:09:54	ℹ	Global (services@irc.rohitab.com): [Logon News - Jun 23 2009] Rest In Peace F28
+2016-07-06 11:09:54	ℹ	Global (services@irc.rohitab.com): [Logon News - Feb 07 2011] No bots allowed without express permission of an IRCop. Unauthorized bots will be IP banned.
+2016-07-07 09:27:59	⚠	irc: reading data on socket: error 110 Connection timed out
+2016-07-07 09:27:59	ℹ	irc: disconnecting from server...
+2016-07-07 09:27:59	ℹ	irc: disconnected from server
+2016-07-07 09:27:59	ℹ	irc: reconnecting to server in 10 seconds
+2016-07-07 09:28:09	ℹ	irc: reconnecting to server...
+2016-07-07 09:28:09	ℹ	irc: connecting to server irc.rohitab.com/6667...
+2016-07-07 09:28:09	ℹ	irc: connected to irc.rohitab.com/6667 (97.107.130.165)
+2016-07-07 09:28:09	ℹ	irc.rohitab.com: *** Looking up your hostname...
+2016-07-07 09:28:10	ℹ	irc.rohitab.com: *** Found your hostname
+2016-07-07 09:28:10	ℹ	Welcome to the Rohitab IRC IRC Network insidious!insidious@c-69-142-165-107.hsd1.nj.comcast.net
+2016-07-07 09:28:10	ℹ	Your host is irc.rohitab.com, running version Unreal3.2.8.1
+2016-07-07 09:28:10	ℹ	This server was created Sat Jun 4 2011 at 01:19:22 EDT
+2016-07-07 09:28:10	ℹ	irc.rohitab.com Unreal3.2.8.1 iowghraAsORTVSxNCWqBzvdHtGp lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGj
+2016-07-07 09:28:10	ℹ	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=10 CHANLIMIT=#:10 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2016-07-07 09:28:10	ℹ	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTG NETWORK=Rohitab-IRC CASEMAPPING=ascii EXTBAN=~,cqnr ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2016-07-07 09:28:10	ℹ	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP :are supported by this server
+2016-07-07 09:28:10	ℹ	There are 11 users and 18 invisible on 2 servers
+2016-07-07 09:28:10	ℹ	8 :operator(s) online
+2016-07-07 09:28:10	ℹ	4 :channels formed
+2016-07-07 09:28:10	ℹ	I have 17 clients and 1 servers
+2016-07-07 09:28:10	ℹ	Current Local Users: 17  Max: 90
+2016-07-07 09:28:10	ℹ	Current Global Users: 29  Max: 91
+2016-07-07 09:28:10	ℹ	- irc.rohitab.com Message of the Day -
+2016-07-07 09:28:10	ℹ	- 4/6/2011 1:46
+2016-07-07 09:28:10	ℹ	-            _     _ _        _
+2016-07-07 09:28:10	ℹ	-  _ __ ___ | |__ (_) |_ __ _| |__   ___ ___  _ __ ___
+2016-07-07 09:28:10	ℹ	- | '__/ _ \| '_ \| | __/ _` | '_ \ / __/ _ \| '_ ` _ \
+2016-07-07 09:28:10	ℹ	- | | | (_) | | | | | || (_| | |_) | (_| (_) | | | | | |
+2016-07-07 09:28:10	ℹ	- |_|  \___/|_| |_|_|\__\__,_|_.__(_)___\___/|_| |_| |_|
+2016-07-07 09:28:10	ℹ	-
+2016-07-07 09:28:10	ℹ	-
+2016-07-07 09:28:10	ℹ	-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+2016-07-07 09:28:10	ℹ	-    ^                                             ^
+2016-07-07 09:28:10	ℹ	-    ^      Official Rohitab IRC Chat Server       ^
+2016-07-07 09:28:10	ℹ	-    ^                                             ^
+2016-07-07 09:28:10	ℹ	-    ^                                             ^
+2016-07-07 09:28:10	ℹ	-    ^  Website:  http://www.rohitab.com/          ^
+2016-07-07 09:28:10	ℹ	-    ^  Forums:   http://www.rohitab.com/discuss/  ^
+2016-07-07 09:28:10	ℹ	-    ^  Code:     http://code.rohitab.com/         ^
+2016-07-07 09:28:10	ℹ	-    ^  PasteBin: http://paste.rohitab.com         ^
+2016-07-07 09:28:10	ℹ	-    ^                                             ^
+2016-07-07 09:28:10	ℹ	-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+2016-07-07 09:28:10	ℹ	-
+2016-07-07 09:28:10	ℹ	-       Web based IRC:   http://irc.rohitab.com/
+2016-07-07 09:28:10	ℹ	-
+2016-07-07 09:28:10	ℹ	-         Connect via SSL  : Port +6697
+2016-07-07 09:28:10	ℹ	-         Connect via IPv6 : [2600:3c03::1b:c003]
+2016-07-07 09:28:10	ℹ	-
+2016-07-07 09:28:10	ℹ	End of /MOTD command.
+2016-07-07 09:28:10	ℹ	User mode [+iwx] by insidious
+2016-07-07 09:28:10	ℹ	Global (services@irc.rohitab.com): [Logon News - Jun 23 2009] Rest In Peace F28
+2016-07-07 09:28:10	ℹ	Global (services@irc.rohitab.com): [Logon News - Feb 07 2011] No bots allowed without express permission of an IRCop. Unauthorized bots will be IP banned.

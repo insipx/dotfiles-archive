@@ -1,0 +1,172 @@
+2016-06-01 15:19:32	⤍ 	insidious (insidious@ChatSpikencqqvg.br12.vlav.0089.2601.IP) has joined #inspircd
+2016-06-01 15:19:32	ℹ	Topic for #inspircd is "GIT: https://github.com/inspircd | RELEASE: 2.0.21 | WIKI: http://wiki.inspircd.org | DOWNLOADS: https://github.com/inspircd/inspircd/releases | DEVELOPMENT: #inspircd.dev"
+2016-06-01 15:19:32	ℹ	Topic set by Attila (attila@ChatSpikekvv862.hu) on Sat, 13 Feb 2016 14:48:01
+2016-06-01 15:19:32	ℹ	Channel #inspircd: 122 nicks (7 ops, 4 halfops, 11 voices, 100 normals)
+2016-06-01 15:19:32	ℹ	PvNotice(ChanServ): On joining this channel looking for help for a problem, you hereby confirm that you have read the manual and example configuration to the best of your ability. Asking questions which are in the documentation will just result in your being told to read it. If you make a scene, you will be banned. Please help us by helping yourself!
+2016-06-01 15:19:34	insidious	hey all
+2016-06-01 15:19:36	ℹ	Channel created on Mon, 16 Sep 2002 20:18:37
+2016-06-01 15:19:40	insidious	need some help with the IRC server i just made
+2016-06-01 15:20:08	insidious	anybody here?
+2016-06-01 15:20:25	%SaberUK	Knorf: ask
+2016-06-01 15:20:25	Knorf	If you have a question, just ask! For example: "I have a problem with ___; I'm running InspIRCd version ___. When I try to do ___ I get the following output ___. I expected it to do ___." Don't ask if you can ask, if anyone uses it, or pick one person to ask. We're all volunteers; make it easy for us to help you. If you don't get an answer try a few hours later.
+2016-06-01 15:21:21	insidious	I have a problem with the m_cloaking module, i'm running InspIRCd version 2.0. when i try to set the user mode with '/mode username +x' the server disconnects. I expected it to set cloaking for that user. I followed the config details according to the wiki
+2016-06-01 15:23:32	+Colgate	is it crashing?
+2016-06-01 15:23:38	insidious	Colgate: i believe so
+2016-06-01 15:24:04	⤍ 	beorn (bjorn@ChatSpike121.6o7.11.89.IP) has joined #inspircd
+2016-06-01 15:24:04	ℹ	Mode #inspircd [+v beorn] by ChanServ
+2016-06-01 15:24:05	+Colgate	what's your m_cloaking config? and do you have m_md5 loaded?
+2016-06-01 15:24:23	insidious	Colgate: oh, i do not have m_md5 loaded
+2016-06-01 15:24:30	+Colgate	you need it
+2016-06-01 15:24:36	insidious	<cloak mode="half|full"
+2016-06-01 15:24:36	insidious	     key="secret"
+2016-06-01 15:24:49	insidious	with prefix="mynetwork" and it's not half|full" it's just full
+2016-06-01 15:24:59	⤎ 	X (EMP@ChatSpike1vonrg.nb.bellaliant.net) has quit (Ping timeout: 121 seconds)
+2016-06-01 15:26:43	insidious	hellya worked
+2016-06-01 15:26:45	insidious	ty Colgate 
+2016-06-01 15:28:04	⤍ 	ctcp (ltmvx@ChatSpike5up6of.ip.telfort.nl) has joined #inspircd
+2016-06-01 15:28:04	ℹ	Mode #inspircd [+v ctcp] by ChanServ
+2016-06-01 15:28:43	insidious	are channels just created when users do '/j #channel' ?
+2016-06-01 15:29:59	⤎ 	Elfangor (HomoSapien@ChatSpikenmp.2q8.192.117.IP) has quit (Ping timeout: 121 seconds)
+2016-06-02 12:52:29	⤍ 	insidious (insidious@ChatSpikencqqvg.br12.vlav.0089.2601.IP) has joined #inspircd
+2016-06-02 12:52:29	ℹ	Topic for #inspircd is "GIT: https://github.com/inspircd | RELEASE: 2.0.21 | WIKI: http://wiki.inspircd.org | DOWNLOADS: https://github.com/inspircd/inspircd/releases | DEVELOPMENT: #inspircd.dev"
+2016-06-02 12:52:29	ℹ	Topic set by Attila (attila@ChatSpikekvv862.hu) on Sat, 13 Feb 2016 14:48:01
+2016-06-02 12:52:29	ℹ	Channel #inspircd: 125 nicks (7 ops, 4 halfops, 12 voices, 102 normals)
+2016-06-02 12:52:29	ℹ	PvNotice(ChanServ): On joining this channel looking for help for a problem, you hereby confirm that you have read the manual and example configuration to the best of your ability. Asking questions which are in the documentation will just result in your being told to read it. If you make a scene, you will be banned. Please help us by helping yourself!
+2016-06-02 12:52:31	ℹ	Channel created on Mon, 16 Sep 2002 20:18:37
+2016-06-02 12:54:37	insidious	yo, trying to set mode P on a channel and i'm oper/NetAdmin, but it says I can't set it bc NetAdmin does not have that ability
+2016-06-02 12:55:11	⤎ 	Heufneutje (Heufy@ChatSpikemug7bc.speed.planet.nl) has quit (Quit: Bees, bees, the musical fruit. The more you eat, the more you’re like ‘JESUS CHRIST I’M EATING BEEESSSSS!!’)
+2016-06-02 12:56:38	⤎ 	Hobbyboy (Hobbyboy@ChatSpike2ncgo9.range212-140.btcentralplus.com) has quit (Connection closed)
+2016-06-02 12:58:57	+Sheogorath	insidious, check your Operclass
+2016-06-02 12:59:03	+Sheogorath	may have to add the mode
+2016-06-02 12:59:44	insidious	wheres the OperClass?
+2016-06-02 13:00:54	+Sheogorath	oper config the class tag
+2016-06-02 13:01:20	Nikos	chanmodes="*" 
+2016-06-02 13:02:34	lbrown	by default there's actually a lot NetAdmins can't do
+2016-06-02 13:03:11	lbrown	it's worth considering how you want to manage permissions. * is convenient but not totally secure, especially if you're giving it out to others
+2016-06-02 13:04:11	insidious	so type name="NetAdmin" and then I edit the class ther? or do I add a class tag under <oper ...> b/c I don't have a class tag under <oper
+2016-06-02 13:04:54	lbrown	create a class wiith the permissions you want
+2016-06-02 13:05:23	lbrown	I have <class name="Everything" commands="*" privs="*" usermodes="*" chanmodes="*"> .. but my net is small and I'm the only one with this permission. it's dangerous
+2016-06-02 13:05:50	lbrown	then give that class to an oper type: <type name="NetAdmin" class="Everything" host="netadmin.foonet.net" .. >
+2016-06-02 13:06:02	insidious	OK making an ubermensh class only for me. This IRC is only for me and a few other people, so I think it should be OK
+2016-06-02 13:06:30	lbrown	then give that oper type to an oper: <oper name="insidious" password="hunter2" host="*@you.your.isp" type="NetAdmin">
+2016-06-02 13:06:42	Nikos	* is set by default,no comments please.
+2016-06-02 13:07:05	lbrown	?
+2016-06-02 13:07:46	lbrown	I'm pretty sure * isn't a default. It wasn't when I configured inspircd
+2016-06-02 13:08:06	Nikos	https://github.com/inspircd/inspircd/blob/cee5a82d95fc3f5d3670ef483998bfc2d4a5a82e/docs/conf/opers.conf.example#L45
+2016-06-02 13:08:12	Nikos	"pretty sure"
+2016-06-02 13:08:27	lbrown	I stand corrected
+2016-06-02 13:08:59	lbrown	<class name="OperChat" commands="WALLOPS GLOBOPS SETIDLE SPYLIST SPYNAMES"> -- here's my line, circa inspircd 2.0
+2016-06-02 13:47:00	⤍ 	insidious (insidious@ChatSpikeqr2ej1.nj.comcast.net) has joined #inspircd
+2016-06-02 13:47:00	ℹ	Topic for #inspircd is "GIT: https://github.com/inspircd | RELEASE: 2.0.21 | WIKI: http://wiki.inspircd.org | DOWNLOADS: https://github.com/inspircd/inspircd/releases | DEVELOPMENT: #inspircd.dev"
+2016-06-02 13:47:00	ℹ	Topic set by Attila (attila@ChatSpikekvv862.hu) on Sat, 13 Feb 2016 14:48:01
+2016-06-02 13:47:00	ℹ	Channel #inspircd: 124 nicks (7 ops, 4 halfops, 12 voices, 101 normals)
+2016-06-02 13:47:00	ℹ	PvNotice(ChanServ): On joining this channel looking for help for a problem, you hereby confirm that you have read the manual and example configuration to the best of your ability. Asking questions which are in the documentation will just result in your being told to read it. If you make a scene, you will be banned. Please help us by helping yourself!
+2016-06-02 13:47:01	ℹ	Channel created on Mon, 16 Sep 2002 20:18:37
+2016-06-02 13:47:02	insidious	so slight problem
+2016-06-02 13:47:11	insidious	what are the permissions ofr inspircd folder and inspircd.conf
+2016-06-02 13:47:14	insidious	for*
+2016-06-02 13:51:39	Shawn	When in doubt make it 777
+2016-06-02 13:51:58	%SaberUK	or not because then everyone has access to your machine
+2016-06-02 13:52:05	insidious	^
+2016-06-02 13:52:21	insidious	if someone can do a ls -l and tell me what the perms are hah
+2016-06-02 13:52:30	insidious	i fucked it up now i can't restart the serv
+2016-06-02 13:52:53	+phy1729	figure out what user the server runs as, Give it read permissions for the config and write for the data dir
+2016-06-02 13:53:05	%SaberUK	INSTMODE_DIR = 0750
+2016-06-02 13:53:05	%SaberUK	INSTMODE_BIN = 0750
+2016-06-02 13:53:05	%SaberUK	INSTMODE_LIB = 0640
+2016-06-02 13:56:18	lbrown	insidious: 400 on all the config files is a good idea. since you have oper passwords in there!
+2016-06-02 13:56:33	%SaberUK	^
+2016-06-02 13:56:55	lbrown	make sure that your files are owned by your ircd user. on some systems this is "irc", it varies depending on your setup
+2016-06-02 13:57:41	insidious	config files are IRC inspircd dir is root
+2016-06-02 13:58:06	insidious	just changed to 400 on conf files, & server is not restarting
+2016-06-02 13:58:10	insidious	bc can't access it
+2016-06-02 13:58:27	lbrown	chmod -R 400 /path/to/config/dir
+2016-06-02 13:58:38	lbrown	chown -R irc:irc /path/to/config/dir
+2016-06-02 14:00:56	insidious	OK I think that's reset to what it was, now just for config files bc can't access those. it's 400 rn it's -r-------- 1 irc irc 4579
+2016-06-02 14:01:41	lbrown	uh, that _should_ be fine
+2016-06-02 14:01:42	lbrown	:/
+2016-06-02 14:01:47	insidious	0.0
+2016-06-02 14:02:09	lbrown	ah
+2016-06-02 14:02:12	lbrown	just broke my own server
+2016-06-02 14:02:15	insidious	x.x
+2016-06-02 14:02:16	lbrown	looks like it needs exec perm as well
+2016-06-02 14:02:30	lbrown	500 should be good?
+2016-06-02 14:02:46	lbrown	works for me
+2016-06-02 14:04:02	insidious	just did sudo chmod -R 500 /etc/inspircd/inspricd.conf, not working :'(
+2016-06-02 14:05:16	lbrown	okay, that's strange
+2016-06-02 14:05:36	lbrown	sudo chmod -R 500 /etc/inspircd
+2016-06-02 14:05:42	lbrown	try that
+2016-06-02 14:05:55	lbrown	as you'll probably need exec on your modules conf and other stuff as well
+2016-06-02 14:06:04	insidious	nvm
+2016-06-02 14:06:05	insidious	fixed it
+2016-06-02 14:06:09	lbrown	great
+2016-06-02 14:06:21	lbrown	you should set 400 on anything which doesn't need exec
+2016-06-02 14:06:27	lbrown	if it doesn't need the perm it doesn't get the perm
+2016-06-02 14:06:41	insidious	sudo find /etc/inspircd -type d -exec chmod 770 {} \; sudo find /etc/inspircd -type f -exec chmod 644 {} \; sudo chown -R irc:irc /etc/inspircd
+2016-06-02 14:06:47	insidious	those three commands
+2016-06-02 14:06:49	insidious	i'm writing them down
+2016-06-02 14:12:27	⤍ 	insidious (insidious@ChatSpikencqqvg.br12.vlav.0089.2601.IP) has joined #inspircd
+2016-06-02 14:12:27	ℹ	Topic for #inspircd is "GIT: https://github.com/inspircd | RELEASE: 2.0.21 | WIKI: http://wiki.inspircd.org | DOWNLOADS: https://github.com/inspircd/inspircd/releases | DEVELOPMENT: #inspircd.dev"
+2016-06-02 14:12:27	ℹ	Topic set by Attila (attila@ChatSpikekvv862.hu) on Sat, 13 Feb 2016 14:48:01
+2016-06-02 14:12:27	ℹ	Channel #inspircd: 124 nicks (7 ops, 4 halfops, 12 voices, 101 normals)
+2016-06-02 14:12:28	ℹ	PvNotice(ChanServ): On joining this channel looking for help for a problem, you hereby confirm that you have read the manual and example configuration to the best of your ability. Asking questions which are in the documentation will just result in your being told to read it. If you make a scene, you will be banned. Please help us by helping yourself!
+2016-06-02 14:12:29	ℹ	Channel created on Mon, 16 Sep 2002 20:18:37
+2016-06-02 14:12:31	insidious	lol internet cutout
+2016-06-02 14:12:50	insidious	just one more question, anyway to make channel modes persistant accross restarts?
+2016-06-02 14:12:59	%SaberUK	use services
+2016-06-02 14:13:07	%SaberUK	or [[m_permchannels]]
+2016-06-02 14:13:07	Knorf	m_permchannels -  Provides support for permanent channels.  - https://wiki.inspircd.org/Modules/2.0/permchannels
+2016-06-02 14:13:56	insidious	ofc thanks for the link Knorf 
+2016-06-02 15:25:33	⤍ 	insidious (insidious@ChatSpikencqqvg.br12.vlav.0089.2601.IP) has joined #inspircd
+2016-06-02 15:25:33	ℹ	Topic for #inspircd is "GIT: https://github.com/inspircd | RELEASE: 2.0.21 | WIKI: http://wiki.inspircd.org | DOWNLOADS: https://github.com/inspircd/inspircd/releases | DEVELOPMENT: #inspircd.dev"
+2016-06-02 15:25:33	ℹ	Topic set by Attila (attila@ChatSpikekvv862.hu) on Sat, 13 Feb 2016 14:48:01
+2016-06-02 15:25:33	ℹ	Channel #inspircd: 123 nicks (7 ops, 4 halfops, 12 voices, 100 normals)
+2016-06-02 15:25:33	ℹ	PvNotice(ChanServ): On joining this channel looking for help for a problem, you hereby confirm that you have read the manual and example configuration to the best of your ability. Asking questions which are in the documentation will just result in your being told to read it. If you make a scene, you will be banned. Please help us by helping yourself!
+2016-06-02 15:25:35	ℹ	Channel created on Mon, 16 Sep 2002 20:18:37
+2016-06-02 15:26:01	insidious	NickServ isn't working at all...just always returns "no such nick/channel" not matter the command
+2016-06-02 15:26:03	insidious	thafuck
+2016-06-02 15:26:14	insidious	using Shalture
+2016-06-02 15:26:53	Shawn	Sounds like a Shalture issue
+2016-06-02 15:27:13	insidious	shize
+2016-06-02 15:31:51	%SaberUK	Knorf: shalture support
+2016-06-02 15:31:51	Knorf	SaberUK: I have never heard of "shalture support" before.
+2016-06-02 15:31:55	%SaberUK	huh
+2016-06-02 15:32:20	%SaberUK	Knorf: atheme support
+2016-06-02 15:32:21	Knorf	Atheme support is located at irc.freenode.net #atheme
+2016-06-02 15:32:59	%SaberUK	Knorf: respond to shalture support with Shalture support is located at irc.freenode.net #shalture
+2016-06-02 15:32:59	Knorf	SaberUK: I will now respond to "shalture support" with "Shalture support is located at irc.freenode.net #shalture".
+2016-06-02 15:33:03	%SaberUK	Knorf: shalture support
+2016-06-02 15:33:04	Knorf	Shalture support is located at irc.freenode.net #shalture
+2016-06-02 15:33:06	%SaberUK	insidious: try there ^
+2016-06-02 15:34:02	insidious	SaberUK: yep i'm already there :D
+2016-06-02 15:34:03	insidious	haha
+2016-06-03 14:17:53	⤍ 	insidious (insidious@ChatSpikeqr2ej1.nj.comcast.net) has joined #inspircd
+2016-06-03 14:17:53	ℹ	Topic for #inspircd is "GIT: https://github.com/inspircd | RELEASE: 2.0.21 | WIKI: http://wiki.inspircd.org | DOWNLOADS: https://github.com/inspircd/inspircd/releases | DEVELOPMENT: #inspircd.dev"
+2016-06-03 14:17:53	ℹ	Topic set by Attila (attila@ChatSpikekvv862.hu) on Sat, 13 Feb 2016 14:48:01
+2016-06-03 14:17:53	ℹ	Channel #inspircd: 126 nicks (6 ops, 4 halfops, 11 voices, 105 normals)
+2016-06-03 14:17:53	ℹ	PvNotice(ChanServ): On joining this channel looking for help for a problem, you hereby confirm that you have read the manual and example configuration to the best of your ability. Asking questions which are in the documentation will just result in your being told to read it. If you make a scene, you will be banned. Please help us by helping yourself!
+2016-06-03 14:17:55	ℹ	Channel created on Mon, 16 Sep 2002 20:18:37
+2016-06-03 14:17:55	insidious	ey all
+2016-06-03 14:19:27	insidious	So i'm trying to install SSL with inspircd and i'm getting TLS handshake failed in weechat and 'Could not verify SSL servers certificate: unable to get local issuer cert" in irssi. I know SSL is installed correctly on apache cause DigiCert says it's all OK, so it has to be a config error in inspircd
+2016-06-03 14:19:29	insidious	or something else
+2016-06-03 14:25:28	⤍ 	Elfangor (HomoSapien@ChatSpike44d.do2.192.117.IP) has joined #inspircd
+2016-06-03 14:26:35	%SaberUK	where did you get your ircd cert from
+2016-06-03 14:26:39	+Colgate	sounds like you either have a self signed cert or you aren't sending the cert chain
+2016-06-03 14:26:48	%SaberUK	^ what Colgate said
+2016-06-03 14:26:50	insidious	I got it from StartCome
+2016-06-03 14:27:06	insidious	free one https://www.startssl.com/ControlPanel
+2016-06-03 14:27:23	+Colgate	did you include the intermediate cert?
+2016-06-03 14:27:35	insidious	is that the ca file?
+2016-06-03 14:28:00	+Colgate	in inspircd config? no
+2016-06-03 14:28:12	+Colgate	that's only if you want to verify client certificates
+2016-06-03 14:28:28	insidious	ahok. I have included private.key and cert.pem so I don't think intermediate is tehre
+2016-06-03 14:28:29	+Colgate	you need to cat the intermediate onto your cert
+2016-06-03 14:28:37	+Colgate	onto your cert.pem
+2016-06-03 14:28:45	insidious	ohh ok
+2016-06-03 14:29:13	insidious	so like cat intermediate.whatever > cert.pem
+2016-06-03 14:29:18	+Colgate	>>, but yes
+2016-06-03 14:29:21	insidious	aight
+2016-06-03 14:29:30	+Colgate	if you just do >, it will overwrite it :P
+2016-06-03 14:30:01	+Colgate	then do a /rehash -ssl, from a connect oper, or restart the ircd
+2016-06-03 14:31:41	insidious	hellya it worked!!
+2016-06-03 14:31:49	insidious	thanks guys, for like the fifth time this week :D

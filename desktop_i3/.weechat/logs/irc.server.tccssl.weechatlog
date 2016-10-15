@@ -1,0 +1,94 @@
+2016-06-02 23:58:26	ℹ	irc: connecting to server irc.thecybercult.net/6697...
+2016-06-02 23:58:26	⚠	irc: connection refused
+2016-06-02 23:58:26	ℹ	irc: reconnecting to server in 10 seconds
+2016-06-02 23:58:36	ℹ	irc: reconnecting to server...
+2016-06-02 23:58:36	ℹ	irc: connecting to server irc.thecybercult.net/6697...
+2016-06-02 23:58:36	⚠	irc: connection refused
+2016-06-02 23:58:36	ℹ	irc: reconnecting to server in 20 seconds
+2016-06-02 23:58:56	ℹ	irc: reconnecting to server...
+2016-06-02 23:58:56	ℹ	irc: connecting to server irc.thecybercult.net/6697...
+2016-06-02 23:58:56	⚠	irc: connection refused
+2016-06-02 23:58:56	ℹ	irc: reconnecting to server in 40 seconds
+2016-06-02 23:59:17		irc: auto-reconnection is cancelled
+2016-06-02 23:59:17	ℹ	irc: disconnected from server
+2016-06-03 00:00:09	ℹ	irc: connecting to server irc.thecybercult.net/6697 (SSL)...
+2016-06-03 00:00:11	⚠	irc: connection refused
+2016-06-03 00:00:11	ℹ	irc: reconnecting to server in 10 seconds
+2016-06-03 00:00:14		irc: auto-reconnection is cancelled
+2016-06-03 00:00:14	ℹ	irc: disconnected from server
+2016-06-03 13:47:09	ℹ	irc: connecting to server irc.thecybercult.net/6697 (SSL)...
+2016-06-03 13:47:10	ℹ	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2016-06-03 13:47:10	ℹ	gnutls: receiving 1 certificate
+2016-06-03 13:47:10	ℹ	 - certificate[1] info:
+2016-06-03 13:47:10	ℹ	   - subject `CN=irc.thecybercult.net', issuer `C=IL,O=StartCom Ltd.,OU=StartCom Certification Authority,CN=StartCom Class 1 DV Server CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2016-06-03 03:35:32 UTC', expires `2017-06-03 03:35:32 UTC', SHA-1 fingerprint `ba33691c4a5fb66b2f8cf1b098652ce71e3f4c0c'
+2016-06-03 13:47:10	⚠	gnutls: peer's certificate is NOT trusted
+2016-06-03 13:47:10	⚠	gnutls: peer's certificate issuer is unknown
+2016-06-03 13:47:10	⚠	irc: TLS handshake failed
+2016-06-03 13:47:10	⚠	irc: error: Error in the certificate.
+2016-06-03 13:47:10	ℹ	irc: reconnecting to server in 10 seconds
+2016-06-03 13:47:20	ℹ	irc: reconnecting to server...
+2016-06-03 13:47:20	ℹ	irc: connecting to server irc.thecybercult.net/6697 (SSL)...
+2016-06-03 13:47:20	ℹ	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2016-06-03 13:47:20	ℹ	gnutls: receiving 1 certificate
+2016-06-03 13:47:20	ℹ	 - certificate[1] info:
+2016-06-03 13:47:20	ℹ	   - subject `CN=irc.thecybercult.net', issuer `C=IL,O=StartCom Ltd.,OU=StartCom Certification Authority,CN=StartCom Class 1 DV Server CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2016-06-03 03:35:32 UTC', expires `2017-06-03 03:35:32 UTC', SHA-1 fingerprint `ba33691c4a5fb66b2f8cf1b098652ce71e3f4c0c'
+2016-06-03 13:47:20	⚠	gnutls: peer's certificate is NOT trusted
+2016-06-03 13:47:20	⚠	gnutls: peer's certificate issuer is unknown
+2016-06-03 13:47:20	⚠	irc: TLS handshake failed
+2016-06-03 13:47:20	⚠	irc: error: Error in the certificate.
+2016-06-03 13:47:20	ℹ	irc: reconnecting to server in 20 seconds
+2016-06-03 13:48:54	ℹ	irc: connecting to server irc.thecybercult.net/6697 (SSL)...
+2016-06-03 13:48:54	ℹ	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2016-06-03 13:48:54	ℹ	gnutls: receiving 1 certificate
+2016-06-03 13:48:54	ℹ	 - certificate[1] info:
+2016-06-03 13:48:54	ℹ	   - subject `CN=irc.thecybercult.net', issuer `C=IL,O=StartCom Ltd.,OU=StartCom Certification Authority,CN=StartCom Class 1 DV Server CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2016-06-03 03:35:32 UTC', expires `2017-06-03 03:35:32 UTC', SHA-1 fingerprint `ba33691c4a5fb66b2f8cf1b098652ce71e3f4c0c'
+2016-06-03 13:48:54	⚠	gnutls: peer's certificate is NOT trusted
+2016-06-03 13:48:54	⚠	gnutls: peer's certificate issuer is unknown
+2016-06-03 13:48:54	⚠	irc: TLS handshake failed
+2016-06-03 13:48:54	⚠	irc: error: Error in the certificate.
+2016-06-03 13:48:54	ℹ	irc: reconnecting to server in 10 seconds
+2016-06-03 13:49:04	ℹ	irc: reconnecting to server...
+2016-06-03 13:49:04	ℹ	irc: connecting to server irc.thecybercult.net/6697 (SSL)...
+2016-06-03 13:49:04	ℹ	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2016-06-03 13:49:04	ℹ	gnutls: receiving 1 certificate
+2016-06-03 13:49:04	ℹ	 - certificate[1] info:
+2016-06-03 13:49:04	ℹ	   - subject `CN=irc.thecybercult.net', issuer `C=IL,O=StartCom Ltd.,OU=StartCom Certification Authority,CN=StartCom Class 1 DV Server CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2016-06-03 03:35:32 UTC', expires `2017-06-03 03:35:32 UTC', SHA-1 fingerprint `ba33691c4a5fb66b2f8cf1b098652ce71e3f4c0c'
+2016-06-03 13:49:04	⚠	gnutls: peer's certificate is NOT trusted
+2016-06-03 13:49:04	⚠	gnutls: peer's certificate issuer is unknown
+2016-06-03 13:49:04	⚠	irc: TLS handshake failed
+2016-06-03 13:49:04	⚠	irc: error: Error in the certificate.
+2016-06-03 13:49:04	ℹ	irc: reconnecting to server in 20 seconds
+2016-06-03 13:49:24		irc: auto-reconnection is cancelled
+2016-06-03 13:49:24	ℹ	irc: disconnected from server
+2016-06-03 14:33:10	ℹ	irc: connecting to server irc.thecybercult.net/6697 (SSL)...
+2016-06-03 14:33:10	ℹ	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2016-06-03 14:33:10	ℹ	gnutls: receiving 2 certificates
+2016-06-03 14:33:10	ℹ	 - certificate[1] info:
+2016-06-03 14:33:10	ℹ	   - subject `CN=irc.thecybercult.net', issuer `C=IL,O=StartCom Ltd.,OU=StartCom Certification Authority,CN=StartCom Class 1 DV Server CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2016-06-03 03:35:32 UTC', expires `2017-06-03 03:35:32 UTC', SHA-1 fingerprint `ba33691c4a5fb66b2f8cf1b098652ce71e3f4c0c'
+2016-06-03 14:33:10	ℹ	 - certificate[2] info:
+2016-06-03 14:33:10	ℹ	   - subject `C=IL,O=StartCom Ltd.,OU=StartCom Certification Authority,CN=StartCom Class 1 DV Server CA', issuer `C=IL,O=StartCom Ltd.,OU=Secure Digital Certificate Signing,CN=StartCom Certification Authority', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-12-16 01:00:05 UTC', expires `2030-12-16 01:00:05 UTC', SHA-1 fingerprint `398e1936639ba5206df5179bfbb7010933969400'
+2016-06-03 14:33:10	ℹ	gnutls: peer's certificate is trusted
+2016-06-03 14:33:11	ℹ	irc: connected to irc.thecybercult.net/6697 (107.170.62.95)
+2016-06-03 14:33:11	ℹ	irc.thecybercult.net: *** Looking up your hostname...
+2016-06-03 14:33:11	ℹ	irc.thecybercult.net: *** Found your hostname (c-69-142-165-107.hsd1.nj.comcast.net) -- cached
+2016-06-03 14:33:12	ℹ	irc.thecybercult.net: Welcome to CyberCult!
+2016-06-03 14:33:12	ℹ	Welcome to the CyberCult IRC Network insidious!insidious@c-69-142-165-107.hsd1.nj.comcast.net
+2016-06-03 14:33:12	ℹ	Your host is irc.thecybercult.net, running version InspIRCd-2.0
+2016-06-03 14:33:12	ℹ	This server was created 13:10:33 Jun  1 2016
+2016-06-03 14:33:12	ℹ	irc.thecybercult.net InspIRCd-2.0 IRdikorswx MPRabhiklmnopqrstv abhkloqv
+2016-06-03 14:33:12	ℹ	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=b,k,l,MPRimnprst CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU EXTBAN=,RU FNC KICKLEN=255 MAP MAXBANS=60 MAXCHANNELS=20 :are supported by this server
+2016-06-03 14:33:12	ℹ	MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=CyberCult NICKLEN=32 PREFIX=(qaohv)~&@%+ SSL=[::]:6697 STARTTLS STATUSMSG=~&@%+ TOPICLEN=307 UHNAMES VBANLIST :are supported by this server
+2016-06-03 14:33:12	ℹ	WALLCHOPS WALLVOICES :are supported by this server
+2016-06-03 14:33:12	ℹ	62FAAAAAB :your unique ID
+2016-06-03 14:33:12	ℹ	irc.thecybercult.net message of the day
+2016-06-03 14:33:12	ℹ	- CyberSec Group IRC channel. Go Ham.
+2016-06-03 14:33:12	ℹ	End of message of the day.
+2016-06-03 14:33:12	ℹ	There are 1 users and 9 invisible on 2 servers
+2016-06-03 14:33:12	ℹ	1 :channels formed
+2016-06-03 14:33:12	ℹ	I have 1 clients and 1 servers
+2016-06-03 14:33:12	ℹ	Current Local Users: 1  Max: 1
+2016-06-03 14:33:12	ℹ	Current Global Users: 10  Max: 10
+2016-06-03 14:33:12	ℹ	CyberCult-eb0.kc8.6v551l.IP :is now your displayed host
+2016-06-03 14:33:12	ℹ	User mode [+x] by insidious
+2016-06-03 14:33:12	ℹ	irc.thecybercult.net: *** You are connected using SSL cipher "RSA-AES-128-CBC-SHA1"
+2016-06-03 14:33:12	ℹ	NickServ (NickServ@CyberCult/services/NickServ): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.

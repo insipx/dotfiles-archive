@@ -1,0 +1,812 @@
+2016-07-06 12:41:51	⤍ 	insidious15 (~insidious@unaffiliated/insidious15) has joined #regex
+2016-07-06 12:41:51	ℹ	Topic for #regex is "Need help? Type '!rehelp' | Trying to regex HTML? Type '!html' | Home: https://regex101.com/ | Tutorial: http://bit.ly/1mXMXbr"
+2016-07-06 12:41:51	ℹ	Topic set by digitok on Fri, 11 Mar 2016 08:45:46
+2016-07-06 12:41:51	ℹ	Channel #regex: 320 nicks (1 op, 16 voices, 303 normals)
+2016-07-06 12:41:51	ℹ	PvNotice(ChanServ): Please use https://regex101.com/ to test your regular expressions and when posting examples.
+2016-07-06 12:41:53	ℹ	Channel created on Sun, 26 Nov 2006 01:43:02
+2016-07-06 12:41:56	insidious15	eyy
+2016-07-06 12:44:43	⤎ 	verwilst (~smuxi@systeembeheer.combell.com) has quit (Ping timeout: 252 seconds)
+2016-07-06 12:53:06	⤎ 	AirPlanes (~ShortBob@bzq-79-178-105-109.red.bezeqint.net) has quit (Ping timeout: 244 seconds)
+2016-07-06 12:53:58	⤍ 	AirPlanes (~ShortBob@bzq-79-178-105-109.red.bezeqint.net) has joined #regex
+2016-07-06 13:03:15	⤎ 	netcarver (~netcarver@host86-148-46-45.range86-148.btcentralplus.com) has quit (Quit: Leaving)
+2016-07-06 13:05:19	⤍ 	regex101-2511 (46a4c99a@gateway/web/freenode/ip.70.164.201.154) has joined #regex
+2016-07-06 13:05:34	⤍ 	regex101-6952 (47f4fdbe@gateway/web/freenode/ip.71.244.253.190) has joined #regex
+2016-07-06 13:05:42	⤎ 	regex101-6952 (47f4fdbe@gateway/web/freenode/ip.71.244.253.190) has quit (Client Quit)
+2016-07-06 13:05:57	regex101-2511	Is there any chance that regex101 will support the Java flavor in the future?
+2016-07-06 13:11:36	⤍ 	ahmed_elgabri (~ahmedelga@162.216.46.188) has joined #regex
+2016-07-06 13:13:40	⤍ 	regex101-9615 (b29b24b0@gateway/web/freenode/ip.178.155.36.176) has joined #regex
+2016-07-06 13:14:06	⤎ 	ahmedelgabri (~ahmedelga@2a02:a441:9f5:0:b2:fff:8753:badc) has quit (Ping timeout: 272 seconds)
+2016-07-06 13:14:28	⤎ 	regex101-9615 (b29b24b0@gateway/web/freenode/ip.178.155.36.176) has quit (Client Quit)
+2016-07-06 13:15:03	⤍ 	timaschew (578a6a91@gateway/web/freenode/ip.87.138.106.145) has joined #regex
+2016-07-06 13:15:10	+turlutton	Lindrian: regex101-2511 has a question for you
+2016-07-06 13:17:22	timaschew	Hi, I need help for a negative lookahead or something like that, I want to find a pattern but with an exception if there is a pattern before, see https://regex101.com/r/kO1cO1/3
+2016-07-06 13:17:48	⤎ 	reveredge_ (~reveredge@111.119.209.215) has quit (Ping timeout: 276 seconds)
+2016-07-06 13:18:42	+turlutton	timaschew: lookbehind are not allowed in js
+2016-07-06 13:19:42	+turlutton	timaschew: why don't you do something like that https://regex101.com/r/kO1cO1/4 ?
+2016-07-06 13:19:42	regex101-2511	!rehelp
+2016-07-06 13:19:42	+perlbot	Please post your regex attempt and sample string(s) at https://regex101.com/, then click Save (ctrl+s) and post the link here. You should indicate what language/platform you are using and, where possible, provide examples of both what should and should not match.
+2016-07-06 13:22:08	timaschew	Because before the href there can be an id or an class: https://regex101.com/r/kO1cO1/5
+2016-07-06 13:24:15	timaschew	But I can change my template it, that data-fetch is always after the href
+2016-07-06 13:24:18	⤍ 	nmz787_i (~ntmccork@134.134.139.82) has joined #regex
+2016-07-06 13:24:32	⤎ 	ejb (~ejb@unaffiliated/ejb) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2016-07-06 13:28:14	+turlutton	timaschew: yeah, that would be easier
+2016-07-06 13:28:43	⤍ 	reveredge_ (~reveredge@111.119.209.215) has joined #regex
+2016-07-06 13:28:57	timaschew	But I can't get it working: https://regex101.com/r/kO1cO1/6 
+2016-07-06 13:29:08	+turlutton	timaschew: https://regex101.com/r/kO1cO1/7
+2016-07-06 13:30:27	+turlutton	timaschew: there is no space after  'href="#"'  in your examples
+2016-07-06 13:31:16	timaschew	should there be a space? This is valid HTML
+2016-07-06 13:31:25	+turlutton	timaschew: you don't seem to undestand what does '^'
+2016-07-06 13:31:58	+turlutton	timaschew: that's not the question, in your examples there is none, so don't lookf for one in your regex
+2016-07-06 13:32:06	timaschew	I think a white space can be used instead of \s
+2016-07-06 13:32:44	⤎ 	nmz787_i (~ntmccork@134.134.139.82) has left #regex
+2016-07-06 13:32:46	+turlutton	timaschew: what's what I did here, https://regex101.com/r/kO1cO1/7 no?
+2016-07-06 13:32:49	timaschew	there is a space in both
+2016-07-06 13:33:15	timaschew	Oh, I really don't get the ^
+2016-07-06 13:33:16	timaschew	thanks!
+2016-07-06 13:33:58	+turlutton	timaschew: in your examples there is no space between the  '"'  and the  '>'  in  'href="#">'
+2016-07-06 13:35:16	+turlutton	timaschew: ^: "assert positon at start of the string" e.g. start of file
+2016-07-06 13:35:41	⤎ 	Qtax_ (~qtax@unaffiliated/qtax) has quit (Ping timeout: 250 seconds)
+2016-07-06 13:38:09	+genio	^ has two meanings. the meaning is determined by whether it's in or outside of a character class, [].
+2016-07-06 13:38:51	+genio	^ -- anchor to the beginning of the string.   [^] -- negate the character class (not any of these characters)
+2016-07-06 13:39:02	⤍ 	KindOne_ (~KindOne@freenude/topless/kindone) has joined #regex
+2016-07-06 13:39:48	⤎ 	timaschew (578a6a91@gateway/web/freenode/ip.87.138.106.145) has quit (Ping timeout: 250 seconds)
+2016-07-06 13:40:04	⤍ 	Qtax (~qtax@unaffiliated/qtax) has joined #regex
+2016-07-06 13:40:04	ℹ	Mode #regex [+v Qtax] by ChanServ
+2016-07-06 13:41:04	⤎ 	KindOne (~KindOne@freenude/topless/kindone) has quit (Ping timeout: 240 seconds)
+2016-07-06 13:42:30	⤍ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has joined #regex
+2016-07-06 13:43:00	⤎ 	TheDcoder (~TheDcoder@unaffiliated/thedcoder) has quit (Quit: Quitting!)
+2016-07-06 13:43:56	ℹ	KindOne_ is now known as KindOne
+2016-07-06 13:44:24	⤎ 	monokrome (~monokrome@54.88.139.115) has quit (Quit: Well, I'm pretty sure that was a mistake...)
+2016-07-06 13:46:36	⤎ 	reveredge_ (~reveredge@111.119.209.215) has quit (Ping timeout: 246 seconds)
+2016-07-06 13:49:15	⤎ 	Lecherito (uid30063@gateway/web/irccloud.com/x-epsxvsjsejipmsbo) has quit (Quit: Connection closed for inactivity)
+2016-07-06 13:49:25	⤍ 	ejb (~ejb@unaffiliated/ejb) has joined #regex
+2016-07-06 13:53:02	⤎ 	AirPlanes (~ShortBob@bzq-79-178-105-109.red.bezeqint.net) has quit (Ping timeout: 244 seconds)
+2016-07-06 13:53:57	⤍ 	AirPlanes (~ShortBob@bzq-79-178-105-109.red.bezeqint.net) has joined #regex
+2016-07-06 13:55:13	⤎ 	Numline1 (~Numline1@unaffiliated/numline1) has quit (Quit: I'll be back...)
+2016-07-06 13:56:18	⤍ 	Neville (~Neville@mail.gradientfx.com) has joined #regex
+2016-07-06 13:57:27	⤎ 	regex101-2511 (46a4c99a@gateway/web/freenode/ip.70.164.201.154) has quit (Quit: Page closed)
+2016-07-06 13:57:38	⤍ 	Numline1 (~Numline1@2a03:b0c0:2:d0::d9:7001) has joined #regex
+2016-07-06 13:58:01	⤎ 	Numline1 (~Numline1@2a03:b0c0:2:d0::d9:7001) has quit (Changing host)
+2016-07-06 13:58:01	⤍ 	Numline1 (~Numline1@unaffiliated/numline1) has joined #regex
+2016-07-06 13:58:22	⤎ 	Numline1 (~Numline1@unaffiliated/numline1) has quit (Max SendQ exceeded)
+2016-07-06 13:58:30	⤍ 	Numline1 (~Numline1@ymir.sk) has joined #regex
+2016-07-06 13:58:30	⤎ 	Numline1 (~Numline1@ymir.sk) has quit (Changing host)
+2016-07-06 13:58:30	⤍ 	Numline1 (~Numline1@unaffiliated/numline1) has joined #regex
+2016-07-06 14:00:14	⤍ 	reveredge_ (~reveredge@115.110.126.75) has joined #regex
+2016-07-06 14:00:18	⤍ 	SwiftMatt (~Objective@162.242.94.179) has joined #regex
+2016-07-06 14:03:38	⤎ 	aw1 (~aw1@unaffiliated/aw1) has quit (Read error: Connection reset by peer)
+2016-07-06 14:06:03	⤎ 	reveredge_ (~reveredge@115.110.126.75) has quit (Ping timeout: 240 seconds)
+2016-07-06 14:08:46	⤍ 	regex101-6084 (3cfe9729@gateway/web/freenode/ip.60.254.151.41) has joined #regex
+2016-07-06 14:09:12	⤍ 	timaschew (6d2dfdb6@gateway/web/freenode/ip.109.45.253.182) has joined #regex
+2016-07-06 14:09:53	timaschew	turlutton: I understand now, I needed to put the space into the lookahead instead of beetween the matching pattern and the negative lookahead pattern
+2016-07-06 14:10:00	timaschew	Thanks again!
+2016-07-06 14:13:51	⤍ 	spookah (~brian@unaffiliated/spookah) has joined #regex
+2016-07-06 14:15:16	⤎ 	ER_nesto (~ER_nesto@host86-131-241-18.range86-131.btcentralplus.com) has quit (Quit: DRIVER_IRQL_NOT_LESS_OR_EQUAL (ETD.sys))
+2016-07-06 14:16:08	⤎ 	kareypowell (~textual@207.204.68.58) has quit (Read error: Connection reset by peer)
+2016-07-06 14:19:50	⤍ 	aw1 (~aw1@unaffiliated/aw1) has joined #regex
+2016-07-06 14:20:59	⤍ 	m1yag1 (~textual@108-204-169-107.lightspeed.hstntx.sbcglobal.net) has joined #regex
+2016-07-06 14:22:22	⤍ 	nilg (~user@89-25-72-42.ip.btc-net.bg) has joined #regex
+2016-07-06 14:22:26	⤍ 	reveredge_ (~reveredge@115.114.106.8) has joined #regex
+2016-07-06 14:25:18	⤎ 	timaschew (6d2dfdb6@gateway/web/freenode/ip.109.45.253.182) has quit (Ping timeout: 250 seconds)
+2016-07-06 14:29:54	⤎ 	nilg (~user@89-25-72-42.ip.btc-net.bg) has quit (Remote host closed the connection)
+2016-07-06 14:31:49	⤍ 	AL_ (~al@unaffiliated/al-/x-5135750) has joined #regex
+2016-07-06 14:36:52	⤍ 	kareypowell (~textual@207.204.68.58) has joined #regex
+2016-07-06 14:40:35	⤎ 	ejb (~ejb@unaffiliated/ejb) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2016-07-06 14:42:16	⤎ 	bowhunter (~textual@168-215-167-148.static.twtelecom.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-07-06 14:42:21	⤍ 	isberg (~isberg@banan.olf.sgsnet.se) has joined #regex
+2016-07-06 14:44:15	⤎ 	reveredge_ (~reveredge@115.114.106.8) has quit (Ping timeout: 264 seconds)
+2016-07-06 14:46:14	⤍ 	bowhunter (~textual@168-215-167-148.static.twtelecom.net) has joined #regex
+2016-07-06 14:46:26	⤍ 	nilg (~user@89-25-72-42.ip.btc-net.bg) has joined #regex
+2016-07-06 14:47:19	⤎ 	bowhunter (~textual@168-215-167-148.static.twtelecom.net) has quit (Max SendQ exceeded)
+2016-07-06 14:50:41	⤍ 	ejb (~ejb@unaffiliated/ejb) has joined #regex
+2016-07-06 14:53:41	⤎ 	AirPlanes (~ShortBob@bzq-79-178-105-109.red.bezeqint.net) has quit (Ping timeout: 250 seconds)
+2016-07-06 14:54:27	⤍ 	AirPlanes (~ShortBob@bzq-79-178-105-109.red.bezeqint.net) has joined #regex
+2016-07-06 14:54:46	⤍ 	bowhunter (~textual@168-215-167-148.static.twtelecom.net) has joined #regex
+2016-07-06 14:59:37	⤍ 	reveredge_ (~reveredge@111.119.209.215) has joined #regex
+2016-07-06 15:00:31	⤍ 	regex101-2868 (5945a944@gateway/web/freenode/ip.89.69.169.68) has joined #regex
+2016-07-06 15:00:34	ℹ	regex101-2868 is now known as mmkay
+2016-07-06 15:02:13	⤎ 	ahmed_elgabri (~ahmedelga@162.216.46.188) has quit (Ping timeout: 252 seconds)
+2016-07-06 15:04:25	⤎ 	mmkay (5945a944@gateway/web/freenode/ip.89.69.169.68) has quit (Client Quit)
+2016-07-06 15:04:56	⤎ 	Suchorski (regex@unaffiliated/suchorski) has quit (Ping timeout: 272 seconds)
+2016-07-06 15:05:23	⤍ 	Suchorski (regex@177-179-179-56.user.veloxzone.com.br) has joined #regex
+2016-07-06 15:05:23	⤎ 	Suchorski (regex@177-179-179-56.user.veloxzone.com.br) has quit (Changing host)
+2016-07-06 15:05:23	⤍ 	Suchorski (regex@unaffiliated/suchorski) has joined #regex
+2016-07-06 15:09:44	⤎ 	mrmortondk (~textual@185.10.221.75) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2016-07-06 15:10:44	⤎ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has quit (Remote host closed the connection)
+2016-07-06 15:14:45	⤍ 	SmashingX (~smashingx@unaffiliated/smashingx) has joined #regex
+2016-07-06 15:15:17	SmashingX	how can I construct a regex to find ocurrences like href="/path/to/directory/"?
+2016-07-06 15:17:07	⤍ 	regex101-2438 (a49c3054@gateway/web/freenode/ip.164.156.48.84) has joined #regex
+2016-07-06 15:17:46	⤍ 	regex101-6308 (a49c3031@gateway/web/freenode/ip.164.156.48.49) has joined #regex
+2016-07-06 15:18:04	regex101-6308	hello can someone help me.
+2016-07-06 15:18:13	edx	see the topic
+2016-07-06 15:19:03	regex101-6308	!rehelp
+2016-07-06 15:19:04	+perlbot	Please post your regex attempt and sample string(s) at https://regex101.com/, then click Save (ctrl+s) and post the link here. You should indicate what language/platform you are using and, where possible, provide examples of both what should and should not match.
+2016-07-06 15:20:00	⤍ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has joined #regex
+2016-07-06 15:20:24	⤍ 	The-spiki (~spiki@unaffiliated/the-spiki) has joined #regex
+2016-07-06 15:20:36	regex101-6308	https://regex101.com/r/uB4fY6/1
+2016-07-06 15:21:46	regex101-6308	I am trying to do a comparison of a href link to the actual text being displayed that follows it 
+2016-07-06 15:23:00	regex101-6308	<a href="http://www2.ed.gov/policy/gen/guid/correctional-education/index.html">http://www2.ed.gov/policy/gen/guid/correctional-educat ion/index.html</a> should work.
+2016-07-06 15:23:18	regex101-6308	<a href="http://www2.ed.gov/policy/gen/guid/correctional-education/index.html">http://www2.ed.gov/policy/gen/guid/correctional-education/index.html</a> should work
+2016-07-06 15:23:41	regex101-6308	<a href="http://www2.ed.gov/policy/gen/guid/correctional-education/index.html">http://www2.notworking/index.html</a> should not work
+2016-07-06 15:27:05	⤍ 	regex101-0080 (51920dab@gateway/web/freenode/ip.81.146.13.171) has joined #regex
+2016-07-06 15:28:18	⤍ 	gelignite (~gelignite@x4db6bce2.dyn.telefonica.de) has joined #regex
+2016-07-06 15:29:09	⤍ 	ahmed_elgabri (~ahmedelga@162.216.46.89) has joined #regex
+2016-07-06 15:29:38	regex101-0080	!rehelp
+2016-07-06 15:29:38	+perlbot	Please post your regex attempt and sample string(s) at https://regex101.com/, then click Save (ctrl+s) and post the link here. You should indicate what language/platform you are using and, where possible, provide examples of both what should and should not match.
+2016-07-06 15:31:07	regex101-0080	Hello, I am trying to use a regular expression so that the input starts with 07 and is followed by 9 digits. I have tried using (^=07)\d{9} as the expression but my example of 07123456789 does not pass - any help would be much appreciated :)
+2016-07-06 15:32:10	SmashingX	href="../html/pages
+2016-07-06 15:32:31	SmashingX	I can't match this with /href="\/\.\.[a-zA-Z]*\//g
+2016-07-06 15:32:39	SmashingX	any idea why?
+2016-07-06 15:33:41	+genio	regex101-0080: 07[0-9]{9}
+2016-07-06 15:34:30	+genio	SmashingX: you have a / at the beginning of the href="   and your sample text begins with ..
+2016-07-06 15:34:46	SmashingX	genio: yep I noticed that man
+2016-07-06 15:34:46	+genio	so, your expression differs from your sample text
+2016-07-06 15:34:47	SmashingX	thanks
+2016-07-06 15:34:58	regex101-0080	Appreciate the help @genio but it still doesn't seem to be passing.
+2016-07-06 15:35:26	regex101-0080	with the same test string of 0712345679
+2016-07-06 15:35:31	+genio	regex101-0080: Can you work up an example in regex101.com and show me exactly how it's not working, please?  
+2016-07-06 15:36:04	+genio	not that I don't believe you, it's just a lot simpler to see what you're talking about with a good example worked up
+2016-07-06 15:36:10	regex101-0080	yeah no problem
+2016-07-06 15:36:14	regex101-0080	here it is https://gyazo.com/7c11a00652d579dc7828355b80c6d9c9
+2016-07-06 15:36:20	⤎ 	regex101-6084 (3cfe9729@gateway/web/freenode/ip.60.254.151.41) has quit (Quit: Page closed)
+2016-07-06 15:36:38	regex101-0080	sorry I should've made that the full screen to show that it isn't passing - I'll get a new screengrab.
+2016-07-06 15:36:44	+genio	There's a save icon on the left of the regex101 site
+2016-07-06 15:36:49	+genio	no need for a screen grab
+2016-07-06 15:36:56	⤎ 	SmashingX (~smashingx@unaffiliated/smashingx) has left #regex
+2016-07-06 15:37:02	regex101-0080	oh - didn't realise :)
+2016-07-06 15:37:11	regex101-0080	here you go: https://regex101.com/r/lD4tX6/1
+2016-07-06 15:37:14	+genio	:) regex101.com, making life easy!
+2016-07-06 15:37:58	+genio	regex101-0080: You're missing a digit in yoru sample text.  8
+2016-07-06 15:38:12	regex101-0080	oh - my bad.
+2016-07-06 15:38:15	regex101-0080	I can't count...
+2016-07-06 15:38:19	+genio	heh.  it happens
+2016-07-06 15:38:31	regex101-0080	Haha thanks a lot
+2016-07-06 15:38:45	+genio	No problem.  glad to be of help
+2016-07-06 15:39:18	⤎ 	nilg (~user@89-25-72-42.ip.btc-net.bg) has quit (Remote host closed the connection)
+2016-07-06 15:41:03	⤎ 	johnnyfive (~johnnyfiv@unaffiliated/isalive) has quit (Quit: A robot on IRC? Noo...)
+2016-07-06 15:43:45	⤎ 	ferdna (~ferdna@cpe-69-23-129-73.elp.res.rr.com) has quit (Quit: Leaving)
+2016-07-06 15:48:14	cat5e	can I parse this with regex? https://github.com/SoniEx2/MDXML
+2016-07-06 15:49:48	+genio	oh, gods.
+2016-07-06 15:51:39	⤍ 	AirPlanes2 (~ShortBob@bzq-79-178-105-109.red.bezeqint.net) has joined #regex
+2016-07-06 15:51:45	⤍ 	johnnyfive (~johnnyfiv@unaffiliated/isalive) has joined #regex
+2016-07-06 15:53:31	⤎ 	AirPlanes (~ShortBob@bzq-79-178-105-109.red.bezeqint.net) has quit (Ping timeout: 240 seconds)
+2016-07-06 15:56:31	⤎ 	ash_workz (~chatzilla@50.243.5.153) has quit (Ping timeout: 240 seconds)
+2016-07-06 15:56:46	cat5e	it should be saner than XHTML
+2016-07-06 15:58:45	⤍ 	netcarver (~netcarver@85.134.115.87.dyn.plus.net) has joined #regex
+2016-07-06 15:59:02	⤍ 	shivers (jshivers@nat/redhat/x-vsiucymsxbzajrvd) has joined #regex
+2016-07-06 15:59:34	⤎ 	_shivers_ (jshivers@nat/redhat/x-ghhsffcsbyqyxyrh) has quit (Ping timeout: 258 seconds)
+2016-07-06 16:01:37	+genio	I've seen entire parsers get created using regular expressions and I don't have any problem with that as long as the entire parser does the right thing and makes sense.  I do have a problem with people writing single, one-off expressions to parse some sort of markup that is easily broken
+2016-07-06 16:06:03	⤎ 	ahmed_elgabri (~ahmedelga@162.216.46.89) has quit (Ping timeout: 250 seconds)
+2016-07-06 16:07:25	cat5e	like assume youtube.com always gives you valid XHTML and looking for <title></title> in it?
+2016-07-06 16:14:39	spookah	parsing that with regex looks like a bad idea
+2016-07-06 16:15:05	⤍ 	monokrome (~monokrome@54.88.139.115) has joined #regex
+2016-07-06 16:15:24	spookah	something like ANTLR would be better
+2016-07-06 16:17:10	cat5e	spookah, it's youtube, you can probably safely assume it's always valid XHTML
+2016-07-06 16:17:21	⤍ 	irco (~irco@HSI-KBW-078-042-015-165.hsi3.kabel-badenwuerttemberg.de) has joined #regex
+2016-07-06 16:17:30	+genio	for example, this is a parser that utilizes regular expressions.  https://metacpan.org/source/Mojo::DOM::HTML  But, it's a proper parser that's maintained and isn't _just_ regular expressions
+2016-07-06 16:20:31	spookah	cat5e: true, if it's something simple like parsing the title tag it should be fine
+2016-07-06 16:20:52	spookah	if you are using Perl i would highly recommend Mojo::DOM
+2016-07-06 16:20:54	spookah	http://mojolicious.org/perldoc/Mojo/DOM
+2016-07-06 16:21:22	cat5e	but yeah if you were doing random webpages regex wouldn't be a good idea, because you can't trust random webpages to not put CDATA before title
+2016-07-06 16:21:39	spookah	or to embed tags in silly ways
+2016-07-06 16:24:19	spookah	if you google chomski type II and type III grammar you can read why parsing html with regex doesn't work
+2016-07-06 16:26:55	⤎ 	Suchorski (regex@unaffiliated/suchorski) has quit (Ping timeout: 252 seconds)
+2016-07-06 16:27:14	⤍ 	Suchorski (regex@unaffiliated/suchorski) has joined #regex
+2016-07-06 16:37:18	⤎ 	regex101-2438 (a49c3054@gateway/web/freenode/ip.164.156.48.84) has quit (Quit: Page closed)
+2016-07-06 16:38:00	⤎ 	nevodka (~Nevodka@c-24-56-227-195.customer.broadstripe.net) has quit (Ping timeout: 276 seconds)
+2016-07-06 16:43:06	⤍ 	Lecherito (uid30063@gateway/web/irccloud.com/x-nkotpnbleygeyoam) has joined #regex
+2016-07-06 16:46:44	⤍ 	ER_nesto (~ER_nesto@host86-131-241-18.range86-131.btcentralplus.com) has joined #regex
+2016-07-06 16:48:17	⤍ 	nevodka (~Nevodka@c-24-56-227-195.customer.broadstripe.net) has joined #regex
+2016-07-06 16:51:01	⤎ 	Winter_ (~a.w1nter@modemcable250.87-70-69.static.videotron.ca) has quit (Quit: Leaving)
+2016-07-06 16:51:26	⤍ 	AirPlanes (~ShortBob@bzq-79-178-105-109.red.bezeqint.net) has joined #regex
+2016-07-06 16:53:21	⤎ 	ejb (~ejb@unaffiliated/ejb) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2016-07-06 16:54:12	⤎ 	AirPlanes2 (~ShortBob@bzq-79-178-105-109.red.bezeqint.net) has quit (Ping timeout: 260 seconds)
+2016-07-06 16:57:10	⤎ 	nevodka (~Nevodka@c-24-56-227-195.customer.broadstripe.net) has quit (Ping timeout: 252 seconds)
+2016-07-06 17:03:17	⤎ 	`tim` (~justbleed@204.246.246.253) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-07-06 17:04:16	⤍ 	ahmed_elgabri (~ahmedelga@162.216.46.89) has joined #regex
+2016-07-06 17:05:04	⤎ 	ph5il (~blank@unaffiliated/ph5il) has quit (Ping timeout: 240 seconds)
+2016-07-06 17:09:54	⤎ 	irco (~irco@HSI-KBW-078-042-015-165.hsi3.kabel-badenwuerttemberg.de) has quit (Ping timeout: 244 seconds)
+2016-07-06 17:15:03	⤎ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has quit (Remote host closed the connection)
+2016-07-06 17:15:26	⤎ 	netcarver (~netcarver@85.134.115.87.dyn.plus.net) has quit (Quit: Leaving)
+2016-07-06 17:15:33	⤎ 	rgrinberg (~rgrinberg@24-246-56-85.cable.teksavvy.com) has quit (Ping timeout: 246 seconds)
+2016-07-06 17:15:52	⤎ 	ahmed_elgabri (~ahmedelga@162.216.46.89) has quit (Ping timeout: 252 seconds)
+2016-07-06 17:17:00	⤎ 	AirPlanes (~ShortBob@bzq-79-178-105-109.red.bezeqint.net) has quit (Ping timeout: 258 seconds)
+2016-07-06 17:17:26	⤍ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has joined #regex
+2016-07-06 17:20:56	⤍ 	ahmed_elgabri (~ahmedelga@162.216.46.131) has joined #regex
+2016-07-06 17:25:08	⤎ 	regex101-6308 (a49c3031@gateway/web/freenode/ip.164.156.48.49) has quit (Ping timeout: 250 seconds)
+2016-07-06 17:26:10	⤎ 	Holz (Holz@spa.st) has quit (Ping timeout: 272 seconds)
+2016-07-06 17:29:08	⤍ 	Holz (Holz@spa.st) has joined #regex
+2016-07-06 17:29:13	⤍ 	_xor (~xor@50.216.161.66.DED-DSL.fuse.net) has joined #regex
+2016-07-06 17:30:29	⤎ 	turlutton (~turlutton@unaffiliated/turlutton) has quit (Quit: leaving)
+2016-07-06 17:37:14	cat5e	spookah, you can parse HTML with regex, kinda
+2016-07-06 17:37:30	cat5e	you can split HTML into logical blocks with regex
+2016-07-06 17:37:46	cat5e	you just need to manually validate opening/closing tags
+2016-07-06 17:37:54	cat5e	(well uh, XHTML at least)
+2016-07-06 17:39:08	⤍ 	pieperloy (545144d2@gateway/web/freenode/ip.84.81.68.210) has joined #regex
+2016-07-06 17:40:23	pieperloy	Hi, can anyone help me match names in here: https://regex101.com/r/dN0mH2/1 the account names are located between <br> and </br> thanks in advance!
+2016-07-06 17:41:02	+lyxia	pieperloy: hello
+2016-07-06 17:41:25	pieperloy	lyxia: hello
+2016-07-06 17:41:38	+lyxia	you wrote </b>
+2016-07-06 17:41:57	pieperloy	Yes, I was trying to get the results between them but didn't work, unfortunately. :(
+2016-07-06 17:41:58	+lyxia	and it times out
+2016-07-06 17:42:07	pieperloy	It believe it does that
+2016-07-06 17:42:20	pieperloy	When I test in actual code it returns false positives.
+2016-07-06 17:43:02	+lyxia	you might need .*? instead
+2016-07-06 17:43:28	⤎ 	monokrome (~monokrome@54.88.139.115) has quit (Ping timeout: 244 seconds)
+2016-07-06 17:43:55	pieperloy	What u mean?
+2016-07-06 17:44:09	+lyxia	replace .* with .*?
+2016-07-06 17:44:11	+lyxia	also your string contains <\/b>, not </b>
+2016-07-06 17:44:30	pieperloy	Ooh snap, you're right
+2016-07-06 17:44:41	+lyxia	https://regex101.com/r/dN0mH2/3
+2016-07-06 17:45:57	+lyxia	pieperloy: did you know that there are HTML parsers out there that can do a much better job than regexes?
+2016-07-06 17:47:02	⤎ 	dandon (~dandon@88.151.72.158) has quit (Quit: .)
+2016-07-06 17:47:02	pieperloy	Yeah I know
+2016-07-06 17:47:10	pieperloy	Like lxml parser
+2016-07-06 17:47:17	pieperloy	but btw
+2016-07-06 17:47:20	pieperloy	The response is almost goods
+2016-07-06 17:47:57	pieperloy	But it returns this: Account: <b>accountname
+2016-07-06 17:48:04	pieperloy	How can I get rid of that <b>
+2016-07-06 17:49:24	+lyxia	so that you get "Account: accountname"? You'll need to process that in another pass in your program
+2016-07-06 17:49:46	cat5e	use an HTML parser that can strip formatting
+2016-07-06 17:49:50	pieperloy	I wanna extract "Account: accountname" from the response
+2016-07-06 17:51:29	pieperloy	Mmm, but for the love of god I cannot manage to get lxml parser installed
+2016-07-06 17:51:44	pieperloy	Since it's using Visual studio dependencies.
+2016-07-06 17:51:57	⤎ 	isberg (~isberg@banan.olf.sgsnet.se) has quit (Read error: Connection reset by peer)
+2016-07-06 17:52:31	⤍ 	isberg (~isberg@banan.olf.sgsnet.se) has joined #regex
+2016-07-06 17:54:22	⤎ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has quit (Ping timeout: 252 seconds)
+2016-07-06 17:55:15	⤍ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has joined #regex
+2016-07-06 17:55:34	pieperloy	Anyway thanks for the help
+2016-07-06 17:55:44	⤎ 	pieperloy (545144d2@gateway/web/freenode/ip.84.81.68.210) has quit (Quit: Page closed)
+2016-07-06 17:58:31	⤎ 	crayon (~i@unaffiliated/button) has quit (Remote host closed the connection)
+2016-07-06 17:59:33	⤍ 	ToAruShiroiNeko (~eva@wikimedia/ToAruShiroiNeko) has joined #regex
+2016-07-06 17:59:57	⤍ 	crayon (~user@unaffiliated/button) has joined #regex
+2016-07-06 18:00:49	⤎ 	regex101-0080 (51920dab@gateway/web/freenode/ip.81.146.13.171) has quit (Quit: Page closed)
+2016-07-06 18:02:37	⤎ 	bowhunter (~textual@168-215-167-148.static.twtelecom.net) has quit (Ping timeout: 252 seconds)
+2016-07-06 18:07:55	⤍ 	rgrinberg (~rgrinberg@TOROON12-3096782042.sdsl.bell.ca) has joined #regex
+2016-07-06 18:17:54	⤍ 	nevodka (~Nevodka@c-24-56-227-195.customer.broadstripe.net) has joined #regex
+2016-07-06 18:18:33	⤎ 	gelignite (~gelignite@x4db6bce2.dyn.telefonica.de) has quit (Quit: http://bit.ly/1kso8Ta)
+2016-07-06 18:19:31	⤍ 	ferdna (~ferdna@cpe-69-23-129-73.elp.res.rr.com) has joined #regex
+2016-07-06 18:23:36	⤎ 	kareypowell (~textual@207.204.68.58) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2016-07-06 18:27:53	⤎ 	Evan (~MuffinMed@unaffiliated/evan) has quit (Changing host)
+2016-07-06 18:27:53	⤍ 	Evan (~MuffinMed@unaffiliated/muffinmedic) has joined #regex
+2016-07-06 18:29:00	ℹ	Evan is now known as MuffinMedic
+2016-07-06 18:30:45	⤍ 	Montezuma (~trevor@HULLPQ2038W-LP130-04-1178045896.dsl.bell.ca) has joined #regex
+2016-07-06 18:34:26	⤎ 	zenlot (~zenlot@78-62-77-171.static.zebra.lt) has quit (Ping timeout: 258 seconds)
+2016-07-06 18:34:34	⤎ 	rgrinberg (~rgrinberg@TOROON12-3096782042.sdsl.bell.ca) has quit (Ping timeout: 272 seconds)
+2016-07-06 18:34:46	⤍ 	zenlot6 (~zenlot@78-62-77-171.static.zebra.lt) has joined #regex
+2016-07-06 18:40:10	⤎ 	Elektrode4 (~Elektrode@wsip-72-215-244-100.br.br.cox.net) has quit (Quit: Elektrode4)
+2016-07-06 18:41:48	⤎ 	Suchorski (regex@unaffiliated/suchorski) has quit
+2016-07-06 18:41:54	⤍ 	Elektrode4 (~Elektrode@wsip-72-215-244-100.br.br.cox.net) has joined #regex
+2016-07-06 18:45:42	⤎ 	MuffinMedic (~MuffinMed@unaffiliated/muffinmedic) has quit (Quit: Be right back.)
+2016-07-06 18:45:56	⤍ 	MuffinMedic (~MuffinMed@unaffiliated/muffinmedic) has joined #regex
+2016-07-06 18:49:40	⤍ 	monokrome (~monokrome@54.88.139.115) has joined #regex
+2016-07-06 18:49:53	⤍ 	idmistir (~idmistir@unaffiliated/idmistir) has joined #regex
+2016-07-06 18:52:24	⤎ 	mmazing (~mmazing@unaffiliated/mmazing) has quit (Quit: Leaving)
+2016-07-06 18:55:09	⤎ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has quit (Ping timeout: 276 seconds)
+2016-07-06 18:55:51	⤍ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has joined #regex
+2016-07-06 18:58:02	⤎ 	badboykas (~pap00se@91.204.208.210) has quit (Remote host closed the connection)
+2016-07-06 18:58:26	⤍ 	Pap00se (~pap00se@91.204.208.210) has joined #regex
+2016-07-06 19:02:34	⤍ 	nodebase (~textual@c-67-164-214-129.hsd1.ca.comcast.net) has joined #regex
+2016-07-06 19:03:32	⤎ 	kikuchi (~nox@cust-208-33-111-94.dyn.as47377.net) has quit
+2016-07-06 19:03:51	⤍ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has joined #regex
+2016-07-06 19:08:22	⤎ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has quit (Ping timeout: 260 seconds)
+2016-07-06 19:10:03	⤎ 	shivers (jshivers@nat/redhat/x-vsiucymsxbzajrvd) has quit (Quit: Konversation terminated!)
+2016-07-06 19:12:19	⤎ 	wojtekson16 (~wojtekson@91.223.64.243) has quit
+2016-07-06 19:22:09	⤎ 	realnot_ (~realnot@host239-23-dynamic.40-79-r.retail.telecomitalia.it) has quit (Ping timeout: 244 seconds)
+2016-07-06 19:22:40	⤎ 	realnot (~realnot@unaffiliated/realnot) has quit (Ping timeout: 264 seconds)
+2016-07-06 19:24:02	⤍ 	d4rklit3 (~textual@rrcs-64-183-104-146.west.biz.rr.com) has joined #regex
+2016-07-06 19:29:46	⤎ 	AL_ (~al@unaffiliated/al-/x-5135750) has quit (Remote host closed the connection)
+2016-07-06 19:29:51	⤍ 	ph5il (~blank@unaffiliated/ph5il) has joined #regex
+2016-07-06 19:32:27	⤍ 	tobias47n9e_ (~tobias47n@188-22-21-247.adsl.highway.telekom.at) has joined #regex
+2016-07-06 19:36:04	⤎ 	nodebase (~textual@c-67-164-214-129.hsd1.ca.comcast.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-07-06 19:36:45	⤎ 	tobias47n9e (~tobias47n@62-46-243-136.adsl.highway.telekom.at) has quit (Ping timeout: 276 seconds)
+2016-07-06 19:42:40	⤎ 	emPi (~emPi@unaffiliated/empi) has quit (Ping timeout: 258 seconds)
+2016-07-06 19:54:27	⤎ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has quit (Ping timeout: 260 seconds)
+2016-07-06 19:55:26	⤍ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has joined #regex
+2016-07-06 20:00:30	⤎ 	m1yag1 (~textual@108-204-169-107.lightspeed.hstntx.sbcglobal.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2016-07-06 20:06:52	⤍ 	Suchorski (regex@unaffiliated/suchorski) has joined #regex
+2016-07-06 20:10:51	⤎ 	trapped (~trapped@pellero.it) has quit (Read error: Connection reset by peer)
+2016-07-06 20:13:33	⤎ 	d4rklit3 (~textual@rrcs-64-183-104-146.west.biz.rr.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-07-06 20:14:52	⤎ 	ph5il (~blank@unaffiliated/ph5il) has quit (Ping timeout: 258 seconds)
+2016-07-06 20:18:00	⤍ 	onlime (~onlime@212-51-129-175.fiber7.init7.net) has joined #regex
+2016-07-06 20:18:57	onlime	hi there. What could be wrong with this sed replacement? sed 's/FilterProvider\s+([A-Z]+)\s+([A-Z]+)\s+resp=([A-Za-z\-]+)\s\$(.+)/FilterProvider  \1  \2 "\%{\3} = \'\4\'"/g' .htaccess
+2016-07-06 20:19:18	onlime	search pattern looks fine so far: https://regex101.com/r/kN3aS9/1
+2016-07-06 20:19:44	onlime	that's what I am trying to accomplish: http://stackoverflow.com/a/23394119
+2016-07-06 20:20:20	⤎ 	lexileo (~lexii@49.248.192.241) has quit (Ping timeout: 272 seconds)
+2016-07-06 20:21:37	⤍ 	regex101-8398 (55676672@gateway/web/freenode/ip.85.103.102.114) has joined #regex
+2016-07-06 20:22:33	⤎ 	regex101-8398 (55676672@gateway/web/freenode/ip.85.103.102.114) has quit (Client Quit)
+2016-07-06 20:26:09	⤎ 	eigenvalue (~eigenvalu@unaffiliated/eigenvalue) has quit (Quit: Leaving)
+2016-07-06 20:27:23	⤍ 	regex101-3449 (445a6961@gateway/web/freenode/ip.68.90.105.97) has joined #regex
+2016-07-06 20:27:39	⤎ 	regex101-3449 (445a6961@gateway/web/freenode/ip.68.90.105.97) has quit (Client Quit)
+2016-07-06 20:29:02	⤎ 	Akuma (~Akuma@AYLMPQ0104W-LP130-06-1242354211.dsl.bell.ca) has quit (Quit: So long sukkas!)
+2016-07-06 20:29:15	⤎ 	Lecherito (uid30063@gateway/web/irccloud.com/x-nkotpnbleygeyoam) has quit (Quit: Connection closed for inactivity)
+2016-07-06 20:32:59	⤎ 	ER_nesto (~ER_nesto@host86-131-241-18.range86-131.btcentralplus.com) has quit (Quit: DRIVER_IRQL_NOT_LESS_OR_EQUAL (ETD.sys))
+2016-07-06 20:33:29	⤍ 	dandon (~dandon@88.151.75.146) has joined #regex
+2016-07-06 20:44:54	⤎ 	SkyFire (~SkyFire@d53-64-44-131.nap.wideopenwest.com) has quit (Quit: Leaving)
+2016-07-06 20:49:59	⤍ 	regex101-9498 (c879dc9a@gateway/web/freenode/ip.200.121.220.154) has joined #regex
+2016-07-06 20:50:58	⤎ 	regex101-9498 (c879dc9a@gateway/web/freenode/ip.200.121.220.154) has quit (Client Quit)
+2016-07-06 20:54:28	⤎ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has quit (Ping timeout: 264 seconds)
+2016-07-06 20:55:17	⤍ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has joined #regex
+2016-07-06 21:19:24	⤎ 	onlime (~onlime@212-51-129-175.fiber7.init7.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2016-07-06 21:25:51	ℹ	VX is now known as VectorX
+2016-07-06 21:32:56	⤍ 	regex101-4991 (7123336b@gateway/web/freenode/ip.113.35.51.107) has joined #regex
+2016-07-06 21:33:15	⤍ 	digitok (~death@unaffiliated/digitok) has joined #regex
+2016-07-06 21:33:55	regex101-4991	can i test posix basic regex on regex 101? working with the find command with -regextype posix-basic flag
+2016-07-06 21:35:08	⤍ 	Miner_48er (~Miner_48e@cpe-75-183-179-188.sc.res.rr.com) has joined #regex
+2016-07-06 21:37:01	Hello71	for BRE it's easiest just to memorize the features you can use
+2016-07-06 21:37:18	Hello71	because the list is [] . ^$ * and that's it
+2016-07-06 21:41:14	ℹ	Mode #regex [+v Hello71] by ChanServ
+2016-07-06 21:44:29	⤍ 	SkyFire (~SkyFire@d53-64-44-131.nap.wideopenwest.com) has joined #regex
+2016-07-06 21:45:47	⤍ 	ahmedelgabri (~ahmedelga@2a02:a441:9f5:0:ece7:ce4d:1cff:dad8) has joined #regex
+2016-07-06 21:46:52	⤎ 	ahmed_elgabri (~ahmedelga@162.216.46.131) has quit (Ping timeout: 258 seconds)
+2016-07-06 21:52:52	⤍ 	Badman703 (~SkyFire@d53-64-44-131.nap.wideopenwest.com) has joined #regex
+2016-07-06 21:52:55	⤎ 	SkyFire (~SkyFire@d53-64-44-131.nap.wideopenwest.com) has quit (Read error: Connection reset by peer)
+2016-07-06 21:53:16	⤎ 	Badman703 (~SkyFire@d53-64-44-131.nap.wideopenwest.com) has quit (Client Quit)
+2016-07-06 21:53:34	⤍ 	SkyFire (~SkyFire@d53-64-44-131.nap.wideopenwest.com) has joined #regex
+2016-07-06 21:55:12	⤎ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has quit (Ping timeout: 276 seconds)
+2016-07-06 21:55:36	⤍ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has joined #regex
+2016-07-06 22:00:18	⤎ 	regex101-4991 (7123336b@gateway/web/freenode/ip.113.35.51.107) has quit (Quit: Page closed)
+2016-07-06 22:03:42	⤎ 	aw1 (~aw1@unaffiliated/aw1) has quit (Read error: Connection reset by peer)
+2016-07-06 22:04:26	⤍ 	rgrinberg (~rgrinberg@24-246-56-85.cable.teksavvy.com) has joined #regex
+2016-07-06 22:06:27	⤎ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has quit (Ping timeout: 244 seconds)
+2016-07-06 22:06:28	⤎ 	monokrome (~monokrome@54.88.139.115) has quit (Quit: Well, I'm pretty sure that was a mistake...)
+2016-07-06 22:15:07	⤍ 	Badman703 (~SkyFire@d53-64-44-131.nap.wideopenwest.com) has joined #regex
+2016-07-06 22:15:21	⤎ 	SkyFire (~SkyFire@d53-64-44-131.nap.wideopenwest.com) has quit (Read error: Connection reset by peer)
+2016-07-06 22:17:13	⤍ 	g-n0m3 (sod@nat/catalyst-it/x-ufegnmaprlrqofvo) has joined #regex
+2016-07-06 22:21:13	⤍ 	aw1 (~aw1@unaffiliated/aw1) has joined #regex
+2016-07-06 22:22:01	⤍ 	ejb (~ejb@unaffiliated/ejb) has joined #regex
+2016-07-06 22:23:44	⤎ 	ejb (~ejb@unaffiliated/ejb) has quit (Client Quit)
+2016-07-06 22:24:04	⤍ 	PCLine__ (~PCLine_@98.29.181.95) has joined #regex
+2016-07-06 22:29:57	⤎ 	CrypticSquared (~CrypticS_@unaffiliated/crypticsquared) has quit (Quit: Leaving...)
+2016-07-06 22:30:27	⤍ 	CrypticSquared (~CrypticS_@unaffiliated/crypticsquared) has joined #regex
+2016-07-06 22:35:30	⤎ 	g-n0m3 (sod@nat/catalyst-it/x-ufegnmaprlrqofvo) has quit (Ping timeout: 276 seconds)
+2016-07-06 22:39:00	⤎ 	Oatmeal (~Suzeanne@75-103-145-152.ccrtc.com) has quit (Ping timeout: 258 seconds)
+2016-07-06 22:39:24	⤍ 	regex101-6298 (855f907e@gateway/web/freenode/ip.133.95.144.126) has joined #regex
+2016-07-06 22:39:49	⤎ 	regex101-6298 (855f907e@gateway/web/freenode/ip.133.95.144.126) has quit (Client Quit)
+2016-07-06 22:40:56	⤍ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has joined #regex
+2016-07-06 22:45:51	⤎ 	ahmedelgabri (~ahmedelga@2a02:a441:9f5:0:ece7:ce4d:1cff:dad8) has quit (Quit: WeeChat 1.5)
+2016-07-06 22:45:57	⤎ 	Elektrode4 (~Elektrode@wsip-72-215-244-100.br.br.cox.net) has quit (Quit: Elektrode4)
+2016-07-06 22:46:31	⤎ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has quit (Remote host closed the connection)
+2016-07-06 22:50:04	⤍ 	g-n0m3 (~sod@cbdfree-gw.cbdfree.net.nz) has joined #regex
+2016-07-06 22:53:44	⤍ 	d4rklit3 (~textual@cpe-76-90-191-36.socal.res.rr.com) has joined #regex
+2016-07-06 22:54:02	⤎ 	Montezuma (~trevor@HULLPQ2038W-LP130-04-1178045896.dsl.bell.ca) has quit (Quit: Leaving)
+2016-07-06 22:58:33	⤎ 	ferdna (~ferdna@cpe-69-23-129-73.elp.res.rr.com) has quit (Ping timeout: 240 seconds)
+2016-07-06 22:59:22	⤎ 	g-n0m3 (~sod@cbdfree-gw.cbdfree.net.nz) has quit (Ping timeout: 260 seconds)
+2016-07-06 23:05:32	⤍ 	Oatmeal (~Suzeanne@75-103-145-152.ccrtc.com) has joined #regex
+2016-07-06 23:11:36	⤍ 	ferdna (~ferdna@cpe-69-23-129-73.elp.res.rr.com) has joined #regex
+2016-07-06 23:17:58	⤎ 	PCLine__ (~PCLine_@98.29.181.95) has quit (Quit: Leaving)
+2016-07-06 23:19:04	⤍ 	regex101-9058 (b5401253@gateway/web/freenode/ip.181.64.18.83) has joined #regex
+2016-07-06 23:19:08	⤎ 	regex101-9058 (b5401253@gateway/web/freenode/ip.181.64.18.83) has quit (Client Quit)
+2016-07-06 23:22:23	⤍ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has joined #regex
+2016-07-06 23:34:16	⤎ 	Suchorski (regex@unaffiliated/suchorski) has quit
+2016-07-06 23:40:30	⤍ 	NaN (~user@unaffiliated/nan) has joined #regex
+2016-07-06 23:46:35	NaN	want to catch all 'node_modules/.../.../.../bar.js' except the ones with 'foo-bar' <<< tried node_modules\/.*[^foo\-bar]+\.js$ with no results
+2016-07-06 23:46:42	NaN	any help? :(
+2016-07-06 23:47:18	⤎ 	Taylor (~Taylor@unaffiliated/taylor) has quit (Quit: Be back soon)
+2016-07-06 23:48:07	digitok	/node_modules\/(?!.*?foo-bar).*\.js$/
+2016-07-06 23:48:23	⤍ 	reev (~reev@122.173.36.77) has joined #regex
+2016-07-06 23:49:27	NaN	digitok: worked!
+2016-07-06 23:49:31	NaN	so the trick was 'Negative Lookahead'
+2016-07-06 23:49:35	digitok	right
+2016-07-06 23:49:50	⤎ 	ferdna (~ferdna@cpe-69-23-129-73.elp.res.rr.com) has quit (Quit: Leaving)
+2016-07-06 23:51:16	NaN	what if besides 'foo-bar' I need to look for bar and baz too (negative)?
+2016-07-06 23:51:37	NaN	a [foo|bar|bar] could work?
+2016-07-06 23:51:49	digitok	(?!.*?(bar|baz))
+2016-07-06 23:52:37	NaN	great!
+2016-07-06 23:52:40	⤍ 	Taylor (~Taylor@unaffiliated/taylor) has joined #regex
+2016-07-06 23:52:42	NaN	thanks digitok 
+2016-07-06 23:53:06	digitok	anything inside [] only represents 1 character. i.e. [foobar] means "1 character that is: F or O or B or A or R"
+2016-07-06 23:53:08	digitok	yw
+2016-07-06 23:56:04	⤍ 	qwerty (~root@unaffiliated/qwerty) has joined #regex
+2016-07-06 23:59:21	⤍ 	jrajav (uid103545@gateway/web/irccloud.com/x-hvvbagdfopmpxsie) has joined #regex
+2016-07-07 00:04:59	⤍ 	ferdna (~ferdna@cpe-69-23-129-73.elp.res.rr.com) has joined #regex
+2016-07-07 00:17:00	⤎ 	rgrinberg (~rgrinberg@24-246-56-85.cable.teksavvy.com) has quit (Ping timeout: 250 seconds)
+2016-07-07 00:19:50	⤍ 	enitiz (~enitiz@2601:645:c100:3214:9cb7:ccb5:ae98:bc71) has joined #regex
+2016-07-07 00:26:51	⤎ 	NaN (~user@unaffiliated/nan) has quit (Quit: leaving)
+2016-07-07 00:38:13	⤍ 	Kexoni (~Kexoni@178-253-216-241.adsl-a-12.sezampro.rs) has joined #regex
+2016-07-07 00:48:06	⤎ 	Qtax (~qtax@unaffiliated/qtax) has quit (Ping timeout: 276 seconds)
+2016-07-07 00:49:56	⤎ 	Miner_48er (~Miner_48e@cpe-75-183-179-188.sc.res.rr.com) has quit (Quit: Leaving)
+2016-07-07 00:51:35	⤍ 	Qtax (~qtax@unaffiliated/qtax) has joined #regex
+2016-07-07 00:51:35	ℹ	Mode #regex [+v Qtax] by ChanServ
+2016-07-07 00:55:25	⤎ 	Kexoni (~Kexoni@178-253-216-241.adsl-a-12.sezampro.rs) has quit (Ping timeout: 244 seconds)
+2016-07-07 09:29:00	ℹ	irc: disconnected from server
+2016-07-07 09:29:29	⤍ 	insidious15 (~insidious@unaffiliated/insidious15) has joined #regex
+2016-07-07 09:29:29	ℹ	Topic for #regex is "Need help? Type '!rehelp' | Trying to regex HTML? Type '!html' | Home: https://regex101.com/ | Tutorial: http://bit.ly/1mXMXbr"
+2016-07-07 09:29:29	ℹ	Topic set by digitok on Fri, 11 Mar 2016 08:45:46
+2016-07-07 09:29:29	ℹ	Channel #regex: 309 nicks (1 op, 17 voices, 291 normals)
+2016-07-07 09:29:29	ℹ	PvNotice(ChanServ): Please use https://regex101.com/ to test your regular expressions and when posting examples.
+2016-07-07 09:29:41	ℹ	Channel created on Sun, 26 Nov 2006 01:43:02
+2016-07-07 09:30:59	⤍ 	Suchorski (regex@unaffiliated/suchorski) has joined #regex
+2016-07-07 09:32:32	⤍ 	`tim` (~justbleed@24.126.226.125) has joined #regex
+2016-07-07 09:38:46	⤎ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has quit (Remote host closed the connection)
+2016-07-07 09:39:10	⤍ 	Taylor (~Taylor@unaffiliated/taylor) has joined #regex
+2016-07-07 09:49:30	⤎ 	the_gamer (~ngerlach@hrz-pc46.hrz.uni-kassel.de) has quit (Remote host closed the connection)
+2016-07-07 09:53:34	⤎ 	BadboyKAS (~pap00se@91.204.208.210) has quit (Read error: Connection reset by peer)
+2016-07-07 09:53:58	⤍ 	Pap00se (~pap00se@91.204.208.210) has joined #regex
+2016-07-07 09:57:03	⤍ 	regex101-5636 (51e07892@gateway/web/freenode/ip.81.224.120.146) has joined #regex
+2016-07-07 09:57:37	regex101-5636	I need help! A word followed by a space OR a space and =
+2016-07-07 09:58:01	regex101-5636	!rehelp
+2016-07-07 09:58:01	+perlbot	Please post your regex attempt and sample string(s) at https://regex101.com/, then click Save (ctrl+s) and post the link here. You should indicate what language/platform you are using and, where possible, provide examples of both what should and should not match.
+2016-07-07 09:58:24	⤍ 	lexileo (~lexii@49.248.192.241) has joined #regex
+2016-07-07 09:58:33	⤎ 	regex101-5636 (51e07892@gateway/web/freenode/ip.81.224.120.146) has quit (Client Quit)
+2016-07-07 10:00:19	⤍ 	shivers (jshivers@nat/redhat/x-euggtibwvotdjpex) has joined #regex
+2016-07-07 10:09:36	⤎ 	Suchorski (regex@unaffiliated/suchorski) has quit
+2016-07-07 10:10:06	⤍ 	isberg (~isberg@banan.olf.sgsnet.se) has joined #regex
+2016-07-07 10:10:46	⤍ 	Suchorski (regex@unaffiliated/suchorski) has joined #regex
+2016-07-07 10:11:41	⤍ 	notebox (~textual@217.138.17.82) has joined #regex
+2016-07-07 10:11:46	⤍ 	bowhunter (~textual@168-215-167-148.static.twtelecom.net) has joined #regex
+2016-07-07 10:15:19	⤎ 	Suchorski (regex@unaffiliated/suchorski) has quit (Read error: Connection reset by peer)
+2016-07-07 10:15:48	⤎ 	nilg (~user@79-100-102-8.ip.btc-net.bg) has quit (Read error: Connection reset by peer)
+2016-07-07 10:16:59	⤍ 	nilg (~user@79-100-102-8.ip.btc-net.bg) has joined #regex
+2016-07-07 10:17:50	⤍ 	ash_workz (~chatzilla@50.243.5.153) has joined #regex
+2016-07-07 10:18:18	⤎ 	nilg (~user@79-100-102-8.ip.btc-net.bg) has quit (Remote host closed the connection)
+2016-07-07 10:20:30	⤍ 	Suchorski (regex@unaffiliated/suchorski) has joined #regex
+2016-07-07 10:23:28	⤎ 	regex101-9809 (a374065c@gateway/web/freenode/ip.163.116.6.92) has quit (Ping timeout: 250 seconds)
+2016-07-07 10:25:10	⤍ 	happy-dude (uid62780@gateway/web/irccloud.com/x-fhbdrudfrogcjwpy) has joined #regex
+2016-07-07 10:27:21	⤎ 	rgrinberg (~rgrinberg@24-246-56-85.cable.teksavvy.com) has quit (Ping timeout: 246 seconds)
+2016-07-07 10:27:27	⤍ 	DSitC (~Adium@195.145.168.106) has joined #regex
+2016-07-07 10:28:13	⤎ 	DSitC (~Adium@195.145.168.106) has quit (Client Quit)
+2016-07-07 10:29:23	⤍ 	mmazing (~mmazing@unaffiliated/mmazing) has joined #regex
+2016-07-07 10:30:39	⤎ 	notebox (~textual@217.138.17.82) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-07-07 10:36:36	⤍ 	realnot (~realnot@unaffiliated/realnot) has joined #regex
+2016-07-07 10:39:09	⤍ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has joined #regex
+2016-07-07 10:44:16	⤎ 	xelra (~xelra@unaffiliated/xelra) has quit (Ping timeout: 264 seconds)
+2016-07-07 10:44:16	⤎ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has quit (Ping timeout: 258 seconds)
+2016-07-07 10:44:27	⤍ 	xelra (~xelra@unaffiliated/xelra) has joined #regex
+2016-07-07 10:49:33	⤍ 	d10n-work (uid37161@gateway/web/irccloud.com/x-bgdfbpkqqibwnyls) has joined #regex
+2016-07-07 10:50:05	⤎ 	spookah (~brian@unaffiliated/spookah) has quit (Quit: Leaving.)
+2016-07-07 11:04:13	⤍ 	skered (~dereks@unaffiliated/skered) has joined #regex
+2016-07-07 11:04:21	⤍ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has joined #regex
+2016-07-07 11:06:55	⤍ 	djpretzel (~djpretzel@pool-74-96-67-124.washdc.fios.verizon.net) has joined #regex
+2016-07-07 11:11:26	⤍ 	rgrinberg (~rgrinberg@205.189.187.4) has joined #regex
+2016-07-07 11:13:07	⤎ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has quit (Remote host closed the connection)
+2016-07-07 11:13:32	⤍ 	SwiftMatt (~Objective@162.242.94.132) has joined #regex
+2016-07-07 11:14:00	⤎ 	isberg (~isberg@banan.olf.sgsnet.se) has quit (Read error: Connection reset by peer)
+2016-07-07 11:23:05	⤍ 	irco (~irco@HSI-KBW-078-042-015-165.hsi3.kabel-badenwuerttemberg.de) has joined #regex
+2016-07-07 11:25:04	⤍ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has joined #regex
+2016-07-07 11:37:00	⤍ 	Lorax (lorax@freenode/staff/lorax) has joined #regex
+2016-07-07 11:37:15	Lorax	hi, sorry for doing this as soon as I arrive
+2016-07-07 11:37:16	Lorax	!html
+2016-07-07 11:37:17	+perlbot	Do NOT regex HTML! (http://bit.ly/1G8p6VH) - Instead, consider using a DOM parser in your programming language of choice.
+2016-07-07 11:57:02	⤍ 	isberg (~isberg@banan.olf.sgsnet.se) has joined #regex
+2016-07-07 12:00:59	+Zarthus	don't worry about it
+2016-07-07 12:01:04	+Zarthus	somehow it's our most used command
+2016-07-07 12:01:25	+Zarthus	Which tells us a lot about the people trying to do a messy job with HTML rather than using a DOM parser.
+2016-07-07 12:01:43	+Zarthus	and every time we encounter such a question, a puppy dies!
+2016-07-07 12:03:23	⤎ 	ph5il (~blank@unaffiliated/ph5il) has quit (Quit: I am out of here)
+2016-07-07 12:04:24	⤍ 	spookah (~brian@unaffiliated/spookah) has joined #regex
+2016-07-07 12:04:27	⤍ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has joined #regex
+2016-07-07 12:08:59	⤎ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has quit (Ping timeout: 258 seconds)
+2016-07-07 12:09:57	⤎ 	spookah (~brian@unaffiliated/spookah) has quit (Ping timeout: 276 seconds)
+2016-07-07 12:12:47	⤍ 	spookah (~brian@unaffiliated/spookah) has joined #regex
+2016-07-07 12:13:52	⤍ 	ferdna (~ferdna@cpe-69-23-129-73.elp.res.rr.com) has joined #regex
+2016-07-07 12:16:04	⤎ 	Suchorski (regex@unaffiliated/suchorski) has quit (Ping timeout: 264 seconds)
+2016-07-07 12:16:51	⤍ 	Suchorski (regex@unaffiliated/suchorski) has joined #regex
+2016-07-07 12:20:51	⤍ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has joined #regex
+2016-07-07 12:24:07	⤎ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has quit (Ping timeout: 244 seconds)
+2016-07-07 12:24:58	⤍ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has joined #regex
+2016-07-07 12:25:58	⤎ 	SwiftMatt (~Objective@162.242.94.132) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2016-07-07 12:26:10	⤎ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has quit (Ping timeout: 272 seconds)
+2016-07-07 12:31:22	⤍ 	notebox (~textual@217.138.17.82) has joined #regex
+2016-07-07 12:32:47	⤍ 	jumpman (~jumpman@unaffiliated/jumpman) has joined #regex
+2016-07-07 12:32:57	⤍ 	ph5il (~blank@unaffiliated/ph5il) has joined #regex
+2016-07-07 12:34:03	⤎ 	spookah (~brian@unaffiliated/spookah) has quit (Ping timeout: 246 seconds)
+2016-07-07 12:35:17	cat5e	HTML is context-sensitive
+2016-07-07 12:36:16	cat5e	XHTML5 on the other hand is thankfully context-free
+2016-07-07 12:36:18	⤎ 	AirPlanes (~ShortBob@bzq-109-64-127-75.red.bezeqint.net) has quit (Ping timeout: 272 seconds)
+2016-07-07 12:36:45	⤍ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has joined #regex
+2016-07-07 12:37:13	⤎ 	abernix (~abernix@unaffiliated/abernix) has quit (Quit: Bye)
+2016-07-07 12:39:29	cat5e	is it bad that I wanna behead anyone who uses non-XML-serialized HTML5?
+2016-07-07 12:44:04	⤍ 	turlutton (~turlutton@unaffiliated/turlutton) has joined #regex
+2016-07-07 12:44:04	ℹ	Mode #regex [+v turlutton] by ChanServ
+2016-07-07 12:44:36	⤍ 	TheDcoder (~TheDcoder@unaffiliated/thedcoder) has joined #regex
+2016-07-07 12:46:27	⤍ 	kikuchi` (kikuchi@cust-179-233-111-94.dyn.as47377.net) has joined #regex
+2016-07-07 12:54:05	⤎ 	ph5il (~blank@unaffiliated/ph5il) has quit (Ping timeout: 244 seconds)
+2016-07-07 12:57:21	⤍ 	ph5il (~blank@unaffiliated/ph5il) has joined #regex
+2016-07-07 13:00:37	⤎ 	Suchorski (regex@unaffiliated/suchorski) has quit
+2016-07-07 13:08:00	⤎ 	`tim` (~justbleed@24.126.226.125) has quit (Ping timeout: 246 seconds)
+2016-07-07 13:10:21	⤍ 	Suchorski (regex@unaffiliated/suchorski) has joined #regex
+2016-07-07 13:11:49	⤍ 	gelignite (~gelignite@x4db63cf0.dyn.telefonica.de) has joined #regex
+2016-07-07 13:14:00	⤎ 	Pulp (~Pulp@63-221-50-195.dyn.estpak.ee) has quit (Read error: Connection reset by peer)
+2016-07-07 13:15:19	⤍ 	samorai (1fd96aee@gateway/web/freenode/ip.31.217.106.238) has joined #regex
+2016-07-07 13:17:05	samorai	hi, everyone. how do i test for negative consequential characters? i want to match that include commas but not two (or more) after another.
+2016-07-07 13:17:34	⤎ 	isberg (~isberg@banan.olf.sgsnet.se) has quit (Read error: Connection reset by peer)
+2016-07-07 13:17:43	samorai	so, "asdf,asdf," is okay while "asdf,,asdf," is not
+2016-07-07 13:17:58	+Ouims	,(?!,)
+2016-07-07 13:19:41	samorai	=)
+2016-07-07 13:20:36	+turlutton	samorai: if you have more than one, forx example that  '"'  char and that  ''' one, you could do
+2016-07-07 13:21:41	⤍ 	d4rklit3 (~textual@rrcs-64-183-104-146.west.biz.rr.com) has joined #regex
+2016-07-07 13:22:17	⤍ 	isberg (~isberg@banan.olf.sgsnet.se) has joined #regex
+2016-07-07 13:22:22	+turlutton	!re101 asdf"asdf asdf""asdf asdf'asdf asdf''asdf /\w+(["'])(?!\1)\w+/g
+2016-07-07 13:22:25	+perlbot	http://tinyurl.com/he7ynmv
+2016-07-07 13:22:27	+turlutton	well not a good example
+2016-07-07 13:22:44	+turlutton	since  '"'  and  ''' are not in \w
+2016-07-07 13:23:04	samorai	Ouims: what if i want to check the entire string? i.e. have other chars that are not commas, like the strings i pasted
+2016-07-07 13:23:31	+turlutton	then try
+2016-07-07 13:24:15	+turlutton	!re101 asdf,,asdf asdf,asdf asdfaasdf /(?:(\S)(?!\1))+/g
+2016-07-07 13:24:17	+perlbot	http://tinyurl.com/jl7xlfx
+2016-07-07 13:27:26	+turlutton	https://regex101.com/r/kN7bN7/1 might be a better example, but it really depends on your sample
+2016-07-07 13:27:31	+turlutton	samorai: ~
+2016-07-07 13:28:50	⤍ 	sanct (~sanct@212.35.67.11) has joined #regex
+2016-07-07 13:30:36	samorai	turlutton: that doesn't work. let me try again: i'm looking for entire string matches/validations. the string is valid if it contains any character, including one or more commas as long as those aren't in sequences longer than 1.
+2016-07-07 13:31:06	samorai	so "asdf" is a valid string, "asdf,asdf" is a valid string, "asdf,,asdf" is not a valid string
+2016-07-07 13:32:52	+turlutton	samorai: looking at your requirements, I would say that it -is- working
+2016-07-07 13:34:05	+turlutton	samorai: have you looked at the last version I proposed ? https://regex101.com/r/kN7bN7/1 
+2016-07-07 13:34:23	⤍ 	SwiftMatt (~Objective@162.242.95.106) has joined #regex
+2016-07-07 13:34:49	samorai	if i enter "asdf" it says no match...
+2016-07-07 13:35:34	+turlutton	samorai: hum your are right
+2016-07-07 13:35:55	+turlutton	it's because of the "end of string"/"end of string" I worked out quickly
+2016-07-07 13:36:35	+turlutton	samorai: https://regex101.com/r/kN7bN7/2
+2016-07-07 13:36:41	+turlutton	if your prefer
+2016-07-07 13:37:40	samorai	?
+2016-07-07 13:37:48	samorai	asdf?
+2016-07-07 13:37:52	⤎ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has quit (Ping timeout: 260 seconds)
+2016-07-07 13:38:43	⤍ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has joined #regex
+2016-07-07 13:38:59	+turlutton	samorai: "?" ? "asdf?" ?
+2016-07-07 13:39:41	+turlutton	help your helper, that will help you
+2016-07-07 13:40:05	⚡	turlutton has find his moto
+2016-07-07 13:43:11	samorai	how about https://regex101.com/r/mW3cN7/1
+2016-07-07 13:43:33	⤎ 	rgrinberg (~rgrinberg@205.189.187.4) has quit (Ping timeout: 276 seconds)
+2016-07-07 13:43:35	samorai	seems to work
+2016-07-07 13:46:29	⤍ 	trytry (~tr@bzq-79-180-16-116.red.bezeqint.net) has joined #regex
+2016-07-07 13:46:46	⤎ 	TheDcoder (~TheDcoder@unaffiliated/thedcoder) has quit (Quit: Good night)
+2016-07-07 13:46:50	+turlutton	samorai: https://regex101.com/r/mW3cN7/2 seems to work too
+2016-07-07 13:47:39	samorai	no, i does not, it matches "asdf,,asdf" which is wrong
+2016-07-07 13:51:07	+turlutton	samorai: https://regex101.com/r/mW3cN7/3 works
+2016-07-07 13:51:57	+turlutton	https://regex101.com/r/mW3cN7/4 works too
+2016-07-07 13:52:43	+turlutton	https://regex101.com/r/mW3cN7/5 works too
+2016-07-07 13:53:23	+turlutton	https://regex101.com/r/mW3cN7/6 works too
+2016-07-07 13:56:03	⤎ 	SwiftMatt (~Objective@162.242.95.106) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2016-07-07 13:56:31	⤍ 	regex101-6364 (4eb813fd@gateway/web/freenode/ip.78.184.19.253) has joined #regex
+2016-07-07 13:56:41	⤎ 	regex101-6364 (4eb813fd@gateway/web/freenode/ip.78.184.19.253) has quit (Client Quit)
+2016-07-07 13:57:04	samorai	you're funny
+2016-07-07 13:57:13	+turlutton	thank you
+2016-07-07 13:57:15	samorai	thanks for the help
+2016-07-07 13:57:20	+turlutton	yw
+2016-07-07 13:58:51	⤍ 	SwiftMatt (~Objective@162.242.95.106) has joined #regex
+2016-07-07 14:02:04	⤎ 	ToAruShiroiNeko (~eva@wikimedia/ToAruShiroiNeko) has quit (Ping timeout: 240 seconds)
+2016-07-07 14:03:42	⤎ 	notebox (~textual@217.138.17.82) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-07-07 14:05:44	⤎ 	ph5il (~blank@unaffiliated/ph5il) has quit (Quit: I has gone to sleep. ZZZzzz…)
+2016-07-07 14:06:21	⤍ 	spookah (~brian@unaffiliated/spookah) has joined #regex
+2016-07-07 14:08:07	⤎ 	aw1 (~aw1@unaffiliated/aw1) has quit (Ping timeout: 250 seconds)
+2016-07-07 14:09:08	⤍ 	ToAruShiroiNeko (~eva@wikimedia/ToAruShiroiNeko) has joined #regex
+2016-07-07 14:14:13	⤍ 	monokrome (~monokrome@54.88.139.115) has joined #regex
+2016-07-07 14:17:00	⤎ 	samorai (1fd96aee@gateway/web/freenode/ip.31.217.106.238) has left #regex
+2016-07-07 14:18:18	⤍ 	rgrinberg (~rgrinberg@72.143.111.226) has joined #regex
+2016-07-07 14:19:37	⤎ 	Holz (Holz@spa.st) has quit (Quit: Lost terminal)
+2016-07-07 14:20:56	⤍ 	aw1 (~aw1@unaffiliated/aw1) has joined #regex
+2016-07-07 14:21:38	⤍ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has joined #regex
+2016-07-07 14:24:35	⤎ 	naitian (~naitian@ip70-174-162-198.dc.dc.cox.net) has quit (Ping timeout: 250 seconds)
+2016-07-07 14:25:14	⤎ 	spookah (~brian@unaffiliated/spookah) has quit (Ping timeout: 272 seconds)
+2016-07-07 14:26:30	⤎ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has quit (Ping timeout: 272 seconds)
+2016-07-07 14:28:01	⤎ 	trytry (~tr@bzq-79-180-16-116.red.bezeqint.net) has quit (Ping timeout: 252 seconds)
+2016-07-07 14:31:20	⤍ 	naitian (~naitian@2600:8806:2501:b800:218:8bff:fe61:db73) has joined #regex
+2016-07-07 14:36:21	⤍ 	regex101-8627 (b5d05aca@gateway/web/freenode/ip.181.208.90.202) has joined #regex
+2016-07-07 14:36:39	regex101-8627	Hi!
+2016-07-07 14:37:13	regex101-8627	I'm new with regex and need some guidance please!
+2016-07-07 14:38:32	⤎ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has quit (Ping timeout: 272 seconds)
+2016-07-07 14:38:40	regex101-8627	!rehelp
+2016-07-07 14:38:40	+perlbot	Please post your regex attempt and sample string(s) at https://regex101.com/, then click Save (ctrl+s) and post the link here. You should indicate what language/platform you are using and, where possible, provide examples of both what should and should not match.
+2016-07-07 14:38:51	⤍ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has joined #regex
+2016-07-07 14:40:12	⤍ 	OnlineCop (~OnlineCop@unaffiliated/onlinecop) has joined #regex
+2016-07-07 14:40:12	ℹ	Mode #regex [+v OnlineCop] by ChanServ
+2016-07-07 14:45:26	+turlutton	regex101-8627: What are you trying to do ?
+2016-07-07 14:49:18	⤎ 	n-st (~n-st@unaffiliated/n-st) has quit (Ping timeout: 272 seconds)
+2016-07-07 14:51:48	⤎ 	bjoe2k4 (bjoe2k4@kalzium.d9c.eu) has quit (Ping timeout: 276 seconds)
+2016-07-07 14:53:51	⤎ 	SwiftMatt (~Objective@162.242.95.106) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2016-07-07 14:54:12	⤍ 	matthias__ (58441747@gateway/web/freenode/ip.88.68.23.71) has joined #regex
+2016-07-07 14:57:12	matthias__	Hi, https://regex101.com/r/pE7hO7/2 how can i match <page /> as seperate results ?  Match 1: <page><title>1</title></page> match 2: <page><title>1</title></page>
+2016-07-07 14:58:40	matthias__	!rehelp
+2016-07-07 14:58:40	+perlbot	Please post your regex attempt and sample string(s) at https://regex101.com/, then click Save (ctrl+s) and post the link here. You should indicate what language/platform you are using and, where possible, provide examples of both what should and should not match.
+2016-07-07 14:59:23	+lyxia	matthias__: hello
+2016-07-07 15:00:00	+lyxia	https://regex101.com/r/pE7hO7/3
+2016-07-07 15:00:47	matthias__	lyxia: thanks, but it has no match groups on the right?
+2016-07-07 15:01:13	+lyxia	well the group is the whole regex, I don't see how that's useful
+2016-07-07 15:01:33	+turlutton	matthias__: match group doesn't exist, it's a -capture- group.
+2016-07-07 15:02:39	+turlutton	matthias__: if you just want to get the whole regex, capture group are not needed. They are for extracting parts of the whole regex, to work later on.
+2016-07-07 15:03:03	+turlutton	matthias__: for example, you could use it to get the title only
+2016-07-07 15:03:37	matthias__	turlutton: adding round brackets around it, did what i want. i come from python and you do re.match().group()   
+2016-07-07 15:04:00	+turlutton	like that https://regex101.com/r/pE7hO7/5
+2016-07-07 15:04:43	+turlutton	matthias__: there is "code generator" below "tools", that you can use.
+2016-07-07 15:05:12	+turlutton	I don't use it with python, but I suppose that you can get the match (not the capture) with $matches.
+2016-07-07 15:05:24	+turlutton	($matches in the code generator example)
+2016-07-07 15:05:41	+Doqnach	matthias__: or use a DOM parser in python
+2016-07-07 15:05:49	+turlutton	Doqnach++
+2016-07-07 15:06:02	+lyxia	group() doesn't make use of parentheses
+2016-07-07 15:06:07	matthias__	turlutton: thank you, it works now
+2016-07-07 15:08:42	⤍ 	trytry (~tr@bzq-79-180-16-116.red.bezeqint.net) has joined #regex
+2016-07-07 15:08:56	+turlutton	matthias__: consider Doqnach answer
+2016-07-07 15:09:48	matthias__	turlutton: i want to compare the speeds, my dom parser is already running :)
+2016-07-07 15:09:59	+turlutton	matthias__: wokay
+2016-07-07 15:11:56	+turlutton	how the regex is constructed come into play too, but since you provided a rather poor example we couldn't try to improve much.
+2016-07-07 15:12:26	+turlutton	s/come/comes/
+2016-07-07 15:13:42	⤎ 	mmazing (~mmazing@unaffiliated/mmazing) has quit (Quit: Leaving)
+2016-07-07 15:14:44	⤍ 	bjoe2k4 (bjoe2k4@kalzium.d9c.eu) has joined #regex
+2016-07-07 15:19:00	⤎ 	regex101-8627 (b5d05aca@gateway/web/freenode/ip.181.208.90.202) has quit (Quit: Page closed)
+2016-07-07 15:19:16	⤎ 	Lecherito (uid30063@gateway/web/irccloud.com/x-stmdgzmixjaqeyax) has quit (Quit: Connection closed for inactivity)
+2016-07-07 15:20:21	⤎ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has quit (Remote host closed the connection)
+2016-07-07 15:21:34	⤍ 	regex101-9480 (a9858c05@gateway/web/freenode/ip.169.133.140.5) has joined #regex
+2016-07-07 15:21:37	⤎ 	regex101-9480 (a9858c05@gateway/web/freenode/ip.169.133.140.5) has quit (Client Quit)
+2016-07-07 15:22:27	⤍ 	doxinho (~doxinho@dox.la) has joined #regex
+2016-07-07 15:23:44	doxinho	Hi. I am trying to create a regex to match the string "username X" if X is not the user "solarwinds", it's my understanding that "username (?!solarwinds).*" should do the trick, but it is also matching the line "username solarwinds" as well as "username blah"
+2016-07-07 15:24:06	⤎ 	telex (teletype@freeshell.de) has quit (Read error: Connection reset by peer)
+2016-07-07 15:24:10	doxinho	!rehelp any help would be greatly appreciated :)
+2016-07-07 15:24:49	+OnlineCop	https://regex101.com/r/mI6nC4/1
+2016-07-07 15:24:54	+turlutton	doxinho: it's ever "solarwinds" alone, are "username whatever" ?
+2016-07-07 15:24:58	+OnlineCop	I don't see any problem with what you have.
+2016-07-07 15:25:04	+turlutton	s/are/or/
+2016-07-07 15:25:12	doxinho	that +
+2016-07-07 15:25:24	doxinho	hmm..
+2016-07-07 15:25:40	+OnlineCop	Well, + if you want it to at least match one character. Otherwise  'username ' would match.
+2016-07-07 15:25:53	+turlutton	https://regex101.com/r/mI6nC4/3
+2016-07-07 15:25:54	+turlutton	?
+2016-07-07 15:26:15	+turlutton	OnlineCop: what's up?
+2016-07-07 15:26:26	+OnlineCop	Oh, trying to work on VR again.
+2016-07-07 15:26:26	doxinho	im doing this in the solarwinds orion console, maybe their regex is different/funky
+2016-07-07 15:26:30	⤍ 	telex (teletype@freeshell.de) has joined #regex
+2016-07-07 15:26:44	+OnlineCop	But we're doing a major refactor, and everyone contributing changes to the same binary makes git want to cry.
+2016-07-07 15:26:59	+OnlineCop	doxinho: Does it support negative look-aheads like what you were using?
+2016-07-07 15:27:20	+OnlineCop	Personally, I'd use /username (?!solarwinds)(\S+)/
+2016-07-07 15:27:39	+OnlineCop	Unless you have some constraints on what usernames can be.
+2016-07-07 15:28:14	doxinho	not sure, checking now... is.gd/WjKZ7D
+2016-07-07 15:29:01	⤎ 	gniourf (~gniourf@pdm-l03.insa-lyon.fr) has quit (Remote host closed the connection)
+2016-07-07 15:32:01	doxinho	its bizarre, in solarwinds it is finding a match when the only line is username "solarwinds" XXXXX
+2016-07-07 15:32:16	+OnlineCop	With double quotes around the username?
+2016-07-07 15:32:31	doxinho	yeah, the config file has double quotes around the user name
+2016-07-07 15:32:37	+OnlineCop	You need that in the regex then.
+2016-07-07 15:32:58	doxinho	username (?!"solarwinds").*
+2016-07-07 15:33:04	+OnlineCop	 /username "(?!solarwinds")([^"]+)"/
+2016-07-07 15:33:17	+OnlineCop	Do you want the double quotes matched as well?
+2016-07-07 15:33:40	doxinho	that did it
+2016-07-07 15:34:04	doxinho	username "(?!solarwinds").*
+2016-07-07 15:34:11	doxinho	I'm a fool for not considering the quotes, first time messing with regex
+2016-07-07 15:34:22	doxinho	thanks for your help, OnlineCop & turlutton 
+2016-07-07 15:34:39	⤍ 	AirPlanes2 (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has joined #regex
+2016-07-07 15:35:07	+turlutton	doxinho: IMHO /.*/ is not enough specific, depending on what you want of course
+2016-07-07 15:37:09	⤎ 	matthias__ (58441747@gateway/web/freenode/ip.88.68.23.71) has quit (Quit: Page closed)
+2016-07-07 15:37:34	⤎ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has quit (Ping timeout: 240 seconds)
+2016-07-07 15:38:54	ℹ	AirPlanes2 is now known as AirPlanes
+2016-07-07 15:43:30	⤍ 	regex101-6108 (bdfdcc8c@gateway/web/freenode/ip.189.253.204.140) has joined #regex
+2016-07-07 15:43:46	⤎ 	aw1 (~aw1@unaffiliated/aw1) has quit (Ping timeout: 272 seconds)
+2016-07-07 15:54:46	⤎ 	regex101-6108 (bdfdcc8c@gateway/web/freenode/ip.189.253.204.140) has quit (Quit: Page closed)
+2016-07-07 15:55:10	doxinho	another easy one for you kind gentlemen....
+2016-07-07 15:55:10	doxinho	https://regex101.com/r/jI9qA9/1
+2016-07-07 15:55:20	doxinho	trying to match the user lines that do not include rescue or solarwinds
+2016-07-07 15:55:50	doxinho	not sure why the op/ro are not being highlighted
+2016-07-07 15:55:56	doxinho	rather, matched*
+2016-07-07 15:56:25	+OnlineCop	It's matching the stuff before the negative look-ahead.
+2016-07-07 15:56:33	+OnlineCop	Now use a pattern to match the words after it.
+2016-07-07 15:57:25	⤍ 	aw1 (~aw1@unaffiliated/aw1) has joined #regex
+2016-07-07 15:57:30	doxinho	oooh, yep yep
+2016-07-07 15:57:54	doxinho	sorry about that, mind is getting weaker as the clock nears 5 :P
+2016-07-07 15:58:33	+OnlineCop	You're fine.
+2016-07-07 16:00:34	⤍ 	regex101-3302 (bdfdcc8c@gateway/web/freenode/ip.189.253.204.140) has joined #regex
+2016-07-07 16:04:27	⤍ 	bjoe2k4_ (bjoe2k4@kalzium.d9c.eu) has joined #regex
+2016-07-07 16:04:51	⤎ 	bjoe2k4 (bjoe2k4@kalzium.d9c.eu) has quit (Read error: Connection reset by peer)
+2016-07-07 16:08:14	⤎ 	todd_dsm_wk (~thomas@74.112.21.215) has quit (Quit: Leaving)
+2016-07-07 16:09:23	⤍ 	regex101-0383 (5c64dbe5@gateway/web/freenode/ip.92.100.219.229) has joined #regex
+2016-07-07 16:09:43	⤎ 	Nach0z (~nach0z@unaffiliated/nach0z) has quit (Read error: Connection reset by peer)
+2016-07-07 16:10:30	⤍ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has joined #regex
+2016-07-07 16:10:51	⤎ 	aw1 (~aw1@unaffiliated/aw1) has quit (Ping timeout: 240 seconds)
+2016-07-07 16:14:34	⤍ 	todd_dsm_wk (~thomas@74.112.21.215) has joined #regex
+2016-07-07 16:16:42	⤍ 	Nach0z_ (~nach0z@unaffiliated/nach0z) has joined #regex
+2016-07-07 16:17:17	⤎ 	Nach0z_ (~nach0z@unaffiliated/nach0z) has quit (Read error: Connection reset by peer)
+2016-07-07 16:18:55	⤍ 	G66K (~G66K@unaffiliated/g66k) has joined #regex
+2016-07-07 16:19:18	⤎ 	ejb (~ejb@unaffiliated/ejb) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2016-07-07 16:20:50	⤎ 	bjoe2k4_ (bjoe2k4@kalzium.d9c.eu) has quit (Ping timeout: 258 seconds)
+2016-07-07 16:22:37	⤍ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has joined #regex
+2016-07-07 16:23:14	⤎ 	regex101-0383 (5c64dbe5@gateway/web/freenode/ip.92.100.219.229) has quit (Quit: Page closed)
+2016-07-07 16:24:02	⤍ 	aw1 (~aw1@unaffiliated/aw1) has joined #regex
+2016-07-07 16:24:25	⤎ 	gelignite (~gelignite@x4db63cf0.dyn.telefonica.de) has quit (Quit: http://bit.ly/1kso8Ta)
+2016-07-07 16:26:44	⤎ 	G66K (~G66K@unaffiliated/g66k) has quit (Quit: leaving)
+2016-07-07 16:27:28	⤎ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has quit (Ping timeout: 272 seconds)
+2016-07-07 16:29:00	⤍ 	ER (~ER_nesto@217.38.86.60) has joined #regex
+2016-07-07 16:29:23	ℹ	ER is now known as Guest57053
+2016-07-07 16:29:25	⤎ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has quit (Remote host closed the connection)
+2016-07-07 16:30:04	⤎ 	regex101-3302 (bdfdcc8c@gateway/web/freenode/ip.189.253.204.140) has quit (Ping timeout: 250 seconds)
+2016-07-07 16:30:19	⤎ 	Guest57053 (~ER_nesto@217.38.86.60) has quit (Max SendQ exceeded)
+2016-07-07 16:30:34	⤎ 	rgrinberg (~rgrinberg@72.143.111.226) has quit (Ping timeout: 240 seconds)
+2016-07-07 16:30:50	⤍ 	Guest57053 (~ER_nesto@217.38.86.60) has joined #regex
+2016-07-07 16:31:59	⤎ 	ER_nesto (~ER_nesto@host86-131-241-18.range86-131.btcentralplus.com) has quit (Ping timeout: 250 seconds)
+2016-07-07 16:36:27	⤎ 	reveredge_ (~reveredge@111.119.209.215) has quit (Ping timeout: 276 seconds)
+2016-07-07 16:36:56	⤍ 	Nach0z (~nach0z@unaffiliated/nach0z) has joined #regex
+2016-07-07 16:38:20	⤎ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has quit (Ping timeout: 244 seconds)
+2016-07-07 16:39:17	⤍ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has joined #regex
+2016-07-07 16:40:51	⤎ 	Svadilfari (~Svadilfar@host72-145-dynamic.4-87-r.retail.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2016-07-07 16:42:57	⤎ 	Winter_ (~a.w1nter@modemcable250.87-70-69.static.videotron.ca) has quit (Quit: Leaving)
+2016-07-07 16:44:58	⤎ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has quit (Ping timeout: 252 seconds)
+2016-07-07 16:45:12	⤎ 	supergonkas (~quassel@2001:470:1f07:55d::25) has quit (Ping timeout: 272 seconds)
+2016-07-07 16:48:02	⤍ 	reveredge_ (~reveredge@115.110.126.75) has joined #regex
+2016-07-07 16:49:22	⤎ 	aw1 (~aw1@unaffiliated/aw1) has quit (Ping timeout: 252 seconds)
+2016-07-07 16:55:39	⤍ 	Svadilfari (~Svadilfar@host188-4-dynamic.60-82-r.retail.telecomitalia.it) has joined #regex
+2016-07-07 16:59:01	⤍ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has joined #regex
+2016-07-07 17:00:23	⤍ 	ER_nesto (~ER_nesto@host86-187-165-192.range86-187.btcentralplus.com) has joined #regex
+2016-07-07 17:03:13	⤍ 	supergonkas (~quassel@2001:470:1f07:55d::25) has joined #regex
+2016-07-07 17:03:28	⤎ 	Guest57053 (~ER_nesto@217.38.86.60) has quit (Ping timeout: 264 seconds)
+2016-07-07 17:04:59	⤍ 	aw1 (~aw1@unaffiliated/aw1) has joined #regex
+2016-07-07 17:05:22	⤍ 	rgrinberg (~rgrinberg@24-246-56-85.cable.teksavvy.com) has joined #regex
+2016-07-07 17:05:42	⤍ 	regex101-9108 (472ae3c2@gateway/web/freenode/ip.71.42.227.194) has joined #regex
+2016-07-07 17:07:14	⤎ 	regex101-9108 (472ae3c2@gateway/web/freenode/ip.71.42.227.194) has quit (Client Quit)
+2016-07-07 17:13:00	⤍ 	ph5il (~blank@unaffiliated/ph5il) has joined #regex
+2016-07-07 17:13:04	⤎ 	turlutton (~turlutton@unaffiliated/turlutton) has quit (Ping timeout: 240 seconds)
+2016-07-07 17:14:10	⤍ 	ER2 (~ER_nesto@217.38.86.60) has joined #regex
+2016-07-07 17:16:48	⤎ 	ER_nesto (~ER_nesto@host86-187-165-192.range86-187.btcentralplus.com) has quit (Ping timeout: 258 seconds)
+2016-07-07 17:17:35	⤎ 	ph5il (~blank@unaffiliated/ph5il) has quit (Ping timeout: 244 seconds)
+2016-07-07 17:20:00	⤎ 	ER2 (~ER_nesto@217.38.86.60) has quit (Ping timeout: 276 seconds)
+2016-07-07 17:26:53	⤎ 	ash_workz (~chatzilla@50.243.5.153) has quit (Ping timeout: 244 seconds)
+2016-07-07 17:33:49	⤍ 	regex101-3553 (bba3292f@gateway/web/freenode/ip.187.163.41.47) has joined #regex
+2016-07-07 17:34:31	⤎ 	regex101-3553 (bba3292f@gateway/web/freenode/ip.187.163.41.47) has quit (Client Quit)
+2016-07-07 17:38:42	AirPlanes	test
+2016-07-07 17:44:48	ℹ	VX is now known as VectorX
+2016-07-07 17:53:09	⤎ 	irco (~irco@HSI-KBW-078-042-015-165.hsi3.kabel-badenwuerttemberg.de) has quit (Ping timeout: 276 seconds)
+2016-07-07 18:01:18	⤎ 	realnot (~realnot@unaffiliated/realnot) has quit (Ping timeout: 246 seconds)
+2016-07-07 18:02:05	⤍ 	ER_nesto (~ER_nesto@host86-187-160-105.range86-187.btcentralplus.com) has joined #regex
+2016-07-07 18:02:25	⤎ 	ER_nesto (~ER_nesto@host86-187-160-105.range86-187.btcentralplus.com) has quit (Max SendQ exceeded)
+2016-07-07 18:02:54	⤍ 	ER_nesto (~ER_nesto@host86-187-160-105.range86-187.btcentralplus.com) has joined #regex
+2016-07-07 18:03:03	⤎ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has quit (Ping timeout: 244 seconds)
+2016-07-07 18:03:59	⤍ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has joined #regex
+2016-07-07 18:04:39	⤍ 	Streusel (~Anonymous@unaffiliated/streusel) has joined #regex
+2016-07-07 18:12:31	⤎ 	bowhunter (~textual@168-215-167-148.static.twtelecom.net) has quit (Ping timeout: 240 seconds)
+2016-07-07 18:17:22	⤎ 	emPi (~emPi@unaffiliated/empi) has quit (Ping timeout: 252 seconds)
+2016-07-07 18:23:11	⤍ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has joined #regex
+2016-07-07 18:25:11	⤎ 	sanct (~sanct@212.35.67.11) has quit (Ping timeout: 240 seconds)
+2016-07-07 18:28:26	⤎ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has quit (Ping timeout: 272 seconds)
+2016-07-07 18:34:03	⤎ 	zenlot6 (~zenlot@78-62-77-171.static.zebra.lt) has quit (Ping timeout: 240 seconds)
+2016-07-07 18:34:12	⤍ 	zenlot (~zenlot@78-62-77-171.static.zebra.lt) has joined #regex
+2016-07-07 18:41:23	⤍ 	ER (~ER_nesto@host86-187-160-105.range86-187.btcentralplus.com) has joined #regex
+2016-07-07 18:41:47	ℹ	ER is now known as Guest53610
+2016-07-07 18:42:40	⤎ 	ER_nesto (~ER_nesto@host86-187-160-105.range86-187.btcentralplus.com) has quit (Ping timeout: 252 seconds)
+2016-07-07 18:49:16	⤎ 	trytry (~tr@bzq-79-180-16-116.red.bezeqint.net) has quit (Ping timeout: 252 seconds)
+2016-07-07 18:52:10	⤍ 	spookah (~brian@unaffiliated/spookah) has joined #regex
+2016-07-07 18:54:27	⤎ 	Guest53610 (~ER_nesto@host86-187-160-105.range86-187.btcentralplus.com) has quit (Read error: Connection reset by peer)
+2016-07-07 19:02:58	⤎ 	kostodo (~k@labs.maven.sc) has quit (Read error: Connection reset by peer)
+2016-07-07 19:04:17	⤎ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has quit (Ping timeout: 252 seconds)
+2016-07-07 19:04:18	⤍ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has joined #regex
+2016-07-07 19:04:18	⤎ 	john51 (~john@15255.s.time4vps.eu) has quit (Read error: Connection reset by peer)
+2016-07-07 19:04:35	⤍ 	john51 (~john@15255.s.t4vps.eu) has joined #regex
+2016-07-07 19:04:46	⤎ 	shivers (jshivers@nat/redhat/x-euggtibwvotdjpex) has quit (Quit: Konversation terminated!)
+2016-07-07 19:17:12	⤍ 	Rainb (~Rainb@200.89.239.231) has joined #regex
+2016-07-07 19:20:04	+JohnDoe2	AirPlanes test back
+2016-07-07 19:21:41	⤎ 	d10n-work (uid37161@gateway/web/irccloud.com/x-bgdfbpkqqibwnyls) has quit (Quit: Connection closed for inactivity)
+2016-07-07 19:23:55	⤎ 	Rainb (~Rainb@200.89.239.231) has quit (Ping timeout: 252 seconds)
+2016-07-07 19:27:33	AirPlanes	thanks
+2016-07-07 19:29:03	⤍ 	regex101-1179 (5faedeb6@gateway/web/freenode/ip.95.174.222.182) has joined #regex
+2016-07-07 19:29:59	⤍ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has joined #regex
+2016-07-07 19:31:00	⤎ 	d4rklit3 (~textual@rrcs-64-183-104-146.west.biz.rr.com) has quit (Read error: Connection reset by peer)
+2016-07-07 19:31:26	⤍ 	john51_ (~john@15255.s.t4vps.eu) has joined #regex
+2016-07-07 19:32:23	⤍ 	d4rklit3 (~textual@rrcs-64-183-104-146.west.biz.rr.com) has joined #regex
+2016-07-07 19:32:29	⤍ 	tobias47n9e__ (~tobias47n@188-23-70-140.adsl.highway.telekom.at) has joined #regex
+2016-07-07 19:33:42	⤎ 	jamieshepherd (~jamieshep@37.139.21.240) has quit (Ping timeout: 246 seconds)
+2016-07-07 19:33:42	⤎ 	john51 (~john@15255.s.t4vps.eu) has quit (Ping timeout: 260 seconds)
+2016-07-07 19:34:03	⤎ 	V28 (~v28@47-35-65-135.dhcp.aldl.mi.charter.com) has quit (Ping timeout: 240 seconds)
+2016-07-07 19:34:32	⤍ 	Miner_48er (~Miner_48e@cpe-75-183-179-188.sc.res.rr.com) has joined #regex
+2016-07-07 19:34:42	⤍ 	jamieshepherd (~jamieshep@37.139.21.240) has joined #regex
+2016-07-07 19:35:34	⤎ 	lexileo (~lexii@49.248.192.241) has quit (Ping timeout: 240 seconds)
+2016-07-07 19:35:38	⤎ 	ferdna (~ferdna@cpe-69-23-129-73.elp.res.rr.com) has quit (Quit: Leaving)
+2016-07-07 19:35:54	⤎ 	benwbooth (~benwbooth@bbooth-macair.dhcp.lbl.gov) has quit (Read error: Connection reset by peer)
+2016-07-07 19:36:28	⤎ 	tobias47n9e_ (~tobias47n@188-22-21-247.adsl.highway.telekom.at) has quit (Ping timeout: 264 seconds)
+2016-07-07 19:40:36	⤎ 	doxinho (~doxinho@dox.la) has left #regex ("Leaving")
+2016-07-07 19:43:16	⤍ 	benwbooth (~benwbooth@bbooth-macair.dhcp.lbl.gov) has joined #regex
+2016-07-07 19:49:52	⤎ 	regex101-1179 (5faedeb6@gateway/web/freenode/ip.95.174.222.182) has quit (Quit: Page closed)
+2016-07-07 19:59:37	⤍ 	AirPlanes2 (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has joined #regex
+2016-07-07 20:02:42	⤍ 	SwiftMatt (~Objective@162.242.94.93) has joined #regex
+2016-07-07 20:03:35	⤎ 	spookah (~brian@unaffiliated/spookah) has quit (Read error: Connection reset by peer)
+2016-07-07 20:03:48	⤎ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has quit (Ping timeout: 276 seconds)
+2016-07-07 20:03:58	⤍ 	spookah (~brian@unaffiliated/spookah) has joined #regex
+2016-07-07 20:08:55	⤎ 	spookah (~brian@unaffiliated/spookah) has quit (Ping timeout: 258 seconds)
+2016-07-07 20:21:51	⤎ 	kriskropd (~kris@unaffiliated/kriskropd) has quit (Ping timeout: 240 seconds)
+2016-07-07 20:22:48	⤍ 	ejb (~ejb@unaffiliated/ejb) has joined #regex
+2016-07-07 20:24:03	⤍ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has joined #regex
+2016-07-07 20:27:28	ℹ	AirPlanes2 is now known as AirPlanes
+2016-07-07 20:28:51	⤎ 	fuchstronaut (~fuchstron@unaffiliated/fuchstronaut) has quit (Ping timeout: 258 seconds)
+2016-07-07 20:36:48	⤎ 	Arcarc (~Arcaon@h-4-16.a166.priv.bahnhof.se) has quit (Ping timeout: 250 seconds)
+2016-07-07 20:43:01	⤎ 	SwiftMatt (~Objective@162.242.94.93) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2016-07-07 20:50:21	⤎ 	trapped (~trapped@pellero.it) has quit (Ping timeout: 246 seconds)
+2016-07-07 20:54:59	⤍ 	digitok (~death@unaffiliated/digitok) has joined #regex
+2016-07-07 20:58:25	⤍ 	Montezuma (~trevor@HULLPQ2038W-LP130-04-1178045896.dsl.bell.ca) has joined #regex
+2016-07-07 21:02:51	⤎ 	reveredge_ (~reveredge@115.110.126.75) has quit (Ping timeout: 240 seconds)
+2016-07-07 21:03:22	⤎ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has quit (Ping timeout: 244 seconds)
+2016-07-07 21:04:31	⤍ 	AirPlanes (~ShortBob@bzq-109-65-170-8.red.bezeqint.net) has joined #regex
+2016-07-07 21:14:23	⤎ 	Adriannom (~d@cpc77535-cwma10-2-0-cust143.7-3.cable.virginm.net) has quit (Remote host closed the connection)
+2016-07-07 21:15:06	⤍ 	eigenvalue (~eigenvalu@unaffiliated/eigenvalue) has joined #regex
+2016-07-07 21:29:15	⤎ 	kon__ (~kon@2a02:120b:2c00:fa10:ac15:83c5:a04:1c4b) has quit (Read error: Connection reset by peer)
