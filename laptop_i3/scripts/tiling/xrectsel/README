@@ -1,4 +1,0 @@
-lolilolicon.2 compile: $ gcc -Wall -lX11 xrectsel.c -o xrectsel
-
-
-source: https://bbs.archlinux.org/viewtopic.php?id=85378
